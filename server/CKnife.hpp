@@ -4,11 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf60
+// Size: 0xf78
 // Has VTable
+// 
+// MNetworkVarNames "bool m_bFirstAttack"
 class CKnife : public CCSWeaponBase
 {
 public:
-	bool m_bFirstAttack; // 0xf58	
+	// MNetworkEnable
+	bool m_bFirstAttack; // 0xf70	
 };
 

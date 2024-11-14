@@ -9,7 +9,7 @@ struct GameTick_t;
 struct C_IronSightController;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1b10
+// Size: 0x1b20
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flTimeWeaponIdle"
@@ -36,6 +36,7 @@ struct C_IronSightController;
 // MNetworkVarNames "int m_iOriginalTeamNumber"
 // MNetworkVarNames "int m_iMostRecentTeamNumber"
 // MNetworkVarNames "bool m_bDroppedNearBuyZone"
+// MNetworkVarNames "GameTime_t m_nextPrevOwnerUseTime"
 // MNetworkVarNames "CHandle< CCSPlayerPawn> m_hPrevOwner"
 // MNetworkVarNames "GameTick_t m_nDropTick"
 // MNetworkVarNames "GameTime_t m_fLastShotTime"
@@ -160,30 +161,32 @@ private:
 	[[maybe_unused]] uint8_t __pad18b8[0x8]; // 0x18b8
 public:
 	// MNetworkEnable
-	CHandle< C_CSPlayerPawn > m_hPrevOwner; // 0x18c0	
+	GameTime_t m_nextPrevOwnerUseTime; // 0x18c0	
 	// MNetworkEnable
-	GameTick_t m_nDropTick; // 0x18c4	
+	CHandle< C_CSPlayerPawn > m_hPrevOwner; // 0x18c4	
+	// MNetworkEnable
+	GameTick_t m_nDropTick; // 0x18c8	
 private:
-	[[maybe_unused]] uint8_t __pad18c8[0x1c]; // 0x18c8
+	[[maybe_unused]] uint8_t __pad18cc[0x20]; // 0x18cc
 public:
-	bool m_donated; // 0x18e4	
+	bool m_donated; // 0x18ec	
 private:
-	[[maybe_unused]] uint8_t __pad18e5[0x3]; // 0x18e5
+	[[maybe_unused]] uint8_t __pad18ed[0x3]; // 0x18ed
 public:
 	// MNetworkEnable
-	GameTime_t m_fLastShotTime; // 0x18e8	
-	bool m_bWasOwnedByCT; // 0x18ec	
-	bool m_bWasOwnedByTerrorist; // 0x18ed	
+	GameTime_t m_fLastShotTime; // 0x18f0	
+	bool m_bWasOwnedByCT; // 0x18f4	
+	bool m_bWasOwnedByTerrorist; // 0x18f5	
 private:
-	[[maybe_unused]] uint8_t __pad18ee[0x2]; // 0x18ee
+	[[maybe_unused]] uint8_t __pad18f6[0x2]; // 0x18f6
 public:
-	float m_gunHeat; // 0x18f0	
-	uint32_t m_smokeAttachments; // 0x18f4	
-	GameTime_t m_lastSmokeTime; // 0x18f8	
-	float m_flNextClientFireBulletTime; // 0x18fc	
-	float m_flNextClientFireBulletTime_Repredict; // 0x1900	
+	float m_gunHeat; // 0x18f8	
+	uint32_t m_smokeAttachments; // 0x18fc	
+	GameTime_t m_lastSmokeTime; // 0x1900	
+	float m_flNextClientFireBulletTime; // 0x1904	
+	float m_flNextClientFireBulletTime_Repredict; // 0x1908	
 private:
-	[[maybe_unused]] uint8_t __pad1904[0xdc]; // 0x1904
+	[[maybe_unused]] uint8_t __pad190c[0xd4]; // 0x190c
 public:
 	C_IronSightController m_IronSightController; // 0x19e0	
 	// MNetworkEnable

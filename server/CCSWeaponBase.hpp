@@ -9,7 +9,7 @@ struct GameTick_t;
 struct CIronSightController;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf58
+// Size: 0xf70
 // Has VTable
 // 
 // MNetworkExcludeByName "m_flTimeWeaponIdle"
@@ -36,6 +36,7 @@ struct CIronSightController;
 // MNetworkVarNames "int m_iOriginalTeamNumber"
 // MNetworkVarNames "int m_iMostRecentTeamNumber"
 // MNetworkVarNames "bool m_bDroppedNearBuyZone"
+// MNetworkVarNames "GameTime_t m_nextPrevOwnerUseTime"
 // MNetworkVarNames "CHandle< CCSPlayerPawn> m_hPrevOwner"
 // MNetworkVarNames "GameTick_t m_nDropTick"
 // MNetworkVarNames "GameTime_t m_fLastShotTime"
@@ -162,35 +163,37 @@ private:
 	[[maybe_unused]] uint8_t __pad0ef4[0x4]; // 0xef4
 public:
 	// MNetworkEnable
-	CHandle< CCSPlayerPawn > m_hPrevOwner; // 0xef8	
+	GameTime_t m_nextPrevOwnerUseTime; // 0xef8	
 	// MNetworkEnable
-	GameTick_t m_nDropTick; // 0xefc	
+	CHandle< CCSPlayerPawn > m_hPrevOwner; // 0xefc	
+	// MNetworkEnable
+	GameTick_t m_nDropTick; // 0xf00	
 private:
-	[[maybe_unused]] uint8_t __pad0f00[0x1c]; // 0xf00
+	[[maybe_unused]] uint8_t __pad0f04[0x20]; // 0xf04
 public:
-	bool m_donated; // 0xf1c	
+	bool m_donated; // 0xf24	
 private:
-	[[maybe_unused]] uint8_t __pad0f1d[0x3]; // 0xf1d
+	[[maybe_unused]] uint8_t __pad0f25[0x3]; // 0xf25
 public:
 	// MNetworkEnable
-	GameTime_t m_fLastShotTime; // 0xf20	
-	bool m_bWasOwnedByCT; // 0xf24	
-	bool m_bWasOwnedByTerrorist; // 0xf25	
-	bool m_bFiredOutOfAmmoEvent; // 0xf26	
+	GameTime_t m_fLastShotTime; // 0xf28	
+	bool m_bWasOwnedByCT; // 0xf2c	
+	bool m_bWasOwnedByTerrorist; // 0xf2d	
+	bool m_bFiredOutOfAmmoEvent; // 0xf2e	
 private:
-	[[maybe_unused]] uint8_t __pad0f27[0x1]; // 0xf27
+	[[maybe_unused]] uint8_t __pad0f2f[0x1]; // 0xf2f
 public:
-	int32_t m_numRemoveUnownedWeaponThink; // 0xf28	
+	int32_t m_numRemoveUnownedWeaponThink; // 0xf30	
 private:
-	[[maybe_unused]] uint8_t __pad0f2c[0x4]; // 0xf2c
+	[[maybe_unused]] uint8_t __pad0f34[0x4]; // 0xf34
 public:
-	CIronSightController m_IronSightController; // 0xf30	
+	CIronSightController m_IronSightController; // 0xf38	
 	// MNetworkEnable
-	int32_t m_iIronSightMode; // 0xf48	
-	GameTime_t m_flLastLOSTraceFailureTime; // 0xf4c	
+	int32_t m_iIronSightMode; // 0xf50	
+	GameTime_t m_flLastLOSTraceFailureTime; // 0xf54	
 	// MNetworkEnable
-	int32_t m_iNumEmptyAttacks; // 0xf50	
-	float m_flWatTickOffset; // 0xf54	
+	int32_t m_iNumEmptyAttacks; // 0xf58	
+	float m_flWatTickOffset; // 0xf5c	
 	
 	// Datamap fields:
 	// void CCSWeaponBaseDefaultTouch; // 0x0

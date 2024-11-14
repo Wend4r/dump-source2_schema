@@ -5,7 +5,7 @@
 struct CAnimGraphDoc_NodeConnection;
 // Registered binary: assetrename.dll (project 'animgraphdoclib')
 // Alignment: 8
-// Size: 0x68
+// Size: 0x60
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -18,8 +18,5 @@ public:
 	// MPropertyFriendlyName "IK Chains"
 	// MPropertyAutoExpandSelf
 	CUtlVector< CSolveIKChainAnimNodeChainData > m_IkChains; // 0x48	
-	// MPropertyFriendlyName "Match Target Orientation"
-	// MPropertyAttrChangeCallback
-	bool m_bMatchTargetOrientation; // 0x60	
 };
 

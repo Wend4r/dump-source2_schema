@@ -4,11 +4,14 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0x1b10
+// Size: 0x1b30
 // Has VTable
+// 
+// MNetworkVarNames "bool m_bFirstAttack"
 class C_Knife : public C_CSWeaponBase
 {
 public:
-	// No schema binary for binding
+	// MNetworkEnable
+	bool m_bFirstAttack; // 0x1b20	
 };
 

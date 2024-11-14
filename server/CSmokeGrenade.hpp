@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf98
+// Size: 0xfb0
 // Has VTable
 class CSmokeGrenade : public CBaseCSGrenade
 {

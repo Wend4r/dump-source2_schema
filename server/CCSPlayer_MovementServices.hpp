@@ -5,10 +5,9 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x4f8
 // Has VTable
 // 
-// MNetworkVarNames "float m_flMaxFallVelocity"
 // MNetworkVarNames "Vector m_vecLadderNormal"
 // MNetworkVarNames "int m_nLadderSurfacePropIndex"
 // MNetworkVarNames "float m_flDuckAmount"
@@ -21,8 +20,6 @@ struct GameTime_t;
 // MNetworkVarNames "float m_flLastDuckTime"
 // MNetworkVarNames "int m_nGameCodeHasMovedPlayerAfterCommand"
 // MNetworkVarNames "bool m_bOldJumpPressed"
-// MNetworkVarNames "float m_flJumpUntil"
-// MNetworkVarNames "float m_flJumpVel"
 // MNetworkVarNames "GameTime_t m_fStashGrenadeParameterWhen"
 // MNetworkVarNames "ButtonBitMask_t m_nButtonDownMaskPrev"
 // MNetworkVarNames "float m_flOffsetTickCompleteTime"
@@ -32,93 +29,89 @@ class CCSPlayer_MovementServices : public CPlayer_MovementServices_Humanoid
 {
 public:
 	// MNetworkEnable
-	float m_flMaxFallVelocity; // 0x228	
-	// MNetworkEnable
 	// MNetworkEncoder "normal"
-	Vector m_vecLadderNormal; // 0x22c	
+	Vector m_vecLadderNormal; // 0x228	
 	// MNetworkEnable
-	int32_t m_nLadderSurfacePropIndex; // 0x238	
+	int32_t m_nLadderSurfacePropIndex; // 0x234	
 	// MNetworkEnable
-	float m_flDuckAmount; // 0x23c	
+	float m_flDuckAmount; // 0x238	
 	// MNetworkEnable
-	float m_flDuckSpeed; // 0x240	
+	float m_flDuckSpeed; // 0x23c	
 	// MNetworkEnable
-	bool m_bDuckOverride; // 0x244	
+	bool m_bDuckOverride; // 0x240	
 	// MNetworkEnable
-	bool m_bDesiresDuck; // 0x245	
+	bool m_bDesiresDuck; // 0x241	
 private:
-	[[maybe_unused]] uint8_t __pad0246[0x2]; // 0x246
+	[[maybe_unused]] uint8_t __pad0242[0x2]; // 0x242
 public:
-	float m_flDuckOffset; // 0x248	
+	float m_flDuckOffset; // 0x244	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	// MNetworkPriority "32"
-	uint32_t m_nDuckTimeMsecs; // 0x24c	
+	uint32_t m_nDuckTimeMsecs; // 0x248	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	uint32_t m_nDuckJumpTimeMsecs; // 0x250	
+	uint32_t m_nDuckJumpTimeMsecs; // 0x24c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	uint32_t m_nJumpTimeMsecs; // 0x254	
+	uint32_t m_nJumpTimeMsecs; // 0x250	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	float m_flLastDuckTime; // 0x258	
+	float m_flLastDuckTime; // 0x254	
 private:
-	[[maybe_unused]] uint8_t __pad025c[0xc]; // 0x25c
+	[[maybe_unused]] uint8_t __pad0258[0x8]; // 0x258
 public:
-	Vector2D m_vecLastPositionAtFullCrouchSpeed; // 0x268	
-	bool m_duckUntilOnGround; // 0x270	
-	bool m_bHasWalkMovedSinceLastJump; // 0x271	
-	bool m_bInStuckTest; // 0x272	
+	Vector2D m_vecLastPositionAtFullCrouchSpeed; // 0x260	
+	bool m_duckUntilOnGround; // 0x268	
+	bool m_bHasWalkMovedSinceLastJump; // 0x269	
+	bool m_bInStuckTest; // 0x26a	
 private:
-	[[maybe_unused]] uint8_t __pad0273[0xd]; // 0x273
+	[[maybe_unused]] uint8_t __pad026b[0xd]; // 0x26b
 public:
-	float m_flStuckCheckTime[2][64]; // 0x280	
-	int32_t m_nTraceCount; // 0x480	
-	int32_t m_StuckLast; // 0x484	
-	bool m_bSpeedCropped; // 0x488	
+	float m_flStuckCheckTime[2][64]; // 0x278	
+	int32_t m_nTraceCount; // 0x478	
+	int32_t m_StuckLast; // 0x47c	
+	bool m_bSpeedCropped; // 0x480	
 private:
-	[[maybe_unused]] uint8_t __pad0489[0x3]; // 0x489
+	[[maybe_unused]] uint8_t __pad0481[0x3]; // 0x481
 public:
-	float m_flGroundMoveEfficiency; // 0x48c	
-	int32_t m_nOldWaterLevel; // 0x490	
-	float m_flWaterEntryTime; // 0x494	
-	Vector m_vecForward; // 0x498	
-	Vector m_vecLeft; // 0x4a4	
-	Vector m_vecUp; // 0x4b0	
+	float m_flGroundMoveEfficiency; // 0x484	
+	int32_t m_nOldWaterLevel; // 0x488	
+	float m_flWaterEntryTime; // 0x48c	
+	Vector m_vecForward; // 0x490	
+	Vector m_vecLeft; // 0x49c	
+	Vector m_vecUp; // 0x4a8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x4bc	
-	bool m_bMadeFootstepNoise; // 0x4c0	
+	int32_t m_nGameCodeHasMovedPlayerAfterCommand; // 0x4b4	
+	bool m_bMadeFootstepNoise; // 0x4b8	
+private:
+	[[maybe_unused]] uint8_t __pad04b9[0x3]; // 0x4b9
+public:
+	int32_t m_iFootsteps; // 0x4bc	
+	// MNetworkEnable
+	bool m_bOldJumpPressed; // 0x4c0	
 private:
 	[[maybe_unused]] uint8_t __pad04c1[0x3]; // 0x4c1
 public:
-	int32_t m_iFootsteps; // 0x4c4	
+	float m_flJumpPressedTime; // 0x4c4	
 	// MNetworkEnable
-	bool m_bOldJumpPressed; // 0x4c8	
+	GameTime_t m_fStashGrenadeParameterWhen; // 0x4c8	
 private:
-	[[maybe_unused]] uint8_t __pad04c9[0x3]; // 0x4c9
-public:
-	float m_flJumpPressedTime; // 0x4cc	
-	// MNetworkEnable
-	float m_flJumpUntil; // 0x4d0	
-	// MNetworkEnable
-	float m_flJumpVel; // 0x4d4	
-	// MNetworkEnable
-	GameTime_t m_fStashGrenadeParameterWhen; // 0x4d8	
-private:
-	[[maybe_unused]] uint8_t __pad04dc[0x4]; // 0x4dc
+	[[maybe_unused]] uint8_t __pad04cc[0x4]; // 0x4cc
 public:
 	// MNetworkEnable
-	uint64_t m_nButtonDownMaskPrev; // 0x4e0	
+	uint64_t m_nButtonDownMaskPrev; // 0x4d0	
 	// MNetworkEnable
-	float m_flOffsetTickCompleteTime; // 0x4e8	
+	float m_flOffsetTickCompleteTime; // 0x4d8	
 	// MNetworkEnable
-	float m_flOffsetTickStashedSpeed; // 0x4ec	
+	float m_flOffsetTickStashedSpeed; // 0x4dc	
 	// MNetworkEnable
-	float m_flStamina; // 0x4f0	
-	float m_flHeightAtJumpStart; // 0x4f4	
-	float m_flMaxJumpHeightThisJump; // 0x4f8	
-	float m_flMaxJumpHeightLastJump; // 0x4fc	
+	float m_flStamina; // 0x4e0	
+	float m_flHeightAtJumpStart; // 0x4e4	
+	float m_flMaxJumpHeightThisJump; // 0x4e8	
+	float m_flMaxJumpHeightLastJump; // 0x4ec	
+	float m_flStaminaAtJumpStart; // 0x4f0	
+	float m_flAccumulatedJumpError; // 0x4f4	
 };
 

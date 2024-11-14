@@ -6,7 +6,7 @@ struct IKSolverSettings_t;
 struct IKTargetSettings_t;
 // Registered binary: assetrename.dll (project 'animgraphdoclib')
 // Alignment: 8
-// Size: 0x60
+// Size: 0x68
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -28,19 +28,22 @@ public:
 	IKSolverSettings_t m_OverrideSolverSettings; // 0x14	
 	// MPropertyFriendlyName "Target Setting Source"
 	// MPropertyAttrChangeCallback
-	SolveIKChainAnimNodeSettingSource m_TargetSettingSource; // 0x1c	
+	SolveIKChainAnimNodeSettingSource m_TargetSettingSource; // 0x20	
+private:
+	[[maybe_unused]] uint8_t __pad0024[0x4]; // 0x24
+public:
 	// MPropertyFriendlyName "Override Target Settings"
 	// MPropertyAutoExpandSelf
 	// MPropertyAttrStateCallback
-	IKTargetSettings_t m_OverrideTargetSettings; // 0x20	
+	IKTargetSettings_t m_OverrideTargetSettings; // 0x28	
 	// MPropertyFriendlyName "Debug Setting"
 	// MPropertyGroupName "Debug"
-	SolveIKChainAnimNodeDebugSetting m_DebugSetting; // 0x48	
+	SolveIKChainAnimNodeDebugSetting m_DebugSetting; // 0x50	
 	// MPropertyFriendlyName "Debug Normalized Length"
 	// MPropertyGroupName "Debug"
-	float m_flDebugNormalizedLength; // 0x4c	
+	float m_flDebugNormalizedLength; // 0x54	
 	// MPropertyFriendlyName "Debug Offset"
 	// MPropertyGroupName "Debug"
-	Vector m_vDebugOffset; // 0x50	
+	Vector m_vDebugOffset; // 0x58	
 };
 

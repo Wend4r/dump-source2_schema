@@ -9,7 +9,7 @@ struct CCSPlayerController_DamageServices;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x868
+// Size: 0x858
 // Has VTable
 // 
 // MNetworkUserGroupProxy "CCSPlayerController"
@@ -57,12 +57,15 @@ struct GameTime_t;
 // MNetworkVarNames "int m_iPawnBotDifficulty"
 // MNetworkVarNames "CHandle< CCSPlayerController> m_hOriginalControllerOfCurrentPawn"
 // MNetworkVarNames "int32 m_iScore"
-// MNetworkVarNames "EKillTypes_t m_vecKills"
+// MNetworkVarNames "uint8 m_recentKillQueue"
+// MNetworkVarNames "uint8 m_nFirstKill"
+// MNetworkVarNames "uint8 m_nKillCount"
 // MNetworkVarNames "bool m_bMvpNoMusic"
 // MNetworkVarNames "int m_eMvpReason"
 // MNetworkVarNames "int m_iMusicKitID"
 // MNetworkVarNames "int m_iMusicKitMVPs"
 // MNetworkVarNames "int m_iMVPs"
+// MNetworkVarNames "bool m_bFireBulletsSeedSynchronized"
 class CCSPlayerController : public CBasePlayerController
 {
 private:
@@ -215,21 +218,28 @@ public:
 	// MNetworkEnable
 	int32_t m_iScore; // 0x834	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< EKillTypes_t > m_vecKills; // 0x838	
+	uint8_t m_recentKillQueue[8]; // 0x838	
 	// MNetworkEnable
-	bool m_bMvpNoMusic; // 0x850	
+	uint8_t m_nFirstKill; // 0x840	
+	// MNetworkEnable
+	uint8_t m_nKillCount; // 0x841	
+	// MNetworkEnable
+	bool m_bMvpNoMusic; // 0x842	
 private:
-	[[maybe_unused]] uint8_t __pad0851[0x3]; // 0x851
+	[[maybe_unused]] uint8_t __pad0843[0x1]; // 0x843
 public:
 	// MNetworkEnable
-	int32_t m_eMvpReason; // 0x854	
+	int32_t m_eMvpReason; // 0x844	
 	// MNetworkEnable
-	int32_t m_iMusicKitID; // 0x858	
+	int32_t m_iMusicKitID; // 0x848	
 	// MNetworkEnable
-	int32_t m_iMusicKitMVPs; // 0x85c	
+	int32_t m_iMusicKitMVPs; // 0x84c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnMVPCountChanged"
-	int32_t m_iMVPs; // 0x860	
-	bool m_bIsPlayerNameDirty; // 0x864	
+	int32_t m_iMVPs; // 0x850	
+	bool m_bIsPlayerNameDirty; // 0x854	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerExclusive"
+	bool m_bFireBulletsSeedSynchronized; // 0x855	
 };
 

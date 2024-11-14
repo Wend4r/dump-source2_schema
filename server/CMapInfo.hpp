@@ -20,6 +20,7 @@ public:
 	float m_flBotMaxVisionDistance; // 0x4f0	
 	int32_t m_iHostageCount; // 0x4f4	
 	bool m_bFadePlayerVisibilityFarZ; // 0x4f8	
+	bool m_bRainTraceToSkyEnabled; // 0x4f9	
 	
 	// Datamap fields:
 	// int32_t InputFireWinCondition; // 0x0

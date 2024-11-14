@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0x8
+// Size: 0xc
 // Has Trivial Destructor
 struct IKSolverSettings_t
 {
@@ -15,5 +15,7 @@ public:
 	// MPropertyFriendlyName "Num Iterations "
 	// MPropertyAttrStateCallback
 	int32_t m_nNumIterations; // 0x4	
+	// MPropertyFriendlyName "End Effector Rotation Behaviour"
+	EIKEndEffectorRotationFixUpMode m_EndEffectorRotationFixUpMode; // 0x8	
 };
 

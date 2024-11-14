@@ -10,7 +10,7 @@ struct GameTime_t;
 struct IntervalTimer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xfa90
+// Size: 0xfa80
 // Has VTable
 // 
 // MNetworkUserGroupProxy "CCSPlayerController"
@@ -58,12 +58,15 @@ struct IntervalTimer;
 // MNetworkVarNames "int m_iPawnBotDifficulty"
 // MNetworkVarNames "CHandle< CCSPlayerController> m_hOriginalControllerOfCurrentPawn"
 // MNetworkVarNames "int32 m_iScore"
-// MNetworkVarNames "EKillTypes_t m_vecKills"
+// MNetworkVarNames "uint8 m_recentKillQueue"
+// MNetworkVarNames "uint8 m_nFirstKill"
+// MNetworkVarNames "uint8 m_nKillCount"
 // MNetworkVarNames "bool m_bMvpNoMusic"
 // MNetworkVarNames "int m_eMvpReason"
 // MNetworkVarNames "int m_iMusicKitID"
 // MNetworkVarNames "int m_iMusicKitMVPs"
 // MNetworkVarNames "int m_iMVPs"
+// MNetworkVarNames "bool m_bFireBulletsSeedSynchronized"
 class CCSPlayerController : public CBasePlayerController
 {
 private:
@@ -227,47 +230,57 @@ public:
 	int32_t m_iRoundScore; // 0x8c8	
 	int32_t m_iRoundsWon; // 0x8cc	
 	// MNetworkEnable
-	CNetworkUtlVectorBase< EKillTypes_t > m_vecKills; // 0x8d0	
+	uint8_t m_recentKillQueue[8]; // 0x8d0	
 	// MNetworkEnable
-	bool m_bMvpNoMusic; // 0x8e8	
+	uint8_t m_nFirstKill; // 0x8d8	
+	// MNetworkEnable
+	uint8_t m_nKillCount; // 0x8d9	
+	// MNetworkEnable
+	bool m_bMvpNoMusic; // 0x8da	
 private:
-	[[maybe_unused]] uint8_t __pad08e9[0x3]; // 0x8e9
+	[[maybe_unused]] uint8_t __pad08db[0x1]; // 0x8db
 public:
 	// MNetworkEnable
-	int32_t m_eMvpReason; // 0x8ec	
+	int32_t m_eMvpReason; // 0x8dc	
 	// MNetworkEnable
-	int32_t m_iMusicKitID; // 0x8f0	
+	int32_t m_iMusicKitID; // 0x8e0	
 	// MNetworkEnable
-	int32_t m_iMusicKitMVPs; // 0x8f4	
+	int32_t m_iMusicKitMVPs; // 0x8e4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnMVPCountChanged"
-	int32_t m_iMVPs; // 0x8f8	
-	int32_t m_nUpdateCounter; // 0x8fc	
-	float m_flSmoothedPing; // 0x900	
+	int32_t m_iMVPs; // 0x8e8	
+	int32_t m_nUpdateCounter; // 0x8ec	
+	float m_flSmoothedPing; // 0x8f0	
 private:
-	[[maybe_unused]] uint8_t __pad0904[0xf0a4]; // 0x904
+	[[maybe_unused]] uint8_t __pad08f4[0xf0a4]; // 0x8f4
 public:
-	IntervalTimer m_lastHeldVoteTimer; // 0xf9a8	
+	IntervalTimer m_lastHeldVoteTimer; // 0xf998	
 private:
-	[[maybe_unused]] uint8_t __padf9b8[0x8]; // 0xf9b8
+	[[maybe_unused]] uint8_t __padf9a8[0x8]; // 0xf9a8
 public:
-	bool m_bShowHints; // 0xf9c0	
+	bool m_bShowHints; // 0xf9b0	
 private:
-	[[maybe_unused]] uint8_t __padf9c1[0x3]; // 0xf9c1
+	[[maybe_unused]] uint8_t __padf9b1[0x3]; // 0xf9b1
 public:
-	int32_t m_iNextTimeCheck; // 0xf9c4	
-	bool m_bJustDidTeamKill; // 0xf9c8	
-	bool m_bPunishForTeamKill; // 0xf9c9	
-	bool m_bGaveTeamDamageWarning; // 0xf9ca	
-	bool m_bGaveTeamDamageWarningThisRound; // 0xf9cb	
+	int32_t m_iNextTimeCheck; // 0xf9b4	
+	bool m_bJustDidTeamKill; // 0xf9b8	
+	bool m_bPunishForTeamKill; // 0xf9b9	
+	bool m_bGaveTeamDamageWarning; // 0xf9ba	
+	bool m_bGaveTeamDamageWarningThisRound; // 0xf9bb	
 private:
-	[[maybe_unused]] uint8_t __padf9cc[0x4]; // 0xf9cc
+	[[maybe_unused]] uint8_t __padf9bc[0x4]; // 0xf9bc
 public:
-	double m_dblLastReceivedPacketPlatFloatTime; // 0xf9d0	
-	GameTime_t m_LastTeamDamageWarningTime; // 0xf9d8	
-	GameTime_t m_LastTimePlayerWasDisconnectedForPawnsRemove; // 0xf9dc	
-	uint32_t m_nSuspiciousHitCount; // 0xf9e0	
-	uint32_t m_nNonSuspiciousHitStreak; // 0xf9e4	
+	double m_dblLastReceivedPacketPlatFloatTime; // 0xf9c0	
+	GameTime_t m_LastTeamDamageWarningTime; // 0xf9c8	
+	GameTime_t m_LastTimePlayerWasDisconnectedForPawnsRemove; // 0xf9cc	
+	uint32_t m_nSuspiciousHitCount; // 0xf9d0	
+	uint32_t m_nNonSuspiciousHitStreak; // 0xf9d4	
+private:
+	[[maybe_unused]] uint8_t __padf9d8[0xa1]; // 0xf9d8
+public:
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerExclusive"
+	bool m_bFireBulletsSeedSynchronized; // 0xfa79	
 	
 	// Datamap fields:
 	// void CCSPlayerControllerPlayerForceTeamThink; // 0x0

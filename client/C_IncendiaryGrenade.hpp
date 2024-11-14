@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0x1b60
+// Size: 0x1b70
 // Has VTable
 class C_IncendiaryGrenade : public C_MolotovGrenade
 {
