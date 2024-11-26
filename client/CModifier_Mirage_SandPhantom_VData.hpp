@@ -11,7 +11,5 @@
 class CModifier_Mirage_SandPhantom_VData : public CCitadelModifierVData
 {
 public:
-	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_WhirlwindSpeedModifier; // 0x5f8	
 };
 

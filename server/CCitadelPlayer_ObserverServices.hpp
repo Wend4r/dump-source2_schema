@@ -20,10 +20,10 @@ public:
 	CHandle< CBaseEntity > m_hLastObserverTarget; // 0x58	
 	CHandle< CBaseEntity > m_hPreviousTeamTarget; // 0x5c	
 	// MNetworkEnable
-	// MNetworkChangeCallback "LocalPlayerExclusive"
+	// MNetworkUserGroup "LocalPlayerExclusive"
 	CHandle< CBaseEntity > m_hOverrideObserverTarget; // 0x60	
 	// MNetworkEnable
-	// MNetworkChangeCallback "LocalPlayerExclusive"
+	// MNetworkUserGroup "LocalPlayerExclusive"
 	ObserverMode_t m_iOverrideObserverMode; // 0x64	
 	// MNetworkEnable
 	int32_t m_iSecondsAfterDeathToAllowObserving; // 0x68	

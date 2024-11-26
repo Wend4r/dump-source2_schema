@@ -5,19 +5,19 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xab8
+// Size: 0xb28
 // Has VTable
 class C_Citadel_FissureWall : public CBaseAnimGraph
 {
 public:
-	Vector m_vStartPos; // 0xa90	
-	Vector m_vEndPos; // 0xa9c	
-	GameTime_t m_flStartEmitTime; // 0xaa8	
-	GameTime_t m_flEndEmitTime; // 0xaac	
-	bool m_bSolid; // 0xab0	
+	Vector m_vStartPos; // 0xb00	
+	Vector m_vEndPos; // 0xb0c	
+	GameTime_t m_flStartEmitTime; // 0xb18	
+	GameTime_t m_flEndEmitTime; // 0xb1c	
+	bool m_bSolid; // 0xb20	
 private:
-	[[maybe_unused]] uint8_t __pad0ab1[0x3]; // 0xab1
+	[[maybe_unused]] uint8_t __pad0b21[0x3]; // 0xb21
 public:
-	int32_t m_nTouchCount; // 0xab4	
+	int32_t m_nTouchCount; // 0xb24	
 };
 

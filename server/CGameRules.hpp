@@ -17,8 +17,6 @@ class CGameRules
 private:
 	[[maybe_unused]] uint8_t __pad0000[0x8]; // 0x0
 public:
-	// MNetworkDisable
-	// MNetworkChangeAccessorFieldPathIndex
 	CNetworkVarChainer __m_pChainEntity; // 0x8	
 	char m_szQuestName[128]; // 0x30	
 	int32_t m_nQuestPhase; // 0xb0	

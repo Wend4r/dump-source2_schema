@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x808
+// Size: 0x828
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_ChainLightningVData : public CCitadel_Modifier_BaseBulle
 {
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x718	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x738	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ChainModifier; // 0x7f8	
+	CEmbeddedSubclass< CCitadelModifier > m_ChainModifier; // 0x818	
 };
 

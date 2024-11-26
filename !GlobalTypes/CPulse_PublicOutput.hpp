@@ -10,8 +10,8 @@
 class CPulse_PublicOutput
 {
 public:
-	CUtlSymbolLarge m_Name; // 0x0	
+	CGlobalSymbol m_Name; // 0x0	
 	CUtlString m_Description; // 0x8	
-	CPulseValueFullType m_ParamType; // 0x10	
+	CUtlLeanVector< CPulseRuntimeMethodArg > m_Args; // 0x10	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1c8
+// Size: 0x1c0
 // Has VTable
 class CCitadel_Modifier_FrenzyAura : public CCitadelModifierAura
 {

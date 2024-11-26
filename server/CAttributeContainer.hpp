@@ -5,7 +5,7 @@
 struct CEconItemView;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x140
+// Size: 0x158
 // Has VTable
 // 
 // MNetworkIncludeByName "m_ProviderType"

@@ -5,7 +5,7 @@
 struct GameTick_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x50
+// Size: 0x58
 // Has VTable
 // 
 // MNetworkVarNames "CEntityIndex m_nEntIndex"
@@ -16,6 +16,7 @@ struct GameTick_t;
 // MNetworkVarNames "bool m_bVisibleOnMap"
 // MNetworkVarNames "bool m_bBackdoorProtectionActive"
 // MNetworkVarNames "GameTick_t m_nTickHidden"
+// MNetworkVarNames "CUtlString m_strEntityName"
 // MNetworkVarNames "uint8 m_nHealthPercent"
 // MNetworkVarNames "uint8 m_nPositionX"
 // MNetworkVarNames "uint8 m_nPositionY"
@@ -44,12 +45,14 @@ public:
 	// MNetworkEnable
 	GameTick_t m_nTickHidden; // 0x44	
 	// MNetworkEnable
-	uint8_t m_nHealthPercent; // 0x48	
+	CUtlString m_strEntityName; // 0x48	
+	// MNetworkEnable
+	uint8_t m_nHealthPercent; // 0x50	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	uint8_t m_nPositionX; // 0x49	
+	uint8_t m_nPositionX; // 0x51	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	uint8_t m_nPositionY; // 0x4a	
+	uint8_t m_nPositionY; // 0x52	
 };
 

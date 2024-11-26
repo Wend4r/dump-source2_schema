@@ -13,8 +13,6 @@ struct HSequence;
 // MGetKV3ClassDefaults
 class CAimMatrixUpdateNode : public CUnaryUpdateNode
 {
-private:
-	[[maybe_unused]] uint8_t __pad0068[0x8]; // 0x68
 public:
 	AimMatrixOpFixedSettings_t m_opFixedSettings; // 0x70	
 private:

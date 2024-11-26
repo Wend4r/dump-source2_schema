@@ -4,12 +4,12 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x38
+// Size: 0xe8
 // Has VTable
-class C_Citadel_DeployablePreview_GraphController : public CAnimGraphControllerBase
+class C_Citadel_DeployablePreview_GraphController : public CBaseAnimGraphAnimGraphController
 {
 public:
-	CAnimGraphParamOptionalRef< bool > m_bDeploying; // 0x18	
+	CAnimGraphParamOptionalRef< bool > m_bDeploying; // 0xc8	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_Citadel_DeployablePreview_GraphController")->m_static_fields[0]->m_instance);};

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 9
+// Enumerator count: 10
 // Alignment: 4
 // Size: 0x4
 enum class ENeutralTrooperType : uint32_t
@@ -17,5 +17,6 @@ enum class ENeutralTrooperType : uint32_t
 	NEUTRAL_TRASHBUG = 0xa,
 	NEUTRAL_WHACK_A_GHOST = 0xb,
 	NEUTRAL_VAULT = 0xc,
+	NEUTRAL_SUPER_HEROTEST = 0xd,
 };
 

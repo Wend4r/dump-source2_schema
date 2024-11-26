@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x6e8
+// Size: 0x6f8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CModifier_Synth_Grasp_Victim_VData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strVictimTetheredSound; // 0x5f8	
+	CSoundEventName m_strVictimTetheredSound; // 0x608	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_GraspVictimParticle; // 0x608	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_GraspVictimParticle; // 0x618	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x228
+// Size: 0x220
 // Has VTable
 class CCitadel_Modifier_PowerSurge_ChainLightning : public CCitadel_Modifier_ChainLightningEffect
 {

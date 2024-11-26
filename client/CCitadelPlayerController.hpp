@@ -2,11 +2,12 @@
 
 #include <cstdint>
 
+struct HeroBuildID_t;
 struct PlayerDataGlobal_t;
 struct CitadelLobbyPlayerSlot_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x930
+// Size: 0xa00
 // Has VTable
 // 
 // MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -22,16 +23,17 @@ struct CitadelLobbyPlayerSlot_t;
 // MNetworkVarNames "float m_flGuideBotMatchLastTaskNagVO"
 // MNetworkVarNames "float m_flGuideBotLastTimeTaskCompleted"
 // MNetworkVarNames "EGuidedBotMatchObjective m_eGuidedBotMatchObjective"
+// MNetworkVarNames "int m_nCurrentRank"
 // MNetworkVarNames "int8 m_nAssignedLane"
 // MNetworkVarNames "int8 m_nOriginalLaneAssignment"
-// MNetworkVarNames "bool m_bSwapCastModeAbility1"
-// MNetworkVarNames "bool m_bSwapCastModeAbility2"
-// MNetworkVarNames "bool m_bSwapCastModeAbility3"
-// MNetworkVarNames "bool m_bSwapCastModeAbility4"
 // MNetworkVarNames "bool m_bIsKingPanda"
 // MNetworkVarNames "bool m_bBotDisconnectTakeover"
 // MNetworkVarNames "bool m_bInTeamChat"
 // MNetworkVarNames "bool m_bInPartyChat"
+// MNetworkVarNames "HeroBuildID_t m_unHeroBuildID"
+// MNetworkVarNames "bool m_bLaneSwapLocked"
+// MNetworkVarNames "EHANDLE m_vecLaneSwapRequests"
+// MNetworkVarNames "EHANDLE m_vecLaneSwapRejects"
 // MNetworkVarNames "CHandle< CCitadelPlayerPawn> m_hHeroPawn"
 // MNetworkVarNames "PlayerDataGlobal_t m_PlayerDataGlobal"
 // MNetworkVarNames "int8 m_nDeathReplayAvailable"
@@ -40,73 +42,79 @@ class CCitadelPlayerController : public CBasePlayerController
 {
 public:
 	// MNetworkEnable
-	EPlayerPlayState m_ePlayState; // 0x6f0	
+	EPlayerPlayState m_ePlayState; // 0x720	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchLastHits; // 0x6f4	
+	int32_t m_iGuidedBotMatchLastHits; // 0x724	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchOrbsSecured; // 0x6f8	
+	int32_t m_iGuidedBotMatchOrbsSecured; // 0x728	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchOrbsDenied; // 0x6fc	
+	int32_t m_iGuidedBotMatchOrbsDenied; // 0x72c	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageToGuardians; // 0x700	
+	int32_t m_iGuidedBotMatchDamageToGuardians; // 0x730	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageToPlayers; // 0x704	
+	int32_t m_iGuidedBotMatchDamageToPlayers; // 0x734	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchDamageTaken; // 0x708	
+	int32_t m_iGuidedBotMatchDamageTaken; // 0x738	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchNetWorth; // 0x70c	
+	int32_t m_iGuidedBotMatchNetWorth; // 0x73c	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchModsPurchased; // 0x710	
+	int32_t m_iGuidedBotMatchModsPurchased; // 0x740	
 	// MNetworkEnable
-	int32_t m_iGuidedBotMatchAbilityUpgrades; // 0x714	
+	int32_t m_iGuidedBotMatchAbilityUpgrades; // 0x744	
 	// MNetworkEnable
-	float m_flGuideBotMatchLastTaskNagVO; // 0x718	
+	float m_flGuideBotMatchLastTaskNagVO; // 0x748	
 	// MNetworkEnable
-	float m_flGuideBotLastTimeTaskCompleted; // 0x71c	
+	float m_flGuideBotLastTimeTaskCompleted; // 0x74c	
 	// MNetworkEnable
-	EGuidedBotMatchObjective m_eGuidedBotMatchObjective; // 0x720	
+	EGuidedBotMatchObjective m_eGuidedBotMatchObjective; // 0x750	
+	// MNetworkEnable
+	int32_t m_nCurrentRank; // 0x754	
 	// MNetworkEnable
 	// MNetworkChangeCallback "AssignedLaneChanged"
-	int8_t m_nAssignedLane; // 0x724	
+	int8_t m_nAssignedLane; // 0x758	
 	// MNetworkEnable
-	int8_t m_nOriginalLaneAssignment; // 0x725	
+	int8_t m_nOriginalLaneAssignment; // 0x759	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility1; // 0x726	
+	bool m_bIsKingPanda; // 0x75a	
 	// MNetworkEnable
-	bool m_bSwapCastModeAbility2; // 0x727	
-	// MNetworkEnable
-	bool m_bSwapCastModeAbility3; // 0x728	
-	// MNetworkEnable
-	bool m_bSwapCastModeAbility4; // 0x729	
-	// MNetworkEnable
-	bool m_bIsKingPanda; // 0x72a	
-	// MNetworkEnable
-	bool m_bBotDisconnectTakeover; // 0x72b	
+	bool m_bBotDisconnectTakeover; // 0x75b	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInTeamChat; // 0x72c	
+	bool m_bInTeamChat; // 0x75c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "ChatGroupsChanged"
-	bool m_bInPartyChat; // 0x72d	
+	bool m_bInPartyChat; // 0x75d	
 private:
-	[[maybe_unused]] uint8_t __pad072e[0x2]; // 0x72e
+	[[maybe_unused]] uint8_t __pad075e[0x2]; // 0x75e
 public:
 	// MNetworkEnable
-	CHandle< C_CitadelPlayerPawn > m_hHeroPawn; // 0x730	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	HeroBuildID_t m_unHeroBuildID; // 0x760	
+	// MNetworkEnable
+	bool m_bLaneSwapLocked; // 0x764	
 private:
-	[[maybe_unused]] uint8_t __pad0734[0x14]; // 0x734
+	[[maybe_unused]] uint8_t __pad0765[0x3]; // 0x765
 public:
 	// MNetworkEnable
-	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x748	
+	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_vecLaneSwapRequests; // 0x768	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int8_t m_nDeathReplayAvailable; // 0x920	
+	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_vecLaneSwapRejects; // 0x780	
 	// MNetworkEnable
-	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x921	
-	bool m_bHasCheckedFriendName; // 0x922	
+	CHandle< C_CitadelPlayerPawn > m_hHeroPawn; // 0x798	
 private:
-	[[maybe_unused]] uint8_t __pad0923[0x5]; // 0x923
+	[[maybe_unused]] uint8_t __pad079c[0x34]; // 0x79c
 public:
-	CUtlString m_sFriendName; // 0x928	
+	// MNetworkEnable
+	PlayerDataGlobal_t m_PlayerDataGlobal; // 0x7d0	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	int8_t m_nDeathReplayAvailable; // 0x9f0	
+	// MNetworkEnable
+	CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x9f1	
+	bool m_bHasCheckedFriendName; // 0x9f2	
+private:
+	[[maybe_unused]] uint8_t __pad09f3[0x5]; // 0x9f3
+public:
+	CUtlString m_sFriendName; // 0x9f8	
 };
 

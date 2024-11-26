@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf0
+// Size: 0xe8
 // Has VTable
 class CCitadel_Modifier_TeleportToObjective : public CCitadelModifier
 {
 public:
-	Vector m_vDest; // 0xc8	
-	QAngle m_angDestAngles; // 0xd4	
-	Vector m_vDestVelocity; // 0xe0	
+	Vector m_vDest; // 0xc0	
+	QAngle m_angDestAngles; // 0xcc	
+	Vector m_vDestVelocity; // 0xd8	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1558
+// Size: 0x15c8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CCitadel_Item_RescueBeamVData : public CitadelItemVData
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DispelAndHealModifier; // 0x1538	
-	CEmbeddedSubclass< CCitadelModifier > m_PullModifier; // 0x1548	
+	CEmbeddedSubclass< CCitadelModifier > m_DispelAndHealModifier; // 0x15a8	
+	CEmbeddedSubclass< CCitadelModifier > m_PullModifier; // 0x15b8	
 };
 

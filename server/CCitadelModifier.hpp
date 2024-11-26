@@ -4,15 +4,15 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc8
+// Size: 0xc0
 // Has VTable
 // Is Abstract
 class CCitadelModifier : public CBaseModifier
 {
 public:
 	// Datamap fields:
-	// void m_pVecAbilityValues; // 0xa0
-	// float m_flEffectiveness; // 0xa8
+	// void m_pVecAbilityValues; // 0x98
+	// float m_flEffectiveness; // 0xa0
 	// No schema binary for binding
 };
 

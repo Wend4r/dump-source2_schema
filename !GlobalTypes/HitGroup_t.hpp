@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 21
+// Enumerator count: 22
 // Alignment: 4
 // Size: 0x4
 enum class HitGroup_t : uint32_t
@@ -28,6 +28,7 @@ enum class HitGroup_t : uint32_t
 	HITGROUP_T2_BOSS_HEAD_WEAKPOINT = 0x10,
 	HITGROUP_T2_BOSS_BACK_WEAKPOINT = 0x11,
 	HITGROUP_DRONE_BOSS_DRONE_WEAKPOINT = 0x12,
-	HITGROUP_COUNT = 0x13,
+	HITGROUP_HEAD_NO_RESIST = 0x13,
+	HITGROUP_COUNT = 0x14,
 };
 

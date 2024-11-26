@@ -6,38 +6,42 @@ struct ParticleIndex_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd50
+// Size: 0xd78
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flCastTime"
 // MNetworkVarNames "bool m_bCrashingDown"
 // MNetworkVarNames "bool m_bImpulseApplied"
+// MNetworkVarNames "bool m_bCanCrash"
 // MNetworkVarNames "Vector m_vecCrashPosition"
 // MNetworkVarNames "Vector m_vecCrashDirection"
 class CCitadel_UtilityUpgrade_RocketBooster : public CCitadel_UtilityUpgrade_RocketBoots
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b68[0x4]; // 0xb68
+	[[maybe_unused]] uint8_t __pad0b90[0x4]; // 0xb90
 public:
-	ParticleIndex_t m_nTargetingParticleIndex; // 0xb6c	
+	ParticleIndex_t m_nTargetingParticleIndex; // 0xb94	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnCanSlamDownChanged"
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flCastTime; // 0xb70	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flCastTime; // 0xb98	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bCrashingDown; // 0xb74	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bCrashingDown; // 0xb9c	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bImpulseApplied; // 0xb75	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bImpulseApplied; // 0xb9d	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bCanCrash; // 0xb9e	
 private:
-	[[maybe_unused]] uint8_t __pad0b76[0x2]; // 0xb76
+	[[maybe_unused]] uint8_t __pad0b9f[0x1]; // 0xb9f
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecCrashPosition; // 0xb78	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vecCrashPosition; // 0xba0	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vecCrashDirection; // 0xb84	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vecCrashDirection; // 0xbac	
 };
 

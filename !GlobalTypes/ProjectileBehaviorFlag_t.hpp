@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 15
+// Enumerator count: 16
 // Alignment: 4
 // Size: 0x4
 enum class ProjectileBehaviorFlag_t : uint32_t
@@ -40,5 +40,8 @@ enum class ProjectileBehaviorFlag_t : uint32_t
 	// MPropertyFriendlyName "Validate Target Line of Sight"
 	// MPropertyDescription "When set, validates the projectile can 'see' the target. Mitigates trigger volumes from hitting targets that are behind cover from the attack position"
 	PBF_ValidateTargetLineOfSight = 0x2000,
+	// MPropertyFriendlyName "Allow Hit On Non-Tracked Targets"
+	// MPropertyDescription "When set, tracked projectiles can hit non-tracked targets, allowing people to intercept."
+	PBF_AllowHitOnNonTrackedTargets = 0x4000,
 };
 

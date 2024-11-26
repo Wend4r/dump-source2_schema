@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x108
+// Size: 0x100
 // Has VTable
 class CCitadel_Modifier_TargetPracticeSelf : public CCitadelModifier
 {
 public:
-	bool m_bFoundTarget; // 0xc8	
+	bool m_bFoundTarget; // 0xc0	
 };
 

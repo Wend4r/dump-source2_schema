@@ -16,6 +16,6 @@ public:
 	CEmbeddedSubclass< CCitadelModifier > m_RejuvModifier; // 0x38	
 	CEmbeddedSubclass< CCitadelModifier > m_PunchPickupModifier; // 0x48	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsDroppingParticle; // 0x58	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_IsFrozenParticle; // 0x58	
 };
 

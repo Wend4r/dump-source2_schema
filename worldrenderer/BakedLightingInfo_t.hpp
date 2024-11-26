@@ -16,10 +16,11 @@ public:
 	bool m_bHasLightmaps; // 0x10	
 	bool m_bBakedShadowsGamma20; // 0x11	
 	bool m_bCompressionEnabled; // 0x12	
-	uint8_t m_nChartPackIterations; // 0x13	
-	uint8_t m_nVradQuality; // 0x14	
+	bool m_bSHLightmaps; // 0x13	
+	uint8_t m_nChartPackIterations; // 0x14	
+	uint8_t m_nVradQuality; // 0x15	
 private:
-	[[maybe_unused]] uint8_t __pad0015[0x3]; // 0x15
+	[[maybe_unused]] uint8_t __pad0016[0x2]; // 0x16
 public:
 	CUtlVector< CStrongHandle< InfoForResourceTypeCTextureBase > > m_lightMaps; // 0x18	
 };

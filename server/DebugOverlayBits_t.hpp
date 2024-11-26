@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 40
+// Enumerator count: 41
 // Alignment: 8
 // Size: 0x8
 enum class DebugOverlayBits_t : uint64_t
@@ -84,7 +84,7 @@ enum class DebugOverlayBits_t : uint64_t
 	// MPropertyFriendlyName "NPC Body Locations"
 	// MPropertyDescription "show npc body locations"
 	OVERLAY_NPC_BODYLOCATIONS = 0x4000000,
-	// MPropertyFriendlyName "NPC View Conde"
+	// MPropertyFriendlyName "NPC View Cone"
 	// MPropertyDescription "show npc's viewcone"
 	OVERLAY_NPC_VIEWCONE_BIT = 0x8000000,
 	// MPropertyFriendlyName "NPC Kill"
@@ -126,5 +126,8 @@ enum class DebugOverlayBits_t : uint64_t
 	// MPropertyFriendlyName "NPC Ability Ranges"
 	// MPropertyDescription "draw range indicators for all abilities on the NPC"
 	OVERLAY_NPC_ABILITY_RANGE_DEBUG_BIT = 0x10000000000,
+	// MPropertyFriendlyName "Minimal Text"
+	// MPropertyDescription "Only draw the base name and subclass, but no other text data"
+	OVERLAY_MINIMAL_TEXT = 0x20000000000,
 };
 

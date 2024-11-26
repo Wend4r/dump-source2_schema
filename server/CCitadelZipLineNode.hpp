@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x810
+// Size: 0x868
 // Has VTable
 // 
 // MNetworkVarNames "CHandle<CCitadelZipLineNode> m_vecConnections"
@@ -16,52 +16,52 @@
 // MNetworkVarNames "bool m_bAlwaysUsable"
 // MNetworkVarNames "bool m_bOneWay"
 // MNetworkVarNames "bool m_bDisableZippingToByPlayers"
+// MNetworkVarNames "bool m_bUseForMinimapDrawing"
 // MNetworkVarNames "EHANDLE m_hGuardingBoss"
 // MNetworkVarNames "float m_flRopeRadius"
 // MNetworkVarNames "bool m_bEnabled"
 class CCitadelZipLineNode : public CBaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0768[0x10]; // 0x768
+	[[maybe_unused]] uint8_t __pad07c0[0x10]; // 0x7c0
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "connectionsChanged"
-	CNetworkUtlVectorBase< CHandle< CCitadelZipLineNode > > m_vecConnections; // 0x778	
+	CNetworkUtlVectorBase< CHandle< CCitadelZipLineNode > > m_vecConnections; // 0x7d0	
 private:
-	[[maybe_unused]] uint8_t __pad0790[0x34]; // 0x790
+	[[maybe_unused]] uint8_t __pad07e8[0x34]; // 0x7e8
 public:
-	Vector m_vTangentIn; // 0x7c4	
-	Vector m_vTangentOut; // 0x7d0	
+	Vector m_vTangentIn; // 0x81c	
+	Vector m_vTangentOut; // 0x828	
 private:
-	[[maybe_unused]] uint8_t __pad07dc[0x4]; // 0x7dc
+	[[maybe_unused]] uint8_t __pad0834[0x4]; // 0x834
 public:
-	CUtlSymbolLarge m_strGuardBossName; // 0x7e0	
-	CUtlSymbolLarge m_strGuardBossName2; // 0x7e8	
-	CUtlSymbolLarge m_strGuardBossName3; // 0x7f0	
+	CUtlSymbolLarge m_strGuardBossName; // 0x838	
+	CUtlSymbolLarge m_strGuardBossName2; // 0x840	
+	CUtlSymbolLarge m_strGuardBossName3; // 0x848	
 	// MNetworkEnable
-	int16_t m_eCaptureState; // 0x7f8	
+	int16_t m_eCaptureState; // 0x850	
 	// MNetworkEnable
-	int16_t m_iPrimaryLane; // 0x7fa	
+	int16_t m_iPrimaryLane; // 0x852	
 	// MNetworkEnable
-	int16_t m_nRopesParity; // 0x7fc	
+	int16_t m_nRopesParity; // 0x854	
 	// MNetworkEnable
-	bool m_bCornerNode; // 0x7fe	
+	bool m_bCornerNode; // 0x856	
 	// MNetworkEnable
-	bool m_bCapturable; // 0x7ff	
+	bool m_bCapturable; // 0x857	
 	// MNetworkEnable
-	bool m_bAlwaysUsable; // 0x800	
+	bool m_bAlwaysUsable; // 0x858	
 	// MNetworkEnable
-	bool m_bOneWay; // 0x801	
+	bool m_bOneWay; // 0x859	
 	// MNetworkEnable
-	bool m_bDisableZippingToByPlayers; // 0x802	
-private:
-	[[maybe_unused]] uint8_t __pad0803[0x1]; // 0x803
-public:
+	bool m_bDisableZippingToByPlayers; // 0x85a	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hGuardingBoss; // 0x804	
+	bool m_bUseForMinimapDrawing; // 0x85b	
 	// MNetworkEnable
-	float m_flRopeRadius; // 0x808	
+	CHandle< CBaseEntity > m_hGuardingBoss; // 0x85c	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x80c	
+	float m_flRopeRadius; // 0x860	
+	// MNetworkEnable
+	bool m_bEnabled; // 0x864	
 };
 

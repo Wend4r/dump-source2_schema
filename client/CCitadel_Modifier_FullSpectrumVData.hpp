@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x648
+// Size: 0x658
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CCitadel_Modifier_FullSpectrumVData : public CCitadel_Modifier_BaseEventPr
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x628	
-	CEmbeddedSubclass< CCitadelModifier > m_BonusDamageModifier; // 0x638	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x638	
+	CEmbeddedSubclass< CCitadelModifier > m_BonusDamageModifier; // 0x648	
 };
 

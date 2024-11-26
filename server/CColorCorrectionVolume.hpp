@@ -5,10 +5,9 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb60
+// Size: 0xba0
 // Has VTable
 // 
-// MNetworkVarNames "bool m_bEnabled"
 // MNetworkVarNames "float32 m_MaxWeight"
 // MNetworkVarNames "float32 m_FadeDuration"
 // MNetworkVarNames "float32 m_Weight"
@@ -17,30 +16,19 @@ class CColorCorrectionVolume : public CBaseTrigger
 {
 public:
 	// MNetworkEnable
-	bool m_bEnabled; // 0x938	
-private:
-	[[maybe_unused]] uint8_t __pad0939[0x3]; // 0x939
-public:
+	float m_MaxWeight; // 0x980	
 	// MNetworkEnable
-	float m_MaxWeight; // 0x93c	
+	float m_FadeDuration; // 0x984	
 	// MNetworkEnable
-	float m_FadeDuration; // 0x940	
-	bool m_bStartDisabled; // 0x944	
-private:
-	[[maybe_unused]] uint8_t __pad0945[0x3]; // 0x945
-public:
+	float m_Weight; // 0x988	
 	// MNetworkEnable
-	float m_Weight; // 0x948	
-	// MNetworkEnable
-	char m_lookupFilename[512]; // 0x94c	
-	float m_LastEnterWeight; // 0xb4c	
-	GameTime_t m_LastEnterTime; // 0xb50	
-	float m_LastExitWeight; // 0xb54	
-	GameTime_t m_LastExitTime; // 0xb58	
+	char m_lookupFilename[512]; // 0x98c	
+	float m_LastEnterWeight; // 0xb8c	
+	GameTime_t m_LastEnterTime; // 0xb90	
+	float m_LastExitWeight; // 0xb94	
+	GameTime_t m_LastExitTime; // 0xb98	
 	
 	// Datamap fields:
 	// void CColorCorrectionVolumeThinkFunc; // 0x0
-	// void InputEnable; // 0x0
-	// void InputDisable; // 0x0
 };
 

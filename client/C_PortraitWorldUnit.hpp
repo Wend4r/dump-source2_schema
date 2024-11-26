@@ -6,48 +6,48 @@ struct ParticleIndex_t;
 struct HeroID_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xeb0
+// Size: 0xf20
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
 class C_PortraitWorldUnit : public C_BaseCombatCharacter
 {
 public:
-	bool m_bSuppressIntroEffects; // 0xcb0	
-	bool m_bIsAlternateLoadout; // 0xcb1	
-	bool m_bSpawnBackgroundModels; // 0xcb2	
-	bool m_bDeferredPortrait; // 0xcb3	
-	bool m_bShowParticleAssetModifiers; // 0xcb4	
-	bool m_bIgnorePortraitInfo; // 0xcb5	
-	bool m_bFlyingCourier; // 0xcb6	
+	bool m_bSuppressIntroEffects; // 0xd20	
+	bool m_bIsAlternateLoadout; // 0xd21	
+	bool m_bSpawnBackgroundModels; // 0xd22	
+	bool m_bDeferredPortrait; // 0xd23	
+	bool m_bShowParticleAssetModifiers; // 0xd24	
+	bool m_bIgnorePortraitInfo; // 0xd25	
+	bool m_bFlyingCourier; // 0xd26	
 private:
-	[[maybe_unused]] uint8_t __pad0cb7[0x1]; // 0xcb7
+	[[maybe_unused]] uint8_t __pad0d27[0x1]; // 0xd27
 public:
-	int32_t m_nEffigyStatusEffect; // 0xcb8	
+	int32_t m_nEffigyStatusEffect; // 0xd28	
 private:
-	[[maybe_unused]] uint8_t __pad0cbc[0x4]; // 0xcbc
+	[[maybe_unused]] uint8_t __pad0d2c[0x4]; // 0xd2c
 public:
-	CUtlSymbolLarge m_effigySequenceName; // 0xcc0	
-	float m_flStartingAnimationCycle; // 0xcc8	
-	float m_flRareLoadoutAnimChance; // 0xccc	
+	CUtlSymbolLarge m_effigySequenceName; // 0xd30	
+	float m_flStartingAnimationCycle; // 0xd38	
+	float m_flRareLoadoutAnimChance; // 0xd3c	
 private:
-	[[maybe_unused]] uint8_t __pad0cd0[0x10]; // 0xcd0
+	[[maybe_unused]] uint8_t __pad0d40[0x10]; // 0xd40
 public:
-	CitadelPortraitEnvironmentType_t m_environment; // 0xce0	
-	StartupBehavior_t m_nStartupBehavior; // 0xce4	
+	CitadelPortraitEnvironmentType_t m_environment; // 0xd50	
+	StartupBehavior_t m_nStartupBehavior; // 0xd54	
 private:
-	[[maybe_unused]] uint8_t __pad0ce8[0x170]; // 0xce8
+	[[maybe_unused]] uint8_t __pad0d58[0x170]; // 0xd58
 public:
-	CUtlSymbolLarge m_cameraName; // 0xe58	
+	CUtlSymbolLarge m_cameraName; // 0xec8	
 private:
-	[[maybe_unused]] uint8_t __pad0e60[0x30]; // 0xe60
+	[[maybe_unused]] uint8_t __pad0ed0[0x30]; // 0xed0
 public:
-	ParticleIndex_t m_nPortraitParticle; // 0xe90	
-	ParticleIndex_t m_nAmbientParticle; // 0xe94	
-	int32_t m_nCourierType; // 0xe98	
-	HeroID_t m_heroID; // 0xe9c	
-	CUtlSymbolLarge m_heroAnimGraphEnumName; // 0xea0	
-	CUtlSymbolLarge m_heroShopAnimGraphEnumName; // 0xea8	
+	ParticleIndex_t m_nPortraitParticle; // 0xf00	
+	ParticleIndex_t m_nAmbientParticle; // 0xf04	
+	int32_t m_nCourierType; // 0xf08	
+	HeroID_t m_heroID; // 0xf0c	
+	CUtlSymbolLarge m_heroAnimGraphEnumName; // 0xf10	
+	CUtlSymbolLarge m_heroShopAnimGraphEnumName; // 0xf18	
 	
 	// Datamap fields:
 	// uint32_t heroid; // 0x7fffffff

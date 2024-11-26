@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc78
+// Size: 0xcb8
 // Has VTable
 class CCitadel_ArmorUpgrade_ReturnFire : public CCitadel_Item
 {

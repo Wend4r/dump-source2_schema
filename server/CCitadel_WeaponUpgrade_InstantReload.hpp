@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xb28
 // Has VTable
 class CCitadel_WeaponUpgrade_InstantReload : public CCitadel_Item
 {
 public:
-	bool m_bIsManualReloading; // 0xaf8	
+	bool m_bIsManualReloading; // 0xb20	
 };
 

@@ -11,10 +11,11 @@ struct DOFDesc_t;
 struct RejuvinatorParams_t;
 struct IdolParams_t;
 struct TeleporterParams_t;
+struct ObjectivesParams_t;
 struct CRemapFloat;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc68
+// Size: 0xef0
 // 
 // MVDataRoot
 // MVDataSingleton
@@ -51,46 +52,67 @@ public:
 	DamageIndicatorSounds_t m_DamageIndicatorSounds; // 0x138	
 	CSoundEventName m_strExitCombatSound; // 0x198	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShoppingEffect; // 0x1a8	
-	// -> m_strLaneName - 0x288
-	// -> m_strCSSClass - 0x290
-	// -> m_Color - 0x298
-	// -> m_MinimapColorOverride - 0x29c
-	LaneDesc_t m_LaneInfo[6]; // 0x288	
-	// -> m_strLaneName - 0x318
-	// -> m_strCSSClass - 0x320
-	// -> m_Color - 0x328
-	// -> m_MinimapColorOverride - 0x32c
-	LaneDesc_t m_NoLaneZip; // 0x318	
-	Color m_MinimapTeamRebelsColor; // 0x330	
-	Color m_MinimapTeamCombineColor; // 0x334	
-	// -> m_strSkillTierName - 0x338
-	// -> m_NetWorth - 0x340
-	// -> m_DamageTaken - 0x344
-	// -> m_BossDamage - 0x348
-	// -> m_PlayerDamage - 0x34c
-	// -> m_LastHits - 0x350
-	// -> m_OrbsSecured - 0x354
-	// -> m_OrbsDenied - 0x358
-	// -> m_AbilitiesUpgraded - 0x35c
-	// -> m_ModsPurchased - 0x360
-	NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x338	
-	int32_t m_nItemPricePerTier[5]; // 0x3f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MinimapZiplinesParticle; // 0x288	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_KillStreakFireParticle; // 0x368	
+	// -> m_strLaneName - 0x448
+	// -> m_strCSSClass - 0x450
+	// -> m_Color - 0x458
+	// -> m_MinimapColorOverride - 0x45c
+	// -> m_MinimapZiplineColorOverride - 0x460
+	LaneDesc_t m_LaneInfo[6]; // 0x448	
+	// -> m_strLaneName - 0x508
+	// -> m_strCSSClass - 0x510
+	// -> m_Color - 0x518
+	// -> m_MinimapColorOverride - 0x51c
+	// -> m_MinimapZiplineColorOverride - 0x520
+	LaneDesc_t m_NoLaneZip; // 0x508	
+	Color m_MinimapTeamRebelsColor; // 0x528	
+	Color m_MinimapTeamCombineColor; // 0x52c	
+	// -> m_strSkillTierName - 0x530
+	// -> m_NetWorth - 0x538
+	// -> m_DamageTaken - 0x53c
+	// -> m_BossDamage - 0x540
+	// -> m_PlayerDamage - 0x544
+	// -> m_LastHits - 0x548
+	// -> m_OrbsSecured - 0x54c
+	// -> m_OrbsDenied - 0x550
+	// -> m_AbilitiesUpgraded - 0x554
+	// -> m_ModsPurchased - 0x558
+	NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x530	
+	int32_t m_nItemPricePerTier[5]; // 0x5f0	
+	float m_flLanePhaseGoldShareFrac[6]; // 0x604	
+	float m_flPostLanePhaseGoldShareFrac[6]; // 0x61c	
 private:
-	[[maybe_unused]] uint8_t __pad040c[0x4]; // 0x40c
+	[[maybe_unused]] uint8_t __pad0634[0x4]; // 0x634
 public:
-	CUtlVector< CSubclassName< 4 > > m_HeroTestingTargetDummyUpgrades; // 0x410	
+	CUtlVector< CSubclassName< 4 > > m_HeroTestingTargetDummyUpgrades; // 0x638	
 private:
-	[[maybe_unused]] uint8_t __pad0428[0x58]; // 0x428
+	[[maybe_unused]] uint8_t __pad0650[0x58]; // 0x650
 public:
-	DOFDesc_t m_DefaultDOF; // 0x480	
-	RejuvinatorParams_t m_RejuvParams; // 0x490	
-	IdolParams_t m_IdolParams; // 0x4b0	
-	TeleporterParams_t m_TeleporterParams; // 0xa08	
-	CUtlOrderedMap< EStatsType, CUtlString > m_mapStatTypeImages; // 0xbf8	
+	DOFDesc_t m_DefaultDOF; // 0x6a8	
+	RejuvinatorParams_t m_RejuvParams; // 0x6b8	
+	IdolParams_t m_IdolParams; // 0x708	
+	TeleporterParams_t m_TeleporterParams; // 0xc60	
+	// -> m_GoldPerOrb - 0xe50
+	// -> m_nTier1GoldKill - 0xe54
+	// -> m_nTier1GoldOrbs - 0xe58
+	// -> m_nTier2GoldKill - 0xe5c
+	// -> m_nTier2GoldOrbs - 0xe60
+	// -> m_nBaseGuardiansGoldKill - 0xe64
+	// -> m_nBaseGuardiansGoldOrbs - 0xe68
+	// -> m_nShrinesGoldKill - 0xe6c
+	// -> m_nShrinesGoldOrbs - 0xe70
+	// -> m_nPatronPhase1GoldKill - 0xe74
+	// -> m_nPatronPhase1GoldOrbs - 0xe78
+	ObjectivesParams_t m_ObjectiveParams; // 0xe50	
+private:
+	[[maybe_unused]] uint8_t __pad0e7c[0x4]; // 0xe7c
+public:
+	CUtlOrderedMap< EStatsType, CUtlString > m_mapStatTypeImages; // 0xe80	
 	// MPropertyDescription "Remap camera angle delta to aim spring strength"
-	CRemapFloat m_AimSpringStrength; // 0xc20	
+	CRemapFloat m_AimSpringStrength; // 0xea8	
 	// MPropertyDescription "Remap camera angle delta to ability targeting spring strength"
-	CRemapFloat m_TargetingSpringStrength; // 0xc30	
-	CUtlOrderedMap< EAbilityResourceType, HeroAbilityResourceDef_t > m_mapResourceTypes; // 0xc40	
+	CRemapFloat m_TargetingSpringStrength; // 0xeb8	
+	CUtlOrderedMap< EAbilityResourceType, HeroAbilityResourceDef_t > m_mapResourceTypes; // 0xec8	
 };
 

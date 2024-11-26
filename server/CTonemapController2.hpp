@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x510
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -20,21 +20,21 @@ class CTonemapController2 : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_flAutoExposureMin; // 0x4d8	
+	float m_flAutoExposureMin; // 0x4e8	
 	// MNetworkEnable
-	float m_flAutoExposureMax; // 0x4dc	
+	float m_flAutoExposureMax; // 0x4ec	
 	// MNetworkEnable
-	float m_flTonemapPercentTarget; // 0x4e0	
+	float m_flTonemapPercentTarget; // 0x4f0	
 	// MNetworkEnable
-	float m_flTonemapPercentBrightPixels; // 0x4e4	
+	float m_flTonemapPercentBrightPixels; // 0x4f4	
 	// MNetworkEnable
-	float m_flTonemapMinAvgLum; // 0x4e8	
+	float m_flTonemapMinAvgLum; // 0x4f8	
 	// MNetworkEnable
-	float m_flExposureAdaptationSpeedUp; // 0x4ec	
+	float m_flExposureAdaptationSpeedUp; // 0x4fc	
 	// MNetworkEnable
-	float m_flExposureAdaptationSpeedDown; // 0x4f0	
+	float m_flExposureAdaptationSpeedDown; // 0x500	
 	// MNetworkEnable
-	float m_flTonemapEVSmoothingRange; // 0x4f4	
+	float m_flTonemapEVSmoothingRange; // 0x504	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x288
+// Size: 0x280
 // Has VTable
 class CCitadel_Modifier_AfterburnWatcher : public CCitadel_Modifier_BaseEventProc
 {

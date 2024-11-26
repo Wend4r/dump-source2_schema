@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x310
+// Size: 0x320
 // Has VTable
 class CCitadel_Modifier_Nano_PredatoryStatue : public CCitadelModifier
 {

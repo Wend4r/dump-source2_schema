@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x20
+// Size: 0x50
 // 
 // MGetKV3ClassDefaults
 struct RejuvinatorParams_t
@@ -14,6 +14,8 @@ public:
 	float m_flRejuvinatorBuffDuration; // 0x4	
 	float m_flRejuvinatorDropHeight; // 0x8	
 	float m_flRejuvinatorDropDuration; // 0xc	
-	CSoundEventName m_strRejuvPickupSound; // 0x10	
+	CUtlVector< float32 > m_TrooperHealthMult; // 0x10	
+	CUtlVector< float32 > m_PlayerRespawnMult; // 0x28	
+	CSoundEventName m_strRejuvPickupSound; // 0x40	
 };
 

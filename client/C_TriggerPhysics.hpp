@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x888
+// Size: 0x9f0
 // Has VTable
 // 
 // MNetworkVarNames "float m_gravityScale"
@@ -24,33 +24,33 @@ class C_TriggerPhysics : public C_BaseTrigger
 {
 public:
 	// MNetworkEnable
-	float m_gravityScale; // 0x838	
+	float m_gravityScale; // 0x9a0	
 	// MNetworkEnable
-	float m_linearLimit; // 0x83c	
+	float m_linearLimit; // 0x9a4	
 	// MNetworkEnable
-	float m_linearDamping; // 0x840	
+	float m_linearDamping; // 0x9a8	
 	// MNetworkEnable
-	float m_angularLimit; // 0x844	
+	float m_angularLimit; // 0x9ac	
 	// MNetworkEnable
-	float m_angularDamping; // 0x848	
+	float m_angularDamping; // 0x9b0	
 	// MNetworkEnable
-	float m_linearForce; // 0x84c	
+	float m_linearForce; // 0x9b4	
 	// MNetworkEnable
-	float m_flFrequency; // 0x850	
+	float m_flFrequency; // 0x9b8	
 	// MNetworkEnable
-	float m_flDampingRatio; // 0x854	
+	float m_flDampingRatio; // 0x9bc	
 	// MNetworkEnable
-	Vector m_vecLinearForcePointAt; // 0x858	
+	Vector m_vecLinearForcePointAt; // 0x9c0	
 	// MNetworkEnable
-	bool m_bCollapseToForcePoint; // 0x864	
+	bool m_bCollapseToForcePoint; // 0x9cc	
 private:
-	[[maybe_unused]] uint8_t __pad0865[0x3]; // 0x865
+	[[maybe_unused]] uint8_t __pad09cd[0x3]; // 0x9cd
 public:
 	// MNetworkEnable
-	Vector m_vecLinearForcePointAtWorld; // 0x868	
+	Vector m_vecLinearForcePointAtWorld; // 0x9d0	
 	// MNetworkEnable
-	Vector m_vecLinearForceDirection; // 0x874	
+	Vector m_vecLinearForceDirection; // 0x9dc	
 	// MNetworkEnable
-	bool m_bConvertToDebrisWhenPossible; // 0x880	
+	bool m_bConvertToDebrisWhenPossible; // 0x9e8	
 };
 

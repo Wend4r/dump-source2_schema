@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 16
+// Enumerator count: 17
 // Alignment: 4
 // Size: 0x4
 enum class StatusEffectProperty_t : uint32_t
@@ -38,7 +38,9 @@ enum class StatusEffectProperty_t : uint32_t
 	EStatusEffect_BulletDebuff = 0xd,
 	// MPropertyFriendlyName "Shows Buff Status Effect in the Important Box"
 	EStatusEffect_Buff = 0xe,
+	// MPropertyFriendlyName "Shows Petrify Status Effect in the Important Box"
+	EStatusEffect_Petrify = 0xf,
 	// MPropertySuppressEnumerator
-	EStatusEffect_Count = 0xf,
+	EStatusEffect_Count = 0x10,
 };
 

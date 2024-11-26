@@ -43,7 +43,6 @@ public:
 	float m_flTimeScale; // 0x7c	
 	CUtlVector< IModifierTrackedObject* >* m_pVecTrackedObjects; // 0x80	
 	ModifierRuntimeHandle_t m_hModifierListHandle; // 0x88	
-	uint8_t m_nDebugHelperFlags; // 0x8c	
 	
 	// Datamap fields:
 	// void m_pModifierProp; // 0x20

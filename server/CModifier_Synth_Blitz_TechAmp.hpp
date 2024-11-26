@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc8
+// Size: 0xc0
 // Has VTable
 class CModifier_Synth_Blitz_TechAmp : public CCitadel_Modifier_Base
 {

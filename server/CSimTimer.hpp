@@ -9,6 +9,6 @@
 class CSimTimer : public CSimpleSimTimer
 {
 public:
-	float m_interval; // 0x8	
+	float m_flInterval; // 0x8	
 };
 

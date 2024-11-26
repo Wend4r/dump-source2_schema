@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc00
+// Size: 0xc20
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_hActiveProjectile"
 class CCitadel_Ability_Perched_Predator : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x120]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0x118]; // 0xb00
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	CHandle< CBaseEntity > m_hActiveProjectile; // 0xbf8	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	CHandle< CBaseEntity > m_hActiveProjectile; // 0xc18	
 };
 

@@ -4,11 +4,15 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdb0
+// Size: 0xe38
 // Has VTable
+// 
+// MNetworkVarNames "CHandle< CCitadelProjectile> m_hActiveProjectile"
 class CAbility_Mirage_Tornado : public C_CitadelBaseAbility
 {
 public:
-	// No schema binary for binding
+	Vector m_vLastValidMovementPosition; // 0xca0	
+	// MNetworkEnable
+	CHandle< C_CitadelProjectile > m_hActiveProjectile; // 0xcac	
 };
 

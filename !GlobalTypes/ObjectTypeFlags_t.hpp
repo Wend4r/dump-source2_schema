@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: worldrenderer.dll (project 'worldrenderer')
-// Enumerator count: 14
+// Enumerator count: 15
 // Alignment: 4
 // Size: 0x4
 enum class ObjectTypeFlags_t : uint32_t
@@ -22,5 +22,6 @@ enum class ObjectTypeFlags_t : uint32_t
 	OBJECT_TYPE_PRECOMPUTED_VISMEMBERS = 0x4000,
 	OBJECT_TYPE_STATIC_CUBE_MAP = 0x8000,
 	OBJECT_TYPE_DISABLE_VIS_CULLING = 0x10000,
+	OBJECT_TYPE_BAKED_GEOMETRY = 0x20000,
 };
 

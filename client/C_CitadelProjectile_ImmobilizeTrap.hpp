@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb98
+// Size: 0xbc8
 // Has VTable
 class C_CitadelProjectile_ImmobilizeTrap : public C_CitadelProjectile
 {
 public:
-	bool m_bShouldDraw; // 0x8b8	
+	bool m_bShouldDraw; // 0x8e8	
 };
 

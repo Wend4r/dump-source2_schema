@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 9
+// Enumerator count: 10
 // Alignment: 4
 // Size: 0x4
 enum class Navigation_t : uint32_t
@@ -17,5 +17,6 @@ enum class Navigation_t : uint32_t
 	AI_NAV_NAVLINK = 0x5,
 	AI_NAV_TRANSITION = 0x6,
 	AI_NAV_ORIENTED = 0x7,
+	AI_NAV_SMART_GOAL = 0x8,
 };
 

@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x108
+// Size: 0x100
 // Has VTable
 class CCitadel_Modifier_Upgrade_OverdriveClip : public CCitadelModifier
 {
 public:
-	int32_t m_nBonusMaxClipSize; // 0xc8	
+	int32_t m_nBonusMaxClipSize; // 0xc0	
 };
 

@@ -12,5 +12,6 @@ private:
 	[[maybe_unused]] uint8_t __pad00c0[0x38]; // 0xc0
 public:
 	bool m_bUseTrail; // 0xf8	
+	bool m_bUseEchoEffect; // 0xf9	
 };
 

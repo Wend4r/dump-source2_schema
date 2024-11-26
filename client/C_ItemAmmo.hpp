@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xab0
+// Size: 0xb20
 // Has VTable
 class C_ItemAmmo : public CBaseAnimGraph
 {

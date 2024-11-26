@@ -10,7 +10,7 @@ struct PulseRegisterMap_t;
 class CPulse_OutflowConnection
 {
 public:
-	CUtlSymbolLarge m_SourceOutflowName; // 0x0	
+	CGlobalSymbol m_SourceOutflowName; // 0x0	
 	PulseRuntimeChunkIndex_t m_nDestChunk; // 0x8	
 	int32_t m_nInstruction; // 0xc	
 	PulseRegisterMap_t m_OutflowRegisterMap; // 0x10	

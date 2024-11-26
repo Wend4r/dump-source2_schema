@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 4
+// Enumerator count: 5
 // Alignment: 4
 // Size: 0x4
 enum class EMeleeHold_AttackType : uint32_t
@@ -13,5 +13,6 @@ enum class EMeleeHold_AttackType : uint32_t
 	EAttackType_Light = 0x1,
 	EAttackType_Heavy = 0x2,
 	EAttackType_HeavyAir = 0x3,
+	EAttackType_Slide = 0x4,
 };
 

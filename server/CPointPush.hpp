@@ -4,24 +4,24 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x510
 // Has VTable
 class CPointPush : public CPointEntity
 {
 public:
-	bool m_bEnabled; // 0x4d8	
+	bool m_bEnabled; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04d9[0x3]; // 0x4d9
+	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
 public:
-	float m_flMagnitude; // 0x4dc	
-	float m_flRadius; // 0x4e0	
-	float m_flInnerRadius; // 0x4e4	
-	float m_flConeOfInfluence; // 0x4e8	
+	float m_flMagnitude; // 0x4ec	
+	float m_flRadius; // 0x4f0	
+	float m_flInnerRadius; // 0x4f4	
+	float m_flConeOfInfluence; // 0x4f8	
 private:
-	[[maybe_unused]] uint8_t __pad04ec[0x4]; // 0x4ec
+	[[maybe_unused]] uint8_t __pad04fc[0x4]; // 0x4fc
 public:
-	CUtlSymbolLarge m_iszFilterName; // 0x4f0	
-	CHandle< CBaseFilter > m_hFilter; // 0x4f8	
+	CUtlSymbolLarge m_iszFilterName; // 0x500	
+	CHandle< CBaseFilter > m_hFilter; // 0x508	
 	
 	// Datamap fields:
 	// void CPointPushPushThink; // 0x0

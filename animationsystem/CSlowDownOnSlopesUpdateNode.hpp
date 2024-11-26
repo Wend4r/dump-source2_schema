@@ -4,13 +4,13 @@
 
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0x70
+// Size: 0x78
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CSlowDownOnSlopesUpdateNode : public CUnaryUpdateNode
 {
 public:
-	float m_flSlowDownStrength; // 0x68	
+	float m_flSlowDownStrength; // 0x70	
 };
 

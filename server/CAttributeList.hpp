@@ -5,7 +5,7 @@
 struct CAttributeManager;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x60
+// Size: 0x78
 // Has VTable
 // 
 // MNetworkVarNames "CEconItemAttribute m_Attributes"
@@ -17,6 +17,6 @@ public:
 	// MNetworkEnable
 	// MNetworkTypeAlias "CUtlVector< CEconItemAttribute >"
 	CUtlVectorEmbeddedNetworkVar< CEconItemAttribute > m_Attributes; // 0x8	
-	CAttributeManager* m_pManager; // 0x58	
+	CAttributeManager* m_pManager; // 0x70	
 };
 

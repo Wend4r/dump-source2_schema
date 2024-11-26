@@ -8,7 +8,7 @@ struct style_index_t;
 struct CAttributeList;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd8
+// Size: 0xf0
 // Has VTable
 // 
 // MNetworkVarNames "item_definition_index_t m_iItemDefinitionIndex"
@@ -63,7 +63,7 @@ private:
 public:
 	// MNetworkEnable
 	// -> m_Attributes - 0x60
-	// -> m_pManager - 0xb0
+	// -> m_pManager - 0xc8
 	CAttributeList m_AttributeList; // 0x58	
 };
 

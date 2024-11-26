@@ -9,6 +9,6 @@
 class CStopwatch : public CStopwatchBase
 {
 public:
-	float m_interval; // 0xc	
+	float m_flInterval; // 0xc	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdd0
+// Size: 0xe58
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn

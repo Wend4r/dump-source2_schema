@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x250
+// Size: 0x248
 // Has VTable
 class CCitadel_Modifier_MagicShock_Proc : public CCitadel_Modifier_BaseEventProc
 {

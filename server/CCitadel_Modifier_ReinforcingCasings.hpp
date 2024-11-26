@@ -5,11 +5,11 @@
 struct ShotID_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x178
+// Size: 0x170
 // Has VTable
 class CCitadel_Modifier_ReinforcingCasings : public CCitadel_Modifier_Intrinsic_Base
 {
 public:
-	ShotID_t m_LastHitShotID; // 0xc8	
+	ShotID_t m_LastHitShotID; // 0xc0	
 };
 

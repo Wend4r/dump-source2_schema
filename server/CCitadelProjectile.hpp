@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x820
+// Size: 0x870
 // Has VTable
 // 
 // MNetworkIncludeByName "m_flTimeScale"
@@ -22,49 +22,48 @@
 class CCitadelProjectile : public CBaseModelEntity
 {
 public:
-	CHandle< CBaseEntity > m_hTarget; // 0x768	
-	float m_flMaxDistance; // 0x76c	
-	float m_flArmingTime; // 0x770	
-	float m_flChargeAmount; // 0x774	
-	bool m_bCollideWithThrower; // 0x778	
-	bool m_bNewCollideWithThrower; // 0x779	
+	float m_flMaxDistance; // 0x7c0	
+	float m_flArmingTime; // 0x7c4	
+	float m_flChargeAmount; // 0x7c8	
+	bool m_bCollideWithThrower; // 0x7cc	
+	bool m_bNewCollideWithThrower; // 0x7cd	
 private:
-	[[maybe_unused]] uint8_t __pad077a[0xe]; // 0x77a
+	[[maybe_unused]] uint8_t __pad07ce[0xa]; // 0x7ce
 public:
-	float m_flTickSoundInterval; // 0x788	
+	float m_flTickSoundInterval; // 0x7d8	
 private:
-	[[maybe_unused]] uint8_t __pad078c[0x4]; // 0x78c
+	[[maybe_unused]] uint8_t __pad07dc[0x4]; // 0x7dc
 public:
-	Vector m_vLastAbsOrigin; // 0x790	
-	Vector m_vLastAbsVelocity; // 0x79c	
+	Vector m_vLastAbsOrigin; // 0x7e0	
+	Vector m_vLastAbsVelocity; // 0x7ec	
 private:
-	[[maybe_unused]] uint8_t __pad07a8[0x18]; // 0x7a8
+	[[maybe_unused]] uint8_t __pad07f8[0x18]; // 0x7f8
 public:
-	CUtlVector< CHandle< CBaseEntity > > m_vecTargetToIgnore; // 0x7c0	
-	bool m_bDetonateStarted; // 0x7d8	
+	CUtlVector< CHandle< CBaseEntity > > m_vecTargetToIgnore; // 0x810	
+	bool m_bDetonateStarted; // 0x828	
 private:
-	[[maybe_unused]] uint8_t __pad07d9[0x3]; // 0x7d9
-public:
-	// MNetworkEnable
-	Vector m_vInitialVelocity; // 0x7dc	
-	// MNetworkEnable
-	Vector m_vInitialPosition; // 0x7e8	
-	// MNetworkEnable
-	CUtlStringToken m_abilityID; // 0x7f4	
-	// MNetworkEnable
-	CHandle< CBaseEntity > m_hThrower; // 0x7f8	
-private:
-	[[maybe_unused]] uint8_t __pad07fc[0x4]; // 0x7fc
+	[[maybe_unused]] uint8_t __pad0829[0x3]; // 0x829
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_sParticleName; // 0x800	
+	Vector m_vInitialVelocity; // 0x82c	
 	// MNetworkEnable
-	Vector m_vecSpawnPosition; // 0x808	
+	Vector m_vInitialPosition; // 0x838	
 	// MNetworkEnable
-	float m_flProjectileSpeed; // 0x814	
+	CUtlStringToken m_abilityID; // 0x844	
 	// MNetworkEnable
-	float m_flMaxLifetime; // 0x818	
+	CHandle< CBaseEntity > m_hThrower; // 0x848	
+private:
+	[[maybe_unused]] uint8_t __pad084c[0x4]; // 0x84c
+public:
 	// MNetworkEnable
-	float m_flParticleRadius; // 0x81c	
+	CUtlSymbolLarge m_sParticleName; // 0x850	
+	// MNetworkEnable
+	Vector m_vecSpawnPosition; // 0x858	
+	// MNetworkEnable
+	float m_flProjectileSpeed; // 0x864	
+	// MNetworkEnable
+	float m_flMaxLifetime; // 0x868	
+	// MNetworkEnable
+	float m_flParticleRadius; // 0x86c	
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 15
+// Enumerator count: 17
 // Alignment: 4
 // Size: 0x4
 enum class WaypointFlags_t : uint32_t
@@ -24,5 +24,7 @@ enum class WaypointFlags_t : uint32_t
 	WP_GOAL_FROM_BLOCKED = 0x800,
 	WP_PLACED_ON_GROUND = 0x1000,
 	WP_PATH_INCOMPLETE_FROM_PROCESSING = 0x2000,
+	WP_STOPPING_PATH = 0x4000,
+	WP_TO_SUBGOAL = 0x8000,
 };
 

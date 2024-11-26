@@ -11,8 +11,6 @@ struct TwoBoneIKSettings_t;
 // MGetKV3ClassDefaults
 class CTwoBoneIKUpdateNode : public CUnaryUpdateNode
 {
-private:
-	[[maybe_unused]] uint8_t __pad0068[0x8]; // 0x68
 public:
 	TwoBoneIKSettings_t m_opFixedData; // 0x70	
 };

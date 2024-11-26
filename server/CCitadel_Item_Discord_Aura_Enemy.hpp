@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x120
+// Size: 0x118
 // Has VTable
 class CCitadel_Item_Discord_Aura_Enemy : public CCitadelModifierAura
 {

@@ -6,34 +6,34 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9d8
+// Size: 0xa20
 // Has VTable
 class CTriggerHurt : public CBaseTrigger
 {
 public:
-	float m_flOriginalDamage; // 0x938	
-	float m_flDamage; // 0x93c	
-	float m_flDamageCap; // 0x940	
-	GameTime_t m_flLastDmgTime; // 0x944	
-	float m_flForgivenessDelay; // 0x948	
-	int32_t m_bitsDamageInflict; // 0x94c	
-	int32_t m_damageModel; // 0x950	
-	bool m_bNoDmgForce; // 0x954	
+	float m_flOriginalDamage; // 0x980	
+	float m_flDamage; // 0x984	
+	float m_flDamageCap; // 0x988	
+	GameTime_t m_flLastDmgTime; // 0x98c	
+	float m_flForgivenessDelay; // 0x990	
+	DamageTypes_t m_bitsDamageInflict; // 0x994	
+	int32_t m_damageModel; // 0x998	
+	bool m_bNoDmgForce; // 0x99c	
 private:
-	[[maybe_unused]] uint8_t __pad0955[0x3]; // 0x955
+	[[maybe_unused]] uint8_t __pad099d[0x3]; // 0x99d
 public:
-	Vector m_vDamageForce; // 0x958	
-	bool m_thinkAlways; // 0x964	
+	Vector m_vDamageForce; // 0x9a0	
+	bool m_thinkAlways; // 0x9ac	
 private:
-	[[maybe_unused]] uint8_t __pad0965[0x3]; // 0x965
+	[[maybe_unused]] uint8_t __pad09ad[0x3]; // 0x9ad
 public:
-	float m_hurtThinkPeriod; // 0x968	
+	float m_hurtThinkPeriod; // 0x9b0	
 private:
-	[[maybe_unused]] uint8_t __pad096c[0x4]; // 0x96c
+	[[maybe_unused]] uint8_t __pad09b4[0x4]; // 0x9b4
 public:
-	CEntityIOOutput m_OnHurt; // 0x970	
-	CEntityIOOutput m_OnHurtPlayer; // 0x998	
-	CUtlVector< CHandle< CBaseEntity > > m_hurtEntities; // 0x9c0	
+	CEntityIOOutput m_OnHurt; // 0x9b8	
+	CEntityIOOutput m_OnHurtPlayer; // 0x9e0	
+	CUtlVector< CHandle< CBaseEntity > > m_hurtEntities; // 0xa08	
 	
 	// Datamap fields:
 	// void CTriggerHurtRadiationThink; // 0x0

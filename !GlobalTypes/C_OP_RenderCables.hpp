@@ -7,7 +7,7 @@ struct CParticleCollectionVecInput;
 struct CParticleTransformInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1488
+// Size: 0x1468
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -75,11 +75,11 @@ public:
 	// MParticleInputOptional
 	CParticleTransformInput m_LightingTransform; // 0x13c0	
 	// MPropertyFriendlyName "material float variables"
-	CUtlVector< FloatInputMaterialVariable_t > m_MaterialFloatVars; // 0x1428	
+	CUtlLeanVector< FloatInputMaterialVariable_t > m_MaterialFloatVars; // 0x1428	
 private:
-	[[maybe_unused]] uint8_t __pad1440[0x18]; // 0x1440
+	[[maybe_unused]] uint8_t __pad1438[0x10]; // 0x1438
 public:
 	// MPropertyFriendlyName "material vector variables"
-	CUtlVector< VecInputMaterialVariable_t > m_MaterialVecVars; // 0x1458	
+	CUtlLeanVector< VecInputMaterialVariable_t > m_MaterialVecVars; // 0x1448	
 };
 

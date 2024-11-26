@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb80
+// Size: 0xbb0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bShowLight"
@@ -13,6 +13,6 @@ class C_RectLight : public C_BarnLight
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RenderingChanged"
-	bool m_bShowLight; // 0xb78	
+	bool m_bShowLight; // 0xba8	
 };
 

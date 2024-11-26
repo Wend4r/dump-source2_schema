@@ -4,15 +4,15 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x98
+// Size: 0x148
 // Has VTable
-class C_Citadel_BreakableProp_GraphController : public CAnimGraphControllerBase
+class C_Citadel_BreakableProp_GraphController : public CBaseAnimGraphAnimGraphController
 {
 public:
-	CAnimGraphParamOptionalRef< bool > m_bSetInit; // 0x18	
-	CAnimGraphParamOptionalRef< float32 > m_flDamageReceived; // 0x38	
-	CAnimGraphParamOptionalRef< bool > m_bOnRespawn; // 0x58	
-	CAnimGraphParamOptionalRef< bool > m_bHitTrigger; // 0x78	
+	CAnimGraphParamOptionalRef< bool > m_bSetInit; // 0xc8	
+	CAnimGraphParamOptionalRef< float32 > m_flDamageReceived; // 0xe8	
+	CAnimGraphParamOptionalRef< bool > m_bOnRespawn; // 0x108	
+	CAnimGraphParamOptionalRef< bool > m_bHitTrigger; // 0x128	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("C_Citadel_BreakableProp_GraphController")->m_static_fields[0]->m_instance);};

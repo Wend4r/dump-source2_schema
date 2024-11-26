@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x760
+// Size: 0x790
 // Has VTable
 // 
 // MNetworkIncludeByName "m_pEntity"
@@ -26,61 +26,61 @@
 class CBasePlayerController : public CBaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04d8[0x8]; // 0x4d8
+	[[maybe_unused]] uint8_t __pad04e8[0x8]; // 0x4e8
 public:
-	uint64_t m_nInButtonsWhichAreToggles; // 0x4e0	
+	uint64_t m_nInButtonsWhichAreToggles; // 0x4f0	
 	// MNetworkEnable
 	// MNetworkPriority "1"
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	uint32_t m_nTickBase; // 0x4e8	
+	uint32_t m_nTickBase; // 0x4f8	
 private:
-	[[maybe_unused]] uint8_t __pad04ec[0x2c]; // 0x4ec
+	[[maybe_unused]] uint8_t __pad04fc[0x2c]; // 0x4fc
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnPawnChanged"
-	CHandle< CBasePlayerPawn > m_hPawn; // 0x518	
+	CHandle< CBasePlayerPawn > m_hPawn; // 0x528	
 	// MNetworkEnable
-	bool m_bKnownTeamMismatch; // 0x51c	
+	bool m_bKnownTeamMismatch; // 0x52c	
 private:
-	[[maybe_unused]] uint8_t __pad051d[0x3]; // 0x51d
+	[[maybe_unused]] uint8_t __pad052d[0x3]; // 0x52d
 public:
-	CSplitScreenSlot m_nSplitScreenSlot; // 0x520	
-	CHandle< CBasePlayerController > m_hSplitOwner; // 0x524	
-	CUtlVector< CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x528	
-	bool m_bIsHLTV; // 0x540	
+	CSplitScreenSlot m_nSplitScreenSlot; // 0x530	
+	CHandle< CBasePlayerController > m_hSplitOwner; // 0x534	
+	CUtlVector< CHandle< CBasePlayerController > > m_hSplitScreenPlayers; // 0x538	
+	bool m_bIsHLTV; // 0x550	
 private:
-	[[maybe_unused]] uint8_t __pad0541[0x3]; // 0x541
+	[[maybe_unused]] uint8_t __pad0551[0x3]; // 0x551
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnConnectionStateChanged"
-	PlayerConnectedState m_iConnected; // 0x544	
+	PlayerConnectedState m_iConnected; // 0x554	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnPlayerControllerNameChanged"
-	char m_iszPlayerName[128]; // 0x548	
-	CUtlString m_szNetworkIDString; // 0x5c8	
-	float m_fLerpTime; // 0x5d0	
-	bool m_bLagCompensation; // 0x5d4	
-	bool m_bPredict; // 0x5d5	
-	bool m_bAutoKickDisabled; // 0x5d6	
-	bool m_bIsLowViolence; // 0x5d7	
-	bool m_bGamePaused; // 0x5d8	
+	char m_iszPlayerName[128]; // 0x558	
+	CUtlString m_szNetworkIDString; // 0x5d8	
+	float m_fLerpTime; // 0x5e0	
+	bool m_bLagCompensation; // 0x5e4	
+	bool m_bPredict; // 0x5e5	
+	bool m_bAutoKickDisabled; // 0x5e6	
+	bool m_bIsLowViolence; // 0x5e7	
+	bool m_bGamePaused; // 0x5e8	
 private:
-	[[maybe_unused]] uint8_t __pad05d9[0x12f]; // 0x5d9
+	[[maybe_unused]] uint8_t __pad05e9[0x14f]; // 0x5e9
 public:
-	ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x708	
-	float m_flLastPlayerTalkTime; // 0x70c	
-	float m_flLastEntitySteadyState; // 0x710	
-	int32_t m_nAvailableEntitySteadyState; // 0x714	
-	bool m_bHasAnySteadyStateEnts; // 0x718	
+	ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x738	
+	float m_flLastPlayerTalkTime; // 0x73c	
+	float m_flLastEntitySteadyState; // 0x740	
+	int32_t m_nAvailableEntitySteadyState; // 0x744	
+	bool m_bHasAnySteadyStateEnts; // 0x748	
 private:
-	[[maybe_unused]] uint8_t __pad0719[0xf]; // 0x719
+	[[maybe_unused]] uint8_t __pad0749[0xf]; // 0x749
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "fixed64"
 	// MNetworkChangeCallback "OnSteamIDChanged"
-	uint64_t m_steamID; // 0x728	
+	uint64_t m_steamID; // 0x758	
 	// MNetworkEnable
-	uint32_t m_iDesiredFOV; // 0x730	
+	uint32_t m_iDesiredFOV; // 0x760	
 	
 	// Static fields:
 	static bool &Get_sm_bRunningPredictedClientStringCommands(){return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBasePlayerController")->m_static_fields[0]->m_instance);};
@@ -90,9 +90,9 @@ public:
 	// bool is_hltv; // 0x7fffffff
 	// const char * playername; // 0x7fffffff
 	// bool reserving; // 0x7fffffff
-	// void m_pCurrentCommand; // 0x720
-	// void m_LastCmd; // 0x5e0
-	// void m_nLastRealCommandNumberExecuted; // 0x6ec
-	// void m_nLastLateCommandExecuted; // 0x6f0
+	// void m_pCurrentCommand; // 0x750
+	// void m_LastCmd; // 0x5f0
+	// void m_nLastRealCommandNumberExecuted; // 0x71c
+	// void m_nLastLateCommandExecuted; // 0x720
 };
 

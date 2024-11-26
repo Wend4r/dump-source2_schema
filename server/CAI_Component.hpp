@@ -12,8 +12,6 @@ class CAI_Component
 private:
 	[[maybe_unused]] uint8_t __pad0000[0x8]; // 0x0
 public:
-	// MNetworkDisable
-	// MNetworkChangeAccessorFieldPathIndex
 	CNetworkVarChainer __m_pChainEntity; // 0x8	
 };
 

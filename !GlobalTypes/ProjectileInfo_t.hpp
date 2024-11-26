@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x370
+// Size: 0x380
 // 
 // MGetKV3ClassDefaults
 struct ProjectileInfo_t
@@ -59,16 +59,17 @@ public:
 	CSoundEventName m_HitSound; // 0x318	
 	CSoundEventName m_DetonateSound; // 0x328	
 	CSoundEventName m_LoopingSound; // 0x338	
+	CSoundEventName m_WarningSound; // 0x348	
 	// MPropertyStartGroup "Tracking"
-	float m_flTrackingDampingCoefficient; // 0x348	
-	float m_flTrackingDuration; // 0x34c	
-	float m_flTrackingStartTime; // 0x350	
-	float m_flTrackingEndTime; // 0x354	
-	float m_flTrackingStopDuration; // 0x358	
+	float m_flTrackingDampingCoefficient; // 0x358	
+	float m_flTrackingDuration; // 0x35c	
+	float m_flTrackingStartTime; // 0x360	
+	float m_flTrackingEndTime; // 0x364	
+	float m_flTrackingStopDuration; // 0x368	
 private:
-	[[maybe_unused]] uint8_t __pad035c[0x4]; // 0x35c
+	[[maybe_unused]] uint8_t __pad036c[0x4]; // 0x36c
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_AutoProjectileModifier; // 0x360	
+	CEmbeddedSubclass< CBaseModifier > m_AutoProjectileModifier; // 0x370	
 };
 

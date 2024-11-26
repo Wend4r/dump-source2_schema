@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x978
+// Size: 0xa40
 // Has VTable
 class CWaterBullet : public CBaseAnimGraph
 {

@@ -12,8 +12,6 @@ class CRenderComponent : public CEntityComponent
 private:
 	[[maybe_unused]] uint8_t __pad0008[0x8]; // 0x8
 public:
-	// MNetworkDisable
-	// MNetworkChangeAccessorFieldPathIndex
 	CNetworkVarChainer __m_pChainEntity; // 0x10	
 private:
 	[[maybe_unused]] uint8_t __pad0038[0x18]; // 0x38

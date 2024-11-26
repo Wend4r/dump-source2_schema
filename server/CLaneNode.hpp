@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x8f0
+// Size: 0x948
 // Has VTable
 class CLaneNode : public CCitadelModelEntity
 {
 public:
 	// Datamap fields:
-	// CHandle< CBaseEntity > m_hLastTrooperChecked; // 0x8e8
-	// CHandle< CBaseEntity > m_hLastBossChecked; // 0x8ec
+	// CHandle< CBaseEntity > m_hLastTrooperChecked; // 0x940
+	// CHandle< CBaseEntity > m_hLastBossChecked; // 0x944
 	// No schema binary for binding
 };
 

@@ -5,21 +5,21 @@
 struct CPathSimple;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x970
+// Size: 0x9b8
 // Has VTable
 class CTriggerPush : public CBaseTrigger
 {
 public:
-	QAngle m_angPushEntitySpace; // 0x938	
-	Vector m_vecPushDirEntitySpace; // 0x944	
-	bool m_bTriggerOnStartTouch; // 0x950	
-	bool m_bUsePathSimple; // 0x951	
+	QAngle m_angPushEntitySpace; // 0x980	
+	Vector m_vecPushDirEntitySpace; // 0x98c	
+	bool m_bTriggerOnStartTouch; // 0x998	
+	bool m_bUsePathSimple; // 0x999	
 private:
-	[[maybe_unused]] uint8_t __pad0952[0x6]; // 0x952
+	[[maybe_unused]] uint8_t __pad099a[0x6]; // 0x99a
 public:
-	CUtlSymbolLarge m_iszPathSimpleName; // 0x958	
-	CPathSimple* m_PathSimple; // 0x960	
-	uint32_t m_splinePushType; // 0x968	
+	CUtlSymbolLarge m_iszPathSimpleName; // 0x9a0	
+	CPathSimple* m_PathSimple; // 0x9a8	
+	uint32_t m_splinePushType; // 0x9b0	
 	
 	// Datamap fields:
 	// Vector InputSetPushDirection; // 0x0

@@ -6,7 +6,7 @@ struct SceneEventId_t;
 struct AttachmentHandle_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc28
+// Size: 0xc98
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flexWeight"
@@ -14,55 +14,55 @@ struct AttachmentHandle_t;
 class C_BaseFlex : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0a90[0x10]; // 0xa90
+	[[maybe_unused]] uint8_t __pad0b00[0x10]; // 0xb00
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "12"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
 	// MNetworkEncodeFlags "1"
-	C_NetworkUtlVectorBase< float32 > m_flexWeight; // 0xaa0	
+	C_NetworkUtlVectorBase< float32 > m_flexWeight; // 0xb10	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
 	// MNetworkChangeCallback "OnViewTargetChanged"
-	Vector m_vLookTargetPosition; // 0xab8	
+	Vector m_vLookTargetPosition; // 0xb28	
 private:
-	[[maybe_unused]] uint8_t __pad0ac4[0xc]; // 0xac4
+	[[maybe_unused]] uint8_t __pad0b34[0xc]; // 0xb34
 public:
 	// MNetworkEnable
-	bool m_blinktoggle; // 0xad0	
+	bool m_blinktoggle; // 0xb40	
 private:
-	[[maybe_unused]] uint8_t __pad0ad1[0x5f]; // 0xad1
+	[[maybe_unused]] uint8_t __pad0b41[0x5f]; // 0xb41
 public:
-	int32_t m_nLastFlexUpdateFrameCount; // 0xb30	
-	Vector m_CachedViewTarget; // 0xb34	
-	SceneEventId_t m_nNextSceneEventId; // 0xb40	
-	int32_t m_iBlink; // 0xb44	
-	float m_blinktime; // 0xb48	
-	bool m_prevblinktoggle; // 0xb4c	
+	int32_t m_nLastFlexUpdateFrameCount; // 0xba0	
+	Vector m_CachedViewTarget; // 0xba4	
+	SceneEventId_t m_nNextSceneEventId; // 0xbb0	
+	int32_t m_iBlink; // 0xbb4	
+	float m_blinktime; // 0xbb8	
+	bool m_prevblinktoggle; // 0xbbc	
 private:
-	[[maybe_unused]] uint8_t __pad0b4d[0x3]; // 0xb4d
+	[[maybe_unused]] uint8_t __pad0bbd[0x3]; // 0xbbd
 public:
-	int32_t m_iJawOpen; // 0xb50	
-	float m_flJawOpenAmount; // 0xb54	
-	float m_flBlinkAmount; // 0xb58	
-	AttachmentHandle_t m_iMouthAttachment; // 0xb5c	
-	AttachmentHandle_t m_iEyeAttachment; // 0xb5d	
-	bool m_bResetFlexWeightsOnModelChange; // 0xb5e	
+	int32_t m_iJawOpen; // 0xbc0	
+	float m_flJawOpenAmount; // 0xbc4	
+	float m_flBlinkAmount; // 0xbc8	
+	AttachmentHandle_t m_iMouthAttachment; // 0xbcc	
+	AttachmentHandle_t m_iEyeAttachment; // 0xbcd	
+	bool m_bResetFlexWeightsOnModelChange; // 0xbce	
 private:
-	[[maybe_unused]] uint8_t __pad0b5f[0x19]; // 0xb5f
+	[[maybe_unused]] uint8_t __pad0bcf[0x19]; // 0xbcf
 public:
-	int32_t m_nEyeOcclusionRendererBone; // 0xb78	
-	matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0xb7c	
-	Vector m_vEyeOcclusionRendererHalfExtent; // 0xbac	
+	int32_t m_nEyeOcclusionRendererBone; // 0xbe8	
+	matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0xbec	
+	Vector m_vEyeOcclusionRendererHalfExtent; // 0xc1c	
 private:
-	[[maybe_unused]] uint8_t __pad0bb8[0x10]; // 0xbb8
+	[[maybe_unused]] uint8_t __pad0c28[0x10]; // 0xc28
 public:
-	// -> m_sClassName - 0xbc8
-	// -> m_flAmount - 0xbe0
-	// -> m_bRequired - 0xbe4
-	// -> m_bBasechecked - 0xbe5
-	// -> m_bValid - 0xbe6
-	C_BaseFlex::Emphasized_Phoneme m_PhonemeClasses[3]; // 0xbc8	
+	// -> m_sClassName - 0xc38
+	// -> m_flAmount - 0xc50
+	// -> m_bRequired - 0xc54
+	// -> m_bBasechecked - 0xc55
+	// -> m_bValid - 0xc56
+	C_BaseFlex::Emphasized_Phoneme m_PhonemeClasses[3]; // 0xc38	
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 33
+// Enumerator count: 36
 // Alignment: 4
 // Size: 0x4
 enum class EUISound : uint32_t
@@ -72,7 +72,13 @@ enum class EUISound : uint32_t
 	EMainMenuPartyPickHeroesConfirm = 0x1d,
 	// MPropertyFriendlyName "Sound that plays when a party enters the queue"
 	EMainMenuPartyPickHeroesExit = 0x1e,
+	// MPropertyFriendlyName "Sound that plays when you commend a player"
+	ECommendConfirmation = 0x1f,
+	// MPropertyFriendlyName "Sound that plays when you recieve a notifcation that a player commended you"
+	ECommendToast = 0x20,
+	// MPropertyFriendlyName "Sound that plays when another player purchases a high tier item."
+	EOtherPlayerPurchasesMod = 0x21,
 	// MPropertySuppressEnumerator
-	EUISoundCount = 0x1f,
+	EUISoundCount = 0x22,
 };
 

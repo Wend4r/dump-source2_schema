@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x220
+// Size: 0x258
 // Has VTable
 class CCitadel_Modifier_HookTarget : public CCitadelModifier
 {

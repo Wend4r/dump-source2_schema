@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x520
+// Size: 0x538
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -20,6 +20,8 @@
 // MNetworkVarNames "float m_fIndirectLightStrength"
 // MNetworkVarNames "float m_fSunLightStrength"
 // MNetworkVarNames "float m_fNoiseStrength"
+// MNetworkVarNames "Color m_TintColor"
+// MNetworkVarNames "bool m_bOverrideTintColor"
 // MNetworkVarNames "bool m_bOverrideIndirectLightStrength"
 // MNetworkVarNames "bool m_bOverrideSunLightStrength"
 // MNetworkVarNames "bool m_bOverrideNoiseStrength"
@@ -28,43 +30,47 @@ class CEnvVolumetricFogVolume : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bActive; // 0x4d8	
+	bool m_bActive; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04d9[0x3]; // 0x4d9
+	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
 public:
 	// MNetworkEnable
-	Vector m_vBoxMins; // 0x4dc	
+	Vector m_vBoxMins; // 0x4ec	
 	// MNetworkEnable
-	Vector m_vBoxMaxs; // 0x4e8	
+	Vector m_vBoxMaxs; // 0x4f8	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x4f4	
+	bool m_bStartDisabled; // 0x504	
 private:
-	[[maybe_unused]] uint8_t __pad04f5[0x3]; // 0x4f5
+	[[maybe_unused]] uint8_t __pad0505[0x3]; // 0x505
 public:
 	// MNetworkEnable
-	float m_flStrength; // 0x4f8	
+	float m_flStrength; // 0x508	
 	// MNetworkEnable
-	int32_t m_nFalloffShape; // 0x4fc	
+	int32_t m_nFalloffShape; // 0x50c	
 	// MNetworkEnable
-	float m_flFalloffExponent; // 0x500	
+	float m_flFalloffExponent; // 0x510	
 	// MNetworkEnable
-	float m_flHeightFogDepth; // 0x504	
+	float m_flHeightFogDepth; // 0x514	
 	// MNetworkEnable
-	float m_fHeightFogEdgeWidth; // 0x508	
+	float m_fHeightFogEdgeWidth; // 0x518	
 	// MNetworkEnable
-	float m_fIndirectLightStrength; // 0x50c	
+	float m_fIndirectLightStrength; // 0x51c	
 	// MNetworkEnable
-	float m_fSunLightStrength; // 0x510	
+	float m_fSunLightStrength; // 0x520	
 	// MNetworkEnable
-	float m_fNoiseStrength; // 0x514	
+	float m_fNoiseStrength; // 0x524	
 	// MNetworkEnable
-	bool m_bOverrideIndirectLightStrength; // 0x518	
+	Color m_TintColor; // 0x528	
 	// MNetworkEnable
-	bool m_bOverrideSunLightStrength; // 0x519	
+	bool m_bOverrideTintColor; // 0x52c	
 	// MNetworkEnable
-	bool m_bOverrideNoiseStrength; // 0x51a	
+	bool m_bOverrideIndirectLightStrength; // 0x52d	
 	// MNetworkEnable
-	bool m_bAllowLPVIndirect; // 0x51b	
+	bool m_bOverrideSunLightStrength; // 0x52e	
+	// MNetworkEnable
+	bool m_bOverrideNoiseStrength; // 0x52f	
+	// MNetworkEnable
+	bool m_bAllowLPVIndirect; // 0x530	
 	
 	// Datamap fields:
 	// bool InputEnable; // 0x0

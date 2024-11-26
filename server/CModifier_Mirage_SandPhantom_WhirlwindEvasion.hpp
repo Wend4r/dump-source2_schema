@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x100
+// Size: 0x130
 // Has VTable
 class CModifier_Mirage_SandPhantom_WhirlwindEvasion : public CCitadelModifier
 {

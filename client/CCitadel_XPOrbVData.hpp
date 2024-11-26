@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x7d0
+// Size: 0xa90
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -24,42 +24,50 @@ public:
 	CSoundEventName m_strOrbDenied; // 0x50	
 	// MPropertyDescription "Played to assigned earners when an enemy denied their orb."
 	CSoundEventName m_strOrbDeniedPlayer; // 0x60	
+	// MPropertyDescription "Played when we predict a hit on the orb but don't fully claim it."
+	CSoundEventName m_strOrbHitConfirm; // 0x70	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_sOrbModel; // 0x70	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sFriendlyGlowParticle; // 0x150	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sEnemyGlowParticle; // 0x230	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sGoldReceivedParticle; // 0x310	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sFriendlyOrbDeniedParticle; // 0x3f0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sEnemyOrbDeniedParticle; // 0x4d0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sFriendlyOrbEarnedParticle; // 0x5b0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sEnemyOrbEarnedParticle; // 0x690	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_sOrbModel; // 0x80	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sPredictedHitLimboGlowParticle; // 0x160	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sFriendlyHitConfirmParticle; // 0x240	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sEnemyHitConfirmParticle; // 0x320	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sFriendlyGlowParticle; // 0x400	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sEnemyGlowParticle; // 0x4e0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sGoldReceivedParticle; // 0x5c0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sFriendlyOrbDeniedParticle; // 0x6a0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sEnemyOrbDeniedParticle; // 0x780	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sFriendlyOrbEarnedParticle; // 0x860	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_sEnemyOrbEarnedParticle; // 0x940	
 	// MPropertyStartGroup "Behavior"
-	float m_flOrbSpawnDelayMin; // 0x770	
-	float m_flOrbSpawnDelayMax; // 0x774	
-	float m_flOrbSpawnOffsetZ; // 0x778	
-	float m_flOrbSpawnOffsetRandomXYZ; // 0x77c	
-	float m_flGravityScale; // 0x780	
-	float m_flLateralSpeedMin; // 0x784	
-	float m_flLateralSpeedMax; // 0x788	
-	float m_flLateralMoveDuration; // 0x78c	
-	float m_flUpSpeedMin; // 0x790	
-	float m_flUpSpeedMax; // 0x794	
-	float m_flBurstSpeedMultiplier; // 0x798	
-	float m_flBurstSpeedDuration; // 0x79c	
-	float m_flOscillateFrequency; // 0x7a0	
-	float m_flLifeTime; // 0x7a4	
-	float m_flCollisionRadius; // 0x7a8	
-	bool m_bUseKillerPlaneOffsets; // 0x7ac	
+	float m_flOrbSpawnDelayMin; // 0xa20	
+	float m_flOrbSpawnDelayMax; // 0xa24	
+	float m_flOrbSpawnOffsetZ; // 0xa28	
+	float m_flOrbSpawnOffsetRandomXYZ; // 0xa2c	
+	float m_flGravityScale; // 0xa30	
+	float m_flLateralSpeedMin; // 0xa34	
+	float m_flLateralSpeedMax; // 0xa38	
+	float m_flLateralMoveDuration; // 0xa3c	
+	float m_flUpSpeedMin; // 0xa40	
+	float m_flUpSpeedMax; // 0xa44	
+	float m_flBurstSpeedMultiplier; // 0xa48	
+	float m_flBurstSpeedDuration; // 0xa4c	
+	float m_flOscillateFrequency; // 0xa50	
+	float m_flLifeTime; // 0xa54	
+	float m_flRadius; // 0xa58	
+	float m_flCollisionRadius; // 0xa5c	
+	float m_flInvulDuration; // 0xa60	
+	bool m_bUseKillerPlaneOffsets; // 0xa64	
 private:
-	[[maybe_unused]] uint8_t __pad07ad[0x3]; // 0x7ad
+	[[maybe_unused]] uint8_t __pad0a65[0x3]; // 0xa65
 public:
-	float m_flKillerPlaneOffset; // 0x7b0	
-	float m_flKillerPlaneHorizontalDecayRate; // 0x7b4	
-	float m_flKillerPlaneHorizontalSpeedX; // 0x7b8	
-	float m_flKillerPlaneHorizontalSpeedY; // 0x7bc	
-	float m_flKillerPlaneVerticalSpeed; // 0x7c0	
-	float m_flKillerPlaneSpeedNoise; // 0x7c4	
-	float m_flKillerPlaneLaunchOffset; // 0x7c8	
-	float m_flKillerPlaneLaunchDelay; // 0x7cc	
+	float m_flKillerPlaneOffset; // 0xa68	
+	float m_flKillerPlaneHorizontalDecayRate; // 0xa6c	
+	float m_flKillerPlaneHorizontalSpeedX; // 0xa70	
+	float m_flKillerPlaneHorizontalSpeedY; // 0xa74	
+	float m_flKillerPlaneVerticalSpeed; // 0xa78	
+	float m_flKillerPlaneSpeedNoise; // 0xa7c	
+	float m_flKillerPlaneLaunchOffset; // 0xa80	
+	float m_flKillerPlaneLaunchDelay; // 0xa84	
+	float m_flOrbClaimWindow; // 0xa88	
 };
 

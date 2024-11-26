@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc60
+// Size: 0xc88
 // Has VTable
 class CCitadel_Ability_RocketLauncher : public CCitadelBaseAbility
 {

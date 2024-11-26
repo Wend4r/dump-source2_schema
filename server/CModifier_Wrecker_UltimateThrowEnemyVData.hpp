@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x898
+// Size: 0x8a8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CModifier_Wrecker_UltimateThrowEnemyVData : public CCitadel_Modifier_Stunn
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EnemyHeroStasisEffect; // 0x6d8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EnemyHeroGrabEffect; // 0x7b8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EnemyHeroStasisEffect; // 0x6e8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EnemyHeroGrabEffect; // 0x7c8	
 };
 

@@ -1,0 +1,32 @@
+#pragma once
+
+#include <cstdint>
+
+// Registered binary: server.dll (project 'server')
+// Enumerator count: 11
+// Alignment: 4
+// Size: 0x4
+enum class AI_MotorGroundAnimGraph_StateType_t : uint32_t
+{
+	// MPropertyFriendlyName "Idle"
+	eIdle = 0x0,
+	// MPropertyFriendlyName "Idle Turn"
+	eIdleTurn = 0x1,
+	// MPropertyFriendlyName "Start"
+	eStart = 0x2,
+	// MPropertyFriendlyName "Loop"
+	eLoop = 0x3,
+	// MPropertyFriendlyName "Stop"
+	eStop = 0x4,
+	// MPropertyFriendlyName "Instant Stop"
+	eInstantStop = 0x5,
+	// MPropertyFriendlyName "Hop"
+	eHop = 0x6,
+	// MPropertyFriendlyName "Loop Performance"
+	eLoopPerformance = 0x7,
+	// MPropertyFriendlyName "Planted Turn"
+	ePlantedTurn = 0x8,
+	eAny = 0x9,
+	eCount = 0x9,
+};
+

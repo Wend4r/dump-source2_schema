@@ -6,7 +6,7 @@ struct CAnimParamHandle;
 struct CAnimInputDamping;
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0xd0
+// Size: 0xd8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -32,5 +32,6 @@ public:
 	bool m_bSyncCycles; // 0xcd	
 	bool m_bLoop; // 0xce	
 	bool m_bLockWhenWaning; // 0xcf	
+	bool m_bIsAngle; // 0xd0	
 };
 

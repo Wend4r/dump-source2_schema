@@ -8,11 +8,11 @@ struct AbilityResource_t;
 // Size: 0x1a0
 // Has VTable
 // 
-// MNetworkVarNames "EHANDLE m_vecAbilities"
+// MNetworkVarNames "CHandle<C_CitadelBaseAbility> m_vecAbilities"
 // MNetworkVarNames "EntitySubclassID_t m_vecUniversalItems"
 // MNetworkVarNames "int32 m_arPendingAsyncAbilityReservationSlots"
 // MNetworkVarNames "int32 m_arPendingAsyncAbilityReservationAbilityIDs"
-// MNetworkVarNames "EHANDLE m_hSelectedAbility"
+// MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hSelectedAbility"
 // MNetworkVarNames "EHANDLE m_hPreviouslySelectedAbility"
 // MNetworkVarNames "bool m_bPreviousAbilityQueued"
 // MNetworkVarNames "float m_flTimeScale"
@@ -29,7 +29,7 @@ public:
 	// MNetworkUserGroup "Abilities"
 	// MNetworkChangeCallback "abilitiesChanged"
 	// MNetworkPriority "32"
-	C_NetworkUtlVectorBase< CHandle< C_BaseEntity > > m_vecAbilities; // 0x70	
+	C_NetworkUtlVectorBase< CHandle< C_CitadelBaseAbility > > m_vecAbilities; // 0x70	
 	// MNetworkEnable
 	// MNetworkUserGroup "Abilities"
 	// MNetworkPriority "32"
@@ -44,7 +44,7 @@ public:
 	C_NetworkUtlVectorBase< int32 > m_arPendingAsyncAbilityReservationAbilityIDs; // 0xb8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "AbiCompSelectedAbilityChanged"
-	CHandle< C_BaseEntity > m_hSelectedAbility; // 0xd0	
+	CHandle< C_CitadelBaseAbility > m_hSelectedAbility; // 0xd0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	CHandle< C_BaseEntity > m_hPreviouslySelectedAbility; // 0xd4	
@@ -86,6 +86,10 @@ private:
 	[[maybe_unused]] uint8_t __pad0128[0x48]; // 0x128
 public:
 	uint32_t m_nExecuteAbilityMask; // 0x170	
+private:
+	[[maybe_unused]] uint8_t __pad0174[0x4]; // 0x174
+public:
+	bool m_bSelectedEffectsStarted; // 0x178	
 	
 	// Static fields:
 	static EntComponentInfo_t &Get_s_EntComponentInfo(){return *reinterpret_cast<EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CCitadelAbilityComponent")->m_static_fields[0]->m_instance);};

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x248
+// Size: 0x210
 // Has VTable
 class CCitadel_Modifier_SilenceProcWatcher : public CCitadel_Modifier_BaseEventProc
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x118
+// Size: 0x110
 // Has VTable
 class CCitadel_Modifier_Cadence_SilenceContraptions : public CCitadelModifier
 {

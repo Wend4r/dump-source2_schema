@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe8
+// Size: 0xe0
 // Has VTable
 // Is Abstract
 class CCitadelModifierAura : public CBaseModifierAura

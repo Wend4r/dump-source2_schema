@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x228
+// Size: 0x220
 // Has VTable
 class CCitadel_Modifier_Gravity_Lasso_Enemy : public CCitadel_Modifier_Stunned
 {
 public:
-	ELassoHoldPosition m_eHoldPosition; // 0xd0	
+	ELassoHoldPosition m_eHoldPosition; // 0xc8	
 };
 

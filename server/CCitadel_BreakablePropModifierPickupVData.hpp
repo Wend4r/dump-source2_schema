@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x328
+// Size: 0x340
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_BreakablePropModifierPickupVData : public CCitadel_BreakablePropPickupVData
 {
 public:
-	CEmbeddedSubclass< CCitadelModifier > m_sModifer; // 0x318	
+	CEmbeddedSubclass< CCitadelModifier > m_sModifer; // 0x330	
 };
 

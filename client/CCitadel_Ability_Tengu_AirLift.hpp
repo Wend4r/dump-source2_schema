@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe78
+// Size: 0xeb8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bFlying"
@@ -16,19 +16,19 @@ struct ParticleIndex_t;
 class CCitadel_Ability_Tengu_AirLift : public C_CitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_nHoldBombEffect; // 0xc60	
+	ParticleIndex_t m_nHoldBombEffect; // 0xca0	
 private:
-	[[maybe_unused]] uint8_t __pad0c64[0x1fc]; // 0xc64
+	[[maybe_unused]] uint8_t __pad0ca4[0x1fc]; // 0xca4
 public:
 	// MNetworkEnable
-	bool m_bFlying; // 0xe60	
+	bool m_bFlying; // 0xea0	
 	// MNetworkEnable
-	bool m_bFlyingStarted; // 0xe61	
+	bool m_bFlyingStarted; // 0xea1	
 	// MNetworkEnable
-	bool m_bIsGrabbing; // 0xe62	
+	bool m_bIsGrabbing; // 0xea2	
 	// MNetworkEnable
-	bool m_bIsHoldingBomb; // 0xe63	
+	bool m_bIsHoldingBomb; // 0xea3	
 	// MNetworkEnable
-	float m_flCurrentSpeed; // 0xe64	
+	float m_flCurrentSpeed; // 0xea4	
 };
 

@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x960
+// Size: 0x9a8
 // Has VTable
 class CTriggerSoundscape : public CBaseTrigger
 {
 public:
-	CHandle< CEnvSoundscapeTriggerable > m_hSoundscape; // 0x938	
+	CHandle< CEnvSoundscapeTriggerable > m_hSoundscape; // 0x980	
 private:
-	[[maybe_unused]] uint8_t __pad093c[0x4]; // 0x93c
+	[[maybe_unused]] uint8_t __pad0984[0x4]; // 0x984
 public:
-	CUtlSymbolLarge m_SoundscapeName; // 0x940	
-	CUtlVector< CHandle< CBasePlayerPawn > > m_spectators; // 0x948	
+	CUtlSymbolLarge m_SoundscapeName; // 0x988	
+	CUtlVector< CHandle< CBasePlayerPawn > > m_spectators; // 0x990	
 	
 	// Datamap fields:
 	// void CTriggerSoundscapePlayerUpdateThink; // 0x0

@@ -5,7 +5,7 @@
 struct CParticleCollectionRendererFloatInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x2ac0
+// Size: 0x2ee8
 // Has VTable
 // Is Abstract
 // 
@@ -16,27 +16,27 @@ public:
 	// MPropertyStartGroup "Orientation"
 	// MPropertyFriendlyName "orientation type"
 	// MPropertySortPriority "750"
-	ParticleOrientationChoiceList_t m_nOrientationType; // 0x27e8	
+	ParticleOrientationChoiceList_t m_nOrientationType; // 0x2c10	
 	// MPropertyFriendlyName "orientation control point"
 	// MPropertySortPriority "750"
 	// MPropertySuppressExpr "m_nOrientationType != PARTICLE_ORIENTATION_ALIGN_TO_PARTICLE_NORMAL && m_nOrientationType != PARTICLE_ORIENTATION_SCREENALIGN_TO_PARTICLE_NORMAL"
-	int32_t m_nOrientationControlPoint; // 0x27ec	
+	int32_t m_nOrientationControlPoint; // 0x2c14	
 	// MPropertyStartGroup "Screenspace Fading and culling"
 	// MPropertyFriendlyName "minimum visual screen-size"
 	// MPropertySortPriority "900"
-	float m_flMinSize; // 0x27f0	
+	float m_flMinSize; // 0x2c18	
 	// MPropertyFriendlyName "maximum visual screen-size"
 	// MPropertySortPriority "900"
-	float m_flMaxSize; // 0x27f4	
+	float m_flMaxSize; // 0x2c1c	
 	// MPropertyFriendlyName "start fade screen-size"
 	// MPropertySortPriority "900"
-	CParticleCollectionRendererFloatInput m_flStartFadeSize; // 0x27f8	
+	CParticleCollectionRendererFloatInput m_flStartFadeSize; // 0x2c20	
 	// MPropertyFriendlyName "end fade and cull screen-size"
 	// MPropertySortPriority "900"
-	CParticleCollectionRendererFloatInput m_flEndFadeSize; // 0x2958	
+	CParticleCollectionRendererFloatInput m_flEndFadeSize; // 0x2d80	
 	// MPropertyStartGroup "Trail UV Controls"
 	// MPropertyFriendlyName "Clamp Non-Sheet texture V coords"
 	// MPropertySortPriority "800"
-	bool m_bClampV; // 0x2ab8	
+	bool m_bClampV; // 0x2ee0	
 };
 

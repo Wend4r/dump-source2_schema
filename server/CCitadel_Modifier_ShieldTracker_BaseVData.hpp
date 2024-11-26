@@ -4,31 +4,31 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x700
+// Size: 0x710
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_ShieldTracker_BaseVData : public CCitadelModifierVData
 {
 public:
-	float m_flShieldImpactEffectDuration; // 0x5f8	
+	float m_flShieldImpactEffectDuration; // 0x608	
 private:
-	[[maybe_unused]] uint8_t __pad05fc[0x4]; // 0x5fc
+	[[maybe_unused]] uint8_t __pad060c[0x4]; // 0x60c
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShieldImpactParticle; // 0x600	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShieldImpactParticle; // 0x610	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ShieldImpactModifier; // 0x6e0	
+	CEmbeddedSubclass< CCitadelModifier > m_ShieldImpactModifier; // 0x6f0	
 	// MPropertyDescription "What type of shield is this."
-	EShieldType_t eShieldType; // 0x6f0	
+	EShieldType_t eShieldType; // 0x700	
 private:
-	[[maybe_unused]] uint8_t __pad06f1[0x3]; // 0x6f1
+	[[maybe_unused]] uint8_t __pad0701[0x3]; // 0x701
 public:
 	// MPropertyDescription "How long before the shield can regenerate after taking damage, but not breaking."
-	float flCooldownOnDamage; // 0x6f4	
+	float flCooldownOnDamage; // 0x704	
 	// MPropertyDescription "How long before the shield can regenerate after breaking (going to 0 shield)"
-	float flCooldownOnBreak; // 0x6f8	
+	float flCooldownOnBreak; // 0x708	
 	// MPropertyDescription "How long does it take the shield to regenerate from 0 to full health. For partial regen, it's the same rate."
-	float flRegenDuration; // 0x6fc	
+	float flRegenDuration; // 0x70c	
 };
 

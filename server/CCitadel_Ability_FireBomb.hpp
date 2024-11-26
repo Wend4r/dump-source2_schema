@@ -6,7 +6,7 @@ struct CCitadelAutoScaledTime;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc50
+// Size: 0xc78
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAutoScaledTime m_flDetonateTime"
@@ -14,13 +14,13 @@ struct GameTime_t;
 class CCitadel_Ability_FireBomb : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x158]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0x158]; // 0xb00
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	CCitadelAutoScaledTime m_flDetonateTime; // 0xc30	
+	CCitadelAutoScaledTime m_flDetonateTime; // 0xc58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flStartTime; // 0xc48	
+	GameTime_t m_flStartTime; // 0xc70	
 };
 

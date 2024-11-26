@@ -5,13 +5,13 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe0
+// Size: 0xd8
 // Has VTable
 class CCitadel_Modifier_Push : public CCitadelModifier
 {
 public:
-	Vector m_vPushForce; // 0xc8	
-	float m_flDecayRate; // 0xd4	
-	GameTime_t m_TimeDestroy; // 0xd8	
+	Vector m_vPushForce; // 0xc0	
+	float m_flDecayRate; // 0xcc	
+	GameTime_t m_TimeDestroy; // 0xd0	
 };
 

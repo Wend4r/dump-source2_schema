@@ -5,7 +5,7 @@
 struct CModelState;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x440
+// Size: 0x490
 // Has VTable
 // 
 // MNetworkVarNames "CModelState m_modelState"
@@ -21,24 +21,21 @@ public:
 	// MNetworkEnable
 	CModelState m_modelState; // 0x170	
 	// MNetworkEnable
-	bool m_bIsAnimationEnabled; // 0x3a0	
+	bool m_bIsAnimationEnabled; // 0x3f0	
 	// MNetworkEnable
-	bool m_bUseParentRenderBounds; // 0x3a1	
-	// MNetworkDisable
-	bool m_bDisableSolidCollisionsForHierarchy; // 0x3a2	
+	bool m_bUseParentRenderBounds; // 0x3f1	
+	bool m_bDisableSolidCollisionsForHierarchy; // 0x3f2	
 	struct 
 	{
-		// MNetworkDisable
 		uint8_t m_bDirtyMotionType: 1; 		
-		// MNetworkDisable
 		uint8_t m_bIsGeneratingLatchedParentSpaceState: 1; 		
 		uint16_t __pad0: 14;
 	}; // 16 bits
 	// MNetworkEnable
 	// MNetworkChangeCallback "skeletonMaterialGroupChanged"
-	CUtlStringToken m_materialGroup; // 0x3a4	
+	CUtlStringToken m_materialGroup; // 0x3f4	
 	// MNetworkEnable
-	uint8_t m_nHitboxSet; // 0x3a8	
+	uint8_t m_nHitboxSet; // 0x3f8	
 	
 	// Datamap fields:
 	// Vector velocity; // 0x7fffffff

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x170
+// Size: 0x168
 // Has VTable
 class CCitadel_Modifier_Savior : public CCitadelModifier
 {

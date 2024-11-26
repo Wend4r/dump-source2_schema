@@ -11,9 +11,9 @@
 class CPulse_OutputConnection
 {
 public:
-	CUtlSymbolLarge m_SourceOutput; // 0x0	
-	CUtlSymbolLarge m_TargetEntity; // 0x8	
-	CUtlSymbolLarge m_TargetInput; // 0x10	
-	CUtlSymbolLarge m_Param; // 0x18	
+	CGlobalSymbol m_SourceOutput; // 0x0	
+	CGlobalSymbol m_TargetEntity; // 0x8	
+	CGlobalSymbol m_TargetInput; // 0x10	
+	CGlobalSymbol m_Param; // 0x18	
 };
 

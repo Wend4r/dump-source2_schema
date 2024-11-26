@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x18
+// Size: 0x20
 // 
 // MGetKV3ClassDefaults
 struct LaneDesc_t
@@ -14,5 +14,6 @@ public:
 	CUtlString m_strCSSClass; // 0x8	
 	Color m_Color; // 0x10	
 	Color m_MinimapColorOverride; // 0x14	
+	Color m_MinimapZiplineColorOverride; // 0x18	
 };
 

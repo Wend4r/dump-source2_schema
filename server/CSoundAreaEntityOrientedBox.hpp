@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x510
+// Size: 0x520
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vMin"
@@ -13,8 +13,8 @@ class CSoundAreaEntityOrientedBox : public CSoundAreaEntityBase
 {
 public:
 	// MNetworkEnable
-	Vector m_vMin; // 0x4f8	
+	Vector m_vMin; // 0x508	
 	// MNetworkEnable
-	Vector m_vMax; // 0x504	
+	Vector m_vMax; // 0x514	
 };
 

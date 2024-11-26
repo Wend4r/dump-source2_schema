@@ -5,15 +5,15 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xab8
+// Size: 0xb28
 // Has VTable
 class CCitadel_GrandFinaleStage : public CBaseAnimGraph
 {
 public:
-	Vector m_vStartPos; // 0xa90	
-	Vector m_vEndPos; // 0xa9c	
-	GameTime_t m_flStartEmitTime; // 0xaa8	
-	GameTime_t m_flEndEmitTime; // 0xaac	
-	int32_t m_nTouchCount; // 0xab0	
+	Vector m_vStartPos; // 0xb00	
+	Vector m_vEndPos; // 0xb0c	
+	GameTime_t m_flStartEmitTime; // 0xb18	
+	GameTime_t m_flEndEmitTime; // 0xb1c	
+	int32_t m_nTouchCount; // 0xb20	
 };
 

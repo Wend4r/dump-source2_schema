@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x840
+// Size: 0x898
 // Has VTable
 class CPushable : public CBreakable
 {

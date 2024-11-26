@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe68
+// Size: 0xef0
 // Has VTable
 class CCitadelPlayerPawnBase : public C_BasePlayerPawn
 {

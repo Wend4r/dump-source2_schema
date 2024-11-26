@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc0
+// Size: 0xf8
 // Has VTable
 class CModifier_Mirage_FireBeetles_Buff : public CCitadelModifier
 {

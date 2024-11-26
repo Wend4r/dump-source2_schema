@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf0
+// Size: 0xe8
 // Has VTable
 class CCitadel_Modifier_ControlPointBlockerAura : public CCitadelModifierAura
 {
 public:
-	CHandle< CCitadelControlPointTrigger > m_hCP; // 0xe8	
+	CHandle< CCitadelControlPointTrigger > m_hCP; // 0xe0	
 };
 

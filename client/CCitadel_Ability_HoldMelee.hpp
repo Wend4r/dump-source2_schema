@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd28
+// Size: 0xd68
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flParryWindowEndTime"
@@ -15,34 +15,38 @@ struct GameTime_t;
 // MNetworkVarNames "EMeleeHold_AttackState m_eCurrentAttackState"
 // MNetworkVarNames "EMeleeHold_AttackType m_eCurrentAttackType"
 // MNetworkVarNames "Vector m_vAirDashDir"
+// MNetworkVarNames "bool m_bAttackStartedWhileSliding"
 class CCitadel_Ability_HoldMelee : public CCitadel_Ability_Melee_Base
 {
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flParryWindowEndTime; // 0xce0	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flParryWindowEndTime; // 0xd20	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextParryTime; // 0xce4	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flNextParryTime; // 0xd24	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flStateStartTime; // 0xce8	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flStateStartTime; // 0xd28	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flDashStartTime; // 0xcec	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flDashStartTime; // 0xd2c	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	EMeleeHold_AttackState m_eCurrentAttackState; // 0xcf0	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	EMeleeHold_AttackState m_eCurrentAttackState; // 0xd30	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	EMeleeHold_AttackType m_eCurrentAttackType; // 0xcf4	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	EMeleeHold_AttackType m_eCurrentAttackType; // 0xd34	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vAirDashDir; // 0xcf8	
-	bool m_bCreatedChargeEffects; // 0xd04	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vAirDashDir; // 0xd38	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bAttackStartedWhileSliding; // 0xd44	
+	bool m_bCreatedChargeEffects; // 0xd45	
 private:
-	[[maybe_unused]] uint8_t __pad0d05[0x3]; // 0xd05
+	[[maybe_unused]] uint8_t __pad0d46[0x2]; // 0xd46
 public:
-	QAngle m_angForced; // 0xd08	
+	QAngle m_angForced; // 0xd48	
 };
 

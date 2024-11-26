@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xad8
+// Size: 0xb00
 // Has VTable
 // Is Abstract
 // 
@@ -52,9 +52,9 @@ struct GameTime_t;
 // MNetworkVarNames "int m_nUpgradeBits"
 // MNetworkVarNames "int m_iBucketID"
 // MNetworkVarNames "bool m_bToggleState"
-// MNetworkVarNames "GameTime_t m_flToggledTime"
 // MNetworkVarNames "GameTime_t m_flCooldownStart"
 // MNetworkVarNames "GameTime_t m_flCooldownEnd"
+// MNetworkVarNames "GameTime_t m_flCastCompletedTime"
 // MNetworkVarNames "GameTime_t m_flChannelStartTime"
 // MNetworkVarNames "GameTime_t m_flCastDelayStartTime"
 // MNetworkVarNames "EAbilitySlots_t m_eAbilitySlot"
@@ -65,89 +65,101 @@ struct GameTime_t;
 // MNetworkVarNames "GameTime_t m_flMovementControlActiveTime"
 // MNetworkVarNames "GameTime_t m_flSelectedChangedTime"
 // MNetworkVarNames "GameTime_t m_flAltCastHoldStartTime"
+// MNetworkVarNames "GameTime_t m_flAltCastDoubleTapStartTime"
 // MNetworkVarNames "AbilityID_t m_nImbuedAbilityID"
+// MNetworkVarNames "bool m_bSelectionModeIsAltMode"
 class CCitadelBaseAbility : public CBaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04d8[0xd0]; // 0x4d8
+	[[maybe_unused]] uint8_t __pad04e8[0xd8]; // 0x4e8
 public:
-	CUtlVector< CModifierHandleTyped< CCitadelModifier > > m_vecIntrinsicModifiers; // 0x5a8	
-	CModifierHandleTyped< CCitadelModifier > m_pCastDelayAutoModifier; // 0x5c0	
-	CModifierHandleTyped< CCitadelModifier > m_pChannelAutoModifier; // 0x5d8	
-	CGlobalSymbol m_strUsedCastGraphParam; // 0x5f0	
-	int32_t m_nCastParamNeedsResetTick; // 0x5f8	
-	bool m_bIsCoolingDownInternal; // 0x5fc	
+	CUtlVector< CModifierHandleTyped< CCitadelModifier > > m_vecIntrinsicModifiers; // 0x5c0	
+	CModifierHandleTyped< CCitadelModifier > m_pCastDelayAutoModifier; // 0x5d8	
+	CModifierHandleTyped< CCitadelModifier > m_pChannelAutoModifier; // 0x5f0	
+	CGlobalSymbol m_strUsedCastGraphParam; // 0x608	
+	int32_t m_nCastParamNeedsResetTick; // 0x610	
+	bool m_bIsCoolingDownInternal; // 0x614	
 private:
-	[[maybe_unused]] uint8_t __pad05fd[0x1b]; // 0x5fd
+	[[maybe_unused]] uint8_t __pad0615[0x3]; // 0x615
+public:
+	GameTime_t m_flCancelLockoutTime; // 0x618	
+private:
+	[[maybe_unused]] uint8_t __pad061c[0x1c]; // 0x61c
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnChannelingChanged"
-	bool m_bChanneling; // 0x618	
+	bool m_bChanneling; // 0x638	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnInCastDelayChanged"
-	bool m_bInCastDelay; // 0x619	
+	bool m_bInCastDelay; // 0x639	
 private:
-	[[maybe_unused]] uint8_t __pad061a[0x6]; // 0x61a
+	[[maybe_unused]] uint8_t __pad063a[0x6]; // 0x63a
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnAbilityImbuedChanged"
-	CNetworkUtlVectorBase< CUtlStringToken > m_vecImbuedByAbilitiyIDs; // 0x620	
+	CNetworkUtlVectorBase< CUtlStringToken > m_vecImbuedByAbilitiyIDs; // 0x640	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnUpgradeBitsChanged"
 	// MNetworkPriority "32"
-	int32_t m_nUpgradeBits; // 0x638	
+	int32_t m_nUpgradeBits; // 0x658	
 	// MNetworkEnable
-	int32_t m_iBucketID; // 0x63c	
+	int32_t m_iBucketID; // 0x65c	
 	// MNetworkEnable
-	bool m_bToggleState; // 0x640	
+	bool m_bToggleState; // 0x660	
 private:
-	[[maybe_unused]] uint8_t __pad0641[0x3]; // 0x641
+	[[maybe_unused]] uint8_t __pad0661[0x3]; // 0x661
 public:
 	// MNetworkEnable
-	GameTime_t m_flToggledTime; // 0x644	
+	// MNetworkPriority "32"
+	GameTime_t m_flCooldownStart; // 0x664	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_flCooldownStart; // 0x648	
+	GameTime_t m_flCooldownEnd; // 0x668	
 	// MNetworkEnable
-	// MNetworkPriority "32"
-	GameTime_t m_flCooldownEnd; // 0x64c	
+	GameTime_t m_flCastCompletedTime; // 0x66c	
 	// MNetworkEnable
-	GameTime_t m_flChannelStartTime; // 0x650	
+	GameTime_t m_flChannelStartTime; // 0x670	
 	// MNetworkEnable
-	GameTime_t m_flCastDelayStartTime; // 0x654	
+	GameTime_t m_flCastDelayStartTime; // 0x674	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnAbilitySlotChanged"
-	EAbilitySlots_t m_eAbilitySlot; // 0x658	
+	EAbilitySlots_t m_eAbilitySlot; // 0x678	
 private:
-	[[maybe_unused]] uint8_t __pad065a[0x2]; // 0x65a
+	[[maybe_unused]] uint8_t __pad067a[0x2]; // 0x67a
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flPostCastDelayEndTime; // 0x65c	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flPostCastDelayEndTime; // 0x67c	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	int32_t m_iRemainingCharges; // 0x660	
+	int32_t m_iRemainingCharges; // 0x680	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_flChargeRechargeStart; // 0x664	
+	GameTime_t m_flChargeRechargeStart; // 0x684	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_flChargeRechargeEnd; // 0x668	
+	GameTime_t m_flChargeRechargeEnd; // 0x688	
 	// MNetworkEnable
-	GameTime_t m_flMovementControlActiveTime; // 0x66c	
+	GameTime_t m_flMovementControlActiveTime; // 0x68c	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flSelectedChangedTime; // 0x670	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flSelectedChangedTime; // 0x690	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flAltCastHoldStartTime; // 0x674	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flAltCastHoldStartTime; // 0x694	
 	// MNetworkEnable
-	CUtlStringToken m_nImbuedAbilityID; // 0x678	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flAltCastDoubleTapStartTime; // 0x698	
+	// MNetworkEnable
+	CUtlStringToken m_nImbuedAbilityID; // 0x69c	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bSelectionModeIsAltMode; // 0x6a0	
 private:
-	[[maybe_unused]] uint8_t __pad067c[0x4]; // 0x67c
+	[[maybe_unused]] uint8_t __pad06a1[0x7]; // 0x6a1
 public:
-	CUtlVector< CHandle< CBaseEntity > > m_vecEnemyHeroesDamaged; // 0x680	
-	float m_flPreviousEffectiveCooldown; // 0x698	
+	CUtlVector< CHandle< CBaseEntity > > m_vecEnemyHeroesDamaged; // 0x6a8	
+	float m_flPreviousEffectiveCooldown; // 0x6c0	
 	
 	// Datamap fields:
 	// int32_t slot; // 0x7fffffff

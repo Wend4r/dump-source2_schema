@@ -5,17 +5,15 @@
 struct AttachmentHandle_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe8
+// Size: 0xe0
 // Has VTable
 class CGameModifier_OverrideTargetIdentifier : public CCitadelModifier
 {
 public:
-	CGlobalSymbol m_sTargetIdentifier; // 0xc8	
-	CHandle< CBaseEntity > m_hTarget; // 0xd0	
-private:
-	[[maybe_unused]] uint8_t __pad00d4[0x4]; // 0xd4
-public:
-	CGlobalSymbol m_sAttachmentName; // 0xd8	
-	AttachmentHandle_t m_hAttachment; // 0xe0	
+	CGlobalSymbol m_sTargetIdentifier; // 0xc0	
+	CHandle< CBaseEntity > m_hTarget; // 0xc8	
+	TargetIdentifierOriginType_t m_nOriginType; // 0xcc	
+	CGlobalSymbol m_sAttachmentName; // 0xd0	
+	AttachmentHandle_t m_hAttachment; // 0xd8	
 };
 

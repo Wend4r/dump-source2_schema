@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7b8
+// Size: 0x7c8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CCitadel_Modifier_PuddleVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_puddleAoeDamageFx; // 0x5f8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TargetDamageFx; // 0x6d8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_puddleAoeDamageFx; // 0x608	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TargetDamageFx; // 0x6e8	
 };
 

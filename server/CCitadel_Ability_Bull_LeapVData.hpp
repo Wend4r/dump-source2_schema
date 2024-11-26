@@ -4,37 +4,40 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1938
+// Size: 0x19b8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Ability_Bull_LeapVData : public CitadelAbilityVData
 {
 public:
-	CPiecewiseCurve m_CrashSpeedScaleCurve; // 0x14f0	
+	CPiecewiseCurve m_CrashSpeedScaleCurve; // 0x1560	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BoostModifier; // 0x1530	
-	CEmbeddedSubclass< CCitadelModifier > m_CrashModifier; // 0x1540	
-	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x1550	
-	CEmbeddedSubclass< CCitadelModifier > m_LandingBonusesModifier; // 0x1560	
+	CEmbeddedSubclass< CCitadelModifier > m_BoostModifier; // 0x15a0	
+	CEmbeddedSubclass< CCitadelModifier > m_CrashModifier; // 0x15b0	
+	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x15c0	
+	CEmbeddedSubclass< CCitadelModifier > m_LandingBonusesModifier; // 0x15d0	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TakeOffParticle; // 0x1570	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x1650	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEPreviewParticle; // 0x1730	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_nHoverParticle; // 0x1810	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TakeOffParticle; // 0x15e0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x16c0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEPreviewParticle; // 0x17a0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_nHoverParticle; // 0x1880	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strCrashingSound; // 0x18f0	
-	CSoundEventName m_strImpactSound; // 0x1900	
+	CSoundEventName m_strCrashingSound; // 0x1960	
+	CSoundEventName m_strImpactSound; // 0x1970	
 	// MPropertyStartGroup "GamePlay"
-	float m_flStartupTime; // 0x1910	
-	float m_flForwardBoostSpeed; // 0x1914	
-	float m_flUpBoostSpeed; // 0x1918	
-	float m_flBoostTurnRate; // 0x191c	
-	float m_flHoverTime; // 0x1920	
-	float m_flMinAimAngle; // 0x1924	
-	float m_flBoostGain; // 0x1928	
-	float m_flBoostTime; // 0x192c	
-	float m_flLandingTime; // 0x1930	
-	float m_flCrashSpeed; // 0x1934	
+	float m_flStartupTime; // 0x1980	
+	float m_flForwardBoostSpeed; // 0x1984	
+	float m_flUpBoostSpeed; // 0x1988	
+	float m_flBoostTurnRate; // 0x198c	
+	float m_flHoverTime; // 0x1990	
+	float m_flMinAimAngle; // 0x1994	
+	float m_flBoostGain; // 0x1998	
+	float m_flBoostTime; // 0x199c	
+	float m_flLandingTime; // 0x19a0	
+	float m_flCrashSpeed; // 0x19a4	
+	float m_flHoverInputSpeedMax; // 0x19a8	
+	float m_flHoverInputAcceleration; // 0x19ac	
+	float m_flHoverSpeedDecay; // 0x19b0	
 };
 

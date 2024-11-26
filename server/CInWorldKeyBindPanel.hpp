@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x970
+// Size: 0x9c8
 // Has VTable
 class CInWorldKeyBindPanel : public CPointClientUIWorldPanel
 {

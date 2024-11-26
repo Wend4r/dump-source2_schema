@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd30
+// Size: 0xda0
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -15,36 +15,36 @@ class C_DynamicProp : public C_BreakableProp
 {
 public:
 	// MNetworkEnable
-	bool m_bUseHitboxesForRenderBox; // 0xc18	
+	bool m_bUseHitboxesForRenderBox; // 0xc88	
 	// MNetworkEnable
-	bool m_bUseAnimGraph; // 0xc19	
+	bool m_bUseAnimGraph; // 0xc89	
 private:
-	[[maybe_unused]] uint8_t __pad0c1a[0x6]; // 0xc1a
+	[[maybe_unused]] uint8_t __pad0c8a[0x6]; // 0xc8a
 public:
-	CEntityIOOutput m_pOutputAnimBegun; // 0xc20	
-	CEntityIOOutput m_pOutputAnimOver; // 0xc48	
-	CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xc70	
-	CEntityIOOutput m_OnAnimReachedStart; // 0xc98	
-	CEntityIOOutput m_OnAnimReachedEnd; // 0xcc0	
-	CUtlSymbolLarge m_iszIdleAnim; // 0xce8	
-	AnimLoopMode_t m_nIdleAnimLoopMode; // 0xcf0	
-	bool m_bRandomizeCycle; // 0xcf4	
-	bool m_bStartDisabled; // 0xcf5	
-	bool m_bFiredStartEndOutput; // 0xcf6	
-	bool m_bForceNpcExclude; // 0xcf7	
-	bool m_bCreateNonSolid; // 0xcf8	
-	bool m_bIsOverrideProp; // 0xcf9	
+	CEntityIOOutput m_pOutputAnimBegun; // 0xc90	
+	CEntityIOOutput m_pOutputAnimOver; // 0xcb8	
+	CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xce0	
+	CEntityIOOutput m_OnAnimReachedStart; // 0xd08	
+	CEntityIOOutput m_OnAnimReachedEnd; // 0xd30	
+	CUtlSymbolLarge m_iszIdleAnim; // 0xd58	
+	AnimLoopMode_t m_nIdleAnimLoopMode; // 0xd60	
+	bool m_bRandomizeCycle; // 0xd64	
+	bool m_bStartDisabled; // 0xd65	
+	bool m_bFiredStartEndOutput; // 0xd66	
+	bool m_bForceNpcExclude; // 0xd67	
+	bool m_bCreateNonSolid; // 0xd68	
+	bool m_bIsOverrideProp; // 0xd69	
 private:
-	[[maybe_unused]] uint8_t __pad0cfa[0x2]; // 0xcfa
+	[[maybe_unused]] uint8_t __pad0d6a[0x2]; // 0xd6a
 public:
-	int32_t m_iInitialGlowState; // 0xcfc	
-	int32_t m_nGlowRange; // 0xd00	
-	int32_t m_nGlowRangeMin; // 0xd04	
-	Color m_glowColor; // 0xd08	
-	int32_t m_nGlowTeam; // 0xd0c	
-	int32_t m_iCachedFrameCount; // 0xd10	
-	Vector m_vecCachedRenderMins; // 0xd14	
-	Vector m_vecCachedRenderMaxs; // 0xd20	
+	int32_t m_iInitialGlowState; // 0xd6c	
+	int32_t m_nGlowRange; // 0xd70	
+	int32_t m_nGlowRangeMin; // 0xd74	
+	Color m_glowColor; // 0xd78	
+	int32_t m_nGlowTeam; // 0xd7c	
+	int32_t m_iCachedFrameCount; // 0xd80	
+	Vector m_vecCachedRenderMins; // 0xd84	
+	Vector m_vecCachedRenderMaxs; // 0xd90	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge StartingAnim; // 0x7fffffff

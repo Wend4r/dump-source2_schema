@@ -26,11 +26,8 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0034[0x4]; // 0x34
 public:
-	// MNetworkDisable
 	WorldGroupId_t m_worldGroupId; // 0x38	
 	uint32_t m_fDataObjectTypes; // 0x3c	
-	// MNetworkDisable
-	// MNetworkChangeAccessorFieldPathIndex
 	ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x40	
 private:
 	[[maybe_unused]] uint8_t __pad0044[0x14]; // 0x44

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x16d0
+// Size: 0x1740
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadel_Ability_FissureWallVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FriendlyWallParticle; // 0x14f0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EnemyWallParticle; // 0x15d0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FriendlyWallParticle; // 0x1560	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_EnemyWallParticle; // 0x1640	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_WallTravelSoundLoop; // 0x16b0	
+	CSoundEventName m_WallTravelSoundLoop; // 0x1720	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_WallModifier; // 0x16c0	
+	CEmbeddedSubclass< CCitadelModifier > m_WallModifier; // 0x1730	
 };
 

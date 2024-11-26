@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x840
+// Size: 0x9a8
 // Has VTable
 class C_CitadelClimbRopeTrigger : public C_BaseTrigger
 {

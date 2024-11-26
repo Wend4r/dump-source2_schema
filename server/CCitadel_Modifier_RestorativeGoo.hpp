@@ -5,16 +5,16 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x3b8
+// Size: 0x3b0
 // Has VTable
 class CCitadel_Modifier_RestorativeGoo : public CCitadelModifier
 {
 public:
-	GameTime_t m_flEarliestBreakoutTime; // 0xc8	
+	GameTime_t m_flEarliestBreakoutTime; // 0xc0	
 private:
-	[[maybe_unused]] uint8_t __pad00cc[0x2dc]; // 0xcc
+	[[maybe_unused]] uint8_t __pad00c4[0x2dc]; // 0xc4
 public:
-	CHandle< CCitadel_RestorativeGooCube > m_hGooCube; // 0x3a8	
-	float m_flBreakoutPercentage; // 0x3ac	
+	CHandle< CCitadel_RestorativeGooCube > m_hGooCube; // 0x3a0	
+	float m_flBreakoutPercentage; // 0x3a4	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb70
+// Size: 0xbd0
 // Has VTable
 // 
 // MNetworkVarNames "int m_iStacks"
@@ -12,6 +12,6 @@ class CCitadel_WeaponUpgrade_SiphonBullets : public CCitadel_Item
 {
 public:
 	// MNetworkEnable
-	int32_t m_iStacks; // 0xaf8	
+	int32_t m_iStacks; // 0xb20	
 };
 

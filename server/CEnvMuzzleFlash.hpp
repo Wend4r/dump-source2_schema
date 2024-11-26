@@ -4,16 +4,16 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4e8
+// Size: 0x4f8
 // Has VTable
 class CEnvMuzzleFlash : public CPointEntity
 {
 public:
-	float m_flScale; // 0x4d8	
+	float m_flScale; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04dc[0x4]; // 0x4dc
+	[[maybe_unused]] uint8_t __pad04ec[0x4]; // 0x4ec
 public:
-	CUtlSymbolLarge m_iszParentAttachment; // 0x4e0	
+	CUtlSymbolLarge m_iszParentAttachment; // 0x4f0	
 	
 	// Datamap fields:
 	// void InputFire; // 0x0

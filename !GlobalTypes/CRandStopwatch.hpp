@@ -9,7 +9,7 @@
 class CRandStopwatch : public CStopwatchBase
 {
 public:
-	float m_minInterval; // 0xc	
-	float m_maxInterval; // 0x10	
+	float m_flMinInterval; // 0xc	
+	float m_flMaxInterval; // 0x10	
 };
 

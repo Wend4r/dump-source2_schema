@@ -5,16 +5,16 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x278
+// Size: 0x158
 // Has VTable
 class CModifier_Mirage_SandPhantom : public CCitadelModifier
 {
 public:
-	ParticleIndex_t m_particleStart; // 0xc8	
-	ParticleIndex_t m_particleEnd; // 0xcc	
-	ParticleIndex_t m_particleTrail; // 0xd0	
-	Vector m_vecStartPosition; // 0xd4	
-	float m_flStartDelay; // 0xe0	
-	Vector m_vecApplyOffset; // 0xe4	
+	ParticleIndex_t m_particleStart; // 0xc0	
+	ParticleIndex_t m_particleEnd; // 0xc4	
+	ParticleIndex_t m_particleTrail; // 0xc8	
+	Vector m_vecStartPosition; // 0xcc	
+	float m_flStartDelay; // 0xd8	
+	Vector m_vecApplyOffset; // 0xdc	
 };
 

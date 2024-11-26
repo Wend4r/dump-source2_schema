@@ -5,23 +5,23 @@
 struct CountdownTimer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x530
+// Size: 0x540
 // Has VTable
 class CFishPool : public CBaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad04d8[0x10]; // 0x4d8
+	[[maybe_unused]] uint8_t __pad04e8[0x10]; // 0x4e8
 public:
-	int32_t m_fishCount; // 0x4e8	
-	float m_maxRange; // 0x4ec	
-	float m_swimDepth; // 0x4f0	
-	float m_waterLevel; // 0x4f4	
-	bool m_isDormant; // 0x4f8	
+	int32_t m_fishCount; // 0x4f8	
+	float m_maxRange; // 0x4fc	
+	float m_swimDepth; // 0x500	
+	float m_waterLevel; // 0x504	
+	bool m_isDormant; // 0x508	
 private:
-	[[maybe_unused]] uint8_t __pad04f9[0x7]; // 0x4f9
+	[[maybe_unused]] uint8_t __pad0509[0x7]; // 0x509
 public:
-	CUtlVector< CHandle< CFish > > m_fishes; // 0x500	
-	CountdownTimer m_visTimer; // 0x518	
+	CUtlVector< CHandle< CFish > > m_fishes; // 0x510	
+	CountdownTimer m_visTimer; // 0x528	
 	
 	// Datamap fields:
 	// void CFishPoolUpdate; // 0x0

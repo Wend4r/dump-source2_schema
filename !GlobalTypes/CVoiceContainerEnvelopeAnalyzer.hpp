@@ -15,8 +15,8 @@ class CVoiceContainerEnvelopeAnalyzer : public CVoiceContainerAnalysisBase
 public:
 	// MPropertyFriendlyName "Envelope Mode"
 	EMode_t m_mode; // 0x50	
-	// MPropertyFriendlyName "Number of sections"
-	int32_t m_nSamples; // 0x54	
+	// MPropertyFriendlyName "Analysis Window"
+	float m_fAnalysisWindowMs; // 0x54	
 	// MPropertyFriendlyName "Threshold"
 	float m_flThreshold; // 0x58	
 };

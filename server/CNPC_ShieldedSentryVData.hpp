@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x360
+// Size: 0x368
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -35,5 +35,7 @@ public:
 	float m_flNotifyEventTime; // 0x350	
 	float m_flNearDeathDuration; // 0x354	
 	float m_flMinimapRevealTime; // 0x358	
+	float m_flMinLifetime; // 0x35c	
+	float m_flAttackThinkTime; // 0x360	
 };
 

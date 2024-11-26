@@ -6,19 +6,16 @@ struct CGameSceneNode;
 struct CNetworkVarChainer;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x50
+// Size: 0x78
 // Has VTable
 class CBodyComponent : public CEntityComponent
 {
 public:
-	// MNetworkDisable
 	CGameSceneNode* m_pSceneNode; // 0x8	
 private:
-	[[maybe_unused]] uint8_t __pad0010[0x10]; // 0x10
+	[[maybe_unused]] uint8_t __pad0010[0x38]; // 0x10
 public:
-	// MNetworkDisable
-	// MNetworkChangeAccessorFieldPathIndex
-	CNetworkVarChainer __m_pChainEntity; // 0x20	
+	CNetworkVarChainer __m_pChainEntity; // 0x48	
 	
 	// Static fields:
 	static EntComponentInfo_t &Get_s_EntComponentInfo(){return *reinterpret_cast<EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CBodyComponent")->m_static_fields[0]->m_instance);};

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd40
+// Size: 0xd68
 // Has VTable
 class CAbility_Rutger_RocketLauncher : public CCitadelBaseAbility
 {

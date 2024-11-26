@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'animlib')
 // Alignment: 8
-// Size: 0x78
+// Size: 0x88
 // 
 // MGetKV3ClassDefaults
 class CNmSkeleton
@@ -19,6 +19,6 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0064[0x4]; // 0x64
 public:
-	CUtlLeanVector< CNmBoneMask > m_boneMasks; // 0x68	
+	CUtlLeanVector< CNmBoneMask::SerializedData_t > m_serializedMasks; // 0x68	
 };
 

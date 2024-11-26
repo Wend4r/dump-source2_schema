@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9d8
+// Size: 0xa20
 // Has VTable
 class CCitadelTriggerHurt : public CTriggerHurt
 {

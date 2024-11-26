@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5b8
+// Size: 0x5c8
 // Has VTable
 class CFilterMultiple : public CBaseFilter
 {
 public:
-	filter_t m_nFilterType; // 0x530	
+	filter_t m_nFilterType; // 0x540	
 private:
-	[[maybe_unused]] uint8_t __pad0534[0x4]; // 0x534
+	[[maybe_unused]] uint8_t __pad0544[0x4]; // 0x544
 public:
-	CUtlSymbolLarge m_iFilterName[10]; // 0x538	
-	CHandle< CBaseEntity > m_hFilter[10]; // 0x588	
-	int32_t m_nFilterCount; // 0x5b0	
+	CUtlSymbolLarge m_iFilterName[10]; // 0x548	
+	CHandle< CBaseEntity > m_hFilter[10]; // 0x598	
+	int32_t m_nFilterCount; // 0x5c0	
 };
 

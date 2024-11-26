@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xaf0
+// Size: 0xb18
 // Has VTable
 class CCitadel_Ability_WreckingBallThrow : public CCitadelBaseTriggerAbility
 {
 public:
-	CHandle< CCitadel_Ability_WreckingBall > m_hWreckingBallAbility; // 0xae8	
+	CHandle< CCitadel_Ability_WreckingBall > m_hWreckingBallAbility; // 0xb10	
 };
 

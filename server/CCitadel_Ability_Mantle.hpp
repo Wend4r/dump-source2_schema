@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb50
+// Size: 0xb78
 // Has VTable
 // 
 // MNetworkVarNames "float m_flVertOffset"
@@ -19,25 +19,25 @@ class CCitadel_Ability_Mantle : public CCitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flVertOffset; // 0xad8	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	float m_flVertOffset; // 0xb00	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flHorizGap; // 0xadc	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	float m_flHorizGap; // 0xb04	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vStartPos; // 0xae0	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vStartPos; // 0xb08	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vTargetPos; // 0xaec	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vTargetPos; // 0xb14	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	QAngle m_angFacing; // 0xaf8	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	QAngle m_angFacing; // 0xb20	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	int32_t m_nMantleTypeIndex; // 0xb04	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	int32_t m_nMantleTypeIndex; // 0xb2c	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flStartTime; // 0xb08	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flStartTime; // 0xb30	
 };
 

@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd18
+// Size: 0xd58
 // Has VTable
 // 
 // MNetworkVarNames "int m_iBonusHealth"
@@ -13,14 +13,14 @@ struct GameTime_t;
 class CCitadel_Ability_UltCombo : public C_CitadelBaseAbility
 {
 public:
-	GameTime_t m_flLastAttackTime; // 0xc60	
-	int32_t m_nAttackNum; // 0xc64	
+	GameTime_t m_flLastAttackTime; // 0xca0	
+	int32_t m_nAttackNum; // 0xca4	
 private:
-	[[maybe_unused]] uint8_t __pad0c68[0xa8]; // 0xc68
+	[[maybe_unused]] uint8_t __pad0ca8[0xa8]; // 0xca8
 public:
 	// MNetworkEnable
-	int32_t m_iBonusHealth; // 0xd10	
+	int32_t m_iBonusHealth; // 0xd50	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTarget; // 0xd14	
+	CHandle< C_BaseEntity > m_hTarget; // 0xd54	
 };
 

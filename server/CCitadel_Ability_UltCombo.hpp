@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xba8
+// Size: 0xbd0
 // Has VTable
 // 
 // MNetworkVarNames "int m_iBonusHealth"
@@ -13,15 +13,15 @@ struct GameTime_t;
 class CCitadel_Ability_UltCombo : public CCitadelBaseAbility
 {
 public:
-	CModifierHandleTyped< CCitadelModifier > m_hTargetComboModifier; // 0xad8	
-	GameTime_t m_flLastAttackTime; // 0xaf0	
-	int32_t m_nAttackNum; // 0xaf4	
+	CModifierHandleTyped< CCitadelModifier > m_hTargetComboModifier; // 0xb00	
+	GameTime_t m_flLastAttackTime; // 0xb18	
+	int32_t m_nAttackNum; // 0xb1c	
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0xa8]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0b20[0xa8]; // 0xb20
 public:
 	// MNetworkEnable
-	int32_t m_iBonusHealth; // 0xba0	
+	int32_t m_iBonusHealth; // 0xbc8	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTarget; // 0xba4	
+	CHandle< CBaseEntity > m_hTarget; // 0xbcc	
 };
 

@@ -5,16 +5,16 @@
 struct CSprite;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x830
+// Size: 0x888
 // Has VTable
 class CEnvLaser : public CBeam
 {
 public:
-	CUtlSymbolLarge m_iszLaserTarget; // 0x808	
-	CSprite* m_pSprite; // 0x810	
-	CUtlSymbolLarge m_iszSpriteName; // 0x818	
-	Vector m_firePosition; // 0x820	
-	float m_flStartFrame; // 0x82c	
+	CUtlSymbolLarge m_iszLaserTarget; // 0x860	
+	CSprite* m_pSprite; // 0x868	
+	CUtlSymbolLarge m_iszSpriteName; // 0x870	
+	Vector m_firePosition; // 0x878	
+	float m_flStartFrame; // 0x884	
 	
 	// Datamap fields:
 	// void CEnvLaserStrikeThink; // 0x0

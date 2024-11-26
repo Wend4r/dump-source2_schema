@@ -6,9 +6,10 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1148
+// Size: 0x1188
 // Has VTable
 // 
+// MNetworkVarNames "bool m_bIsRolling"
 // MNetworkVarNames "CHandle< CCitadelViscousBall > m_hBall"
 // MNetworkVarNames "EViscousBowlingBallState_t m_eRollingState"
 // MNetworkVarNames "GameTime_t m_flNextStateTime"
@@ -19,41 +20,43 @@ struct ParticleIndex_t;
 class CCitadel_Ability_GooBowlingBall : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0c60[0x348]; // 0xc60
+	[[maybe_unused]] uint8_t __pad0ca0[0x348]; // 0xca0
 public:
-	bool m_bHasAirJumped; // 0xfa8	
-	bool m_bIsFollowingBall; // 0xfa9	
-	bool m_bIsShowingBall; // 0xfaa	
+	int32_t m_nAirJumpsLeft; // 0xfe8	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	// MNetworkChangeCallback "OnIsRollingChanged"
+	bool m_bIsRolling; // 0xfec	
 private:
-	[[maybe_unused]] uint8_t __pad0fab[0x1]; // 0xfab
+	[[maybe_unused]] uint8_t __pad0fed[0x3]; // 0xfed
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	CHandle< C_CitadelViscousBall > m_hBall; // 0xfac	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	CHandle< C_CitadelViscousBall > m_hBall; // 0xff0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	EViscousBowlingBallState_t m_eRollingState; // 0xfb0	
+	EViscousBowlingBallState_t m_eRollingState; // 0xff4	
 private:
-	[[maybe_unused]] uint8_t __pad0fb1[0x3]; // 0xfb1
+	[[maybe_unused]] uint8_t __pad0ff5[0x3]; // 0xff5
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextStateTime; // 0xfb4	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextWallCheck; // 0xfb8	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flNextStateTime; // 0xff8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flRollStartTime; // 0xfbc	
+	GameTime_t m_flNextWallCheck; // 0xffc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flWallExitTime; // 0xfc0	
+	GameTime_t m_flRollStartTime; // 0x1000	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	Vector m_vecWallExitVelocity; // 0xfc4	
+	GameTime_t m_flWallExitTime; // 0x1004	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vecWallExitVelocity; // 0x1008	
 private:
-	[[maybe_unused]] uint8_t __pad0fd0[0x8]; // 0xfd0
+	[[maybe_unused]] uint8_t __pad1014[0x8]; // 0x1014
 public:
-	ParticleIndex_t m_nDirectionParticleIndex; // 0xfd8	
+	ParticleIndex_t m_nDirectionParticleIndex; // 0x101c	
 };
 

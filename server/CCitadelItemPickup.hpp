@@ -3,9 +3,10 @@
 #include <cstdint>
 
 struct CCitadelMinimapComponent;
+struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5bf0
+// Size: 0x64c8
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -18,35 +19,36 @@ struct CCitadelMinimapComponent;
 class CCitadelItemPickup : public CCitadelAnimatingModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0af8[0x8]; // 0xaf8
+	[[maybe_unused]] uint8_t __pad0bc0[0x8]; // 0xbc0
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xb00	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbc8	
 	// MNetworkEnable
-	int32_t m_eLootType; // 0xb18	
+	int32_t m_eLootType; // 0xbe0	
 	// MNetworkEnable
-	int32_t m_nCurrencyValue; // 0xb1c	
+	int32_t m_nCurrencyValue; // 0xbe4	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszModelName; // 0xb20	
+	CUtlSymbolLarge m_iszModelName; // 0xbe8	
 	// MNetworkEnable
-	float m_flModelScale; // 0xb28	
+	float m_flModelScale; // 0xbf0	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetPlayer; // 0xb2c	
+	CHandle< CBaseEntity > m_hTargetPlayer; // 0xbf4	
 	// MNetworkEnable
-	float m_flFallRate; // 0xb30	
+	float m_flFallRate; // 0xbf8	
 private:
-	[[maybe_unused]] uint8_t __pad0b34[0xc]; // 0xb34
+	[[maybe_unused]] uint8_t __pad0bfc[0xc]; // 0xbfc
 public:
-	Vector m_vHomePosition; // 0xb40	
-	Vector m_vDropPosition; // 0xb4c	
+	Vector m_vHomePosition; // 0xc08	
+	Vector m_vDropPosition; // 0xc14	
+	GameTime_t m_tFirstPickupTime; // 0xc20	
 	
 	// Datamap fields:
-	// bool m_bRequireGroundForPickup; // 0xb38
+	// bool m_bRequireGroundForPickup; // 0xc00
 	// bool from_crate; // 0x7fffffff
-	// int32_t m_eObjectivePosition; // 0xb34
-	// int32_t m_nKillingTeamNumber; // 0xb3c
+	// int32_t m_eObjectivePosition; // 0xbfc
+	// int32_t m_nKillingTeamNumber; // 0xc04
 };
 

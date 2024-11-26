@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x15e8
+// Size: 0x1830
 // Has VTable
 class CNPC_HeroDecoy : public CNPC_HeroCloneTrooper
 {

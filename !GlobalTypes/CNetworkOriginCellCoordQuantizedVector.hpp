@@ -30,6 +30,7 @@ public:
 	uint16_t m_cellZ; // 0x14	
 	// MNetworkEnable
 	uint16_t m_nOutsideWorld; // 0x16	
+	// MNetworkEnable
 	// MNetworkBitCount "15"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1024.000000"
@@ -38,6 +39,7 @@ public:
 	// MNetworkPriority "31"
 	// MNetworkSerializer "posx"
 	CNetworkedQuantizedFloat m_vecX; // 0x18	
+	// MNetworkEnable
 	// MNetworkBitCount "15"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1024.000000"
@@ -46,6 +48,7 @@ public:
 	// MNetworkPriority "31"
 	// MNetworkSerializer "posy"
 	CNetworkedQuantizedFloat m_vecY; // 0x20	
+	// MNetworkEnable
 	// MNetworkBitCount "15"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1024.000000"

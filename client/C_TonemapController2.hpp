@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x580
+// Size: 0x590
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -20,21 +20,21 @@ class C_TonemapController2 : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_flAutoExposureMin; // 0x558	
+	float m_flAutoExposureMin; // 0x568	
 	// MNetworkEnable
-	float m_flAutoExposureMax; // 0x55c	
+	float m_flAutoExposureMax; // 0x56c	
 	// MNetworkEnable
-	float m_flTonemapPercentTarget; // 0x560	
+	float m_flTonemapPercentTarget; // 0x570	
 	// MNetworkEnable
-	float m_flTonemapPercentBrightPixels; // 0x564	
+	float m_flTonemapPercentBrightPixels; // 0x574	
 	// MNetworkEnable
-	float m_flTonemapMinAvgLum; // 0x568	
+	float m_flTonemapMinAvgLum; // 0x578	
 	// MNetworkEnable
-	float m_flExposureAdaptationSpeedUp; // 0x56c	
+	float m_flExposureAdaptationSpeedUp; // 0x57c	
 	// MNetworkEnable
-	float m_flExposureAdaptationSpeedDown; // 0x570	
+	float m_flExposureAdaptationSpeedDown; // 0x580	
 	// MNetworkEnable
-	float m_flTonemapEVSmoothingRange; // 0x574	
+	float m_flTonemapEVSmoothingRange; // 0x584	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

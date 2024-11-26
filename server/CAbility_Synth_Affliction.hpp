@@ -5,13 +5,13 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb50
+// Size: 0xb78
 // Has VTable
 class CAbility_Synth_Affliction : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x70]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0x70]; // 0xb00
 public:
-	ParticleIndex_t m_hAOEParticle; // 0xb48	
+	ParticleIndex_t m_hAOEParticle; // 0xb70	
 };
 

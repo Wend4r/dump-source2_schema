@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa30
+// Size: 0xa60
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bIgnoreInput"
@@ -22,41 +22,41 @@
 class C_PointClientUIHUD : public C_BaseClientUIEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0860[0x8]; // 0x860
+	[[maybe_unused]] uint8_t __pad0890[0x8]; // 0x890
 public:
-	bool m_bCheckCSSClasses; // 0x868	
+	bool m_bCheckCSSClasses; // 0x898	
 private:
-	[[maybe_unused]] uint8_t __pad0869[0x17f]; // 0x869
+	[[maybe_unused]] uint8_t __pad0899[0x17f]; // 0x899
 public:
 	// MNetworkEnable
-	bool m_bIgnoreInput; // 0x9e8	
+	bool m_bIgnoreInput; // 0xa18	
 private:
-	[[maybe_unused]] uint8_t __pad09e9[0x3]; // 0x9e9
+	[[maybe_unused]] uint8_t __pad0a19[0x3]; // 0xa19
 public:
 	// MNetworkEnable
-	float m_flWidth; // 0x9ec	
+	float m_flWidth; // 0xa1c	
 	// MNetworkEnable
-	float m_flHeight; // 0x9f0	
+	float m_flHeight; // 0xa20	
 	// MNetworkEnable
-	float m_flDPI; // 0x9f4	
+	float m_flDPI; // 0xa24	
 	// MNetworkEnable
-	float m_flInteractDistance; // 0x9f8	
+	float m_flInteractDistance; // 0xa28	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0x9fc	
+	float m_flDepthOffset; // 0xa2c	
 	// MNetworkEnable
-	uint32_t m_unOwnerContext; // 0xa00	
+	uint32_t m_unOwnerContext; // 0xa30	
 	// MNetworkEnable
-	uint32_t m_unHorizontalAlign; // 0xa04	
+	uint32_t m_unHorizontalAlign; // 0xa34	
 	// MNetworkEnable
-	uint32_t m_unVerticalAlign; // 0xa08	
+	uint32_t m_unVerticalAlign; // 0xa38	
 	// MNetworkEnable
-	uint32_t m_unOrientation; // 0xa0c	
+	uint32_t m_unOrientation; // 0xa3c	
 	// MNetworkEnable
-	bool m_bAllowInteractionFromAllSceneWorlds; // 0xa10	
+	bool m_bAllowInteractionFromAllSceneWorlds; // 0xa40	
 private:
-	[[maybe_unused]] uint8_t __pad0a11[0x7]; // 0xa11
+	[[maybe_unused]] uint8_t __pad0a41[0x7]; // 0xa41
 public:
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0xa18	
+	C_NetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0xa48	
 };
 

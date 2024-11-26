@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1670
+// Size: 0x16e0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,14 +12,14 @@ class CCitadel_Ability_PrimaryWeapon_BebopVData : public CCitadel_Ability_Primar
 {
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strWindupSound; // 0x1538	
-	CSoundEventName m_strBeamStartSound; // 0x1548	
-	CSoundEventName m_strBeamLoopSound1; // 0x1558	
-	CSoundEventName m_strBeamLoopSound2; // 0x1568	
-	CSoundEventName m_strBeamStopSound; // 0x1578	
+	CSoundEventName m_strWindupSound; // 0x15a8	
+	CSoundEventName m_strBeamStartSound; // 0x15b8	
+	CSoundEventName m_strBeamLoopSound1; // 0x15c8	
+	CSoundEventName m_strBeamLoopSound2; // 0x15d8	
+	CSoundEventName m_strBeamStopSound; // 0x15e8	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szWeaponBeamParticle; // 0x1588	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_szWeaponBeamParticle; // 0x15f8	
 	// MPropertyStartGroup "Misc"
-	float m_flWindupRepeatCycle; // 0x1668	
+	float m_flWindupRepeatCycle; // 0x16d8	
 };
 

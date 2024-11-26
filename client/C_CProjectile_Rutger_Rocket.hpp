@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x8b8
+// Size: 0x8e8
 // Has VTable
 class C_CProjectile_Rutger_Rocket : public C_CitadelProjectile
 {

@@ -5,7 +5,7 @@
 struct CCitadelAbilityComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc48
+// Size: 0xcb8
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
@@ -18,13 +18,13 @@ public:
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xa98	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb08	
 private:
-	[[maybe_unused]] uint8_t __pad0c38[0x4]; // 0xc38
+	[[maybe_unused]] uint8_t __pad0ca8[0x4]; // 0xca8
 public:
 	// MNetworkEnable
-	float m_flAttackRange; // 0xc3c	
+	float m_flAttackRange; // 0xcac	
 	// MNetworkEnable
-	float m_flAimPitch; // 0xc40	
+	float m_flAimPitch; // 0xcb0	
 };
 

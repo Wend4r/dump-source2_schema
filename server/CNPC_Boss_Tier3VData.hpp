@@ -4,57 +4,58 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1830
+// Size: 0x19d8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CNPC_Boss_Tier3VData : public CAI_CitadelNPCVData
 {
 public:
-	int32_t m_nPhase2Health; // 0xf30	
-	float m_flEyeZOffset; // 0xf34	
-	float m_flDefaultMoveSpeed; // 0xf38	
-	float m_flNoShieldMoveSpeed; // 0xf3c	
-	float m_flDyingMoveSpeed; // 0xf40	
-	float m_flMovingToFinalPositionSpeed; // 0xf44	
+	int32_t m_nPhase2Health; // 0x10d8	
+	float m_flEyeZOffset; // 0x10dc	
+	float m_flDefaultMoveSpeed; // 0x10e0	
+	float m_flNoShieldMoveSpeed; // 0x10e4	
+	float m_flDyingMoveSpeed; // 0x10e8	
+	float m_flMovingToFinalPositionSpeed; // 0x10ec	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathSmallExplosionParticle; // 0xf48	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathLargeExplosionParticle; // 0x1028	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_WeakpointBrokenExplosionParticle; // 0x1108	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ChargeUpExplosionParticle; // 0x11e8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x12c8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathSmallExplosionParticle; // 0x10f0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathLargeExplosionParticle; // 0x11d0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_WeakpointBrokenExplosionParticle; // 0x12b0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ChargeUpExplosionParticle; // 0x1390	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x1470	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_DyingSmallExplosion; // 0x13a8	
-	CSoundEventName m_AvatarKilledSound; // 0x13b8	
-	CSoundEventName m_AvatarBecomePatronSound; // 0x13c8	
-	CSoundEventName m_PatronLandedSound; // 0x13d8	
-	CSoundEventName m_PatronKilledSound; // 0x13e8	
-	CSoundEventName m_LaserSound; // 0x13f8	
+	CSoundEventName m_DyingSmallExplosion; // 0x1550	
+	CSoundEventName m_AvatarKilledSound; // 0x1560	
+	CSoundEventName m_AvatarBecomePatronSound; // 0x1570	
+	CSoundEventName m_PatronLandedSound; // 0x1580	
+	CSoundEventName m_PatronKilledSound; // 0x1590	
+	CSoundEventName m_LaserSound; // 0x15a0	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_LaserBeamModifier; // 0x1408	
-	CEmbeddedSubclass< CBaseModifier > m_DyingModifier; // 0x1418	
-	CEmbeddedSubclass< CBaseModifier > m_VulnerableModifier; // 0x1428	
-	CEmbeddedSubclass< CBaseModifier > m_Phase1Modifier; // 0x1438	
-	CEmbeddedSubclass< CBaseModifier > m_Phase2Modifier; // 0x1448	
-	CEmbeddedSubclass< CBaseModifier > m_BackdoorProtection; // 0x1458	
-	CEmbeddedSubclass< CBaseModifier > m_ObjectiveRegen; // 0x1468	
+	CEmbeddedSubclass< CBaseModifier > m_LaserBeamModifier; // 0x15b0	
+	CEmbeddedSubclass< CBaseModifier > m_DyingModifier; // 0x15c0	
+	CEmbeddedSubclass< CBaseModifier > m_VulnerableModifier; // 0x15d0	
+	CEmbeddedSubclass< CBaseModifier > m_Phase1Modifier; // 0x15e0	
+	CEmbeddedSubclass< CBaseModifier > m_Phase2Modifier; // 0x15f0	
+	CEmbeddedSubclass< CBaseModifier > m_BackdoorProtection; // 0x1600	
+	CEmbeddedSubclass< CBaseModifier > m_ObjectiveRegen; // 0x1610	
 	// MPropertyStartGroup "Laser"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserChargingParticle; // 0x1478	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserBeamEffect; // 0x1558	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserPreviewEffect; // 0x1638	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserDamageEffect; // 0x1718	
-	float m_flLaserTargetingZOffset; // 0x17f8	
-	float m_flLaserTrackingSpeed; // 0x17fc	
-	float m_flLaserTrackingMaxSpeed; // 0x1800	
-	float m_flLaserCastingTrackSpeed; // 0x1804	
-	float m_flLaserCastingTrackMaxSpeed; // 0x1808	
-	float m_flLaserDPSToPlayers; // 0x180c	
-	float m_flLaserDPSToNPCs; // 0x1810	
-	float m_flNoShieldLaserTrackingSpeed; // 0x1814	
-	float m_flNoShieldLaserTrackingMaxSpeed; // 0x1818	
-	float m_flNoShieldLaserCastingTrackSpeed; // 0x181c	
-	float m_flNoShieldLaserCastingTrackMaxSpeed; // 0x1820	
-	float m_flNoShieldLaserDPSToPlayers; // 0x1824	
-	float m_flNoShieldLaserDPSToNPCs; // 0x1828	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserChargingParticle; // 0x1620	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserBeamEffect; // 0x1700	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserPreviewEffect; // 0x17e0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LaserDamageEffect; // 0x18c0	
+	float m_flLaserTargetingZOffset; // 0x19a0	
+	float m_flLaserTrackingSpeed; // 0x19a4	
+	float m_flLaserTrackingMaxSpeed; // 0x19a8	
+	float m_flLaserCastingTrackSpeed; // 0x19ac	
+	float m_flLaserCastingTrackMaxSpeed; // 0x19b0	
+	float m_flLaserDPSToPlayers; // 0x19b4	
+	float m_flLaserDPSToNPCs; // 0x19b8	
+	float m_flLaserDPSMaxHealth; // 0x19bc	
+	float m_flNoShieldLaserTrackingSpeed; // 0x19c0	
+	float m_flNoShieldLaserTrackingMaxSpeed; // 0x19c4	
+	float m_flNoShieldLaserCastingTrackSpeed; // 0x19c8	
+	float m_flNoShieldLaserCastingTrackMaxSpeed; // 0x19cc	
+	float m_flNoShieldLaserDPSToPlayers; // 0x19d0	
+	float m_flNoShieldLaserDPSToNPCs; // 0x19d4	
 };
 

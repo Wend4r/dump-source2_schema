@@ -10,7 +10,7 @@ struct GameTime_t;
 class CSimpleSimTimer
 {
 public:
-	GameTime_t m_next; // 0x0	
+	GameTime_t m_flNext; // 0x0	
 	WorldGroupId_t m_nWorldGroupId; // 0x4	
 };
 

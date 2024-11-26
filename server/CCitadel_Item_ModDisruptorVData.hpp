@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1630
+// Size: 0x16a0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Item_ModDisruptorVData : public CitadelItemVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DetonateParticle; // 0x1538	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DetonateParticle; // 0x15a8	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DisruptModifier; // 0x1618	
+	CEmbeddedSubclass< CCitadelModifier > m_DisruptModifier; // 0x1688	
 	// MPropertyStartGroup "Gameplay"
-	float m_flWaveSpeed; // 0x1628	
+	float m_flWaveSpeed; // 0x1698	
 };
 

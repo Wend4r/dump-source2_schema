@@ -11,6 +11,6 @@ struct PulseGraphExecutionHistoryNodeDesc_t
 {
 public:
 	CBufferString strCellDesc; // 0x0	
-	CUtlSymbolLarge strBindingName; // 0x10	
+	CGlobalSymbol strBindingName; // 0x10	
 };
 

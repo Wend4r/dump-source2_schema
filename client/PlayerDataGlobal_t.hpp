@@ -6,7 +6,7 @@ struct GameTime_t;
 struct HeroID_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1d8
+// Size: 0x220
 // Has VTable
 // 
 // MNetworkVarNames "int32 m_iLevel"
@@ -38,6 +38,7 @@ struct HeroID_t;
 // MNetworkVarNames "GameTime_t m_flUltimateCooldownEnd"
 // MNetworkVarNames "bool m_bHasRejuvenator"
 // MNetworkVarNames "bool m_bHasRebirth"
+// MNetworkVarNames "bool m_bFlaggedAsCheater"
 // MNetworkVarNames "int32 m_iHeroDamage"
 // MNetworkVarNames "int32 m_iHeroHealing"
 // MNetworkVarNames "int32 m_iSelfHealing"
@@ -120,8 +121,10 @@ public:
 	bool m_bHasRejuvenator; // 0x74	
 	// MNetworkEnable
 	bool m_bHasRebirth; // 0x75	
+	// MNetworkEnable
+	bool m_bFlaggedAsCheater; // 0x76	
 private:
-	[[maybe_unused]] uint8_t __pad0076[0x2]; // 0x76
+	[[maybe_unused]] uint8_t __pad0077[0x1]; // 0x77
 public:
 	// MNetworkEnable
 	int32_t m_iHeroDamage; // 0x78	
@@ -155,8 +158,8 @@ public:
 	// MNetworkEnable
 	C_UtlVectorEmbeddedNetworkVar< ItemImbuementPair_t > m_vecImbuements; // 0xe8	
 	// MNetworkEnable
-	C_UtlVectorEmbeddedNetworkVar< DynamicAbilityValues_t > m_vecDynamicAbilityValues; // 0x138	
+	C_UtlVectorEmbeddedNetworkVar< DynamicAbilityValues_t > m_vecDynamicAbilityValues; // 0x150	
 	// MNetworkEnable
-	C_UtlVectorEmbeddedNetworkVar< StatViewerModifierValues_t > m_vecStatViewerModifierValues; // 0x188	
+	C_UtlVectorEmbeddedNetworkVar< StatViewerModifierValues_t > m_vecStatViewerModifierValues; // 0x1b8	
 };
 

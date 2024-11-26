@@ -6,29 +6,29 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5a0
+// Size: 0x5b0
 // Has VTable
 class CPointAngleSensor : public CPointEntity
 {
 public:
-	bool m_bDisabled; // 0x4d8	
+	bool m_bDisabled; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04d9[0x7]; // 0x4d9
+	[[maybe_unused]] uint8_t __pad04e9[0x7]; // 0x4e9
 public:
-	CUtlSymbolLarge m_nLookAtName; // 0x4e0	
-	CHandle< CBaseEntity > m_hTargetEntity; // 0x4e8	
-	CHandle< CBaseEntity > m_hLookAtEntity; // 0x4ec	
-	float m_flDuration; // 0x4f0	
-	float m_flDotTolerance; // 0x4f4	
-	GameTime_t m_flFacingTime; // 0x4f8	
-	bool m_bFired; // 0x4fc	
+	CUtlSymbolLarge m_nLookAtName; // 0x4f0	
+	CHandle< CBaseEntity > m_hTargetEntity; // 0x4f8	
+	CHandle< CBaseEntity > m_hLookAtEntity; // 0x4fc	
+	float m_flDuration; // 0x500	
+	float m_flDotTolerance; // 0x504	
+	GameTime_t m_flFacingTime; // 0x508	
+	bool m_bFired; // 0x50c	
 private:
-	[[maybe_unused]] uint8_t __pad04fd[0x3]; // 0x4fd
+	[[maybe_unused]] uint8_t __pad050d[0x3]; // 0x50d
 public:
-	CEntityIOOutput m_OnFacingLookat; // 0x500	
-	CEntityIOOutput m_OnNotFacingLookat; // 0x528	
-	CEntityOutputTemplate< Vector > m_TargetDir; // 0x550	
-	CEntityOutputTemplate< float32 > m_FacingPercentage; // 0x578	
+	CEntityIOOutput m_OnFacingLookat; // 0x510	
+	CEntityIOOutput m_OnNotFacingLookat; // 0x538	
+	CEntityOutputTemplate< Vector > m_TargetDir; // 0x560	
+	CEntityOutputTemplate< float32 > m_FacingPercentage; // 0x588	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

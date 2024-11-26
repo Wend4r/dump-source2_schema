@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa08
+// Size: 0xad0
 // Has VTable
 class CBaseFlexAlias_funCBaseFlex : public CBaseFlex
 {

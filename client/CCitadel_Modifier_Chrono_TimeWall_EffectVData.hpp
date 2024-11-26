@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x7d8
+// Size: 0x7e8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadel_Modifier_Chrono_TimeWall_EffectVData : public CCitadelModifierVDa
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x5f8	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x608	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BuffParticle; // 0x608	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DebuffParticle; // 0x6e8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BuffParticle; // 0x618	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DebuffParticle; // 0x6f8	
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_strDamageSound; // 0x7c8	
+	CSoundEventName m_strDamageSound; // 0x7d8	
 };
 

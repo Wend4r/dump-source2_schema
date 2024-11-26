@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf8
+// Size: 0xc0
 // Has VTable
 class CModifier_SiphonBullets_HealthLoss : public CCitadelModifier
 {

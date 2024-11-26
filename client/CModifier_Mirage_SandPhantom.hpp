@@ -5,7 +5,7 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x270
+// Size: 0x158
 // Has VTable
 class CModifier_Mirage_SandPhantom : public CCitadelModifier
 {

@@ -11,13 +11,12 @@ struct FollowAttachmentSettings_t;
 // MGetKV3ClassDefaults
 class CFollowAttachmentUpdateNode : public CUnaryUpdateNode
 {
-private:
-	[[maybe_unused]] uint8_t __pad0068[0x8]; // 0x68
 public:
 	// -> m_attachment - 0x70
 	// -> m_boneIndex - 0xf0
-	// -> m_bMatchTranslation - 0xf4
-	// -> m_bMatchRotation - 0xf5
+	// -> m_attachmentHandle - 0xf4
+	// -> m_bMatchTranslation - 0xf5
+	// -> m_bMatchRotation - 0xf6
 	FollowAttachmentSettings_t m_opFixedData; // 0x70	
 };
 

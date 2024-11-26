@@ -5,7 +5,7 @@
 struct CCitadelMinimapComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x528
+// Size: 0x538
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -16,10 +16,10 @@ public:
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x4d8	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04f0[0x18]; // 0x4f0
+	[[maybe_unused]] uint8_t __pad0500[0x18]; // 0x500
 public:
-	CUtlSymbolLarge m_iszCampName; // 0x508	
+	CUtlSymbolLarge m_iszCampName; // 0x518	
 };
 

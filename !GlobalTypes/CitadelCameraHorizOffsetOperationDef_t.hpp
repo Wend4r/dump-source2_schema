@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa0
+// Size: 0xb8
 // Has VTable
 // Has Trivial Destructor
 // 
@@ -13,6 +13,6 @@ struct CitadelCameraHorizOffsetOperationDef_t : public CitadelCameraOperationDef
 {
 public:
 	// MPropertyHideField
-	int32_t m_nCameraParam; // 0x98	
+	int32_t m_nCameraParam; // 0xb0	
 };
 

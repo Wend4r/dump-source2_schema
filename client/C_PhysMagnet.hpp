@@ -4,12 +4,12 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xac0
+// Size: 0xb30
 // Has VTable
 class C_PhysMagnet : public CBaseAnimGraph
 {
 public:
-	CUtlVector< int32 > m_aAttachedObjectsFromServer; // 0xa90	
-	CUtlVector< CHandle< C_BaseEntity > > m_aAttachedObjects; // 0xaa8	
+	CUtlVector< int32 > m_aAttachedObjectsFromServer; // 0xb00	
+	CUtlVector< CHandle< C_BaseEntity > > m_aAttachedObjects; // 0xb18	
 };
 

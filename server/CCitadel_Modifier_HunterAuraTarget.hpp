@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x190
+// Size: 0x188
 // Has VTable
 class CCitadel_Modifier_HunterAuraTarget : public CCitadelModifier
 {
 private:
-	[[maybe_unused]] uint8_t __pad00c8[0xa8]; // 0xc8
+	[[maybe_unused]] uint8_t __pad00c0[0xa8]; // 0xc0
 public:
-	float m_flDebuffScale; // 0x170	
+	float m_flDebuffScale; // 0x168	
 private:
-	[[maybe_unused]] uint8_t __pad0174[0x4]; // 0x174
+	[[maybe_unused]] uint8_t __pad016c[0x4]; // 0x16c
 public:
-	CModifierHandleTyped< CCitadelModifier > m_AuraModifierHandle; // 0x178	
+	CModifierHandleTyped< CCitadelModifier > m_AuraModifierHandle; // 0x170	
 };
 

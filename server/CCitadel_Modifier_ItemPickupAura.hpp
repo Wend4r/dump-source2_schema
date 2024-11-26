@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe8
+// Size: 0xe0
 // Has VTable
 class CCitadel_Modifier_ItemPickupAura : public CCitadelModifierAura
 {

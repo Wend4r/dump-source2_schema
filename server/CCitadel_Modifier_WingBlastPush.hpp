@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x148
+// Size: 0x140
 // Has VTable
 class CCitadel_Modifier_WingBlastPush : public CCitadelModifier
 {
 public:
-	Vector m_vPush; // 0xc8	
+	Vector m_vPush; // 0xc0	
 };
 

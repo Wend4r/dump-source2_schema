@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe58
+// Size: 0xe98
 // Has VTable
 class CCitadel_Ability_Spinning_Blade : public C_CitadelBaseAbility
 {

@@ -12,8 +12,6 @@ struct CAnimParamHandle;
 // MGetKV3ClassDefaults
 class CLookAtUpdateNode : public CUnaryUpdateNode
 {
-private:
-	[[maybe_unused]] uint8_t __pad0068[0x8]; // 0x68
 public:
 	// -> m_attachment - 0x70
 	// -> m_damping - 0xf0

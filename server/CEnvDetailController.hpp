@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4e0
+// Size: 0x4f0
 // Has VTable
 // 
 // MNetworkVarNames "float32 m_flFadeStartDist"
@@ -13,8 +13,8 @@ class CEnvDetailController : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_flFadeStartDist; // 0x4d8	
+	float m_flFadeStartDist; // 0x4e8	
 	// MNetworkEnable
-	float m_flFadeEndDist; // 0x4dc	
+	float m_flFadeEndDist; // 0x4ec	
 };
 

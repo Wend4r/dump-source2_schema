@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1668
+// Size: 0x1908
 // Has VTable
 // 
 // MNetworkVarNames "int m_iLane"
@@ -13,30 +13,30 @@
 class CNPC_Trooper : public CAI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad15a8[0x8]; // 0x15a8
+	[[maybe_unused]] uint8_t __pad17f0[0x8]; // 0x17f0
 public:
 	// MNetworkEnable
-	int32_t m_iLane; // 0x15b0	
-	int32_t m_iLaneSlot; // 0x15b4	
+	int32_t m_iLane; // 0x17f8	
+	int32_t m_iLaneSlot; // 0x17fc	
 private:
-	[[maybe_unused]] uint8_t __pad15b8[0x1c]; // 0x15b8
+	[[maybe_unused]] uint8_t __pad1800[0x20]; // 0x1800
 public:
-	CHandle< CInfoTrooperBossSpawn > m_hSpawnWaveController; // 0x15d4	
-	CHandle< CBaseEntity > m_hTrooperSpawnPoint; // 0x15d8	
+	CHandle< CInfoTrooperBossSpawn > m_hSpawnWaveController; // 0x1820	
+	CHandle< CBaseEntity > m_hTrooperSpawnPoint; // 0x1824	
 private:
-	[[maybe_unused]] uint8_t __pad15dc[0x1c]; // 0x15dc
+	[[maybe_unused]] uint8_t __pad1828[0x20]; // 0x1828
 public:
-	CModifierHandleTyped< CCitadelModifier > m_hNearDeathModifier; // 0x15f8	
+	CModifierHandleTyped< CCitadelModifier > m_hNearDeathModifier; // 0x1848	
 private:
-	[[maybe_unused]] uint8_t __pad1610[0x8]; // 0x1610
+	[[maybe_unused]] uint8_t __pad1860[0x8]; // 0x1860
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x1618	
+	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x1868	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
-	float m_flHealingChargeParticlePct; // 0x161c	
+	float m_flHealingChargeParticlePct; // 0x186c	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_TROOPER_MOVE_OUT(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[0]->m_instance);};
@@ -86,15 +86,14 @@ public:
 	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_UNTIL_LAND_ON_GROUND(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[44]->m_instance);};
 	static CUtlSymbolLarge &Get_TASK_TROOPER_INITIAL_WAIT(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[45]->m_instance);};
 	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FOR_SQUAD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[46]->m_instance);};
-	static CUtlSymbolLarge &Get_TASK_TROOPER_FACE_INITIAL_DIRECTION(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[47]->m_instance);};
-	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FLINCH(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[48]->m_instance);};
-	static CUtlSymbolLarge &Get_TASK_TROOPER_GET_PATH_TO_TARGET(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[49]->m_instance);};
-	static CUtlSymbolLarge &Get_TASK_TROOPER_PLAY_ANIMATION(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[50]->m_instance);};
-	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FOR_LANE_MOVEMENT(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[51]->m_instance);};
-	static CUtlSymbolLarge &Get_TASK_TROOPER_DEPLOY_SHIELD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[52]->m_instance);};
-	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FOR_MELEE_MOVEMENT(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[53]->m_instance);};
+	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FLINCH(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[47]->m_instance);};
+	static CUtlSymbolLarge &Get_TASK_TROOPER_GET_PATH_TO_TARGET(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[48]->m_instance);};
+	static CUtlSymbolLarge &Get_TASK_TROOPER_EXPLOSION_REACT(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[49]->m_instance);};
+	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FOR_LANE_MOVEMENT(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[50]->m_instance);};
+	static CUtlSymbolLarge &Get_TASK_TROOPER_DEPLOY_SHIELD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[51]->m_instance);};
+	static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FOR_MELEE_MOVEMENT(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->m_static_fields[52]->m_instance);};
 	
 	// Datamap fields:
-	// int32_t m_iCoverGroupID; // 0x1508
+	// int32_t m_iCoverGroupID; // 0x1750
 };
 

@@ -16,8 +16,8 @@ struct CPulse_ResumePoint;
 class CPulseCell_Step_CallExternalMethod : public CPulseCell_BaseYieldingInflow
 {
 public:
-	CUtlSymbolLarge m_MethodName; // 0x48	
-	CUtlSymbolLarge m_GameBlackboard; // 0x50	
+	CGlobalSymbol m_MethodName; // 0x48	
+	CGlobalSymbol m_GameBlackboard; // 0x50	
 	CUtlLeanVector< CPulseRuntimeMethodArg > m_ExpectedArgs; // 0x58	
 	PulseMethodCallMode_t m_nAsyncCallMode; // 0x68	
 private:

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x528
+// Size: 0x538
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_iszStackName"
@@ -19,20 +19,20 @@ class CCitadelSoundOpvarSetOBB : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszStackName; // 0x4d8	
+	CUtlSymbolLarge m_iszStackName; // 0x4e8	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOperatorName; // 0x4e0	
+	CUtlSymbolLarge m_iszOperatorName; // 0x4f0	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOpvarName; // 0x4e8	
+	CUtlSymbolLarge m_iszOpvarName; // 0x4f8	
 	// MNetworkEnable
-	Vector m_vDistanceInnerMins; // 0x4f0	
+	Vector m_vDistanceInnerMins; // 0x500	
 	// MNetworkEnable
-	Vector m_vDistanceInnerMaxs; // 0x4fc	
+	Vector m_vDistanceInnerMaxs; // 0x50c	
 	// MNetworkEnable
-	Vector m_vDistanceOuterMins; // 0x508	
+	Vector m_vDistanceOuterMins; // 0x518	
 	// MNetworkEnable
-	Vector m_vDistanceOuterMaxs; // 0x514	
+	Vector m_vDistanceOuterMaxs; // 0x524	
 	// MNetworkEnable
-	int32_t m_nAABBDirection; // 0x520	
+	int32_t m_nAABBDirection; // 0x530	
 };
 

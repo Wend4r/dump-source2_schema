@@ -6,7 +6,7 @@ struct ParticleIndex_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd28
+// Size: 0xd50
 // Has VTable
 // 
 // MNetworkVarNames "EViscousChargedGunState m_ChargeState"
@@ -17,20 +17,20 @@ class CCitadel_Ability_ViscousWeapon_Alt : public CCitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	EViscousChargedGunState m_ChargeState; // 0xad8	
+	EViscousChargedGunState m_ChargeState; // 0xb00	
 	// MNetworkEnable
-	float m_nClipConsumed; // 0xadc	
+	float m_nClipConsumed; // 0xb04	
 	// MNetworkEnable
-	bool m_bIsCharging; // 0xae0	
+	bool m_bIsCharging; // 0xb08	
 	// MNetworkEnable
-	bool m_bIsToggled; // 0xae1	
+	bool m_bIsToggled; // 0xb09	
 private:
-	[[maybe_unused]] uint8_t __pad0ae2[0x2]; // 0xae2
+	[[maybe_unused]] uint8_t __pad0b0a[0x2]; // 0xb0a
 public:
-	ParticleIndex_t m_fxChargingParticle; // 0xae4	
+	ParticleIndex_t m_fxChargingParticle; // 0xb0c	
 private:
-	[[maybe_unused]] uint8_t __pad0ae8[0x8]; // 0xae8
+	[[maybe_unused]] uint8_t __pad0b10[0x8]; // 0xb10
 public:
-	GameTime_t m_flLastBulletConsumedTime; // 0xaf0	
+	GameTime_t m_flLastBulletConsumedTime; // 0xb18	
 };
 

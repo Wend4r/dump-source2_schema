@@ -51,5 +51,6 @@ public:
 	// MPropertySuppressExpr "m_bIsSubnavMessage == true"
 	ECitadelPingWheelSliceTypes_t m_eSliceType; // 0x78	
 	bool m_bBindable; // 0x7c	
+	bool m_bPingWheelBindable; // 0x7d	
 };
 

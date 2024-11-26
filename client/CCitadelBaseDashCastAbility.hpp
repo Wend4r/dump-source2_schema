@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcb0
+// Size: 0xcf0
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flDashCastStartTime"
@@ -13,12 +13,12 @@ struct GameTime_t;
 class CCitadelBaseDashCastAbility : public C_CitadelBaseAbility
 {
 public:
-	CHandle< C_CitadelBaseAbility > m_hAbilityToTrigger; // 0xc60	
+	CHandle< C_CitadelBaseAbility > m_hAbilityToTrigger; // 0xca0	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flDashCastStartTime; // 0xc64	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flDashCastStartTime; // 0xca4	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	Vector m_vDashCastDir; // 0xc68	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vDashCastDir; // 0xca8	
 };
 

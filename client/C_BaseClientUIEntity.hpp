@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x860
+// Size: 0x890
 // Has VTable
 // Is Abstract
 // 
@@ -15,18 +15,18 @@
 class C_BaseClientUIEntity : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0830[0x8]; // 0x830
+	[[maybe_unused]] uint8_t __pad0860[0x8]; // 0x860
 public:
 	// MNetworkEnable
-	bool m_bEnabled; // 0x838	
+	bool m_bEnabled; // 0x868	
 private:
-	[[maybe_unused]] uint8_t __pad0839[0x7]; // 0x839
+	[[maybe_unused]] uint8_t __pad0869[0x7]; // 0x869
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_DialogXMLName; // 0x840	
+	CUtlSymbolLarge m_DialogXMLName; // 0x870	
 	// MNetworkEnable
-	CUtlSymbolLarge m_PanelClassName; // 0x848	
+	CUtlSymbolLarge m_PanelClassName; // 0x878	
 	// MNetworkEnable
-	CUtlSymbolLarge m_PanelID; // 0x850	
+	CUtlSymbolLarge m_PanelID; // 0x880	
 };
 

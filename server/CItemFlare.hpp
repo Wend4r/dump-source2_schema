@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc0
+// Size: 0xc88
 // Has VTable
 class CItemFlare : public CItemGeneric
 {

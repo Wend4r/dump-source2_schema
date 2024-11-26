@@ -6,7 +6,7 @@ struct AttachmentHandle_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7d8
+// Size: 0x830
 // Has VTable
 // 
 // MNetworkVarNames "HMaterialStrong m_hSpriteMaterial"
@@ -25,62 +25,62 @@ class CSprite : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSpriteMaterial; // 0x768	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hSpriteMaterial; // 0x7c0	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hAttachedToEntity; // 0x770	
+	CHandle< CBaseEntity > m_hAttachedToEntity; // 0x7c8	
 	// MNetworkEnable
-	AttachmentHandle_t m_nAttachment; // 0x774	
+	AttachmentHandle_t m_nAttachment; // 0x7cc	
 private:
-	[[maybe_unused]] uint8_t __pad0775[0x3]; // 0x775
+	[[maybe_unused]] uint8_t __pad07cd[0x3]; // 0x7cd
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "60.000000"
 	// MNetworkEncodeFlags "2"
-	float m_flSpriteFramerate; // 0x778	
+	float m_flSpriteFramerate; // 0x7d0	
 	// MNetworkEnable
 	// MNetworkBitCount "20"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "256.000000"
 	// MNetworkEncodeFlags "1"
-	float m_flFrame; // 0x77c	
-	GameTime_t m_flDieTime; // 0x780	
+	float m_flFrame; // 0x7d4	
+	GameTime_t m_flDieTime; // 0x7d8	
 private:
-	[[maybe_unused]] uint8_t __pad0784[0xc]; // 0x784
+	[[maybe_unused]] uint8_t __pad07dc[0xc]; // 0x7dc
 public:
 	// MNetworkEnable
-	uint32_t m_nBrightness; // 0x790	
+	uint32_t m_nBrightness; // 0x7e8	
 	// MNetworkEnable
-	float m_flBrightnessDuration; // 0x794	
+	float m_flBrightnessDuration; // 0x7ec	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnSpriteScaleChanged"
-	float m_flSpriteScale; // 0x798	
+	float m_flSpriteScale; // 0x7f0	
 	// MNetworkEnable
-	float m_flScaleDuration; // 0x79c	
+	float m_flScaleDuration; // 0x7f4	
 	// MNetworkEnable
-	bool m_bWorldSpaceScale; // 0x7a0	
+	bool m_bWorldSpaceScale; // 0x7f8	
 private:
-	[[maybe_unused]] uint8_t __pad07a1[0x3]; // 0x7a1
+	[[maybe_unused]] uint8_t __pad07f9[0x3]; // 0x7f9
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "6"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "64.000000"
 	// MNetworkEncodeFlags "2"
-	float m_flGlowProxySize; // 0x7a4	
+	float m_flGlowProxySize; // 0x7fc	
 	// MNetworkEnable
-	float m_flHDRColorScale; // 0x7a8	
-	GameTime_t m_flLastTime; // 0x7ac	
-	float m_flMaxFrame; // 0x7b0	
-	float m_flStartScale; // 0x7b4	
-	float m_flDestScale; // 0x7b8	
-	GameTime_t m_flScaleTimeStart; // 0x7bc	
-	int32_t m_nStartBrightness; // 0x7c0	
-	int32_t m_nDestBrightness; // 0x7c4	
-	GameTime_t m_flBrightnessTimeStart; // 0x7c8	
-	int32_t m_nSpriteWidth; // 0x7cc	
-	int32_t m_nSpriteHeight; // 0x7d0	
+	float m_flHDRColorScale; // 0x800	
+	GameTime_t m_flLastTime; // 0x804	
+	float m_flMaxFrame; // 0x808	
+	float m_flStartScale; // 0x80c	
+	float m_flDestScale; // 0x810	
+	GameTime_t m_flScaleTimeStart; // 0x814	
+	int32_t m_nStartBrightness; // 0x818	
+	int32_t m_nDestBrightness; // 0x81c	
+	GameTime_t m_flBrightnessTimeStart; // 0x820	
+	int32_t m_nSpriteWidth; // 0x824	
+	int32_t m_nSpriteHeight; // 0x828	
 	
 	// Datamap fields:
 	// void CSpriteAnimateThink; // 0x0

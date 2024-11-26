@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1c8
+// Size: 0x1e8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -85,7 +85,7 @@ public:
 	float m_flPrimaryDropChance; // 0x180	
 	// MPropertyDescription "Category for the random roller"
 	ECitadelRandomRollTypes m_eRollType; // 0x184	
-	// MPropertyStartGroup "Pickup rewards"
+	// MPropertyStartGroup "Level 1 Pickup rewards"
 	// MPropertyDescription "Primary Pickups are rolled first."
 	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPrimaryPickups; // 0x188	
 	// MPropertyDescription "Level 2 Rewards"
@@ -94,7 +94,13 @@ private:
 	[[maybe_unused]] uint8_t __pad01a4[0x4]; // 0x1a4
 public:
 	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPickups_lv2; // 0x1a8	
+	// MPropertyDescription "Level 3 Rewards"
+	int32_t m_iMatchTimeMinsForLevel3Pickups; // 0x1c0	
+private:
+	[[maybe_unused]] uint8_t __pad01c4[0x4]; // 0x1c4
+public:
+	CUtlVector< BreakablePowerupDropDefinition_t > m_vecPickups_lv3; // 0x1c8	
 	// MPropertyDescription "How many times each entry should be in the 'card deck'"
-	int32_t m_iLootListDeckSize; // 0x1c0	
+	int32_t m_iLootListDeckSize; // 0x1e0	
 };
 

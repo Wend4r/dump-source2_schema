@@ -5,7 +5,7 @@
 struct CCitadelWeaponInfo;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xf30
+// Size: 0x10d8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -19,77 +19,83 @@ class CAI_CitadelNPCVData : public CAI_BaseNPCVData
 {
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCNmGraphVariation > > m_sAG2VariationName; // 0x220	
-	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0x300	
-	float m_flSightRangePlayers; // 0x328	
-	float m_flSightRangeNPCs; // 0x32c	
-	CGlobalSymbol m_MeleeAnimName; // 0x330	
-	float m_flMeleeAttemptRange; // 0x338	
-	float m_flMeleeHitRange; // 0x33c	
-	CUtlVector< float32 > m_MeleeAttackPoints; // 0x340	
-	float m_flMaxHealthBarDrawDistance; // 0x358	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCNmGraphVariation > > m_sAG2VariationName; // 0x398	
+	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0x478	
+	float m_flSightRangePlayers; // 0x4a0	
+	float m_flSightRangeNPCs; // 0x4a4	
+	CGlobalSymbol m_MeleeAnimName; // 0x4a8	
+	float m_flMeleeAttemptRange; // 0x4b0	
+	float m_flMeleeHitRange; // 0x4b4	
+	CUtlVector< float32 > m_MeleeAttackPoints; // 0x4b8	
+	float m_flMaxHealthBarDrawDistance; // 0x4d0	
 	// MPropertyStartGroup "Movement"
-	float m_flWalkSpeed; // 0x35c	
-	float m_flRunSpeed; // 0x360	
-	float m_flTurnRate; // 0x364	
-	float m_flAcceleration; // 0x368	
-	float m_flStepHeight; // 0x36c	
-	int8_t m_navHull; // 0x370	
-	bool m_bFaceTargetEvenWhenMoving; // 0x371	
+	float m_flWalkSpeed; // 0x4d4	
+	float m_flRunSpeed; // 0x4d8	
+	float m_flTurnRate; // 0x4dc	
+	float m_flAcceleration; // 0x4e0	
+	float m_flStepHeight; // 0x4e4	
+	int8_t m_navHull; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad0372[0x6]; // 0x372
+	[[maybe_unused]] uint8_t __pad04e9[0x7]; // 0x4e9
 public:
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_BeamStartSound; // 0x378	
-	CSoundEventName m_BeamStopSound; // 0x388	
-	CSoundEventName m_BeamPointStartLoopSound; // 0x398	
-	CSoundEventName m_BeamPointEndLoopSound; // 0x3a8	
-	CSoundEventName m_BeamPointClosestLoopSound; // 0x3b8	
-	CSoundEventName m_strAmbientLoopSound; // 0x3c8	
-	CSoundEventName m_DeathSound; // 0x3d8	
-	CSoundEventName m_strLastHitSound; // 0x3e8	
-	bool m_bPlayLastHitSound; // 0x3f8	
+	CSoundEventName m_BeamStartSound; // 0x4f0	
+	CSoundEventName m_BeamStopSound; // 0x500	
+	CSoundEventName m_BeamPointStartLoopSound; // 0x510	
+	CSoundEventName m_BeamPointEndLoopSound; // 0x520	
+	CSoundEventName m_BeamPointClosestLoopSound; // 0x530	
+	CSoundEventName m_strAmbientLoopSound; // 0x540	
+	CSoundEventName m_DeathSound; // 0x550	
+	CSoundEventName m_strLastHitSound; // 0x560	
+	bool m_bPlayLastHitSound; // 0x570	
 private:
-	[[maybe_unused]] uint8_t __pad03f9[0x7]; // 0x3f9
+	[[maybe_unused]] uint8_t __pad0571[0x7]; // 0x571
 public:
-	CSoundEventName m_MeleeHitSound; // 0x400	
-	CSoundEventName m_MeleeHitPlayerSound; // 0x410	
+	CSoundEventName m_MeleeHitSound; // 0x578	
+	CSoundEventName m_MeleeHitPlayerSound; // 0x588	
 	// MPropertyStartGroup "Visuals"
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sDefaultMaterialGroupName; // 0x420	
+	CUtlString m_sDefaultMaterialGroupName; // 0x598	
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sEnemyMaterialGroupName; // 0x428	
+	CUtlString m_sEnemyMaterialGroupName; // 0x5a0	
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sTeam1MaterialGroupName; // 0x430	
+	CUtlString m_sTeam1MaterialGroupName; // 0x5a8	
 	// MPropertyAttributeEditor "VDataModelMaterialGroup( m_sModelName )"
-	CUtlString m_sTeam2MaterialGroupName; // 0x438	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeSwingParticle; // 0x440	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeActivateParticle; // 0x520	
-	float m_flModelScale; // 0x600	
+	CUtlString m_sTeam2MaterialGroupName; // 0x5b0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeSwingParticle; // 0x5b8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MeleeActivateParticle; // 0x698	
+	float m_flModelScale; // 0x778	
 private:
-	[[maybe_unused]] uint8_t __pad0604[0x4]; // 0x604
+	[[maybe_unused]] uint8_t __pad077c[0x4]; // 0x77c
 public:
 	// MPropertyDescription "Particle to play instead of doing a ragdoll"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathParticle; // 0x608	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeathParticle; // 0x780	
 	// MPropertyStartGroup "Health Bar"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealthBarParticle; // 0x6e8	
-	CUtlString m_sHealthBarAttachment; // 0x7c8	
-	Color m_HealthBarColorFriend; // 0x7d0	
-	Color m_HealthBarColorEnemy; // 0x7d4	
-	Color m_HealthBarColorTeam1; // 0x7d8	
-	Color m_HealthBarColorTeam2; // 0x7dc	
-	Color m_HealthBarColorTeamNeutral; // 0x7e0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealthBarParticle; // 0x860	
+	CUtlString m_sHealthBarAttachment; // 0x940	
+	Color m_HealthBarColorFriend; // 0x948	
+	Color m_HealthBarColorEnemy; // 0x94c	
+	Color m_HealthBarColorTeam1; // 0x950	
+	Color m_HealthBarColorTeam2; // 0x954	
+	Color m_HealthBarColorTeamNeutral; // 0x958	
 	// MPropertyStartGroup "Misc"
-	float m_flHealthBarOffset; // 0x7e4	
-	// MPropertyStartGroup "Beam Weapon"
-	float m_flBeamWeaponWidth; // 0x7e8	
-	float m_flBeamTurnRate; // 0x7ec	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BeamWeaponParticle; // 0x7f0	
-	// MPropertyDescription "Modifier for physics impulses applied to this NPC (0 == unmoveable)"
-	float m_flPhysicsImpulseMultiplier; // 0x8d0	
+	float m_flHealthBarOffset; // 0x95c	
+	// MPropertyDescription "When true, spawns breakables defined in the model"
+	bool m_bSpawnBreakablesOnDeath; // 0x960	
 private:
-	[[maybe_unused]] uint8_t __pad08d4[0x4]; // 0x8d4
+	[[maybe_unused]] uint8_t __pad0961[0x3]; // 0x961
 public:
-	CCitadelWeaponInfo m_WeaponInfo; // 0x8d8	
+	// MPropertySuppressExpr "m_bSpawnBreakablesOnDeath == false"
+	float m_flBreakableForceScale; // 0x964	
+	// MPropertyDescription "Modifier for physics impulses applied to this NPC (0 == unmoveable)"
+	float m_flPhysicsImpulseMultiplier; // 0x968	
+	// MPropertyStartGroup "Beam Weapon"
+	float m_flBeamWeaponWidth; // 0x96c	
+	float m_flBeamTurnRate; // 0x970	
+private:
+	[[maybe_unused]] uint8_t __pad0974[0x4]; // 0x974
+public:
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_BeamWeaponParticle; // 0x978	
+	CCitadelWeaponInfo m_WeaponInfo; // 0xa58	
 };
 

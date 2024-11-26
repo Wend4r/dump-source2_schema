@@ -8,6 +8,9 @@ struct GameTime_t;
 // Size: 0x50
 // Has VTable
 // 
+// MNetworkVarNames "float m_flGainRate"
+// MNetworkVarNames "float m_flDrainRate"
+// MNetworkVarNames "float m_flMaxValue"
 // MNetworkVarNames "float m_flLatchedValue"
 // MNetworkVarNames "GameTime_t m_flLatchedTime"
 // MNetworkVarNames "ELockonState m_eLockonState"
@@ -17,8 +20,11 @@ struct LockonTarget_t
 private:
 	[[maybe_unused]] uint8_t __pad0000[0x30]; // 0x0
 public:
+	// MNetworkEnable
 	float m_flGainRate; // 0x30	
+	// MNetworkEnable
 	float m_flDrainRate; // 0x34	
+	// MNetworkEnable
 	float m_flMaxValue; // 0x38	
 	int32_t m_nPrevFullStacks; // 0x3c	
 	// MNetworkEnable

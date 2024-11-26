@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 22
+// Enumerator count: 24
 // Alignment: 4
 // Size: 0x4
 enum class EGCBaseMsg : uint32_t
@@ -30,5 +30,7 @@ enum class EGCBaseMsg : uint32_t
 	k_EMsgClientToGCIntegrityStatus = 0x11aa,
 	k_EMsgClientToGCAggregateMetrics = 0x11ab,
 	k_EMsgGCToClientAggregateMetricsBackoff = 0x11ac,
+	k_EMsgGCToServerSteamLearnAccessTokensChanged = 0x11ad,
+	k_EMsgGCToServerSteamLearnUseHTTP = 0x11ae,
 };
 

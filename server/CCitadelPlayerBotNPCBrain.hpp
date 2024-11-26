@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x16f0
+// Size: 0x1958
 // Has VTable
 class CCitadelPlayerBotNPCBrain : public CAI_CitadelNPC
 {

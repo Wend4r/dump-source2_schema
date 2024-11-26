@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1628
+// Size: 0x1698
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Item_Savior_VData : public CitadelItemVData
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SaviorModifier; // 0x1538	
+	CEmbeddedSubclass< CCitadelModifier > m_SaviorModifier; // 0x15a8	
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x1548	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CastParticle; // 0x15b8	
 };
 

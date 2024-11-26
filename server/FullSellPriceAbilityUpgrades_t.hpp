@@ -11,7 +11,9 @@ struct GameTime_t;
 struct FullSellPriceAbilityUpgrades_t
 {
 public:
+	// MNetworkEnable
 	CUtlString m_strAbilityUpgrade; // 0x0	
+	// MNetworkEnable
 	GameTime_t m_unGameTimePurchased; // 0x8	
 };
 

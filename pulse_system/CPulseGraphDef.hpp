@@ -13,10 +13,10 @@ class CPulseGraphDef
 private:
 	[[maybe_unused]] uint8_t __pad0000[0x8]; // 0x0
 public:
-	CUtlSymbolLarge m_DomainIdentifier; // 0x8	
-	CUtlSymbolLarge m_ParentMapName; // 0x10	
-	CUtlSymbolLarge m_ParentXmlName; // 0x18	
-	CUtlVector< CUtlSymbolLarge > m_vecGameBlackboards; // 0x20	
+	CGlobalSymbol m_DomainIdentifier; // 0x8	
+	CGlobalSymbol m_ParentMapName; // 0x10	
+	CGlobalSymbol m_ParentXmlName; // 0x18	
+	CUtlVector< CGlobalSymbol > m_vecGameBlackboards; // 0x20	
 	CUtlVector< CPulse_Chunk* > m_Chunks; // 0x38	
 	CUtlVector< CPulseCell_Base* > m_Cells; // 0x50	
 	CUtlVector< CPulse_Variable > m_Vars; // 0x68	

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd68
+// Size: 0xdd8
 // Has VTable
 // 
 // MNetworkVarNames "CUtlString m_strDefaultSkin"
@@ -14,20 +14,20 @@
 class C_Citadel_DynamicProp : public C_DynamicProp
 {
 private:
-	[[maybe_unused]] uint8_t __pad0d30[0x10]; // 0xd30
+	[[maybe_unused]] uint8_t __pad0da0[0x10]; // 0xda0
 public:
-	int32_t m_nPlayerTeamEvent; // 0xd40	
+	int32_t m_nPlayerTeamEvent; // 0xdb0	
 private:
-	[[maybe_unused]] uint8_t __pad0d44[0x4]; // 0xd44
+	[[maybe_unused]] uint8_t __pad0db4[0x4]; // 0xdb4
 public:
 	// MNetworkEnable
-	CUtlString m_strDefaultSkin; // 0xd48	
+	CUtlString m_strDefaultSkin; // 0xdb8	
 	// MNetworkEnable
-	CUtlString m_strFriendlySkin; // 0xd50	
+	CUtlString m_strFriendlySkin; // 0xdc0	
 	// MNetworkEnable
-	CUtlString m_strEnemySkin; // 0xd58	
+	CUtlString m_strEnemySkin; // 0xdc8	
 	// MNetworkEnable
-	bool m_bIsWorld; // 0xd60	
+	bool m_bIsWorld; // 0xdd0	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge SetFriendlySkin; // 0x0

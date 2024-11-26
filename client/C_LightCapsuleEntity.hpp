@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x838
+// Size: 0x868
 // Has VTable
 class C_LightCapsuleEntity : public C_LightEntity
 {

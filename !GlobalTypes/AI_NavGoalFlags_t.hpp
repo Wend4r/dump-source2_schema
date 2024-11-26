@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 13
+// Enumerator count: 14
 // Alignment: 4
 // Size: 0x4
 enum class AI_NavGoalFlags_t : uint32_t
@@ -20,6 +20,7 @@ enum class AI_NavGoalFlags_t : uint32_t
 	eClearGoalOffsetOnRepathForMovement = 0x200,
 	eUseTargetPredictedPosition = 0x400,
 	eDisableTargetPredictedPositionForDynamicPathing = 0x800,
+	eDisableStopAtGoal = 0x1000,
 	// MEnumeratorIsNotAFlag
 	eDefault = 0x0,
 };

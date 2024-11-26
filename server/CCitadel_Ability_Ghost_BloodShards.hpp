@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc40
+// Size: 0xc68
 // Has VTable
 class CCitadel_Ability_Ghost_BloodShards : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x150]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0x150]; // 0xb00
 public:
-	CUtlVector< CHandle< CBaseEntity > > m_vecDamagedTargets; // 0xc28	
+	CUtlVector< CHandle< CBaseEntity > > m_vecDamagedTargets; // 0xc50	
 };
 

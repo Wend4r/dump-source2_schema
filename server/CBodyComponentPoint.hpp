@@ -5,15 +5,17 @@
 struct CGameSceneNode;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1b0
+// Size: 0x1e0
 // Has VTable
 // 
 // MNetworkVarNames "CGameSceneNode m_sceneNode"
 class CBodyComponentPoint : public CBodyComponent
 {
+private:
+	[[maybe_unused]] uint8_t __pad0078[0x8]; // 0x78
 public:
 	// MNetworkEnable
-	CGameSceneNode m_sceneNode; // 0x50	
+	CGameSceneNode m_sceneNode; // 0x80	
 	
 	// Static fields:
 	static EntComponentInfo_t &Get_s_EntComponentInfo(){return *reinterpret_cast<EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBodyComponentPoint")->m_static_fields[0]->m_instance);};

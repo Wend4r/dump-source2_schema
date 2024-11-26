@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7d8
+// Size: 0x830
 // Has VTable
 class CCitadelZapTrigger : public CFuncBrush
 {
 public:
-	float m_flShootAfterEnteringTime; // 0x788	
-	float m_flWaitForNextShootTime; // 0x78c	
-	float m_flPercentMaxHealthDamage; // 0x790	
+	float m_flShootAfterEnteringTime; // 0x7e0	
+	float m_flWaitForNextShootTime; // 0x7e4	
+	float m_flPercentMaxHealthDamage; // 0x7e8	
 private:
-	[[maybe_unused]] uint8_t __pad0794[0x4]; // 0x794
+	[[maybe_unused]] uint8_t __pad07ec[0x4]; // 0x7ec
 public:
-	CUtlSymbolLarge m_strShootOrigin; // 0x798	
+	CUtlSymbolLarge m_strShootOrigin; // 0x7f0	
 };
 

@@ -6,11 +6,10 @@ struct HeroID_t;
 struct HeroStatsUI_t;
 struct HeroStatsDisplay_t;
 struct CitadelStatsDisplay_t;
-struct CitadelCameraOperationsSequence_t;
 struct CFootstepTableHandle;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x12a0
+// Size: 0xec8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -44,115 +43,108 @@ public:
 	CPanoramaImageName m_strTopBarVertical; // 0x400	
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hRespawnParticle; // 0x410	
 	Color m_colorUI; // 0x4f0	
+	Color m_colorGlowFriendly; // 0x4f4	
+	Color m_colorGlowEnemy; // 0x4f8	
+	Color m_colorGlowTeam1; // 0x4fc	
+	Color m_colorGlowTeam2; // 0x500	
 private:
-	[[maybe_unused]] uint8_t __pad04f4[0x4]; // 0x4f4
+	[[maybe_unused]] uint8_t __pad0504[0x4]; // 0x504
 public:
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_hAmbientParticle; // 0x4f8	
-	CUtlVector< AmbientParticleSettings_t > m_vecAmbientParticleSettings; // 0x5d8	
-	Color m_colorGlowFriendly; // 0x5f0	
-	Color m_colorGlowEnemy; // 0x5f4	
-	Color m_colorGlowTeam1; // 0x5f8	
-	Color m_colorGlowTeam2; // 0x5fc	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strModelName; // 0x600	
-	int32_t m_nModelSkin; // 0x6e0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strModelName; // 0x508	
+	int32_t m_nModelSkin; // 0x5e8	
 private:
-	[[maybe_unused]] uint8_t __pad06e4[0x4]; // 0x6e4
+	[[maybe_unused]] uint8_t __pad05ec[0x4]; // 0x5ec
 public:
-	// MPropertyDescription "If specified, this model will be used in steam public universe only."
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strPublicModelName; // 0x6e8	
 	// MPropertyDescription "If specified, this model will be used if convar citadel_use_wip_models is true."
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x7c8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strWIPModelName; // 0x5f0	
+	// MPropertyDescription "If specified, this model will be used in main instead of 'Model Name'."
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCModel > > m_strMainOnlyModelName; // 0x6d0	
 	// MPropertyStartGroup "UI"
 	// MPropertyDescription "AnimGraph for UI"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIAnimGraphModelBinding > > m_strUIAnimGraph; // 0x8a8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIAnimGraphModelBinding > > m_strUIShopAnimGraph; // 0x988	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCNmGraphVariation > > m_sAG2VariationName; // 0x7b0	
 	// MPropertyAttributeEditor "AssetBrowse( vmap )"
-	CUtlString m_strUIPortraitMap; // 0xa68	
+	CUtlString m_strUIPortraitMap; // 0x890	
 	// MPropertyAttributeEditor "AssetBrowse( vmap )"
-	CUtlString m_strUIShoppingMap; // 0xa70	
-	HeroStatsUI_t m_heroStatsUI; // 0xa78	
-	HeroStatsDisplay_t m_heroStatsDisplay; // 0xaa8	
-	CitadelStatsDisplay_t m_ShopStatDisplay; // 0xb38	
-	// MPropertyStartGroup "Zipline Camera"
-	CitadelCameraOperationsSequence_t m_cameraSequenceAwaitingTether; // 0xbe0	
-	CitadelCameraOperationsSequence_t m_cameraSequenceLatched; // 0xc60	
-	CitadelCameraOperationsSequence_t m_cameraSequenceAttached; // 0xce0	
-	CitadelCameraOperationsSequence_t m_cameraSequenceClear; // 0xd60	
+	CUtlString m_strUIShoppingMap; // 0x898	
+	HeroStatsUI_t m_heroStatsUI; // 0x8a0	
+	HeroStatsDisplay_t m_heroStatsDisplay; // 0x8d0	
+	CitadelStatsDisplay_t m_ShopStatDisplay; // 0x960	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strDeathSound; // 0xde0	
-	CSoundEventName m_strLastHitSound; // 0xdf0	
-	CSoundEventName m_strRosterSelectedSound; // 0xe00	
-	CSoundEventName m_strRosterRemovedSound; // 0xe10	
-	CSoundEventName m_strFootstepSoundEventDefault; // 0xe20	
-	CSoundEventName m_strLowHealthSound; // 0xe30	
-	CSoundEventName m_strHeroSpecificLowHealthSound; // 0xe40	
-	CSoundEventName m_strMovementLoop; // 0xe50	
+	CSoundEventName m_strDeathSound; // 0xa08	
+	CSoundEventName m_strLastHitSound; // 0xa18	
+	CSoundEventName m_strRosterSelectedSound; // 0xa28	
+	CSoundEventName m_strRosterRemovedSound; // 0xa38	
+	CSoundEventName m_strFootstepSoundEventDefault; // 0xa48	
+	CSoundEventName m_strLowHealthSound; // 0xa58	
+	CSoundEventName m_strHeroSpecificLowHealthSound; // 0xa68	
+	CSoundEventName m_strMovementLoop; // 0xa78	
 	// MPropertyDescription "Teammate footstep sounds are relative to whoever we're spectating."
-	CFootstepTableHandle m_hFootstepSounds; // 0xe60	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGameSoundEventScript; // 0xe68	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGeneratedVOEventScript; // 0xf48	
-	float m_flFootstepSoundTravelDistanceMeters; // 0x1028	
-	float m_flStealthSpeedMetersPerSecond; // 0x102c	
-	float m_flStepSoundTime; // 0x1030	
-	float m_flStepSoundTimeSprinting; // 0x1034	
+	CFootstepTableHandle m_hFootstepSounds; // 0xa88	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGameSoundEventScript; // 0xa90	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeCVSoundEventScriptList > > m_hGeneratedVOEventScript; // 0xb70	
+	float m_flFootstepSoundTravelDistanceMeters; // 0xc50	
+	float m_flStealthSpeedMetersPerSecond; // 0xc54	
+	float m_flStepSoundTime; // 0xc58	
+	float m_flStepSoundTimeSprinting; // 0xc5c	
 	// MPropertyStartGroup
-	float m_flCollisionRadius; // 0x1038	
-	float m_flCollisionHeight; // 0x103c	
-	float m_flStepHeight; // 0x1040	
-	bool m_bInDevelopment; // 0x1044	
-	bool m_bAssignedPlayersOnly; // 0x1045	
-	bool m_bBotSelectable; // 0x1046	
-	bool m_bNewPlayerRecommended; // 0x1047	
-	bool m_bLaneTestingRecommended; // 0x1048	
-	bool m_bNeedsTesting; // 0x1049	
-	bool m_bLimitedTesting; // 0x104a	
-	bool m_bDisabled; // 0x104b	
-	bool m_bPlayerSelectable; // 0x104c	
+	float m_flCollisionRadius; // 0xc60	
+	float m_flCollisionHeight; // 0xc64	
+	float m_flStepHeight; // 0xc68	
+	bool m_bInDevelopment; // 0xc6c	
+	bool m_bAssignedPlayersOnly; // 0xc6d	
+	bool m_bBotSelectable; // 0xc6e	
+	bool m_bNewPlayerRecommended; // 0xc6f	
+	bool m_bLaneTestingRecommended; // 0xc70	
+	bool m_bNeedsTesting; // 0xc71	
+	bool m_bLimitedTesting; // 0xc72	
+	bool m_bDisabled; // 0xc73	
+	bool m_bPlayerSelectable; // 0xc74	
+	bool m_bAvailableInHeroLabs; // 0xc75	
 private:
-	[[maybe_unused]] uint8_t __pad104d[0x3]; // 0x104d
+	[[maybe_unused]] uint8_t __pad0c76[0x2]; // 0xc76
 public:
-	int32_t m_nComplexity; // 0x1050	
-	int32_t m_nReadability; // 0x1054	
+	int32_t m_nComplexity; // 0xc78	
+	int32_t m_nReadability; // 0xc7c	
 	// MPropertyStartGroup "Low Health Settings"
 	// MPropertyDescription "Percentage of health to be considered low health"
 	// MPropertyAttributeRange "0 1"
-	float m_flMinLowHealthPercentage; // 0x1058	
+	float m_flMinLowHealthPercentage; // 0xc80	
 	// MPropertyDescription "Percentage of health to be considered low health when you have high max health."
 	// MPropertyAttributeRange "0 1"
-	float m_flMaxLowHealthPercentage; // 0x105c	
+	float m_flMaxLowHealthPercentage; // 0xc84	
 	// MPropertyDescription "Percentage of health to be considered mid health"
 	// MPropertyAttributeRange "0 1"
-	float m_flMinMidHealthPercentage; // 0x1060	
+	float m_flMinMidHealthPercentage; // 0xc88	
 	// MPropertyDescription "Percentage of health to be considered mid health when you have high max health."
 	// MPropertyAttributeRange "0 1"
-	float m_flMaxMidHealthPercentage; // 0x1064	
+	float m_flMaxMidHealthPercentage; // 0xc8c	
 	// MPropertyDescription "Min Max Health for Remapped Value"
-	float m_flMinHealthForThreshold; // 0x1068	
+	float m_flMinHealthForThreshold; // 0xc90	
 	// MPropertyDescription "Max Max Health for remapped value"
-	float m_flMaxHealthForThreshold; // 0x106c	
+	float m_flMaxHealthForThreshold; // 0xc94	
 	// MPropertyStartGroup
-	CUtlOrderedMap< EStatsType, float32 > m_mapStartingStats; // 0x1070	
-	CUtlOrderedMap< EStatsType, HeroScalingStat_t > m_mapScalingStats; // 0x1098	
+	CUtlOrderedMap< EStatsType, float32 > m_mapStartingStats; // 0xc98	
+	CUtlOrderedMap< EStatsType, HeroScalingStat_t > m_mapScalingStats; // 0xcc0	
 private:
-	[[maybe_unused]] uint8_t __pad10c0[0x18]; // 0x10c0
+	[[maybe_unused]] uint8_t __pad0ce8[0x18]; // 0xce8
 public:
-	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0x10d8	
-	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapWIPAbilities; // 0x1100	
-	CUtlOrderedMap< EItemSlotTypes_t, ItemSlotInfo_t > m_mapItemSlotInfo; // 0x1128	
-	CUtlVector< CSubclassName< 4 > > m_RecommendedUpgrades; // 0x1150	
+	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapBoundAbilities; // 0xd00	
+	CUtlOrderedMap< EAbilitySlots_t, CSubclassName< 4 > > m_mapWIPAbilities; // 0xd28	
+	CUtlOrderedMap< EItemSlotTypes_t, ItemSlotInfo_t > m_mapItemSlotInfo; // 0xd50	
+	CUtlVector< CSubclassName< 4 > > m_RecommendedUpgrades; // 0xd78	
 private:
-	[[maybe_unused]] uint8_t __pad1168[0x70]; // 0x1168
+	[[maybe_unused]] uint8_t __pad0d90[0x70]; // 0xd90
 public:
-	CUtlVector< CSubclassName< 4 > > m_RecommendedAbilityOrder; // 0x11d8	
+	CUtlVector< CSubclassName< 4 > > m_RecommendedAbilityOrder; // 0xe00	
 private:
-	[[maybe_unused]] uint8_t __pad11f0[0x18]; // 0x11f0
+	[[maybe_unused]] uint8_t __pad0e18[0x18]; // 0xe18
 public:
-	EAbilityResourceType m_eAbilityResourceType; // 0x1208	
+	EAbilityResourceType m_eAbilityResourceType; // 0xe30	
 private:
-	[[maybe_unused]] uint8_t __pad120c[0x1c]; // 0x120c
+	[[maybe_unused]] uint8_t __pad0e34[0x1c]; // 0xe34
 public:
-	CUtlOrderedMap< EModifierValue, float32 > m_mapStandardLevelUpUpgrades; // 0x1228	
-	CUtlOrderedMap< int32, HeroLevel_t > m_mapLevelInfo; // 0x1250	
-	CUtlOrderedMap< EItemSlotTypes_t, CUtlVector< HeroPurchaseBonus_t > > m_mapPurchaseBonuses; // 0x1278	
+	CUtlOrderedMap< EModifierValue, float32 > m_mapStandardLevelUpUpgrades; // 0xe50	
+	CUtlOrderedMap< int32, HeroLevel_t > m_mapLevelInfo; // 0xe78	
+	CUtlOrderedMap< EItemSlotTypes_t, CUtlVector< HeroPurchaseBonus_t > > m_mapPurchaseBonuses; // 0xea0	
 };
 

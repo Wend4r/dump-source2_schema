@@ -5,21 +5,21 @@
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1598
+// Size: 0x1610
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Ability_Chrono_KineticCarbineVData : public CitadelAbilityVData
 {
 public:
-	float m_flShotTimeScaleLingerDuration; // 0x14f0	
+	float m_flShotTimeScaleLingerDuration; // 0x1560	
 private:
-	[[maybe_unused]] uint8_t __pad14f4[0x4]; // 0x14f4
+	[[maybe_unused]] uint8_t __pad1564[0x4]; // 0x1564
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ChargingModifier; // 0x14f8	
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1508	
+	CEmbeddedSubclass< CCitadelModifier > m_ChargingModifier; // 0x1568	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1578	
 	// MPropertyStartGroup "Camera"
-	CitadelCameraOperationsSequence_t m_cameraKineticCarbineShotFired; // 0x1518	
+	CitadelCameraOperationsSequence_t m_cameraKineticCarbineShotFired; // 0x1588	
 };
 

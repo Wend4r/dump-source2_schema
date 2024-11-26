@@ -46,16 +46,12 @@ public:
 	// MNetworkMaxValue "1.000000"
 	// MNetworkEncodeFlags "0"
 	CNetworkedQuantizedFloat m_flWeight; // 0x14	
-	// MNetworkDisable
 	bool m_bSequenceChangeNetworked; // 0x1c	
-	// MNetworkDisable
 	bool m_bDiscontinuity; // 0x1d	
 private:
 	[[maybe_unused]] uint8_t __pad001e[0x2]; // 0x1e
 public:
-	// MNetworkDisable
 	float m_flPrevCycleFromDiscontinuity; // 0x20	
-	// MNetworkDisable
 	float m_flPrevCycleForAnimEventDetection; // 0x24	
 	
 	// Datamap fields:

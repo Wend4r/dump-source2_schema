@@ -15,6 +15,6 @@
 class CPulseCell_Inflow_GraphHook : public CPulseCell_Inflow_BaseEntrypoint
 {
 public:
-	CUtlSymbolLarge m_HookName; // 0x70	
+	CGlobalSymbol m_HookName; // 0x70	
 };
 

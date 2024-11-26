@@ -5,17 +5,17 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x818
+// Size: 0x870
 // Has VTable
 class CGunTarget : public CBaseToggle
 {
 public:
-	bool m_on; // 0x7e8	
+	bool m_on; // 0x840	
 private:
-	[[maybe_unused]] uint8_t __pad07e9[0x3]; // 0x7e9
+	[[maybe_unused]] uint8_t __pad0841[0x3]; // 0x841
 public:
-	CHandle< CBaseEntity > m_hTargetEnt; // 0x7ec	
-	CEntityIOOutput m_OnDeath; // 0x7f0	
+	CHandle< CBaseEntity > m_hTargetEnt; // 0x844	
+	CEntityIOOutput m_OnDeath; // 0x848	
 	
 	// Datamap fields:
 	// void CGunTargetNext; // 0x0

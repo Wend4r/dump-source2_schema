@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 4
-// Size: 0x24
+// Size: 0x28
 // Has Trivial Constructor
 // Has Trivial Destructor
 // 
@@ -18,5 +18,6 @@ public:
 	uint16_t m_nPackedBaseUv[2]; // 0x18	
 	uint32_t m_nPackedSurfaceNormalOs; // 0x1c	
 	uint32_t m_nPackedSurfaceTangentOs; // 0x20	
+	uint32_t m_nDataOffset_Segments; // 0x24	
 };
 

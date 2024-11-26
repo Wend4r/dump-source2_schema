@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb70
+// Size: 0xc38
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bTakesDamage"
@@ -14,24 +14,24 @@ struct GameTime_t;
 class CNPC_BaseDefenseSentry : public CNPC_SimpleAnimatingAI
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b10[0x8]; // 0xb10
+	[[maybe_unused]] uint8_t __pad0bd8[0x8]; // 0xbd8
 public:
 	// MNetworkEnable
-	Vector m_vecUnitStatusOffset; // 0xb18	
+	Vector m_vecUnitStatusOffset; // 0xbe0	
 private:
-	[[maybe_unused]] uint8_t __pad0b24[0x28]; // 0xb24
+	[[maybe_unused]] uint8_t __pad0bec[0x28]; // 0xbec
 public:
-	float m_flAttackCone; // 0xb4c	
-	float m_flAttackDelay; // 0xb50	
-	GameTime_t m_flLastAlertSound; // 0xb54	
+	float m_flAttackCone; // 0xc14	
+	float m_flAttackDelay; // 0xc18	
+	GameTime_t m_flLastAlertSound; // 0xc1c	
 private:
-	[[maybe_unused]] uint8_t __pad0b58[0x4]; // 0xb58
+	[[maybe_unused]] uint8_t __pad0c20[0x4]; // 0xc20
 public:
-	int16_t m_nSentryLevel; // 0xb5c	
+	int16_t m_nSentryLevel; // 0xc24	
 private:
-	[[maybe_unused]] uint8_t __pad0b5e[0x2]; // 0xb5e
+	[[maybe_unused]] uint8_t __pad0c26[0x2]; // 0xc26
 public:
-	Vector m_vecForward; // 0xb60	
+	Vector m_vecForward; // 0xc28	
 	
 	// Datamap fields:
 	// void EnableAttacking; // 0x0

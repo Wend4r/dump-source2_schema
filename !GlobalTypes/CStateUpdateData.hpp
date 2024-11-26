@@ -25,7 +25,9 @@ public:
 		uint8_t m_bIsStartState: 1; 		
 		uint8_t m_bIsEndState: 1; 		
 		uint8_t m_bIsPassthrough: 1; 		
-		uint8_t __pad0: 3;
-	}; // 6 bits
+		uint8_t m_bIsPassthroughRootMotion: 1; 		
+		uint8_t m_bPreEvaluatePassthroughTransitionPath: 1; 		
+		uint8_t __pad0: 5;
+	}; // 10 bits
 };
 

@@ -13,7 +13,7 @@ struct PulseRuntimeChunkIndex_t;
 class CPulse_CallInfo
 {
 public:
-	CUtlSymbolLarge m_PortName; // 0x0	
+	CGlobalSymbol m_PortName; // 0x0	
 	PulseDocNodeID_t m_nEditorNodeID; // 0x8	
 private:
 	[[maybe_unused]] uint8_t __pad000c[0x4]; // 0xc

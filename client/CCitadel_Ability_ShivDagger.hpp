@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd60
+// Size: 0xda0
 // Has VTable
 class CCitadel_Ability_ShivDagger : public CCitadelBaseShivAbility
 {
 public:
-	bool m_bIsInRicochet; // 0xc60	
+	bool m_bIsInRicochet; // 0xca0	
 };
 

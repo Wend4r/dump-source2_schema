@@ -6,7 +6,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc8
+// Size: 0xbf0
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bInGround"
@@ -14,17 +14,17 @@ struct ParticleIndex_t;
 class CCitadel_Ability_Burrow : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0xe0]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0xe0]; // 0xb00
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bInGround; // 0xbb8	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bInGround; // 0xbe0	
 private:
-	[[maybe_unused]] uint8_t __pad0bb9[0x3]; // 0xbb9
+	[[maybe_unused]] uint8_t __pad0be1[0x3]; // 0xbe1
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_SpinEndTime; // 0xbbc	
-	ParticleIndex_t m_nBurrowEffect; // 0xbc0	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_SpinEndTime; // 0xbe4	
+	ParticleIndex_t m_nBurrowEffect; // 0xbe8	
 };
 

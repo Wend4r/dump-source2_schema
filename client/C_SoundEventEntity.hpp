@@ -5,37 +5,37 @@
 struct CEntityIOOutput;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x618
+// Size: 0x628
 // Has VTable
 class C_SoundEventEntity : public C_BaseEntity
 {
 public:
-	bool m_bStartOnSpawn; // 0x558	
-	bool m_bToLocalPlayer; // 0x559	
-	bool m_bStopOnNew; // 0x55a	
-	bool m_bSaveRestore; // 0x55b	
-	bool m_bSavedIsPlaying; // 0x55c	
+	bool m_bStartOnSpawn; // 0x568	
+	bool m_bToLocalPlayer; // 0x569	
+	bool m_bStopOnNew; // 0x56a	
+	bool m_bSaveRestore; // 0x56b	
+	bool m_bSavedIsPlaying; // 0x56c	
 private:
-	[[maybe_unused]] uint8_t __pad055d[0x3]; // 0x55d
+	[[maybe_unused]] uint8_t __pad056d[0x3]; // 0x56d
 public:
-	float m_flSavedElapsedTime; // 0x560	
+	float m_flSavedElapsedTime; // 0x570	
 private:
-	[[maybe_unused]] uint8_t __pad0564[0x4]; // 0x564
+	[[maybe_unused]] uint8_t __pad0574[0x4]; // 0x574
 public:
-	CUtlSymbolLarge m_iszSourceEntityName; // 0x568	
-	CUtlSymbolLarge m_iszAttachmentName; // 0x570	
-	CEntityOutputTemplate< uint64 > m_onGUIDChanged; // 0x578	
-	CEntityIOOutput m_onSoundFinished; // 0x5a0	
-	float m_flClientCullRadius; // 0x5c8	
+	CUtlSymbolLarge m_iszSourceEntityName; // 0x578	
+	CUtlSymbolLarge m_iszAttachmentName; // 0x580	
+	CEntityOutputTemplate< uint64 > m_onGUIDChanged; // 0x588	
+	CEntityIOOutput m_onSoundFinished; // 0x5b0	
+	float m_flClientCullRadius; // 0x5d8	
 private:
-	[[maybe_unused]] uint8_t __pad05cc[0x2c]; // 0x5cc
+	[[maybe_unused]] uint8_t __pad05dc[0x2c]; // 0x5dc
 public:
-	CUtlSymbolLarge m_iszSoundName; // 0x5f8	
+	CUtlSymbolLarge m_iszSoundName; // 0x608	
 private:
-	[[maybe_unused]] uint8_t __pad0600[0x8]; // 0x600
+	[[maybe_unused]] uint8_t __pad0610[0x8]; // 0x610
 public:
-	CEntityHandle m_hSource; // 0x608	
-	int32_t m_nEntityIndexSelection; // 0x60c	
+	CEntityHandle m_hSource; // 0x618	
+	int32_t m_nEntityIndexSelection; // 0x61c	
 	struct 
 	{
 		uint8_t m_bClientSideOnly: 1; 		
@@ -49,7 +49,7 @@ public:
 	// bool InputPauseSound; // 0x0
 	// bool InputUnPauseSound; // 0x0
 	// void InputStopSound; // 0x0
-	// void m_nGUID; // 0x600
+	// void m_nGUID; // 0x610
 	// void C_SoundEventEntitySoundFinishedThink; // 0x0
 };
 

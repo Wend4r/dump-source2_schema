@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1f8
+// Size: 0x1f0
 // Has VTable
 class CCitadel_Modifier_Ricochet_Proc : public CCitadel_Modifier_BaseEventProc
 {

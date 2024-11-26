@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x830
+// Size: 0x888
 // Has VTable
 class CFuncPlatRot : public CFuncPlat
 {
 public:
-	QAngle m_end; // 0x818	
-	QAngle m_start; // 0x824	
+	QAngle m_end; // 0x870	
+	QAngle m_start; // 0x87c	
 };
 

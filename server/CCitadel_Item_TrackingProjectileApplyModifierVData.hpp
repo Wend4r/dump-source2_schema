@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1638
+// Size: 0x16a8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,9 +12,9 @@ class CCitadel_Item_TrackingProjectileApplyModifierVData : public CitadelItemVDa
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ProjectileImpactParticle; // 0x1538	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ProjectileImpactParticle; // 0x15a8	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_TargetModifier; // 0x1618	
-	CEmbeddedSubclass< CCitadelModifier > m_FriendlyOnlyModifier; // 0x1628	
+	CEmbeddedSubclass< CCitadelModifier > m_TargetModifier; // 0x1688	
+	CEmbeddedSubclass< CCitadelModifier > m_FriendlyOnlyModifier; // 0x1698	
 };
 

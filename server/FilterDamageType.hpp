@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x538
+// Size: 0x548
 // Has VTable
 class FilterDamageType : public CBaseFilter
 {
 public:
-	int32_t m_iDamageType; // 0x530	
+	int32_t m_iDamageType; // 0x540	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x18
+// Size: 0x20
 // Has Trivial Destructor
 struct ModifierVariant_t
 {

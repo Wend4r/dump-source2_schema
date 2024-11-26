@@ -18,7 +18,7 @@ public:
 	CUtlVector< CGlobalSymbol > m_controlParameterIDs; // 0x20	
 	CUtlVector< CGlobalSymbol > m_virtualParameterIDs; // 0x38	
 	CUtlVector< int16 > m_virtualParameterNodeIndices; // 0x50	
-	CUtlVector< CNmGraphDefinition::ChildGraphSlot_t > m_childGraphSlots; // 0x68	
+	CUtlVector< CNmGraphDefinition::ReferencedGraphSlot_t > m_referencedGraphSlots; // 0x68	
 	CUtlVector< CNmGraphDefinition::ExternalGraphSlot_t > m_externalGraphSlots; // 0x80	
 private:
 	[[maybe_unused]] uint8_t __pad0098[0x70]; // 0x98

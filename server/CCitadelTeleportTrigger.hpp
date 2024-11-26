@@ -6,7 +6,7 @@ struct CCitadelMinimapComponent;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9d0
+// Size: 0xa18
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -18,17 +18,17 @@ public:
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x948	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x990	
 	// MNetworkEnable
-	Vector m_vExitOrigin; // 0x960	
+	Vector m_vExitOrigin; // 0x9a8	
 private:
-	[[maybe_unused]] uint8_t __pad096c[0x2c]; // 0x96c
+	[[maybe_unused]] uint8_t __pad09b4[0x2c]; // 0x9b4
 public:
-	CUtlSymbolLarge m_strExitPoint; // 0x998	
-	CEntityIOOutput m_OnTeleport; // 0x9a0	
-	CUtlSymbolLarge m_strPropModel; // 0x9c8	
+	CUtlSymbolLarge m_strExitPoint; // 0x9e0	
+	CEntityIOOutput m_OnTeleport; // 0x9e8	
+	CUtlSymbolLarge m_strPropModel; // 0xa10	
 	
 	// Datamap fields:
-	// void m_pEntExit; // 0x970
+	// void m_pEntExit; // 0x9b8
 };
 

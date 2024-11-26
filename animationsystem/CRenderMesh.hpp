@@ -26,6 +26,7 @@ public:
 	// -> m_flTensionStretchScale - 0x1ac
 	// -> m_bRecomputeSmoothNormalsAfterAnimation - 0x1b0
 	// -> m_bComputeDynamicMeshTensionAfterAnimation - 0x1b1
+	// -> m_bSmoothNormalsAcrossUvSeams - 0x1b2
 	DynamicMeshDeformParams_t m_meshDeformParams; // 0x1a8	
 private:
 	[[maybe_unused]] uint8_t __pad01b4[0x4]; // 0x1b4

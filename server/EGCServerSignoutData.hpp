@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 8
+// Enumerator count: 9
 // Alignment: 4
 // Size: 0x4
 enum class EGCServerSignoutData : uint32_t
@@ -16,5 +16,6 @@ enum class EGCServerSignoutData : uint32_t
 	k_EServerSignoutData_PlayerChat = 0x7,
 	k_EServerSignoutData_BookRewards = 0x8,
 	k_EServerSignoutData_PenalizedPlayers = 0x9,
+	k_EServerSignoutData_ReportCheaters = 0xa,
 };
 

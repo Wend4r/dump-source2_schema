@@ -9,7 +9,7 @@ struct ModifierQueuedRefreshHandle_t;
 struct ModifierRuntimeHandle_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x90
+// Size: 0x88
 // Has VTable
 // Is Abstract
 class CBaseModifier
@@ -42,7 +42,6 @@ public:
 	CUtlVector< IModifierTrackedObject* >* m_pVecTrackedObjects; // 0x78	
 	ModifierRuntimeHandle_t m_hModifierListHandle; // 0x80	
 	int32_t m_iStringIndex; // 0x84	
-	uint8_t m_nDebugHelperFlags; // 0x88	
 	
 	// Datamap fields:
 	// void m_pModifierProp; // 0x20

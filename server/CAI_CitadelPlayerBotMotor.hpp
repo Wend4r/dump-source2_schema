@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x210
+// Size: 0x548
 // Has VTable
 class CAI_CitadelPlayerBotMotor : public CAI_Motor
 {

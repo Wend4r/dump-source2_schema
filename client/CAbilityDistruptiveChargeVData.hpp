@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x15e0
+// Size: 0x1650
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CAbilityDistruptiveChargeVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_Particle; // 0x14f0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_Particle; // 0x1560	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x15d0	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x1640	
 };
 

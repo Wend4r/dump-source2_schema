@@ -6,7 +6,7 @@ struct CCitadelModifierResponseRules_t;
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5f8
+// Size: 0x608
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -75,12 +75,12 @@ public:
 	// MPropertyStartGroup "Camera"
 	CitadelCameraOperationsSequence_t m_cameraSequenceCreated; // 0x4e0	
 	// MPropertyDescription "By default, we stop the sequence from 'Sequence Created' once the modifier is removed.  Un-check this to allow it to continue past the modifier's lifetime."
-	bool m_bEndCreatedSequenceOnRemove; // 0x560	
+	bool m_bEndCreatedSequenceOnRemove; // 0x568	
 private:
-	[[maybe_unused]] uint8_t __pad0561[0x7]; // 0x561
+	[[maybe_unused]] uint8_t __pad0569[0x7]; // 0x569
 public:
-	CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x568	
+	CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x570	
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_sExpiredSound; // 0x5e8	
+	CSoundEventName m_sExpiredSound; // 0x5f8	
 };
 

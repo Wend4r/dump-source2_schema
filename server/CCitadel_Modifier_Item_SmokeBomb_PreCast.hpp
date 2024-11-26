@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x138
+// Size: 0x130
 // Has VTable
 class CCitadel_Modifier_Item_SmokeBomb_PreCast : public CCitadelModifier
 {

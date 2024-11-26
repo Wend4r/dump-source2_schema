@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1a58
+// Size: 0x1828
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,18 +12,15 @@ class CAbilityPerchedPredatorVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_MineActiveParticle; // 0x14f0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CatReappearParticle; // 0x15d0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_CatEyesParticle; // 0x16b0	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeBaseParticle; // 0x1790	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeFriendlyParticle; // 0x1870	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeEnemyParticle; // 0x1950	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeBaseParticle; // 0x1560	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeFriendlyParticle; // 0x1640	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeEnemyParticle; // 0x1720	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strExplodeSound; // 0x1a30	
+	CSoundEventName m_strExplodeSound; // 0x1800	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ModifierDragEnemy; // 0x1a40	
+	CEmbeddedSubclass< CCitadelModifier > m_ModifierDragEnemy; // 0x1810	
 	// MPropertyStartGroup "Gameplay"
-	float m_flOnHitDetonateTimer; // 0x1a50	
-	float m_flTraceTravelRadius; // 0x1a54	
+	float m_flOnHitDetonateTimer; // 0x1820	
+	float m_flTraceTravelRadius; // 0x1824	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9a8
+// Size: 0xa80
 // Has VTable
 class CCitadel_BreakablePropModifierPickup : public CCitadel_BreakablePropPickup
 {

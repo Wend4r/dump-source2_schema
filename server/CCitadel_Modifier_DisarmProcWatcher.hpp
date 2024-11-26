@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1e0
+// Size: 0x1d8
 // Has VTable
 class CCitadel_Modifier_DisarmProcWatcher : public CCitadel_Modifier_BaseEventProc
 {

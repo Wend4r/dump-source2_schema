@@ -15,6 +15,6 @@
 class CPulseCell_Inflow_EventHandler : public CPulseCell_Inflow_BaseEntrypoint
 {
 public:
-	CUtlSymbolLarge m_EventName; // 0x70	
+	CGlobalSymbol m_EventName; // 0x70	
 };
 

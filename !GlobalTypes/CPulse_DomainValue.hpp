@@ -12,7 +12,7 @@ class CPulse_DomainValue
 {
 public:
 	PulseDomainValueType_t m_nType; // 0x0	
-	CGlobalSymbol m_Value; // 0x8	
-	CGlobalSymbol m_ExpectedRuntimeType; // 0x10	
+	CGlobalSymbolCaseSensitive m_Value; // 0x8	
+	CGlobalSymbolCaseSensitive m_ExpectedRuntimeType; // 0x10	
 };
 

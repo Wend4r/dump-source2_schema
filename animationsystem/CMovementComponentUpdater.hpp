@@ -5,7 +5,7 @@
 struct CAnimInputDamping;
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0xa8
+// Size: 0xb0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -22,6 +22,6 @@ public:
 	bool m_bMoveVarsDisabled; // 0x68	
 	bool m_bNetworkPath; // 0x69	
 	bool m_bNetworkFacing; // 0x6a	
-	CAnimParamHandle m_paramHandles[30]; // 0x6b	
+	CAnimParamHandle m_paramHandles[34]; // 0x6b	
 };
 

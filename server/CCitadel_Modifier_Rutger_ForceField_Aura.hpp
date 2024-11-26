@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x158
+// Size: 0x150
 // Has VTable
 class CCitadel_Modifier_Rutger_ForceField_Aura : public CCitadelModifierAura
 {

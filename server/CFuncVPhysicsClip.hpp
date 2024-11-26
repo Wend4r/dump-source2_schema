@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x770
+// Size: 0x7c8
 // Has VTable
 class CFuncVPhysicsClip : public CBaseModelEntity
 {
 public:
-	bool m_bDisabled; // 0x768	
+	bool m_bDisabled; // 0x7c0	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

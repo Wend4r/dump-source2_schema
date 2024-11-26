@@ -7,7 +7,7 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x938
+// Size: 0x990
 // Has VTable
 // 
 // MNetworkVarNames "CHandle< CBaseModelEntity> m_glowEntity"
@@ -16,53 +16,53 @@ struct CEntityIOOutput;
 class CBaseButton : public CBaseToggle
 {
 public:
-	QAngle m_angMoveEntitySpace; // 0x7e8	
-	bool m_fStayPushed; // 0x7f4	
-	bool m_fRotating; // 0x7f5	
+	QAngle m_angMoveEntitySpace; // 0x840	
+	bool m_fStayPushed; // 0x84c	
+	bool m_fRotating; // 0x84d	
 private:
-	[[maybe_unused]] uint8_t __pad07f6[0x2]; // 0x7f6
+	[[maybe_unused]] uint8_t __pad084e[0x2]; // 0x84e
 public:
-	locksound_t m_ls; // 0x7f8	
-	CUtlSymbolLarge m_sUseSound; // 0x818	
-	CUtlSymbolLarge m_sLockedSound; // 0x820	
-	CUtlSymbolLarge m_sUnlockedSound; // 0x828	
-	CUtlSymbolLarge m_sOverrideAnticipationName; // 0x830	
-	bool m_bLocked; // 0x838	
-	bool m_bDisabled; // 0x839	
+	locksound_t m_ls; // 0x850	
+	CUtlSymbolLarge m_sUseSound; // 0x870	
+	CUtlSymbolLarge m_sLockedSound; // 0x878	
+	CUtlSymbolLarge m_sUnlockedSound; // 0x880	
+	CUtlSymbolLarge m_sOverrideAnticipationName; // 0x888	
+	bool m_bLocked; // 0x890	
+	bool m_bDisabled; // 0x891	
 private:
-	[[maybe_unused]] uint8_t __pad083a[0x2]; // 0x83a
+	[[maybe_unused]] uint8_t __pad0892[0x2]; // 0x892
 public:
-	GameTime_t m_flUseLockedTime; // 0x83c	
-	bool m_bSolidBsp; // 0x840	
+	GameTime_t m_flUseLockedTime; // 0x894	
+	bool m_bSolidBsp; // 0x898	
 private:
-	[[maybe_unused]] uint8_t __pad0841[0x7]; // 0x841
+	[[maybe_unused]] uint8_t __pad0899[0x7]; // 0x899
 public:
-	CEntityIOOutput m_OnDamaged; // 0x848	
-	CEntityIOOutput m_OnPressed; // 0x870	
-	CEntityIOOutput m_OnUseLocked; // 0x898	
-	CEntityIOOutput m_OnIn; // 0x8c0	
-	CEntityIOOutput m_OnOut; // 0x8e8	
-	int32_t m_nState; // 0x910	
-	CEntityHandle m_hConstraint; // 0x914	
-	CEntityHandle m_hConstraintParent; // 0x918	
-	bool m_bForceNpcExclude; // 0x91c	
+	CEntityIOOutput m_OnDamaged; // 0x8a0	
+	CEntityIOOutput m_OnPressed; // 0x8c8	
+	CEntityIOOutput m_OnUseLocked; // 0x8f0	
+	CEntityIOOutput m_OnIn; // 0x918	
+	CEntityIOOutput m_OnOut; // 0x940	
+	int32_t m_nState; // 0x968	
+	CEntityHandle m_hConstraint; // 0x96c	
+	CEntityHandle m_hConstraintParent; // 0x970	
+	bool m_bForceNpcExclude; // 0x974	
 private:
-	[[maybe_unused]] uint8_t __pad091d[0x3]; // 0x91d
+	[[maybe_unused]] uint8_t __pad0975[0x3]; // 0x975
 public:
-	CUtlSymbolLarge m_sGlowEntity; // 0x920	
+	CUtlSymbolLarge m_sGlowEntity; // 0x978	
 	// MNetworkEnable
-	CHandle< CBaseModelEntity > m_glowEntity; // 0x928	
+	CHandle< CBaseModelEntity > m_glowEntity; // 0x980	
 	// MNetworkEnable
-	bool m_usable; // 0x92c	
+	bool m_usable; // 0x984	
 private:
-	[[maybe_unused]] uint8_t __pad092d[0x3]; // 0x92d
+	[[maybe_unused]] uint8_t __pad0985[0x3]; // 0x985
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_szDisplayText; // 0x930	
+	CUtlSymbolLarge m_szDisplayText; // 0x988	
 	
 	// Datamap fields:
-	//  m_ls.sLockedSound; // 0x800
-	//  m_ls.sUnlockedSound; // 0x808
+	//  m_ls.sLockedSound; // 0x858
+	//  m_ls.sUnlockedSound; // 0x860
 	// void CBaseButtonButtonTouch; // 0x0
 	// void CBaseButtonButtonSpark; // 0x0
 	// void CBaseButtonTriggerAndWait; // 0x0

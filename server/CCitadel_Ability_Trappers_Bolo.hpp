@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc50
+// Size: 0xc78
 // Has VTable
 class CCitadel_Ability_Trappers_Bolo : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x38]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0x38]; // 0xb00
 public:
-	CHandle< CBaseEntity > m_hProjectile; // 0xb10	
-	CHandle< CBaseEntity > m_hNextTarget; // 0xb14	
-	CUtlVector< CHandle< CBaseEntity > > m_hHitTargets; // 0xb18	
-	int32_t m_iBounces; // 0xb30	
-	bool m_bReturning; // 0xb34	
+	CHandle< CBaseEntity > m_hProjectile; // 0xb38	
+	CHandle< CBaseEntity > m_hNextTarget; // 0xb3c	
+	CUtlVector< CHandle< CBaseEntity > > m_hHitTargets; // 0xb40	
+	int32_t m_iBounces; // 0xb58	
+	bool m_bReturning; // 0xb5c	
 };
 

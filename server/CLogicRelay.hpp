@@ -5,18 +5,18 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x530
+// Size: 0x540
 // Has VTable
 class CLogicRelay : public CLogicalEntity
 {
 public:
-	CEntityIOOutput m_OnTrigger; // 0x4d8	
-	CEntityIOOutput m_OnSpawn; // 0x500	
-	bool m_bDisabled; // 0x528	
-	bool m_bWaitForRefire; // 0x529	
-	bool m_bTriggerOnce; // 0x52a	
-	bool m_bFastRetrigger; // 0x52b	
-	bool m_bPassthoughCaller; // 0x52c	
+	CEntityIOOutput m_OnTrigger; // 0x4e8	
+	CEntityIOOutput m_OnSpawn; // 0x510	
+	bool m_bDisabled; // 0x538	
+	bool m_bWaitForRefire; // 0x539	
+	bool m_bTriggerOnce; // 0x53a	
+	bool m_bFastRetrigger; // 0x53b	
+	bool m_bPassthoughCaller; // 0x53c	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x530
+// Size: 0x540
 // Has VTable
 class CNodeEnt_InfoNodeHint : public CNodeEnt
 {

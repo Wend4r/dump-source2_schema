@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd0
+// Size: 0xc8
 // Has VTable
 // Is Abstract
 class CCitadel_Modifier_BaseShield : public CCitadelModifier
 {
 public:
-	CUtlSymbolLarge m_strToken; // 0xc8	
+	CUtlSymbolLarge m_strToken; // 0xc0	
 };
 

@@ -15,7 +15,7 @@
 class CPulseCell_Inflow_Method : public CPulseCell_Inflow_BaseEntrypoint
 {
 public:
-	CUtlSymbolLarge m_MethodName; // 0x70	
+	CGlobalSymbol m_MethodName; // 0x70	
 	CUtlString m_Description; // 0x78	
 	bool m_bIsPublic; // 0x80	
 private:

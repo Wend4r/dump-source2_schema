@@ -6,20 +6,20 @@ struct ParticleIndex_t;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdc8
+// Size: 0xe08
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flPostCastHoldEndTime"
 class CCitadel_Ability_HealthSwap : public C_CitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_nFXIndex; // 0xc60	
-	float m_flHealthToCaster; // 0xc64	
-	float m_flTargetHealthLost; // 0xc68	
+	ParticleIndex_t m_nFXIndex; // 0xca0	
+	float m_flHealthToCaster; // 0xca4	
+	float m_flTargetHealthLost; // 0xca8	
 private:
-	[[maybe_unused]] uint8_t __pad0c6c[0x11c]; // 0xc6c
+	[[maybe_unused]] uint8_t __pad0cac[0x11c]; // 0xcac
 public:
 	// MNetworkEnable
-	GameTime_t m_flPostCastHoldEndTime; // 0xd88	
+	GameTime_t m_flPostCastHoldEndTime; // 0xdc8	
 };
 

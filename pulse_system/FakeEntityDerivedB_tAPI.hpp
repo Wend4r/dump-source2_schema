@@ -8,8 +8,8 @@
 // Has Trivial Constructor
 // Has Trivial Destructor
 // 
-// MPulseProvideFeatureTag
 // MPulseLibraryBindings
+// MPulseProvideFeatureTag
 class FakeEntityDerivedB_tAPI
 {
 private:

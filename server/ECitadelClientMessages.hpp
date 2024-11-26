@@ -8,7 +8,6 @@
 // Size: 0x4
 enum class ECitadelClientMessages : uint32_t
 {
-	CITADEL_CM_CancelAbility = 0x3e9,
 	CITADEL_CM_MapPing = 0x3ea,
 	CITADEL_CM_PerformanceStats = 0x3eb,
 	CITADEL_CM_PingWheel = 0x3ec,
@@ -20,5 +19,6 @@ enum class ECitadelClientMessages : uint32_t
 	CITADEL_CM_AbilityPing = 0x3f2,
 	CITADEL_CM_ExecuteMapUnitAbility = 0x3f3,
 	CITADEL_CM_GetDamageStats = 0x3f4,
+	CITADEL_CM_CheaterVote = 0x3f5,
 };
 

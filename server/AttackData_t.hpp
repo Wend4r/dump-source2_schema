@@ -5,7 +5,7 @@
 struct CitadelCameraOperationsSequence_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x520
+// Size: 0x528
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -34,10 +34,12 @@ public:
 	float m_flCooldownOnHit; // 0x20	
 	// MPropertyDescription "Half width of the cone at the player"
 	float m_flTraceConeHalfWidth; // 0x24	
+	// MPropertyDescription "How much force to apply upward on hit"
+	float m_flKnockUpStrength; // 0x28	
 	// MPropertyDescription "Trigger a big screen shake when this attack hits"
-	bool m_bApplyScreenShake; // 0x28	
+	bool m_bApplyScreenShake; // 0x2c	
 private:
-	[[maybe_unused]] uint8_t __pad0029[0x7]; // 0x29
+	[[maybe_unused]] uint8_t __pad002d[0x3]; // 0x2d
 public:
 	// MPropertyDescription "The curve defining move speed bonus/penalty.  This is how we apply the post-movement controller movement slow."
 	CPiecewiseCurve m_SpeedBonusCurve; // 0x30	

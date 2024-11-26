@@ -4,9 +4,9 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd58
+// Size: 0xd60
 // Has VTable
-class CCitadel_WeaponUpgrade_Headhunter : public CCitadel_Item
+class CCitadel_WeaponUpgrade_Headhunter : public CCitadel_WeaponUpgrade_HeadshotBooster
 {
 public:
 	// No schema binary for binding

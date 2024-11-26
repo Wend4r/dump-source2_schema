@@ -5,7 +5,7 @@
 struct C_PointCamera;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5b8
+// Size: 0x5c8
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -35,68 +35,68 @@ class C_PointCamera : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	float m_FOV; // 0x558	
+	float m_FOV; // 0x568	
 	// MNetworkEnable
-	float m_Resolution; // 0x55c	
+	float m_Resolution; // 0x56c	
 	// MNetworkEnable
-	bool m_bFogEnable; // 0x560	
+	bool m_bFogEnable; // 0x570	
 	// MNetworkEnable
-	Color m_FogColor; // 0x561	
+	Color m_FogColor; // 0x571	
 private:
-	[[maybe_unused]] uint8_t __pad0565[0x3]; // 0x565
+	[[maybe_unused]] uint8_t __pad0575[0x3]; // 0x575
 public:
 	// MNetworkEnable
-	float m_flFogStart; // 0x568	
+	float m_flFogStart; // 0x578	
 	// MNetworkEnable
-	float m_flFogEnd; // 0x56c	
+	float m_flFogEnd; // 0x57c	
 	// MNetworkEnable
-	float m_flFogMaxDensity; // 0x570	
+	float m_flFogMaxDensity; // 0x580	
 	// MNetworkEnable
-	bool m_bActive; // 0x574	
+	bool m_bActive; // 0x584	
 	// MNetworkEnable
-	bool m_bUseScreenAspectRatio; // 0x575	
+	bool m_bUseScreenAspectRatio; // 0x585	
 private:
-	[[maybe_unused]] uint8_t __pad0576[0x2]; // 0x576
+	[[maybe_unused]] uint8_t __pad0586[0x2]; // 0x586
 public:
 	// MNetworkEnable
-	float m_flAspectRatio; // 0x578	
+	float m_flAspectRatio; // 0x588	
 	// MNetworkEnable
-	bool m_bNoSky; // 0x57c	
+	bool m_bNoSky; // 0x58c	
 private:
-	[[maybe_unused]] uint8_t __pad057d[0x3]; // 0x57d
+	[[maybe_unused]] uint8_t __pad058d[0x3]; // 0x58d
 public:
 	// MNetworkEnable
-	float m_fBrightness; // 0x580	
+	float m_fBrightness; // 0x590	
 	// MNetworkEnable
-	float m_flZFar; // 0x584	
+	float m_flZFar; // 0x594	
 	// MNetworkEnable
-	float m_flZNear; // 0x588	
+	float m_flZNear; // 0x598	
 	// MNetworkEnable
-	bool m_bCanHLTVUse; // 0x58c	
+	bool m_bCanHLTVUse; // 0x59c	
 	// MNetworkEnable
-	bool m_bAlignWithParent; // 0x58d	
+	bool m_bAlignWithParent; // 0x59d	
 	// MNetworkEnable
-	bool m_bDofEnabled; // 0x58e	
+	bool m_bDofEnabled; // 0x59e	
 private:
-	[[maybe_unused]] uint8_t __pad058f[0x1]; // 0x58f
+	[[maybe_unused]] uint8_t __pad059f[0x1]; // 0x59f
 public:
 	// MNetworkEnable
-	float m_flDofNearBlurry; // 0x590	
+	float m_flDofNearBlurry; // 0x5a0	
 	// MNetworkEnable
-	float m_flDofNearCrisp; // 0x594	
+	float m_flDofNearCrisp; // 0x5a4	
 	// MNetworkEnable
-	float m_flDofFarCrisp; // 0x598	
+	float m_flDofFarCrisp; // 0x5a8	
 	// MNetworkEnable
-	float m_flDofFarBlurry; // 0x59c	
+	float m_flDofFarBlurry; // 0x5ac	
 	// MNetworkEnable
-	float m_flDofTiltToGround; // 0x5a0	
-	float m_TargetFOV; // 0x5a4	
-	float m_DegreesPerSecond; // 0x5a8	
-	bool m_bIsOn; // 0x5ac	
+	float m_flDofTiltToGround; // 0x5b0	
+	float m_TargetFOV; // 0x5b4	
+	float m_DegreesPerSecond; // 0x5b8	
+	bool m_bIsOn; // 0x5bc	
 private:
-	[[maybe_unused]] uint8_t __pad05ad[0x3]; // 0x5ad
+	[[maybe_unused]] uint8_t __pad05bd[0x3]; // 0x5bd
 public:
-	C_PointCamera* m_pNext; // 0x5b0	
+	C_PointCamera* m_pNext; // 0x5c0	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge InputChangeFOV; // 0x0

@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5338
+// Size: 0x5b40
 // Has VTable
 class CCitadelPlayerBot
 {
 private:
-	[[maybe_unused]] uint8_t __pad0000[0x5338]; // 0x0
+	[[maybe_unused]] uint8_t __pad0000[0x5b40]; // 0x0
 public:
 	// No schema binary for binding
 };

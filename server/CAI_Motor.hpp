@@ -5,9 +5,10 @@
 struct CSimpleSimTimer;
 struct CAI_MotorNavLink;
 struct CAI_MotorTransition;
+struct CAI_MotorGroundAnimGraph;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1e8
+// Size: 0x520
 // Has VTable
 class CAI_Motor : public CAI_Component
 {
@@ -20,26 +21,34 @@ public:
 	Vector m_vMoveVel; // 0x64	
 	Vector m_vMoveVelNavigation; // 0x70	
 	Vector m_vecAngularVelocity; // 0x7c	
-	Vector m_vIdealClimbOrientation; // 0x88	
-	CSimpleSimTimer m_timerFloorPointCached; // 0x94	
-	Vector m_vFloorPointCached; // 0x9c	
-	bool m_bFloorPointCachingEnabled; // 0xa8	
+	CSimpleSimTimer m_timerFloorPointCached; // 0x88	
+	Vector m_vFloorPointCached; // 0x90	
+	bool m_bFloorPointCachingEnabled; // 0x9c	
 private:
-	[[maybe_unused]] uint8_t __pad00a9[0x2b]; // 0xa9
+	[[maybe_unused]] uint8_t __pad009d[0x27]; // 0x9d
 public:
-	float m_flSpeed; // 0xd4	
-	bool m_bMovementActive; // 0xd8	
-	bool m_bEmbeddedRecoveryEnabled; // 0xd9	
-	bool m_pEnableForceFacing[2]; // 0xda	
-	uint8_t m_nEntityFacingLockCount; // 0xdc	
+	float m_flSpeed; // 0xc4	
+	bool m_bMovementActive; // 0xc8	
+	bool m_bEmbeddedRecoveryEnabled; // 0xc9	
+	bool m_pEnableForceFacing[2]; // 0xca	
+	uint8_t m_nEntityFacingLockCount; // 0xcc	
 private:
-	[[maybe_unused]] uint8_t __pad00dd[0x3]; // 0xdd
+	[[maybe_unused]] uint8_t __pad00cd[0x3]; // 0xcd
 public:
-	CUtlVector< ChoreoEntityFacing_t > m_vecChoreoEntityFacings; // 0xe0	
-	Vector m_vBoundaryDistCachedPos; // 0xf8	
-	float m_flBoundaryDistCached; // 0x104	
-	CAI_MotorNavLink m_motorNavLink; // 0x108	
-	CAI_MotorTransition m_motorTransition; // 0x180	
-	bool m_bIsExecutingMoveSolve; // 0x1e0	
+	CUtlVector< ChoreoEntityFacing_t > m_vecChoreoEntityFacings; // 0xd0	
+	Vector m_vBoundaryDistCachedPos; // 0xe8	
+	float m_flBoundaryDistCached; // 0xf4	
+	CAI_MotorNavLink m_motorNavLink; // 0xf8	
+	CAI_MotorTransition m_motorTransition; // 0x170	
+	CAI_MotorGroundAnimGraph m_motorGroundAnimgraph; // 0x1d0	
+	bool m_bIsExecutingMoveSolve; // 0x410	
+private:
+	[[maybe_unused]] uint8_t __pad0411[0x3]; // 0x411
+public:
+	CAI_InterestTarget m_pEntityFacingRequests[5]; // 0x414	
+	AI_ScheduleFacingTargetPriority_t m_eScheduleFacingRequestPriority; // 0x518	
+	AI_Motor_MovementFacingMode_t m_movementFacingModeRequests[4]; // 0x519	
+	AI_Motor_DefaultFacing_t m_eDefaultFacing; // 0x51d	
+	AI_Motor_DefaultFacing_t m_eScheduleDefaultFacing; // 0x51e	
 };
 

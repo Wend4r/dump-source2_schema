@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x260
+// Size: 0x258
 // Has VTable
 class CCitadel_Modifier_Galvanic_Storm_Effect : public CCitadel_Modifier_ChainLightningEffect
 {

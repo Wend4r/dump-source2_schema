@@ -5,12 +5,13 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x108
+// Size: 0x170
 // Has VTable
 class CCitadel_Modifier_StickyBombAttached : public CCitadelModifier
 {
+private:
+	[[maybe_unused]] uint8_t __pad00c0[0x4]; // 0xc0
 public:
-	float m_flDamage; // 0xc8	
-	ParticleIndex_t m_nParticleIndex; // 0xcc	
+	ParticleIndex_t m_nParticleIndex; // 0xc4	
 };
 

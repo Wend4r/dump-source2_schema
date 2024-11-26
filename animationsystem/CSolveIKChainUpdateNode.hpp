@@ -12,7 +12,7 @@ struct SolveIKChainPoseOpFixedSettings_t;
 class CSolveIKChainUpdateNode : public CUnaryUpdateNode
 {
 public:
-	CUtlVector< CSolveIKTargetHandle_t > m_targetHandles; // 0x68	
-	SolveIKChainPoseOpFixedSettings_t m_opFixedData; // 0x80	
+	CUtlVector< CSolveIKTargetHandle_t > m_targetHandles; // 0x70	
+	SolveIKChainPoseOpFixedSettings_t m_opFixedData; // 0x88	
 };
 

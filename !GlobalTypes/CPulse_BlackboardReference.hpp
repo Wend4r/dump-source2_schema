@@ -12,7 +12,7 @@ class CPulse_BlackboardReference
 {
 public:
 	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIPulseGraphDef > > m_hBlackboardResource; // 0x0	
-	CUtlSymbolLarge m_BlackboardResource; // 0xe0	
+	CGlobalSymbol m_BlackboardResource; // 0xe0	
 	PulseDocNodeID_t m_nNodeID; // 0xe8	
 private:
 	[[maybe_unused]] uint8_t __pad00ec[0x4]; // 0xec

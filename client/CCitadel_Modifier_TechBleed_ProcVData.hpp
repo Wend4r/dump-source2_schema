@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x648
+// Size: 0x658
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CCitadel_Modifier_TechBleed_ProcVData : public CCitadel_Modifier_BaseEvent
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_BleedModifier; // 0x628	
-	CEmbeddedSubclass< CBaseModifier > m_SlowModifier; // 0x638	
+	CEmbeddedSubclass< CBaseModifier > m_BleedModifier; // 0x638	
+	CEmbeddedSubclass< CBaseModifier > m_SlowModifier; // 0x648	
 };
 

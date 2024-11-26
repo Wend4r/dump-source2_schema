@@ -58,7 +58,11 @@ private:
 public:
 	int32_t m_nStepside; // 0x210	
 	int32_t m_iTargetVolume; // 0x214	
-	Vector m_vecSmoothedVelocity; // 0x218	
+	bool m_bDisableMovementSounds; // 0x218	
+private:
+	[[maybe_unused]] uint8_t __pad0219[0x3]; // 0x219
+public:
+	Vector m_vecSmoothedVelocity; // 0x21c	
 	
 	// Datamap fields:
 	// void m_pSurfaceData; // 0x208

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc8
+// Size: 0xc0
 // Has VTable
 class CGameModifier_FireUserEntityIO : public CCitadelModifier
 {

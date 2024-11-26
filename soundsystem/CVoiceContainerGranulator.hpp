@@ -4,7 +4,7 @@
 
 // Registered binary: soundsystem.dll (project 'soundsystem_voicecontainers')
 // Alignment: 8
-// Size: 0x190
+// Size: 0x198
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,6 +16,10 @@ public:
 	float m_flGrainCrossfadeAmount; // 0xc4	
 	float m_flStartJitter; // 0xc8	
 	float m_flPlaybackJitter; // 0xcc	
-	CStrongHandle< InfoForResourceTypeCVoiceContainerBase > m_sourceAudio; // 0xd0	
+	bool m_bShouldWraparound; // 0xd0	
+private:
+	[[maybe_unused]] uint8_t __pad00d1[0x7]; // 0xd1
+public:
+	CStrongHandle< InfoForResourceTypeCVoiceContainerBase > m_sourceAudio; // 0xd8	
 };
 

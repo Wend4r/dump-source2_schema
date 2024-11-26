@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x778
+// Size: 0x7d0
 // Has VTable
 class CRulePointEntity : public CRuleEntity
 {
 public:
-	int32_t m_Score; // 0x770	
+	int32_t m_Score; // 0x7c8	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x160
+// Size: 0x158
 // Has VTable
 class CCitadel_Modifier_Cadence_Sleeping : public CCitadel_Modifier_Sleep
 {

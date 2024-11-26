@@ -5,20 +5,20 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc40
+// Size: 0xcb0
 // Has VTable
 class C_PhysPropClientside : public C_BreakableProp
 {
 public:
-	GameTime_t m_flTouchDelta; // 0xc18	
-	GameTime_t m_fDeathTime; // 0xc1c	
-	float m_inertiaScale; // 0xc20	
-	Vector m_vecDamagePosition; // 0xc24	
-	Vector m_vecDamageDirection; // 0xc30	
-	int32_t m_nDamageType; // 0xc3c	
+	GameTime_t m_flTouchDelta; // 0xc88	
+	GameTime_t m_fDeathTime; // 0xc8c	
+	float m_inertiaScale; // 0xc90	
+	Vector m_vecDamagePosition; // 0xc94	
+	Vector m_vecDamageDirection; // 0xca0	
+	DamageTypes_t m_nDamageType; // 0xcac	
 	
 	// Datamap fields:
-	// float m_impactEnergyScale; // 0xb88
+	// float m_impactEnergyScale; // 0xbf8
 	// bool forcemotiondisabled; // 0x7fffffff
 	// bool phys_start_asleep; // 0x7fffffff
 	// float fademaxdist; // 0x7fffffff

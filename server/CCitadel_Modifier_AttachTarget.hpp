@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xd8
+// Size: 0xd0
 // Has VTable
 class CCitadel_Modifier_AttachTarget : public CCitadelModifier
 {
 public:
-	CHandle< CBaseEntity > m_hTarget; // 0xc8	
-	Vector m_vecOffset; // 0xcc	
+	CHandle< CBaseEntity > m_hTarget; // 0xc0	
+	Vector m_vecOffset; // 0xc4	
 };
 

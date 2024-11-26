@@ -5,11 +5,11 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xcb8
+// Size: 0xcf8
 // Has VTable
 class CCitadel_Item_WarpStone : public CCitadel_Item
 {
 public:
-	ParticleIndex_t m_nCastDelayParticleIndex; // 0xc78	
+	ParticleIndex_t m_nCastDelayParticleIndex; // 0xcb8	
 };
 

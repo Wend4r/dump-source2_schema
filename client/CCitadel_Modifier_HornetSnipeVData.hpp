@@ -11,7 +11,5 @@
 class CCitadel_Modifier_HornetSnipeVData : public CCitadelModifierVData
 {
 public:
-	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_GlowEnemeyModifier; // 0x5f8	
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 7
+// Enumerator count: 8
 // Alignment: 4
 // Size: 0x4
 enum class ECitadelMatchMode : uint32_t
@@ -15,5 +15,6 @@ enum class ECitadelMatchMode : uint32_t
 	k_ECitadelMatchMode_Ranked = 0x4,
 	k_ECitadelMatchMode_ServerTest = 0x5,
 	k_ECitadelMatchMode_Tutorial = 0x6,
+	k_ECitadelMatchMode_HeroLabs = 0x7,
 };
 

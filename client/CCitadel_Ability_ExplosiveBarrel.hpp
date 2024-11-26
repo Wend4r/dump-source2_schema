@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe20
+// Size: 0xe60
 // Has VTable
 class CCitadel_Ability_ExplosiveBarrel : public C_CitadelBaseAbility
 {

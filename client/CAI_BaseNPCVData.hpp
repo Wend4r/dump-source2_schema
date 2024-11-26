@@ -6,9 +6,10 @@ struct CFootstepTableHandle;
 struct NPCStatusEffectMap_t;
 struct CSkillFloat;
 struct CSkillInt;
+struct AI_AdditionalMovementSettings;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x220
+// Size: 0x398
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -46,29 +47,43 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad01c9[0x7]; // 0x1c9
 public:
-	// MPropertyDescription "Destructible Parts"
-	CUtlVector< CAI_BaseNPC_DestructiblePartData > m_DestructiblePartsData; // 0x1d0	
-	// MPropertyStartGroup "Navigation"
-	bool m_bAllowNonZUpMovement; // 0x1e8	
-	// MPropertyDescription "If true, this NPC will use the capsule collision.  Capsule collision will also be used if m_bAllowNonZUpMovement is set."
-	bool m_bRequestCapsuleCollision; // 0x1e9	
+	// MPropertyDescription "Damaged Effect"
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_strDamagedEffect; // 0x1d0	
+	// MPropertyDescription "Amount of health to grant to a ragdoll before the ragdoll is destroyed."
+	int32_t m_nRagdollHealth; // 0x2b0	
 private:
-	[[maybe_unused]] uint8_t __pad01ea[0x2]; // 0x1ea
+	[[maybe_unused]] uint8_t __pad02b4[0x4]; // 0x2b4
+public:
+	// MPropertyDescription "Destructible Part Overrides.  The key is a unique name for a part (searches all hitgroups and the sub parts).  Will override default data specified in the model."
+	CUtlOrderedMap< CUtlString, CDestructiblePartsSystemData_PartRuntimeData > m_DestructiblePartsOverrideByPartName; // 0x2b8	
+	// MPropertyStartGroup "Navigation"
+	bool m_bAllowNonZUpMovement; // 0x2e0	
+	// MPropertyDescription "If true, this NPC will use a dynamic collision hull that allows it to be pushed by heavy things and affected by constraints."
+	bool m_bUseDynamicCollisionHull; // 0x2e1	
+	// MPropertyDescription "If true, this NPC will use the capsule collision.  Capsule collision will also be used if m_bAllowNonZUpMovement is set."
+	bool m_bRequestCapsuleCollision; // 0x2e2	
+private:
+	[[maybe_unused]] uint8_t __pad02e3[0x1]; // 0x2e3
 public:
 	// MPropertyDescription "Override the radius of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop OBB"
-	float m_flCapsuleRadiusOverride; // 0x1ec	
+	float m_flCapsuleRadiusOverride; // 0x2e4	
 	// MPropertyDescription "Override the height of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop height."
-	float m_flCapsuleHeightOverride; // 0x1f0	
+	float m_flCapsuleHeightOverride; // 0x2e8	
+	// MPropertyDescription "If true, this NPC will use code driven animgraph movement actions such as starts and stops"
+	bool m_bAllowAnimgraphMotorMovementStates; // 0x2ec	
 private:
-	[[maybe_unused]] uint8_t __pad01f4[0x4]; // 0x1f4
+	[[maybe_unused]] uint8_t __pad02ed[0x3]; // 0x2ed
 public:
 	// MPropertyStartGroup "Animation"
 	// MPropertyFriendlyName "Enabled Shared Actions"
 	// MPropertyDescription "List of the shared BaseNPC actions this NPC supports"
 	// MPropertyAttributeEditor "VDataAnimGraphParamEnumValue( m_sModelName; literal; e_action_desired_shared )"
-	CUtlVector< CGlobalSymbol > m_vecActionDesiredShared; // 0x1f8	
+	CUtlVector< CGlobalSymbol > m_vecActionDesiredShared; // 0x2f0	
 	// MPropertyStartGroup "Sounds"
 	// MPropertyDescription "Player Killed NPC Sound"
-	CSoundEventName m_sPlayerKilledNpcSound; // 0x210	
+	CSoundEventName m_sPlayerKilledNpcSound; // 0x308	
+	CGlobalSymbol m_sCustomDeathHandshake; // 0x318	
+	// MPropertyStartGroup "Movement"
+	AI_AdditionalMovementSettings m_defaultAdditionalMovementSettings; // 0x320	
 };
 

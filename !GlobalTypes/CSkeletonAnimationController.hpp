@@ -11,7 +11,6 @@ struct CSkeletonInstance;
 class CSkeletonAnimationController : public ISkeletonAnimationController
 {
 public:
-	// MNetworkDisable
 	CSkeletonInstance* m_pSkeletonInstance; // 0x8	
 };
 

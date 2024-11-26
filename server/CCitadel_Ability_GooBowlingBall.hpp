@@ -5,9 +5,10 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xfb8
+// Size: 0xfe8
 // Has VTable
 // 
+// MNetworkVarNames "bool m_bIsRolling"
 // MNetworkVarNames "CHandle< CCitadelViscousBall > m_hBall"
 // MNetworkVarNames "EViscousBowlingBallState_t m_eRollingState"
 // MNetworkVarNames "GameTime_t m_flNextStateTime"
@@ -18,37 +19,39 @@ struct GameTime_t;
 class CCitadel_Ability_GooBowlingBall : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x348]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0x348]; // 0xb00
 public:
-	bool m_bHasAirJumped; // 0xe20	
-	bool m_bIsFollowingBall; // 0xe21	
-	bool m_bIsShowingBall; // 0xe22	
+	int32_t m_nAirJumpsLeft; // 0xe48	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	// MNetworkChangeCallback "OnIsRollingChanged"
+	bool m_bIsRolling; // 0xe4c	
 private:
-	[[maybe_unused]] uint8_t __pad0e23[0x1]; // 0xe23
+	[[maybe_unused]] uint8_t __pad0e4d[0x3]; // 0xe4d
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	CHandle< CCitadelViscousBall > m_hBall; // 0xe24	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	CHandle< CCitadelViscousBall > m_hBall; // 0xe50	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	EViscousBowlingBallState_t m_eRollingState; // 0xe28	
+	EViscousBowlingBallState_t m_eRollingState; // 0xe54	
 private:
-	[[maybe_unused]] uint8_t __pad0e29[0x3]; // 0xe29
+	[[maybe_unused]] uint8_t __pad0e55[0x3]; // 0xe55
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextStateTime; // 0xe2c	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flNextWallCheck; // 0xe30	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flNextStateTime; // 0xe58	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flRollStartTime; // 0xe34	
+	GameTime_t m_flNextWallCheck; // 0xe5c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flWallExitTime; // 0xe38	
+	GameTime_t m_flRollStartTime; // 0xe60	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	Vector m_vecWallExitVelocity; // 0xe3c	
+	GameTime_t m_flWallExitTime; // 0xe64	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	Vector m_vecWallExitVelocity; // 0xe68	
 };
 

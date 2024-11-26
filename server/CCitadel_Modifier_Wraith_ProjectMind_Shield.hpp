@@ -4,9 +4,9 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x100
+// Size: 0xc8
 // Has VTable
-class CCitadel_Modifier_Wraith_ProjectMind_Shield : public CCitadelModifier
+class CCitadel_Modifier_Wraith_ProjectMind_Shield : public CCitadel_Modifier_BaseShield
 {
 public:
 	// No schema binary for binding

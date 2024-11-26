@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 12
+// Enumerator count: 13
 // Alignment: 4
 // Size: 0x4
 enum class ECitadelChatMessage : uint32_t
@@ -20,5 +20,6 @@ enum class ECitadelChatMessage : uint32_t
 	CITADEL_CHAT_MESSAGE_CANTPAUSEYET = 0xa,
 	CITADEL_CHAT_MESSAGE_PREGAME_COUNTDOWN = 0xb,
 	CITADEL_CHAT_MESSAGE_NOTEAMPAUSESLEFT = 0xc,
+	CITADEL_CHAT_MESSAGE_COMMS_RESTRICTED = 0xd,
 };
 

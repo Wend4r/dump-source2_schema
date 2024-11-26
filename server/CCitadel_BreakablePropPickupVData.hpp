@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x318
+// Size: 0x330
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -47,7 +47,12 @@ public:
 	CSoundEventName m_sSpawnSound; // 0x300	
 	// MPropertyDescription "Pickup Radius"
 	float m_flPickupRadius; // 0x310	
+private:
+	[[maybe_unused]] uint8_t __pad0314[0x4]; // 0x314
+public:
+	// MPropertyDescription "Ambient Sound"
+	CSoundEventName m_sAmbientSound; // 0x318	
 	// MPropertyDescription "Pickup Expiration Duration"
-	float m_flPickupExpirationDuration; // 0x314	
+	float m_flPickupExpirationDuration; // 0x328	
 };
 

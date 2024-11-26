@@ -2,9 +2,10 @@
 
 #include <cstdint>
 
+struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xa60
+// Size: 0xbc8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bEnabled"
@@ -15,22 +16,22 @@
 class C_ColorCorrectionVolume : public C_BaseTrigger
 {
 public:
-	float m_LastEnterWeight; // 0x838	
-	float m_LastEnterTime; // 0x83c	
-	float m_LastExitWeight; // 0x840	
-	float m_LastExitTime; // 0x844	
+	float m_LastEnterWeight; // 0x9a0	
+	GameTime_t m_LastEnterTime; // 0x9a4	
+	float m_LastExitWeight; // 0x9a8	
+	GameTime_t m_LastExitTime; // 0x9ac	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x848	
+	bool m_bEnabled; // 0x9b0	
 private:
-	[[maybe_unused]] uint8_t __pad0849[0x3]; // 0x849
+	[[maybe_unused]] uint8_t __pad09b1[0x3]; // 0x9b1
 public:
 	// MNetworkEnable
-	float m_MaxWeight; // 0x84c	
+	float m_MaxWeight; // 0x9b4	
 	// MNetworkEnable
-	float m_FadeDuration; // 0x850	
+	float m_FadeDuration; // 0x9b8	
 	// MNetworkEnable
-	float m_Weight; // 0x854	
+	float m_Weight; // 0x9bc	
 	// MNetworkEnable
-	char m_lookupFilename[512]; // 0x858	
+	char m_lookupFilename[512]; // 0x9c0	
 };
 

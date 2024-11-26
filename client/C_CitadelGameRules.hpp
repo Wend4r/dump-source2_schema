@@ -24,6 +24,7 @@ struct MatchID_t;
 // MNetworkVarNames "bool m_bNoDeathEnabled"
 // MNetworkVarNames "bool m_bFastCooldownsEnabled"
 // MNetworkVarNames "bool m_bStaminaCooldownsEnabled"
+// MNetworkVarNames "bool m_bUnlimitedAmmoEnabled"
 // MNetworkVarNames "bool m_bInfiniteResourcesEnabled"
 // MNetworkVarNames "bool m_bFlexSlotsForcedUnlocked"
 // MNetworkVarNames "ECitadelMatchMode m_eMatchMode"
@@ -84,11 +85,13 @@ public:
 	// MNetworkEnable
 	bool m_bStaminaCooldownsEnabled; // 0x93	
 	// MNetworkEnable
-	bool m_bInfiniteResourcesEnabled; // 0x94	
+	bool m_bUnlimitedAmmoEnabled; // 0x94	
 	// MNetworkEnable
-	bool m_bFlexSlotsForcedUnlocked; // 0x95	
+	bool m_bInfiniteResourcesEnabled; // 0x95	
+	// MNetworkEnable
+	bool m_bFlexSlotsForcedUnlocked; // 0x96	
 private:
-	[[maybe_unused]] uint8_t __pad0096[0x2]; // 0x96
+	[[maybe_unused]] uint8_t __pad0097[0x1]; // 0x97
 public:
 	// MNetworkEnable
 	ECitadelMatchMode m_eMatchMode; // 0x98	

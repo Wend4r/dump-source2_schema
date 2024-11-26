@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x178
+// Size: 0x170
 // Has VTable
 class CCitadel_Modifier_ThrownShiv_Damage_Debuff : public CCitadelModifier
 {
 public:
-	int32_t m_nNumTicksRemaining; // 0xc8	
+	int32_t m_nNumTicksRemaining; // 0xc0	
 };
 

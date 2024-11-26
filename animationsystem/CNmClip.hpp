@@ -19,8 +19,9 @@ public:
 	CUtlVector< NmCompressionSettings_t > m_trackCompressionSettings; // 0x28	
 	CUtlVector< uint32 > m_compressedPoseOffsets; // 0x40	
 private:
-	[[maybe_unused]] uint8_t __pad0058[0x48]; // 0x58
+	[[maybe_unused]] uint8_t __pad0058[0x28]; // 0x58
 public:
+	CUtlVectorFixedGrowable< CNmClip*, 1 > m_secondaryAnimations; // 0x80	
 	// -> m_syncEvents - 0xa0
 	// -> m_nStartEventOffset - 0x148
 	CNmSyncTrack m_syncTrack; // 0xa0	

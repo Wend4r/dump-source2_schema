@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc68
+// Size: 0xca8
 // Has VTable
 class CCitadel_Ability_Fealty : public C_CitadelBaseAbility
 {
 public:
-	CHandle< C_BaseEntity > m_hTarget; // 0xc60	
+	CHandle< C_BaseEntity > m_hTarget; // 0xca0	
 };
 

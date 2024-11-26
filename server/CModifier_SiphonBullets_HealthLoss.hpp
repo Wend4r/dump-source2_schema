@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x100
+// Size: 0xc0
 // Has VTable
 class CModifier_SiphonBullets_HealthLoss : public CCitadelModifier
 {

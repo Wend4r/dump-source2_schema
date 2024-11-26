@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 16
-// Size: 0xcf0
+// Size: 0xd20
 // Has VTable
 // 
 // MNetworkVarNames "CUtlString m_targetCamera"
@@ -19,23 +19,23 @@ class C_FuncMonitor : public C_FuncBrush
 {
 public:
 	// MNetworkEnable
-	CUtlString m_targetCamera; // 0x830	
+	CUtlString m_targetCamera; // 0x860	
 	// MNetworkEnable
-	int32_t m_nResolutionEnum; // 0x838	
+	int32_t m_nResolutionEnum; // 0x868	
 	// MNetworkEnable
-	bool m_bRenderShadows; // 0x83c	
+	bool m_bRenderShadows; // 0x86c	
 	// MNetworkEnable
-	bool m_bUseUniqueColorTarget; // 0x83d	
+	bool m_bUseUniqueColorTarget; // 0x86d	
 private:
-	[[maybe_unused]] uint8_t __pad083e[0x2]; // 0x83e
+	[[maybe_unused]] uint8_t __pad086e[0x2]; // 0x86e
 public:
 	// MNetworkEnable
-	CUtlString m_brushModelName; // 0x840	
+	CUtlString m_brushModelName; // 0x870	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hTargetCamera; // 0x848	
+	CHandle< C_BaseEntity > m_hTargetCamera; // 0x878	
 	// MNetworkEnable
-	bool m_bEnabled; // 0x84c	
+	bool m_bEnabled; // 0x87c	
 	// MNetworkEnable
-	bool m_bDraw3DSkybox; // 0x84d	
+	bool m_bDraw3DSkybox; // 0x87d	
 };
 

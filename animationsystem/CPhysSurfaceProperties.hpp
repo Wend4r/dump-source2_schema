@@ -7,7 +7,7 @@ struct CPhysSurfacePropertiesSoundNames;
 struct CPhysSurfacePropertiesAudio;
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 8
-// Size: 0xc0
+// Size: 0xc8
 // 
 // MGetKV3ClassDefaults
 class CPhysSurfaceProperties
@@ -29,12 +29,9 @@ public:
 	CUtlString m_description; // 0x20	
 	// MKV3TransferName "physics"
 	CPhysSurfacePropertiesPhysics m_physics; // 0x28	
-private:
-	[[maybe_unused]] uint8_t __pad0044[0x4]; // 0x44
-public:
 	// MKV3TransferName "audiosounds"
-	CPhysSurfacePropertiesSoundNames m_audioSounds; // 0x48	
+	CPhysSurfacePropertiesSoundNames m_audioSounds; // 0x50	
 	// MKV3TransferName "audioparams"
-	CPhysSurfacePropertiesAudio m_audioParams; // 0xa0	
+	CPhysSurfacePropertiesAudio m_audioParams; // 0xa8	
 };
 

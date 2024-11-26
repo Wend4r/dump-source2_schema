@@ -6,19 +6,19 @@ struct ParticleIndex_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x290
+// Size: 0x288
 // Has VTable
 class CCitadel_Modifier_IceDome : public CCitadelModifier
 {
 public:
-	CHandle< CCitadel_Ice_Dome_Blocker > m_hBlocker; // 0xc8	
-	CHandle< CPointModifierThinker > m_hFriendlyAura; // 0xcc	
-	CHandle< CPointModifierThinker > m_hEnemyAura; // 0xd0	
-	ParticleIndex_t m_nParticleIndex; // 0xd4	
-	GameTime_t m_flStartTime; // 0xd8	
+	CHandle< CCitadel_Ice_Dome_Blocker > m_hBlocker; // 0xc0	
+	CHandle< CPointModifierThinker > m_hFriendlyAura; // 0xc4	
+	CHandle< CPointModifierThinker > m_hEnemyAura; // 0xc8	
+	ParticleIndex_t m_nParticleIndex; // 0xcc	
+	GameTime_t m_flStartTime; // 0xd0	
 private:
-	[[maybe_unused]] uint8_t __pad00dc[0xe4]; // 0xdc
+	[[maybe_unused]] uint8_t __pad00d4[0xe4]; // 0xd4
 public:
-	Vector m_vOrigin; // 0x1c0	
+	Vector m_vOrigin; // 0x1b8	
 };
 

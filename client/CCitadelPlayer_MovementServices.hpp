@@ -5,7 +5,7 @@
 struct CNetworkVelocityVector;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x268
+// Size: 0x280
 // Has VTable
 // 
 // MNetworkVarNames "CNetworkVelocityVector m_vPositionDeltaVelocity"

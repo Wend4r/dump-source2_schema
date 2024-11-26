@@ -10,7 +10,9 @@
 struct AABB_t
 {
 public:
+	// MNetworkEnable
 	Vector m_vMinBounds; // 0x0	
+	// MNetworkEnable
 	Vector m_vMaxBounds; // 0xc	
 };
 

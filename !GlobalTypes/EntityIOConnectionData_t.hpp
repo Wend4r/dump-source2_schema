@@ -4,7 +4,7 @@
 
 // Registered binary: worldrenderer.dll (project 'worldrenderer')
 // Alignment: 8
-// Size: 0x30
+// Size: 0x40
 // 
 // MGetKV3ClassDefaults
 struct EntityIOConnectionData_t
@@ -20,5 +20,6 @@ public:
 	CUtlString m_overrideParam; // 0x20	
 	float m_flDelay; // 0x28	
 	int32_t m_nTimesToFire; // 0x2c	
+	KeyValues3 m_paramMap; // 0x30	
 };
 

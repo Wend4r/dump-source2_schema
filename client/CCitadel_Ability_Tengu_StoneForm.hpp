@@ -6,7 +6,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe38
+// Size: 0xe78
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flStartTime"
@@ -18,29 +18,29 @@ struct ParticleIndex_t;
 class CCitadel_Ability_Tengu_StoneForm : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0c60[0x1c0]; // 0xc60
+	[[maybe_unused]] uint8_t __pad0ca0[0x1c0]; // 0xca0
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flStartTime; // 0xe20	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flStartTime; // 0xe60	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	GameTime_t m_flLandedTime; // 0xe24	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	GameTime_t m_flLandedTime; // 0xe64	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bLanded; // 0xe28	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bLanded; // 0xe68	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bFalling; // 0xe29	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bFalling; // 0xe69	
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	bool m_bInStoneForm; // 0xe2a	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bInStoneForm; // 0xe6a	
 private:
-	[[maybe_unused]] uint8_t __pad0e2b[0x1]; // 0xe2b
+	[[maybe_unused]] uint8_t __pad0e6b[0x1]; // 0xe6b
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerExclusive"
-	float m_flStartHeight; // 0xe2c	
-	ParticleIndex_t m_nStoneFormEffect; // 0xe30	
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	float m_flStartHeight; // 0xe6c	
+	ParticleIndex_t m_nStoneFormEffect; // 0xe70	
 };
 

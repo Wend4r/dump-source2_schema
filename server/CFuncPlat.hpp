@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x818
+// Size: 0x870
 // Has VTable
 class CFuncPlat : public CBasePlatTrain
 {
 public:
-	CUtlSymbolLarge m_sNoise; // 0x810	
+	CUtlSymbolLarge m_sNoise; // 0x868	
 	
 	// Datamap fields:
 	// void CFuncPlatPlatUse; // 0x0

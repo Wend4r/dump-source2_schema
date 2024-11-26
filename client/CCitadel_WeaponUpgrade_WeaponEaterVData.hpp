@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1548
+// Size: 0x15b8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_WeaponUpgrade_WeaponEaterVData : public CitadelItemVData
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_WeaponEaterTracker; // 0x1538	
+	CEmbeddedSubclass< CCitadelModifier > m_WeaponEaterTracker; // 0x15a8	
 };
 

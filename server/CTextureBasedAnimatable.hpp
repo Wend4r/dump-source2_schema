@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7a0
+// Size: 0x7f8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bLoop"
@@ -19,24 +19,24 @@ class CTextureBasedAnimatable : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bLoop; // 0x768	
+	bool m_bLoop; // 0x7c0	
 private:
-	[[maybe_unused]] uint8_t __pad0769[0x3]; // 0x769
+	[[maybe_unused]] uint8_t __pad07c1[0x3]; // 0x7c1
 public:
 	// MNetworkEnable
-	float m_flFPS; // 0x76c	
+	float m_flFPS; // 0x7c4	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hPositionKeys; // 0x770	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hPositionKeys; // 0x7c8	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hRotationKeys; // 0x778	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hRotationKeys; // 0x7d0	
 	// MNetworkEnable
-	Vector m_vAnimationBoundsMin; // 0x780	
+	Vector m_vAnimationBoundsMin; // 0x7d8	
 	// MNetworkEnable
-	Vector m_vAnimationBoundsMax; // 0x78c	
+	Vector m_vAnimationBoundsMax; // 0x7e4	
 	// MNetworkEnable
-	float m_flStartTime; // 0x798	
+	float m_flStartTime; // 0x7f0	
 	// MNetworkEnable
-	float m_flStartFrame; // 0x79c	
+	float m_flStartFrame; // 0x7f4	
 	
 	// Datamap fields:
 	// void InputStart; // 0x0

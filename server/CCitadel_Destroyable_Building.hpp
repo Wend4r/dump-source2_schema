@@ -8,7 +8,7 @@ struct GameTime_t;
 struct CCitadelAbilityComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf20
+// Size: 0x1000
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bTakesDamage"
@@ -26,44 +26,44 @@ public:
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xaf8	
-	CEntityIOOutput m_OnDestroyed; // 0xb10	
-	CEntityIOOutput m_OnRevitilized; // 0xb38	
-	CEntityIOOutput m_OnDamageTaken; // 0xb60	
-	CEntityIOOutput m_OnLifeChanged; // 0xb88	
-	CEntityIOOutput m_OnBecomeActive; // 0xbb0	
-	CEntityIOOutput m_OnBecomeInvulnerable; // 0xbd8	
-	CEntityIOOutput m_OnBecomeVulnerable; // 0xc00	
-	CEntityIOOutput m_OnUnderAttack; // 0xc28	
-	CEntityIOOutput m_OnAttackSubsided; // 0xc50	
-	int32_t m_nBuildingHealth; // 0xc78	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbc0	
+	CEntityIOOutput m_OnDestroyed; // 0xbd8	
+	CEntityIOOutput m_OnRevitilized; // 0xc00	
+	CEntityIOOutput m_OnDamageTaken; // 0xc28	
+	CEntityIOOutput m_OnLifeChanged; // 0xc50	
+	CEntityIOOutput m_OnBecomeActive; // 0xc78	
+	CEntityIOOutput m_OnBecomeInvulnerable; // 0xca0	
+	CEntityIOOutput m_OnBecomeVulnerable; // 0xcc8	
+	CEntityIOOutput m_OnUnderAttack; // 0xcf0	
+	CEntityIOOutput m_OnAttackSubsided; // 0xd18	
+	int32_t m_nBuildingHealth; // 0xd40	
 private:
-	[[maybe_unused]] uint8_t __pad0c7c[0x4]; // 0xc7c
+	[[maybe_unused]] uint8_t __pad0d44[0x4]; // 0xd44
 public:
-	int32_t m_iLane; // 0xc80	
-	GameTime_t m_flDestroyedTime; // 0xc84	
-	GameTime_t m_flLastDamagedTime; // 0xc88	
-	QAngle m_angOriginal; // 0xc8c	
+	int32_t m_iLane; // 0xd48	
+	GameTime_t m_flDestroyedTime; // 0xd4c	
+	GameTime_t m_flLastDamagedTime; // 0xd50	
+	QAngle m_angOriginal; // 0xd54	
 private:
-	[[maybe_unused]] uint8_t __pad0c98[0x18]; // 0xc98
+	[[maybe_unused]] uint8_t __pad0d60[0x18]; // 0xd60
 public:
-	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0xcb0	
+	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0xd78	
 private:
-	[[maybe_unused]] uint8_t __pad0cb8[0x8]; // 0xcb8
+	[[maybe_unused]] uint8_t __pad0d80[0x8]; // 0xd80
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xcc0	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xd88	
 	// MNetworkEnable
-	CUtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0xec8	
+	CUtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0xf90	
 	// MNetworkEnable
 	// MNetworkChangeCallback "DestroyedChanged"
-	bool m_bDestroyed; // 0xf18	
+	bool m_bDestroyed; // 0xff8	
 	// MNetworkEnable
-	bool m_bActive; // 0xf19	
+	bool m_bActive; // 0xff9	
 	// MNetworkEnable
-	bool m_bFinal; // 0xf1a	
+	bool m_bFinal; // 0xffa	
 };
 

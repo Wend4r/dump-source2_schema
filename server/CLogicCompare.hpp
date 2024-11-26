@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x580
+// Size: 0x590
 // Has VTable
 class CLogicCompare : public CLogicalEntity
 {
 public:
-	float m_flInValue; // 0x4d8	
-	float m_flCompareValue; // 0x4dc	
-	CEntityOutputTemplate< float32 > m_OnLessThan; // 0x4e0	
-	CEntityOutputTemplate< float32 > m_OnEqualTo; // 0x508	
-	CEntityOutputTemplate< float32 > m_OnNotEqualTo; // 0x530	
-	CEntityOutputTemplate< float32 > m_OnGreaterThan; // 0x558	
+	float m_flInValue; // 0x4e8	
+	float m_flCompareValue; // 0x4ec	
+	CEntityOutputTemplate< float32 > m_OnLessThan; // 0x4f0	
+	CEntityOutputTemplate< float32 > m_OnEqualTo; // 0x518	
+	CEntityOutputTemplate< float32 > m_OnNotEqualTo; // 0x540	
+	CEntityOutputTemplate< float32 > m_OnGreaterThan; // 0x568	
 	
 	// Datamap fields:
 	// float InputSetValue; // 0x0

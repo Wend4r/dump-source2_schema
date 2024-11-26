@@ -6,39 +6,39 @@ struct GameTime_t;
 struct AttachmentHandle_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1c8
+// Size: 0x1c0
 // Has VTable
 class CCitadel_Modifier_Tier3Boss_LaserBeam : public CCitadel_Modifier_Tier3Boss_Base
 {
 private:
-	[[maybe_unused]] uint8_t __pad00c8[0x8]; // 0xc8
+	[[maybe_unused]] uint8_t __pad00c0[0x8]; // 0xc0
 public:
-	GameTime_t m_flSoundStartTime; // 0xd0	
+	GameTime_t m_flSoundStartTime; // 0xc8	
 private:
-	[[maybe_unused]] uint8_t __pad00d4[0x4]; // 0xd4
+	[[maybe_unused]] uint8_t __pad00cc[0x4]; // 0xcc
 public:
-	Vector m_vStart; // 0xd8	
-	Vector m_vEnd; // 0xe4	
-	Vector m_vPrevEnd; // 0xf0	
-	float m_flAngleBetweenTrace; // 0xfc	
-	float m_flPlayerDamagePerTick; // 0x100	
-	float m_flNPCDamagePerTick; // 0x104	
-	GameTime_t m_flNextDamageTick; // 0x108	
+	Vector m_vStart; // 0xd0	
+	Vector m_vEnd; // 0xdc	
+	Vector m_vPrevEnd; // 0xe8	
+	float m_flAngleBetweenTrace; // 0xf4	
+	float m_flPlayerDamagePerTick; // 0xf8	
+	float m_flNPCDamagePerTick; // 0xfc	
+	GameTime_t m_flNextDamageTick; // 0x100	
 private:
-	[[maybe_unused]] uint8_t __pad010c[0x4]; // 0x10c
+	[[maybe_unused]] uint8_t __pad0104[0x4]; // 0x104
 public:
-	CUtlVector< CHandle< CBaseEntity > > m_vecEntitiesHit; // 0x110	
-	float m_flDamageTickRate; // 0x128	
-	GameTime_t m_flLastShakeTime; // 0x12c	
-	bool m_bSweepRightFirst; // 0x130	
+	CUtlVector< CHandle< CBaseEntity > > m_vecEntitiesHit; // 0x108	
+	float m_flDamageTickRate; // 0x120	
+	GameTime_t m_flLastShakeTime; // 0x124	
+	bool m_bSweepRightFirst; // 0x128	
 private:
-	[[maybe_unused]] uint8_t __pad0131[0x3]; // 0x131
+	[[maybe_unused]] uint8_t __pad0129[0x3]; // 0x129
 public:
-	Vector m_vecBeamTarget; // 0x134	
-	GameTime_t m_flLastBeamUpdateTime; // 0x140	
-	Vector m_vecEnemyPosition; // 0x144	
-	int32_t m_nTrackingIndex; // 0x150	
-	bool m_bPreviewMode; // 0x154	
-	AttachmentHandle_t m_hAttachment; // 0x155	
+	Vector m_vecBeamTarget; // 0x12c	
+	GameTime_t m_flLastBeamUpdateTime; // 0x138	
+	Vector m_vecEnemyPosition; // 0x13c	
+	int32_t m_nTrackingIndex; // 0x148	
+	bool m_bPreviewMode; // 0x14c	
+	AttachmentHandle_t m_hAttachment; // 0x14d	
 };
 

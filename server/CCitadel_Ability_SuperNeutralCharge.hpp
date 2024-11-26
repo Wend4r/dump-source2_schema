@@ -6,7 +6,7 @@ struct GameTime_t;
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xce8
+// Size: 0xd10
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bPreparing"
@@ -17,25 +17,25 @@ struct ParticleIndex_t;
 class CCitadel_Ability_SuperNeutralCharge : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad8[0x1c0]; // 0xad8
+	[[maybe_unused]] uint8_t __pad0b00[0x1c0]; // 0xb00
 public:
 	// MNetworkEnable
-	bool m_bPreparing; // 0xc98	
+	bool m_bPreparing; // 0xcc0	
 	// MNetworkEnable
-	bool m_bTackling; // 0xc99	
+	bool m_bTackling; // 0xcc1	
 private:
-	[[maybe_unused]] uint8_t __pad0c9a[0x2]; // 0xc9a
+	[[maybe_unused]] uint8_t __pad0cc2[0x2]; // 0xcc2
 public:
 	// MNetworkEnable
-	GameTime_t m_flTackleStartTime; // 0xc9c	
+	GameTime_t m_flTackleStartTime; // 0xcc4	
 	// MNetworkEnable
-	float m_flTackleDuration; // 0xca0	
+	float m_flTackleDuration; // 0xcc8	
 	// MNetworkEnable
-	Vector m_vecTackleDir; // 0xca4	
-	Vector m_vecLastPosition; // 0xcb0	
-	int32_t m_nStuckFramesCount; // 0xcbc	
-	CUtlVector< CEntityIndex > m_vecHitEnemies; // 0xcc0	
-	GameTime_t m_flPrepareStartTime; // 0xcd8	
-	ParticleIndex_t m_nDistancePreview; // 0xcdc	
+	Vector m_vecTackleDir; // 0xccc	
+	Vector m_vecLastPosition; // 0xcd8	
+	int32_t m_nStuckFramesCount; // 0xce4	
+	CUtlVector< CEntityIndex > m_vecHitEnemies; // 0xce8	
+	GameTime_t m_flPrepareStartTime; // 0xd00	
+	ParticleIndex_t m_nDistancePreview; // 0xd04	
 };
 

@@ -5,7 +5,7 @@
 struct AmmoIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xe0
+// Size: 0xe8
 // Has VTable
 class CTakeDamageInfo
 {
@@ -21,44 +21,45 @@ public:
 	CHandle< CBaseEntity > m_hAbility; // 0x40	
 	float m_flDamage; // 0x44	
 	float m_flTotalledDamage; // 0x48	
-	int32_t m_bitsDamageType; // 0x4c	
-	int32_t m_iDamageCustom; // 0x50	
-	AmmoIndex_t m_iAmmoType; // 0x54	
+	float m_flTotalledDamageAbsorbed; // 0x4c	
+	DamageTypes_t m_bitsDamageType; // 0x50	
+	int32_t m_iDamageCustom; // 0x54	
+	AmmoIndex_t m_iAmmoType; // 0x58	
 private:
-	[[maybe_unused]] uint8_t __pad0055[0xb]; // 0x55
+	[[maybe_unused]] uint8_t __pad0059[0xf]; // 0x59
 public:
-	float m_flOriginalDamage; // 0x60	
-	bool m_bShouldBleed; // 0x64	
-	bool m_bShouldSpark; // 0x65	
+	float m_flOriginalDamage; // 0x68	
+	bool m_bShouldBleed; // 0x6c	
+	bool m_bShouldSpark; // 0x6d	
 private:
-	[[maybe_unused]] uint8_t __pad0066[0xa]; // 0x66
+	[[maybe_unused]] uint8_t __pad006e[0x2]; // 0x6e
 public:
-	TakeDamageFlags_t m_nDamageFlags; // 0x70	
-	ECitadelDamageType m_eCitadelDamageType; // 0x78	
-	float m_flAfterBuffDamage; // 0x7c	
-	float m_flPreResistDamage; // 0x80	
-	bool m_bEvaded; // 0x84	
+	float m_flDamageAbsorbed; // 0x70	
 private:
-	[[maybe_unused]] uint8_t __pad0085[0x3]; // 0x85
+	[[maybe_unused]] uint8_t __pad0074[0xc]; // 0x74
 public:
-	float m_flDamageAbsorbed; // 0x88	
-	HitGroup_t m_iHitGroupId; // 0x8c	
-	Vector m_vecDamageNormal; // 0x90	
+	TakeDamageFlags_t m_nDamageFlags; // 0x80	
+	ECitadelDamageType m_eCitadelDamageType; // 0x88	
+	float m_flAfterBuffDamage; // 0x8c	
+	float m_flPreResistDamage; // 0x90	
+	bool m_bEvaded; // 0x94	
 private:
-	[[maybe_unused]] uint8_t __pad009c[0x8]; // 0x9c
+	[[maybe_unused]] uint8_t __pad0095[0x3]; // 0x95
 public:
-	CHandle< CBaseEntity > m_hOriginator; // 0xa4	
-	int32_t m_iBatchCount; // 0xa8	
-	float m_flEffectiveness; // 0xac	
-	float m_timeDamage; // 0xb0	
+	HitGroup_t m_iHitGroupId; // 0x98	
+	Vector m_vecDamageNormal; // 0x9c	
 private:
-	[[maybe_unused]] uint8_t __pad00b4[0x4]; // 0xb4
+	[[maybe_unused]] uint8_t __pad00a8[0x8]; // 0xa8
 public:
-	HSCRIPT m_hScriptInstance; // 0xb8	
+	CHandle< CBaseEntity > m_hOriginator; // 0xb0	
+	int32_t m_iBatchCount; // 0xb4	
+	float m_flEffectiveness; // 0xb8	
+	float m_timeDamage; // 0xbc	
+	HSCRIPT m_hScriptInstance; // 0xc0	
 private:
-	[[maybe_unused]] uint8_t __pad00c0[0x14]; // 0xc0
+	[[maybe_unused]] uint8_t __pad00c8[0x14]; // 0xc8
 public:
-	bool m_bInTakeDamageFlow; // 0xd4	
+	bool m_bInTakeDamageFlow; // 0xdc	
 	
 	// Static fields:
 	static CTakeDamageInfo &Get_EmptyInfo(){return *reinterpret_cast<CTakeDamageInfo*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CTakeDamageInfo")->m_static_fields[0]->m_instance);};

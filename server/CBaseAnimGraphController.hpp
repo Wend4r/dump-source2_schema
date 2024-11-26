@@ -7,7 +7,7 @@ struct HSequence;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x580
+// Size: 0x588
 // Has VTable
 // 
 // MNetworkVarNames "CAnimGraphNetworkedVariables m_animGraphNetworkedVars"
@@ -22,14 +22,11 @@ private:
 public:
 	// MNetworkEnable
 	CAnimGraphNetworkedVariables m_animGraphNetworkedVars; // 0x18	
-	// MNetworkDisable
 	bool m_bSequenceFinished; // 0x220	
 private:
 	[[maybe_unused]] uint8_t __pad0221[0x3]; // 0x221
 public:
-	// MNetworkDisable
 	float m_flSoundSyncTime; // 0x224	
-	// MNetworkDisable
 	uint32_t m_nActiveIKChainMask; // 0x228	
 	// MNetworkEnable
 	// MNetworkSerializer "minusone"
@@ -59,21 +56,16 @@ public:
 private:
 	[[maybe_unused]] uint8_t __pad0244[0x4]; // 0x244
 public:
-	// MNetworkDisable
 	SequenceFinishNotifyState_t m_nNotifyState; // 0x248	
 private:
 	[[maybe_unused]] uint8_t __pad0249[0x1]; // 0x249
 public:
-	// MNetworkDisable
 	bool m_bNetworkedAnimationInputsChanged; // 0x24a	
-	// MNetworkDisable
 	bool m_bNetworkedSequenceChanged; // 0x24b	
-	// MNetworkDisable
 	bool m_bLastUpdateSkipped; // 0x24c	
 private:
 	[[maybe_unused]] uint8_t __pad024d[0x3]; // 0x24d
 public:
-	// MNetworkDisable
 	GameTime_t m_flPrevAnimUpdateTime; // 0x250	
 	
 	// Datamap fields:

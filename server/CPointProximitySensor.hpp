@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x508
+// Size: 0x518
 // Has VTable
 class CPointProximitySensor : public CPointEntity
 {
 public:
-	bool m_bDisabled; // 0x4d8	
+	bool m_bDisabled; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04d9[0x3]; // 0x4d9
+	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
 public:
-	CHandle< CBaseEntity > m_hTargetEntity; // 0x4dc	
-	CEntityOutputTemplate< float32 > m_Distance; // 0x4e0	
+	CHandle< CBaseEntity > m_hTargetEntity; // 0x4ec	
+	CEntityOutputTemplate< float32 > m_Distance; // 0x4f0	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

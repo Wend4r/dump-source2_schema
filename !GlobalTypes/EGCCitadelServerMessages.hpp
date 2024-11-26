@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 20
+// Enumerator count: 22
 // Alignment: 4
 // Size: 0x4
 enum class EGCCitadelServerMessages : uint32_t
@@ -28,5 +28,7 @@ enum class EGCCitadelServerMessages : uint32_t
 	k_EMsgGCToServerSetServerConVar = 0x2737,
 	k_EMsgGCToServerSetServerConVarResponse = 0x2738,
 	k_EMsgServerToGCUpdateMatchInfo = 0x2739,
+	k_EMsgServerToGCReportCheater = 0x273a,
+	k_EMsgServerToGCReportCheaterResponse = 0x273b,
 };
 
