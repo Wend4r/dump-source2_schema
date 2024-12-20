@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5d0
+// Size: 0x5d8
 // Has VTable
 class C_CSGO_MapPreviewCameraPath : public C_BaseEntity
 {

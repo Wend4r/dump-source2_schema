@@ -4,20 +4,20 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5f0
+// Size: 0x5f8
 // Has VTable
 class C_CSGO_TeamPreviewCamera : public C_CSGO_MapPreviewCameraPath
 {
 public:
-	int32_t m_nVariant; // 0x5d0	
-	bool m_bDofEnabled; // 0x5d4	
+	int32_t m_nVariant; // 0x5d8	
+	bool m_bDofEnabled; // 0x5dc	
 private:
-	[[maybe_unused]] uint8_t __pad05d5[0x3]; // 0x5d5
+	[[maybe_unused]] uint8_t __pad05dd[0x3]; // 0x5dd
 public:
-	float m_flDofNearBlurry; // 0x5d8	
-	float m_flDofNearCrisp; // 0x5dc	
-	float m_flDofFarCrisp; // 0x5e0	
-	float m_flDofFarBlurry; // 0x5e4	
-	float m_flDofTiltToGround; // 0x5e8	
+	float m_flDofNearBlurry; // 0x5e0	
+	float m_flDofNearCrisp; // 0x5e4	
+	float m_flDofFarCrisp; // 0x5e8	
+	float m_flDofFarBlurry; // 0x5ec	
+	float m_flDofTiltToGround; // 0x5f0	
 };
 

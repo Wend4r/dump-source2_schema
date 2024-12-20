@@ -41,8 +41,7 @@ public:
 	RotationVector m_vecGrenadeSpin; // 0xb30	
 	Vector m_vecLastHitSurfaceNormal; // 0xb3c	
 	int32_t m_nTicksAtZeroVelocity; // 0xb48	
-	bool m_bHasEverHitPlayer; // 0xb4c	
-	bool m_bClearFromPlayers; // 0xb4d	
+	bool m_bHasEverHitEnemy; // 0xb4c	
 	
 	// Static fields:
 	static float &Get_s_flThinkInterval(){return *reinterpret_cast<float*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseCSGrenadeProjectile")->m_static_fields[0]->m_instance);};

@@ -113,8 +113,9 @@ public:
 	bool m_bSwitchTeamsOnNextRoundReset; // 0x7d0	
 	bool m_bRemoveAllItemsOnNextRoundReset; // 0x7d1	
 private:
-	[[maybe_unused]] uint8_t __pad07d2[0x6]; // 0x7d2
+	[[maybe_unused]] uint8_t __pad07d2[0x2]; // 0x7d2
 public:
+	GameTime_t m_flLastJoinTeamTime; // 0x7d4	
 	// MNetworkEnable
 	CUtlSymbolLarge m_szClan; // 0x7d8	
 	char m_szClanName[32]; // 0x7e0	
