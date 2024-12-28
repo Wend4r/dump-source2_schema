@@ -4,15 +4,15 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x618
+// Size: 0x640
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_ClimbRopeSpeedVData : public CCitadelModifierVData
 {
 public:
-	float m_flRampUpTime; // 0x608	
-	float m_flPercentageMultiplierStart; // 0x60c	
-	float m_flPercentageMultiplierEnd; // 0x610	
+	float m_flRampUpTime; // 0x630	
+	float m_flPercentageMultiplierStart; // 0x634	
+	float m_flPercentageMultiplierEnd; // 0x638	
 };
 

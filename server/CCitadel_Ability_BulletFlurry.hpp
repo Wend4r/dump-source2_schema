@@ -10,20 +10,22 @@ struct GameTime_t;
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAutoScaledTime m_flFlurryEndTime"
+// MNetworkVarNames "GameTime_t m_flNextAttackTime"
 class CCitadel_Ability_BulletFlurry : public CCitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flFlurryEndTime; // 0xb00	
+	CCitadelAutoScaledTime m_flFlurryEndTime; // 0xaf8	
+	// MNetworkEnable
+	GameTime_t m_flNextAttackTime; // 0xb10	
 private:
-	[[maybe_unused]] uint8_t __pad0b18[0x118]; // 0xb18
+	[[maybe_unused]] uint8_t __pad0b14[0x11c]; // 0xb14
 public:
 	CUtlVector< CHandle< CBaseEntity > > m_vecShootTargets; // 0xc30	
 	int32_t m_nNumPlayersKilled; // 0xc48	
 	int32_t m_nShootIndex; // 0xc4c	
 	int32_t m_nShootIndexNPC; // 0xc50	
 	int32_t m_nBurstShots; // 0xc54	
-	GameTime_t m_flNextAttackTime; // 0xc58	
-	bool m_bHasCameraOverride; // 0xc5c	
+	bool m_bHasCameraOverride; // 0xc58	
 };
 

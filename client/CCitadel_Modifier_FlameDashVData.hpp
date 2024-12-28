@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x7e8
+// Size: 0x810
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_FlameDashVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_GroundAuraModifier; // 0x608	
-	CEmbeddedSubclass< CCitadelModifier > m_ProgressModifier; // 0x618	
+	CEmbeddedSubclass< CCitadelModifier > m_GroundAuraModifier; // 0x630	
+	CEmbeddedSubclass< CCitadelModifier > m_ProgressModifier; // 0x640	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FlameDashParticle; // 0x628	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FlameAuraParticle; // 0x708	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FlameDashParticle; // 0x650	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FlameAuraParticle; // 0x730	
 };
 

@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb20
+// Size: 0xb18
 // Has VTable
 class CScriptItem : public CItem
 {
 public:
-	MoveType_t m_MoveTypeOverride; // 0xb18	
+	MoveType_t m_MoveTypeOverride; // 0xb10	
 };
 

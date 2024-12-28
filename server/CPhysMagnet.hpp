@@ -6,29 +6,29 @@ struct CEntityIOOutput;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xad0
+// Size: 0xac8
 // Has VTable
 class CPhysMagnet : public CBaseAnimGraph
 {
 public:
-	CEntityIOOutput m_OnMagnetAttach; // 0xa40	
-	CEntityIOOutput m_OnMagnetDetach; // 0xa68	
-	float m_massScale; // 0xa90	
-	float m_forceLimit; // 0xa94	
-	float m_torqueLimit; // 0xa98	
+	CEntityIOOutput m_OnMagnetAttach; // 0xa38	
+	CEntityIOOutput m_OnMagnetDetach; // 0xa60	
+	float m_massScale; // 0xa88	
+	float m_forceLimit; // 0xa8c	
+	float m_torqueLimit; // 0xa90	
 private:
-	[[maybe_unused]] uint8_t __pad0a9c[0x4]; // 0xa9c
+	[[maybe_unused]] uint8_t __pad0a94[0x4]; // 0xa94
 public:
-	CUtlVector< magnetted_objects_t > m_MagnettedEntities; // 0xaa0	
-	bool m_bActive; // 0xab8	
-	bool m_bHasHitSomething; // 0xab9	
+	CUtlVector< magnetted_objects_t > m_MagnettedEntities; // 0xa98	
+	bool m_bActive; // 0xab0	
+	bool m_bHasHitSomething; // 0xab1	
 private:
-	[[maybe_unused]] uint8_t __pad0aba[0x2]; // 0xaba
+	[[maybe_unused]] uint8_t __pad0ab2[0x2]; // 0xab2
 public:
-	float m_flTotalMass; // 0xabc	
-	float m_flRadius; // 0xac0	
-	GameTime_t m_flNextSuckTime; // 0xac4	
-	int32_t m_iMaxObjectsAttached; // 0xac8	
+	float m_flTotalMass; // 0xab4	
+	float m_flRadius; // 0xab8	
+	GameTime_t m_flNextSuckTime; // 0xabc	
+	int32_t m_iMaxObjectsAttached; // 0xac0	
 	
 	// Datamap fields:
 	// void InputToggle; // 0x0

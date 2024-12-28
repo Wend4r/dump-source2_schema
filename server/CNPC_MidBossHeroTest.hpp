@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1858
+// Size: 0x1850
 // Has VTable
 class CNPC_MidBossHeroTest : public CNPC_TrooperNeutral
 {

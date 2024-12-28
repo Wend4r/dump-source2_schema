@@ -6,7 +6,7 @@ struct ice_path_shard_model_desc_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x818
+// Size: 0x810
 // Has VTable
 // 
 // MNetworkExcludeByName "m_hModel"
@@ -18,19 +18,19 @@ class CCitadel_Ice_Path_Shard_Physics : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	ice_path_shard_model_desc_t m_ShardDesc; // 0x7c0	
+	ice_path_shard_model_desc_t m_ShardDesc; // 0x7b8	
 	// MNetworkEnable
-	QAngle m_qForward; // 0x7f8	
+	QAngle m_qForward; // 0x7f0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnStartTimeChanged"
-	GameTime_t m_flStartTime; // 0x804	
+	GameTime_t m_flStartTime; // 0x7fc	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnEndTimeChanged"
-	GameTime_t m_flEndTime; // 0x808	
-	bool m_bIsBase; // 0x80c	
+	GameTime_t m_flEndTime; // 0x800	
+	bool m_bIsBase; // 0x804	
 private:
-	[[maybe_unused]] uint8_t __pad080d[0x3]; // 0x80d
+	[[maybe_unused]] uint8_t __pad0805[0x3]; // 0x805
 public:
-	CHandle< CTriggerIcePathVolume > m_hTrooperTrigger; // 0x810	
+	CHandle< CTriggerIcePathVolume > m_hTrooperTrigger; // 0x808	
 };
 

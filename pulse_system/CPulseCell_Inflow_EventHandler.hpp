@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x78
+// Size: 0x80
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -15,6 +15,6 @@
 class CPulseCell_Inflow_EventHandler : public CPulseCell_Inflow_BaseEntrypoint
 {
 public:
-	CGlobalSymbol m_EventName; // 0x70	
+	PulseSymbol_t m_EventName; // 0x70	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_system')
 // Alignment: 8
-// Size: 0x88
+// Size: 0x90
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -18,11 +18,11 @@ class CPulseCell_WaitForCursorsWithTag : public CPulseCell_WaitForCursorsWithTag
 {
 public:
 	// MPropertyDescription "Apply the same tag we're waiting on to the resulting cursor upon wait completion. Can be used to wait on our result cursor with the same tag."
-	bool m_bTagSelfWhenComplete; // 0x80	
+	bool m_bTagSelfWhenComplete; // 0x88	
 private:
-	[[maybe_unused]] uint8_t __pad0081[0x3]; // 0x81
+	[[maybe_unused]] uint8_t __pad0089[0x3]; // 0x89
 public:
 	// MPropertyDescription "When we start waiting, how should we handle existing cursors?"
-	PulseCursorCancelPriority_t m_nDesiredKillPriority; // 0x84	
+	PulseCursorCancelPriority_t m_nDesiredKillPriority; // 0x8c	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1650
+// Size: 0x1658
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Ability_Gunslinger_SpreadingFireVData : public CitadelAbilityVDat
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x1560	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ImpactParticle; // 0x1568	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_FireDebuffModifier; // 0x1640	
+	CEmbeddedSubclass< CCitadelModifier > m_FireDebuffModifier; // 0x1648	
 };
 

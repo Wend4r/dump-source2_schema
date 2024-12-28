@@ -5,7 +5,7 @@
 struct CLightComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x868
+// Size: 0x860
 // Has VTable
 // 
 // MNetworkVarNames "CLightComponent::Storage_t m_CLightComponent"
@@ -17,6 +17,6 @@ public:
 	// MNetworkUserGroup "CLightComponent"
 	// MNetworkAlias "CLightComponent"
 	// MNetworkTypeAlias "CLightComponent"
-	CLightComponent* m_CLightComponent; // 0x860	
+	CLightComponent* m_CLightComponent; // 0x858	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc38
+// Size: 0xc30
 // Has VTable
 class CCitadel_Item_CheatDeath : public CCitadel_Item
 {

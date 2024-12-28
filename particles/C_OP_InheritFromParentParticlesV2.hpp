@@ -2,10 +2,11 @@
 
 #include <cstdint>
 
+struct CPerParticleFloatInput;
 struct ParticleAttributeIndex_t;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0x1d8
+// Size: 0x5f0
 // Has VTable
 // 
 // MParticleMinVersion
@@ -14,18 +15,23 @@ class C_OP_InheritFromParentParticlesV2 : public CParticleFunctionOperator
 {
 public:
 	// MPropertyFriendlyName "scale"
-	float m_flScale; // 0x1c0	
+	CPerParticleFloatInput m_flScale; // 0x1c0	
 	// MPropertyFriendlyName "inherited field"
 	// MPropertyAttributeChoiceName "particlefield"
-	ParticleAttributeIndex_t m_nFieldOutput; // 0x1c4	
-	// MPropertyFriendlyName "particle increment amount"
-	int32_t m_nIncrement; // 0x1c8	
-	// MPropertyFriendlyName "random parent particle distribution"
-	bool m_bRandomDistribution; // 0x1cc	
+	ParticleAttributeIndex_t m_nFieldOutput; // 0x320	
 private:
-	[[maybe_unused]] uint8_t __pad01cd[0x3]; // 0x1cd
+	[[maybe_unused]] uint8_t __pad0324[0x4]; // 0x324
+public:
+	// MPropertyFriendlyName "particle increment amount"
+	CPerParticleFloatInput m_nIncrement; // 0x328	
+	// MPropertyFriendlyName "random parent particle distribution"
+	bool m_bRandomDistribution; // 0x488	
+private:
+	[[maybe_unused]] uint8_t __pad0489[0x3]; // 0x489
 public:
 	// MPropertyFriendlyName "behavior if parent particle dies"
-	MissingParentInheritBehavior_t m_nMissingParentBehavior; // 0x1d0	
+	MissingParentInheritBehavior_t m_nMissingParentBehavior; // 0x48c	
+	// MPropertyFriendlyName "Interpolation"
+	CPerParticleFloatInput m_flInterpolation; // 0x490	
 };
 

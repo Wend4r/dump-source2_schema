@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x18e0
+// Size: 0x18d8
 // Has VTable
 // 
 // MNetworkVarNames "int m_iLane"
@@ -18,32 +18,32 @@ struct CEntityIOOutput;
 class CNPC_Boss_Tier2 : public CAI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad17f0[0x8]; // 0x17f0
+	[[maybe_unused]] uint8_t __pad17e8[0x8]; // 0x17e8
 public:
-	Vector m_vecStartingPosition; // 0x17f8	
+	Vector m_vecStartingPosition; // 0x17f0	
 	// MNetworkEnable
-	int32_t m_iLane; // 0x1804	
+	int32_t m_iLane; // 0x17fc	
 private:
-	[[maybe_unused]] uint8_t __pad1808[0x8]; // 0x1808
+	[[maybe_unused]] uint8_t __pad1800[0x8]; // 0x1800
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x1810	
+	CHandle< CBaseEntity > m_hTargetedEnemy; // 0x1808	
 	// MNetworkEnable
-	GameTime_t m_flFadeOutStart; // 0x1814	
+	GameTime_t m_flFadeOutStart; // 0x180c	
 	// MNetworkEnable
-	GameTime_t m_flFadeOutEnd; // 0x1818	
+	GameTime_t m_flFadeOutEnd; // 0x1810	
 private:
-	[[maybe_unused]] uint8_t __pad181c[0x24]; // 0x181c
+	[[maybe_unused]] uint8_t __pad1814[0x24]; // 0x1814
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vecElectricBeamLookTarget; // 0x1840	
+	Vector m_vecElectricBeamLookTarget; // 0x1838	
 	// MNetworkEnable
-	int32_t m_nElectricBeamCasts; // 0x184c	
+	int32_t m_nElectricBeamCasts; // 0x1844	
 private:
-	[[maybe_unused]] uint8_t __pad1850[0x28]; // 0x1850
+	[[maybe_unused]] uint8_t __pad1848[0x28]; // 0x1848
 public:
-	CEntityIOOutput m_eventOnBossKilled; // 0x1878	
+	CEntityIOOutput m_eventOnBossKilled; // 0x1870	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_STAGGERED(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->m_static_fields[0]->m_instance);};
@@ -80,6 +80,6 @@ public:
 	static CUtlSymbolLarge &Get_TASK_T2BOSS_STOMP_ACTIVATE(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->m_static_fields[31]->m_instance);};
 	
 	// Datamap fields:
-	// CUtlSymbolLarge m_strBossEntityName; // 0x18a8
+	// CUtlSymbolLarge m_strBossEntityName; // 0x18a0
 };
 

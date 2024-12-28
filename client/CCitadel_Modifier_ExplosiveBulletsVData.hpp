@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x828
+// Size: 0x850
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,8 +12,8 @@ class CCitadel_Modifier_ExplosiveBulletsVData : public CCitadel_Modifier_BaseBul
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x738	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x760	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ExplodeSound; // 0x818	
+	CSoundEventName m_ExplodeSound; // 0x840	
 };
 

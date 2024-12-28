@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x700
+// Size: 0x728
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,13 +12,13 @@ class CModifierAirLiftGrabVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_GrabEffect; // 0x608	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_GrabEffect; // 0x630	
 	// MPropertyStartGroup "Gameplay"
-	float m_flLiftHorizontal; // 0x6e8	
-	float m_flLiftHeight; // 0x6ec	
-	float m_flFollowDampingFactor; // 0x6f0	
-	float m_flFollowDistance; // 0x6f4	
-	float m_flAllyGrabCancelTime; // 0x6f8	
-	float m_flAllyPossibleStuckDistance; // 0x6fc	
+	float m_flLiftHorizontal; // 0x710	
+	float m_flLiftHeight; // 0x714	
+	float m_flFollowDampingFactor; // 0x718	
+	float m_flFollowDistance; // 0x71c	
+	float m_flAllyGrabCancelTime; // 0x720	
+	float m_flAllyPossibleStuckDistance; // 0x724	
 };
 

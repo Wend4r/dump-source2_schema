@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9e8
+// Size: 0x9e0
 // Has VTable
 class CTriggerTrooperDetector : public CBaseTrigger
 {
 private:
-	[[maybe_unused]] uint8_t __pad0980[0x60]; // 0x980
+	[[maybe_unused]] uint8_t __pad0978[0x60]; // 0x978
 public:
-	float m_flRadius; // 0x9e0	
+	float m_flRadius; // 0x9d8	
 };
 

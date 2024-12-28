@@ -5,7 +5,7 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x18a8
+// Size: 0x18a0
 // Has VTable
 // 
 // MNetworkVarNames "int m_iLane"
@@ -18,33 +18,33 @@ class CNPC_Boss_Tier3 : public CAI_CitadelNPC
 {
 public:
 	// MNetworkEnable
-	int32_t m_iLane; // 0x17f0	
+	int32_t m_iLane; // 0x17e8	
 private:
-	[[maybe_unused]] uint8_t __pad17f4[0x30]; // 0x17f4
+	[[maybe_unused]] uint8_t __pad17ec[0x30]; // 0x17ec
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
-	QAngle m_angTargeting1; // 0x1824	
+	QAngle m_angTargeting1; // 0x181c	
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
-	QAngle m_angTargeting2; // 0x1830	
+	QAngle m_angTargeting2; // 0x1828	
 	// MNetworkEnable
-	int32_t m_nElectricBeamCasts; // 0x183c	
+	int32_t m_nElectricBeamCasts; // 0x1834	
 private:
-	[[maybe_unused]] uint8_t __pad1840[0x20]; // 0x1840
+	[[maybe_unused]] uint8_t __pad1838[0x20]; // 0x1838
 public:
-	CEntityIOOutput m_eventOnBossKilled; // 0x1860	
-	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1888	
+	CEntityIOOutput m_eventOnBossKilled; // 0x1858	
+	CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1880	
+private:
+	[[maybe_unused]] uint8_t __pad1888[0x4]; // 0x1888
+public:
+	// MNetworkEnable
+	ETier3State_t m_eAliveState; // 0x188c	
 private:
 	[[maybe_unused]] uint8_t __pad1890[0x4]; // 0x1890
 public:
 	// MNetworkEnable
-	ETier3State_t m_eAliveState; // 0x1894	
-private:
-	[[maybe_unused]] uint8_t __pad1898[0x4]; // 0x1898
-public:
-	// MNetworkEnable
-	ETier3Phase_t m_ePhase; // 0x189c	
+	ETier3Phase_t m_ePhase; // 0x1894	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_T3BOSS_CAN_ELECTRIC_BEAM(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier3")->m_static_fields[0]->m_instance);};
@@ -71,8 +71,8 @@ public:
 	static CUtlSymbolLarge &Get_TASK_T3BOSS_MOVE_TO_LARGEST_ENEMY_GROUP(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier3")->m_static_fields[21]->m_instance);};
 	
 	// Datamap fields:
-	// void m_vecStartingPosition; // 0x1800
-	// int32_t m_nDyingEndCoverPointID; // 0x1810
-	// int32_t m_nVulnerableCoverPointID; // 0x1814
+	// void m_vecStartingPosition; // 0x17f8
+	// int32_t m_nDyingEndCoverPointID; // 0x1808
+	// int32_t m_nVulnerableCoverPointID; // 0x180c
 };
 

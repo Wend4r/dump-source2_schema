@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x9a0
+// Size: 0x998
 // Has VTable
 class C_TriggerMultiple : public C_BaseTrigger
 {

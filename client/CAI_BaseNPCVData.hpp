@@ -9,7 +9,7 @@ struct CSkillInt;
 struct AI_AdditionalMovementSettings;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x398
+// Size: 0x3a8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -69,10 +69,8 @@ public:
 	float m_flCapsuleRadiusOverride; // 0x2e4	
 	// MPropertyDescription "Override the height of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop height."
 	float m_flCapsuleHeightOverride; // 0x2e8	
-	// MPropertyDescription "If true, this NPC will use code driven animgraph movement actions such as starts and stops"
-	bool m_bAllowAnimgraphMotorMovementStates; // 0x2ec	
 private:
-	[[maybe_unused]] uint8_t __pad02ed[0x3]; // 0x2ed
+	[[maybe_unused]] uint8_t __pad02ec[0x4]; // 0x2ec
 public:
 	// MPropertyStartGroup "Animation"
 	// MPropertyFriendlyName "Enabled Shared Actions"
@@ -82,8 +80,14 @@ public:
 	// MPropertyStartGroup "Sounds"
 	// MPropertyDescription "Player Killed NPC Sound"
 	CSoundEventName m_sPlayerKilledNpcSound; // 0x308	
+	// MPropertyStartGroup "Death"
 	CGlobalSymbol m_sCustomDeathHandshake; // 0x318	
 	// MPropertyStartGroup "Movement"
-	AI_AdditionalMovementSettings m_defaultAdditionalMovementSettings; // 0x320	
+	// MPropertyDescription "If true, this NPC will use code driven animgraph movement actions such as starts and stops"
+	bool m_bEnableCodeDrivenAnimgraphMovement; // 0x320	
+private:
+	[[maybe_unused]] uint8_t __pad0321[0x7]; // 0x321
+public:
+	AI_AdditionalMovementSettings m_defaultAdditionalMovementSettings; // 0x328	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x818
+// Size: 0x810
 // Has VTable
 class CRopeKeyframeAlias_move_rope : public CRopeKeyframe
 {

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: client.dll (project 'client')
-// Enumerator count: 117
+// Enumerator count: 116
 // Alignment: 4
 // Size: 0x4
 enum class EGCCitadelClientMessages : uint32_t
@@ -108,12 +108,9 @@ enum class EGCCitadelClientMessages : uint32_t
 	k_EMsgClientToGCGetOldHeroBuildData = 0x2401,
 	k_EMsgClientToGCGetOldHeroBuildDataResponse = 0x2402,
 	k_EMsgClientToGCUpdateSpectatorStatus = 0x2403,
-	k_EMsgGCToClientRankedSchedule = 0x2404,
 	k_EMsgClientToGCCommendPlayerFromMatch = 0x2407,
 	k_EMsgClientToGCCommendPlayerFromMatchResponse = 0x2408,
 	k_EMsgGCToClientCommendNotification = 0x2409,
-	k_EMsgClientToGCGetRankedIntervalStats = 0x240a,
-	k_EMsgClientToGCGetRankedIntervalStatsResponse = 0x240b,
 	k_EMsgGCToClientHeroLabsSchedule = 0x240c,
 	k_EMsgClientToGCDevRequestCheatReports = 0x240e,
 	k_EMsgClientToGCDevRequestCheatReportsResponse = 0x240f,
@@ -125,5 +122,7 @@ enum class EGCCitadelClientMessages : uint32_t
 	k_EMsgClientToGCGetLeaderboardResponse = 0x2415,
 	k_EMsgClientToGCGetAccountLeaderboards = 0x2416,
 	k_EMsgClientToGCGetAccountLeaderboardsResponse = 0x2417,
+	k_EMsgClientToGCSetHideHolidayModels = 0x2418,
+	k_EMsgClientToGCSetHideHolidayModelsResponse = 0x2419,
 };
 

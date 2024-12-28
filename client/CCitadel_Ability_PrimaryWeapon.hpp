@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd78
+// Size: 0xd70
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flNextPrimaryAttack"
@@ -38,124 +38,124 @@ class CCitadel_Ability_PrimaryWeapon : public C_CitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flNextPrimaryAttack; // 0xca0	
+	GameTime_t m_flNextPrimaryAttack; // 0xc98	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
 	// MNetworkSerializer "minusone"
 	// MNetworkPriority "32"
-	int32_t m_iClip; // 0xca4	
+	int32_t m_iClip; // 0xc9c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
 	// MNetworkSerializer "minusone"
 	// MNetworkPriority "32"
-	int32_t m_iBonusClip; // 0xca8	
+	int32_t m_iBonusClip; // 0xca0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flSpreadPenalty; // 0xcac	
+	float m_flSpreadPenalty; // 0xca4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flZoomTime; // 0xcb0	
+	GameTime_t m_flZoomTime; // 0xca8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flZoomOutTime; // 0xcb4	
+	GameTime_t m_flZoomOutTime; // 0xcac	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	int8_t m_iSpreadIndex; // 0xcb8	
+	int8_t m_iSpreadIndex; // 0xcb0	
 private:
-	[[maybe_unused]] uint8_t __pad0cb9[0x1]; // 0xcb9
+	[[maybe_unused]] uint8_t __pad0cb1[0x1]; // 0xcb1
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	int16_t m_nShotRecoilIndex; // 0xcba	
+	int16_t m_nShotRecoilIndex; // 0xcb2	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	GameTime_t m_flNextShotRecoilRecoveryTime; // 0xcbc	
+	GameTime_t m_flNextShotRecoilRecoveryTime; // 0xcb4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bIsZoomed; // 0xcc0	
+	bool m_bIsZoomed; // 0xcb8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	uint8_t m_nBurstShotsRemaining; // 0xcc1	
+	uint8_t m_nBurstShotsRemaining; // 0xcb9	
+private:
+	[[maybe_unused]] uint8_t __pad0cba[0x2]; // 0xcba
+public:
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	uint32_t m_nShotNumber; // 0xcbc	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bInReload; // 0xcc0	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bSingleShotReloadFirstBullet; // 0xcc1	
 private:
 	[[maybe_unused]] uint8_t __pad0cc2[0x2]; // 0xcc2
 public:
 	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	uint32_t m_nShotNumber; // 0xcc4	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bInReload; // 0xcc8	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bSingleShotReloadFirstBullet; // 0xcc9	
-private:
-	[[maybe_unused]] uint8_t __pad0cca[0x2]; // 0xcca
-public:
-	// MNetworkEnable
 	// MNetworkUserGroup "LocalWeaponExclusive"
-	GameTime_t m_reloadQueuedStartTime; // 0xccc	
+	GameTime_t m_reloadQueuedStartTime; // 0xcc4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flReloadAvailableTime; // 0xcd0	
+	GameTime_t m_flReloadAvailableTime; // 0xcc8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bCanActiveReload; // 0xcd4	
+	bool m_bCanActiveReload; // 0xccc	
 private:
-	[[maybe_unused]] uint8_t __pad0cd5[0x3]; // 0xcd5
+	[[maybe_unused]] uint8_t __pad0ccd[0x3]; // 0xccd
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flLastAttackTime; // 0xcd8	
+	GameTime_t m_flLastAttackTime; // 0xcd0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flNextAttackDelayStartTime; // 0xcdc	
+	GameTime_t m_flNextAttackDelayStartTime; // 0xcd4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flNextAttackDelayEndTime; // 0xce0	
+	GameTime_t m_flNextAttackDelayEndTime; // 0xcd8	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flAttackDelayPauseTotalTime; // 0xce4	
+	float m_flAttackDelayPauseTotalTime; // 0xcdc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flAttackDelayPauseEndTime; // 0xce8	
+	GameTime_t m_flAttackDelayPauseEndTime; // 0xce0	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	ENextAttackDelayReason_t m_eNextAttackDelayReason; // 0xcec	
+	ENextAttackDelayReason_t m_eNextAttackDelayReason; // 0xce4	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bInputPressedWhileSelected; // 0xcf0	
+	bool m_bInputPressedWhileSelected; // 0xce8	
 private:
-	[[maybe_unused]] uint8_t __pad0cf1[0x3]; // 0xcf1
+	[[maybe_unused]] uint8_t __pad0ce9[0x3]; // 0xce9
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	EFireMode_t m_eActiveFireMode; // 0xcf4	
-	QAngle m_angRecoilAngles; // 0xcf8	
-	QAngle m_angRecoilToAdd; // 0xd04	
-	QAngle m_angRecoilRecovery; // 0xd10	
-	GameTime_t m_flRecoilStartTime; // 0xd1c	
-	float m_flRecoilRecoverySpeed; // 0xd20	
-	float m_flAddApproachSpeed; // 0xd24	
-	bool m_bFireBackwards; // 0xd28	
+	EFireMode_t m_eActiveFireMode; // 0xcec	
+	QAngle m_angRecoilAngles; // 0xcf0	
+	QAngle m_angRecoilToAdd; // 0xcfc	
+	QAngle m_angRecoilRecovery; // 0xd08	
+	GameTime_t m_flRecoilStartTime; // 0xd14	
+	float m_flRecoilRecoverySpeed; // 0xd18	
+	float m_flAddApproachSpeed; // 0xd1c	
+	bool m_bFireBackwards; // 0xd20	
 private:
-	[[maybe_unused]] uint8_t __pad0d29[0x3]; // 0xd29
+	[[maybe_unused]] uint8_t __pad0d21[0x3]; // 0xd21
 public:
-	float m_currentSpread; // 0xd2c	
-	float m_currentMaxSpread; // 0xd30	
-	float m_currentFireSpread; // 0xd34	
-	float m_flCurrentSpinRate; // 0xd38	
+	float m_currentSpread; // 0xd24	
+	float m_currentMaxSpread; // 0xd28	
+	float m_currentFireSpread; // 0xd2c	
+	float m_flCurrentSpinRate; // 0xd30	
 private:
-	[[maybe_unused]] uint8_t __pad0d3c[0x4]; // 0xd3c
+	[[maybe_unused]] uint8_t __pad0d34[0x4]; // 0xd34
 public:
-	float m_fFireDuration; // 0xd40	
+	float m_fFireDuration; // 0xd38	
 private:
-	[[maybe_unused]] uint8_t __pad0d44[0x1]; // 0xd44
+	[[maybe_unused]] uint8_t __pad0d3c[0x1]; // 0xd3c
 public:
-	bool m_bFireOnEmpty; // 0xd45	
-	bool m_bHasReleasedForSemiAuto; // 0xd46	
+	bool m_bFireOnEmpty; // 0xd3d	
+	bool m_bHasReleasedForSemiAuto; // 0xd3e	
 private:
-	[[maybe_unused]] uint8_t __pad0d47[0x1]; // 0xd47
+	[[maybe_unused]] uint8_t __pad0d3f[0x1]; // 0xd3f
 public:
-	GameTime_t m_flNextDisarmSound; // 0xd48	
+	GameTime_t m_flNextDisarmSound; // 0xd40	
 };
 

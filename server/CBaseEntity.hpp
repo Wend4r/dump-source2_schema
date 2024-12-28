@@ -12,7 +12,7 @@ struct CCollisionProperty;
 struct CModifierProperty;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4e8
+// Size: 0x4e0
 // Has VTable
 // 
 // MNetworkExcludeByName "m_bClientSideRagdoll"
@@ -66,199 +66,199 @@ public:
 	// MNetworkAlias "CBodyComponent"
 	// MNetworkTypeAlias "CBodyComponent"
 	// MNetworkPriority "48"
-	CBodyComponent* m_CBodyComponent; // 0x40	
-	CNetworkTransmitComponent m_NetworkTransmitComponent; // 0x48	
+	CBodyComponent* m_CBodyComponent; // 0x38	
+	CNetworkTransmitComponent m_NetworkTransmitComponent; // 0x40	
 private:
-	[[maybe_unused]] uint8_t __pad0210[0x40]; // 0x210
+	[[maybe_unused]] uint8_t __pad0208[0x40]; // 0x208
 public:
-	CUtlVector< thinkfunc_t > m_aThinkFunctions; // 0x250	
-	int32_t m_iCurrentThinkContext; // 0x268	
-	GameTick_t m_nLastThinkTick; // 0x26c	
-	bool m_bDisabledContextThinks; // 0x270	
+	CUtlVector< thinkfunc_t > m_aThinkFunctions; // 0x248	
+	int32_t m_iCurrentThinkContext; // 0x260	
+	GameTick_t m_nLastThinkTick; // 0x264	
+	bool m_bDisabledContextThinks; // 0x268	
 private:
-	[[maybe_unused]] uint8_t __pad0271[0xf]; // 0x271
+	[[maybe_unused]] uint8_t __pad0269[0xf]; // 0x269
 public:
-	CTypedBitVec< 64 > m_isSteadyState; // 0x280	
-	float m_lastNetworkChange; // 0x288	
+	CTypedBitVec< 64 > m_isSteadyState; // 0x278	
+	float m_lastNetworkChange; // 0x280	
 private:
-	[[maybe_unused]] uint8_t __pad028c[0xc]; // 0x28c
+	[[maybe_unused]] uint8_t __pad0284[0xc]; // 0x284
 public:
-	CUtlVector< ResponseContext_t > m_ResponseContexts; // 0x298	
-	CUtlSymbolLarge m_iszResponseContext; // 0x2b0	
+	CUtlVector< ResponseContext_t > m_ResponseContexts; // 0x290	
+	CUtlSymbolLarge m_iszResponseContext; // 0x2a8	
 private:
-	[[maybe_unused]] uint8_t __pad02b8[0x20]; // 0x2b8
+	[[maybe_unused]] uint8_t __pad02b0[0x20]; // 0x2b0
 public:
 	// MNetworkEnable
 	// MNetworkSerializer "ClampHealth"
 	// MNetworkUserGroup "Player"
 	// MNetworkPriority "32"
-	int32_t m_iHealth; // 0x2d8	
+	int32_t m_iHealth; // 0x2d0	
 	// MNetworkEnable
-	int32_t m_iMaxHealth; // 0x2dc	
+	int32_t m_iMaxHealth; // 0x2d4	
 	// MNetworkEnable
 	// MNetworkUserGroup "Player"
 	// MNetworkPriority "32"
-	uint8_t m_lifeState; // 0x2e0	
+	uint8_t m_lifeState; // 0x2d8	
 private:
-	[[maybe_unused]] uint8_t __pad02e1[0x3]; // 0x2e1
+	[[maybe_unused]] uint8_t __pad02d9[0x3]; // 0x2d9
 public:
-	float m_flDamageAccumulator; // 0x2e4	
+	float m_flDamageAccumulator; // 0x2dc	
 	// MNetworkEnable
-	bool m_bTakesDamage; // 0x2e8	
+	bool m_bTakesDamage; // 0x2e0	
 private:
-	[[maybe_unused]] uint8_t __pad02e9[0x7]; // 0x2e9
-public:
-	// MNetworkEnable
-	TakeDamageFlags_t m_nTakeDamageFlags; // 0x2f0	
-	// MNetworkEnable
-	EntityPlatformTypes_t m_nPlatformType; // 0x2f8	
-private:
-	[[maybe_unused]] uint8_t __pad02f9[0x1]; // 0x2f9
+	[[maybe_unused]] uint8_t __pad02e1[0x7]; // 0x2e1
 public:
 	// MNetworkEnable
-	MoveCollide_t m_MoveCollide; // 0x2fa	
+	TakeDamageFlags_t m_nTakeDamageFlags; // 0x2e8	
 	// MNetworkEnable
-	MoveType_t m_MoveType; // 0x2fb	
-	MoveType_t m_nActualMoveType; // 0x2fc	
-	uint8_t m_nWaterTouch; // 0x2fd	
-	uint8_t m_nSlimeTouch; // 0x2fe	
-	bool m_bRestoreInHierarchy; // 0x2ff	
-	CUtlSymbolLarge m_target; // 0x300	
-	CHandle< CBaseFilter > m_hDamageFilter; // 0x308	
+	EntityPlatformTypes_t m_nPlatformType; // 0x2f0	
 private:
-	[[maybe_unused]] uint8_t __pad030c[0x4]; // 0x30c
+	[[maybe_unused]] uint8_t __pad02f1[0x1]; // 0x2f1
 public:
-	CUtlSymbolLarge m_iszDamageFilterName; // 0x310	
-	float m_flMoveDoneTime; // 0x318	
+	// MNetworkEnable
+	MoveCollide_t m_MoveCollide; // 0x2f2	
+	// MNetworkEnable
+	MoveType_t m_MoveType; // 0x2f3	
+	MoveType_t m_nActualMoveType; // 0x2f4	
+	uint8_t m_nWaterTouch; // 0x2f5	
+	uint8_t m_nSlimeTouch; // 0x2f6	
+	bool m_bRestoreInHierarchy; // 0x2f7	
+	CUtlSymbolLarge m_target; // 0x2f8	
+	CHandle< CBaseFilter > m_hDamageFilter; // 0x300	
+private:
+	[[maybe_unused]] uint8_t __pad0304[0x4]; // 0x304
+public:
+	CUtlSymbolLarge m_iszDamageFilterName; // 0x308	
+	float m_flMoveDoneTime; // 0x310	
 	// MNetworkEnable
 	// MNetworkSendProxyRecipientsFilter
-	CUtlStringToken m_nSubclassID; // 0x31c	
+	CUtlStringToken m_nSubclassID; // 0x314	
 private:
-	[[maybe_unused]] uint8_t __pad0320[0x8]; // 0x320
+	[[maybe_unused]] uint8_t __pad0318[0x8]; // 0x318
 public:
 	// MNetworkEnable
 	// MNetworkPriority "0"
 	// MNetworkSerializer "animTimeSerializer"
 	// MNetworkSendProxyRecipientsFilter
-	float m_flAnimTime; // 0x328	
+	float m_flAnimTime; // 0x320	
 	// MNetworkEnable
 	// MNetworkPriority "1"
 	// MNetworkSerializer "simulationTimeSerializer"
 	// MNetworkSendProxyRecipientsFilter
-	float m_flSimulationTime; // 0x32c	
+	float m_flSimulationTime; // 0x324	
 	// MNetworkEnable
-	GameTime_t m_flCreateTime; // 0x330	
+	GameTime_t m_flCreateTime; // 0x328	
 	// MNetworkEnable
-	bool m_bClientSideRagdoll; // 0x334	
+	bool m_bClientSideRagdoll; // 0x32c	
 	// MNetworkEnable
-	uint8_t m_ubInterpolationFrame; // 0x335	
+	uint8_t m_ubInterpolationFrame; // 0x32d	
 private:
-	[[maybe_unused]] uint8_t __pad0336[0x2]; // 0x336
+	[[maybe_unused]] uint8_t __pad032e[0x2]; // 0x32e
 public:
-	Vector m_vPrevVPhysicsUpdatePos; // 0x338	
+	Vector m_vPrevVPhysicsUpdatePos; // 0x330	
 	// MNetworkEnable
-	uint8_t m_iTeamNum; // 0x344	
+	uint8_t m_iTeamNum; // 0x33c	
 private:
-	[[maybe_unused]] uint8_t __pad0345[0x3]; // 0x345
+	[[maybe_unused]] uint8_t __pad033d[0x3]; // 0x33d
 public:
-	CUtlSymbolLarge m_iGlobalname; // 0x348	
-	int32_t m_iSentToClients; // 0x350	
+	CUtlSymbolLarge m_iGlobalname; // 0x340	
+	int32_t m_iSentToClients; // 0x348	
 	// MNetworkEnable
-	float m_flSpeed; // 0x354	
-	CUtlString m_sUniqueHammerID; // 0x358	
+	float m_flSpeed; // 0x34c	
+	CUtlString m_sUniqueHammerID; // 0x350	
 	// MNetworkEnable
-	uint32_t m_spawnflags; // 0x360	
+	uint32_t m_spawnflags; // 0x358	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	GameTick_t m_nNextThinkTick; // 0x364	
-	int32_t m_nSimulationTick; // 0x368	
+	GameTick_t m_nNextThinkTick; // 0x35c	
+	int32_t m_nSimulationTick; // 0x360	
 private:
-	[[maybe_unused]] uint8_t __pad036c[0x4]; // 0x36c
+	[[maybe_unused]] uint8_t __pad0364[0x4]; // 0x364
 public:
-	CEntityIOOutput m_OnKilled; // 0x370	
+	CEntityIOOutput m_OnKilled; // 0x368	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkUserGroup "Player"
-	uint32_t m_fFlags; // 0x398	
-	Vector m_vecAbsVelocity; // 0x39c	
+	uint32_t m_fFlags; // 0x390	
+	Vector m_vecAbsVelocity; // 0x394	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
 	// MNetworkPriority "32"
-	CNetworkVelocityVector m_vecVelocity; // 0x3a8	
+	CNetworkVelocityVector m_vecVelocity; // 0x3a0	
 private:
-	[[maybe_unused]] uint8_t __pad03d0[0x8]; // 0x3d0
+	[[maybe_unused]] uint8_t __pad03c8[0x8]; // 0x3c8
 public:
-	int32_t m_nPushEnumCount; // 0x3d8	
+	int32_t m_nPushEnumCount; // 0x3d0	
 private:
-	[[maybe_unused]] uint8_t __pad03dc[0x4]; // 0x3dc
+	[[maybe_unused]] uint8_t __pad03d4[0x4]; // 0x3d4
 public:
-	CCollisionProperty* m_pCollision; // 0x3e0	
+	CCollisionProperty* m_pCollision; // 0x3d8	
 	// MNetworkEnable
-	CModifierProperty* m_pModifierProp; // 0x3e8	
+	CModifierProperty* m_pModifierProp; // 0x3e0	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hEffectEntity; // 0x3f0	
+	CHandle< CBaseEntity > m_hEffectEntity; // 0x3e8	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	CHandle< CBaseEntity > m_hOwnerEntity; // 0x3f4	
+	CHandle< CBaseEntity > m_hOwnerEntity; // 0x3ec	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnEffectsChanged"
-	uint32_t m_fEffects; // 0x3f8	
+	uint32_t m_fEffects; // 0x3f0	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkUserGroup "Player"
-	CHandle< CBaseEntity > m_hGroundEntity; // 0x3fc	
+	CHandle< CBaseEntity > m_hGroundEntity; // 0x3f4	
 	// MNetworkEnable
 	// MNetworkPriority "32"
 	// MNetworkUserGroup "Player"
-	int32_t m_nGroundBodyIndex; // 0x400	
+	int32_t m_nGroundBodyIndex; // 0x3f8	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "4.000000"
 	// MNetworkEncodeFlags "1"
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	float m_flFriction; // 0x404	
+	float m_flFriction; // 0x3fc	
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	float m_flElasticity; // 0x408	
+	float m_flElasticity; // 0x400	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	float m_flGravityScale; // 0x40c	
+	float m_flGravityScale; // 0x404	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerExclusive"
-	float m_flTimeScale; // 0x410	
+	float m_flTimeScale; // 0x408	
 	// MNetworkEnable
 	// MNetworkUserGroup "Water"
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
 	// MNetworkEncodeFlags "8"
-	float m_flWaterLevel; // 0x414	
+	float m_flWaterLevel; // 0x40c	
 	// MNetworkEnable
-	bool m_bAnimatedEveryTick; // 0x418	
-	bool m_bDisableLowViolence; // 0x419	
-	uint8_t m_nWaterType; // 0x41a	
+	bool m_bAnimatedEveryTick; // 0x410	
+	bool m_bDisableLowViolence; // 0x411	
+	uint8_t m_nWaterType; // 0x412	
 private:
-	[[maybe_unused]] uint8_t __pad041b[0x1]; // 0x41b
+	[[maybe_unused]] uint8_t __pad0413[0x1]; // 0x413
 public:
-	int32_t m_iEFlags; // 0x41c	
-	CEntityIOOutput m_OnUser1; // 0x420	
-	CEntityIOOutput m_OnUser2; // 0x448	
-	CEntityIOOutput m_OnUser3; // 0x470	
-	CEntityIOOutput m_OnUser4; // 0x498	
-	int32_t m_iInitialTeamNum; // 0x4c0	
+	int32_t m_iEFlags; // 0x414	
+	CEntityIOOutput m_OnUser1; // 0x418	
+	CEntityIOOutput m_OnUser2; // 0x440	
+	CEntityIOOutput m_OnUser3; // 0x468	
+	CEntityIOOutput m_OnUser4; // 0x490	
+	int32_t m_iInitialTeamNum; // 0x4b8	
 	// MNetworkEnable
-	GameTime_t m_flNavIgnoreUntilTime; // 0x4c4	
-	QAngle m_vecAngVelocity; // 0x4c8	
-	bool m_bNetworkQuantizeOriginAndAngles; // 0x4d4	
-	bool m_bLagCompensate; // 0x4d5	
+	GameTime_t m_flNavIgnoreUntilTime; // 0x4bc	
+	QAngle m_vecAngVelocity; // 0x4c0	
+	bool m_bNetworkQuantizeOriginAndAngles; // 0x4cc	
+	bool m_bLagCompensate; // 0x4cd	
 private:
-	[[maybe_unused]] uint8_t __pad04d6[0x2]; // 0x4d6
+	[[maybe_unused]] uint8_t __pad04ce[0x2]; // 0x4ce
 public:
-	float m_flOverriddenFriction; // 0x4d8	
-	CHandle< CBaseEntity > m_pBlocker; // 0x4dc	
-	float m_flLocalTime; // 0x4e0	
-	float m_flVPhysicsUpdateLocalTime; // 0x4e4	
+	float m_flOverriddenFriction; // 0x4d0	
+	CHandle< CBaseEntity > m_pBlocker; // 0x4d4	
+	float m_flLocalTime; // 0x4d8	
+	float m_flVPhysicsUpdateLocalTime; // 0x4dc	
 	
 	// Static fields:
 	static Relationship_t** &Get_sm_DefaultRelationship(){return *reinterpret_cast<Relationship_t***>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseEntity")->m_static_fields[0]->m_instance);};
@@ -276,12 +276,12 @@ public:
 	// CUtlSymbolLarge m_iszPrivateVScripts; // 0x8
 	// void m_CScriptComponent; // 0x30
 	// CUtlSymbolLarge subclass_name; // 0x7fffffff
-	// void m_pSubclassVData; // 0x320
-	// void* m_think; // 0x290
-	// void* m_pfnTouch; // 0x2b8
-	// void* m_pfnUse; // 0x2c0
-	// void* m_pfnBlocked; // 0x2c8
-	// void* m_pfnMoveDone; // 0x2d0
+	// void m_pSubclassVData; // 0x318
+	// void* m_think; // 0x288
+	// void* m_pfnTouch; // 0x2b0
+	// void* m_pfnUse; // 0x2b8
+	// void* m_pfnBlocked; // 0x2c0
+	// void* m_pfnMoveDone; // 0x2c8
 	// int32_t InputSetTeam; // 0x0
 	// void InputKill; // 0x0
 	// void InputKillHierarchy; // 0x0
@@ -323,8 +323,8 @@ public:
 	// void CBaseEntityFrictionRevertThink; // 0x0
 	// void CBaseEntityFakeScriptThinkFunc; // 0x0
 	// void CBaseEntityClearNavIgnoreContentsThink; // 0x0
-	// void m_pGameSceneNode; // 0x278
-	// void m_nEntityType; // 0x2f9
+	// void m_pGameSceneNode; // 0x270
+	// void m_nEntityType; // 0x2f1
 	// QAngle angles; // 0x7fffffff
 	// Vector origin; // 0x7fffffff
 	// CStrongHandle< InfoForResourceTypeCModel > model; // 0x7fffffff

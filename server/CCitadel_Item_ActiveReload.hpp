@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb20
+// Size: 0xb18
 // Has VTable
 class CCitadel_Item_ActiveReload : public CCitadel_Item
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1498
+// Size: 0x1490
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bPlayingIdle"
@@ -14,9 +14,9 @@ class C_NPC_TrooperNeutral : public C_AI_CitadelNPC
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnPlayingIdleChanged"
-	bool m_bPlayingIdle; // 0x1468	
+	bool m_bPlayingIdle; // 0x1460	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnShieldActiveChanged"
-	bool m_bShieldActive; // 0x1469	
+	bool m_bShieldActive; // 0x1461	
 };
 

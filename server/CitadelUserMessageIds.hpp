@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 51
+// Enumerator count: 52
 // Alignment: 4
 // Size: 0x4
 enum class CitadelUserMessageIds : uint32_t
@@ -59,5 +59,6 @@ enum class CitadelUserMessageIds : uint32_t
 	k_EUserMsg_CallCheaterVote = 0x162,
 	k_EUserMsg_MeleeHit = 0x163,
 	k_EUserMsg_FlexSlotUnlocked = 0x164,
+	k_EUserMsg_SeasonalAchievementUnlocked = 0x165,
 };
 

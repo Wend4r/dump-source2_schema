@@ -35,13 +35,13 @@ struct CPointOffScreenIndicatorUi;
 class C_PointClientUIWorldPanel : public C_BaseClientUIEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0890[0x8]; // 0x890
+	[[maybe_unused]] uint8_t __pad0888[0x8]; // 0x888
 public:
-	bool m_bForceRecreateNextUpdate; // 0x898	
-	bool m_bMoveViewToPlayerNextThink; // 0x899	
-	bool m_bCheckCSSClasses; // 0x89a	
+	bool m_bForceRecreateNextUpdate; // 0x890	
+	bool m_bMoveViewToPlayerNextThink; // 0x891	
+	bool m_bCheckCSSClasses; // 0x892	
 private:
-	[[maybe_unused]] uint8_t __pad089b[0x5]; // 0x89b
+	[[maybe_unused]] uint8_t __pad0893[0xd]; // 0x893
 public:
 	CTransform m_anchorDeltaTransform; // 0x8a0	
 private:

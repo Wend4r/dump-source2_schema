@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: rendersystemdx11.dll (project 'rendersystemdx11')
-// Enumerator count: 13
+// Enumerator count: 14
 // Alignment: 4
 // Size: 0x4
 enum class RenderPrimitiveType_t : uint32_t
@@ -20,6 +20,7 @@ enum class RenderPrimitiveType_t : uint32_t
 	RENDER_PRIM_INSTANCED_QUADS = 0x9,
 	RENDER_PRIM_HETEROGENOUS = 0xa,
 	RENDER_PRIM_COMPUTE_SHADER = 0xb,
-	RENDER_PRIM_TYPE_COUNT = 0xc,
+	RENDER_PRIM_MESH_SHADER = 0xc,
+	RENDER_PRIM_TYPE_COUNT = 0xd,
 };
 

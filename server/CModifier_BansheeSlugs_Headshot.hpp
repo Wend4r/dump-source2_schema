@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x130
+// Size: 0x170
 // Has VTable
 class CModifier_BansheeSlugs_Headshot : public CCitadelModifier
 {
 public:
-	// No schema binary for binding
+	float m_nDebuffsTotal; // 0xc0	
 };
 

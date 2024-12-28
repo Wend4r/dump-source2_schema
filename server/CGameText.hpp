@@ -5,13 +5,13 @@
 struct hudtextparms_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7f0
+// Size: 0x7e8
 // Has VTable
 class CGameText : public CRulePointEntity
 {
 public:
-	CUtlSymbolLarge m_iszMessage; // 0x7d0	
-	hudtextparms_t m_textParms; // 0x7d8	
+	CUtlSymbolLarge m_iszMessage; // 0x7c8	
+	hudtextparms_t m_textParms; // 0x7d0	
 	
 	// Datamap fields:
 	// void InputDisplay; // 0x0

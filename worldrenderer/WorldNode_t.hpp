@@ -5,7 +5,7 @@
 struct BakedLightingInfo_t;
 // Registered binary: worldrenderer.dll (project 'worldrenderer')
 // Alignment: 8
-// Size: 0x148
+// Size: 0x160
 // 
 // MGetKV3ClassDefaults
 struct WorldNode_t
@@ -19,11 +19,12 @@ public:
 	CUtlVector< ExtraVertexStreamOverride_t > m_extraVertexStreamOverrides; // 0x78	
 	CUtlVector< MaterialOverride_t > m_materialOverrides; // 0x90	
 	CUtlVector< WorldNodeOnDiskBufferData_t > m_extraVertexStreams; // 0xa8	
-	CUtlVector< CUtlString > m_layerNames; // 0xc0	
-	CUtlVector< uint8 > m_sceneObjectLayerIndices; // 0xd8	
-	CUtlVector< uint8 > m_overlayLayerIndices; // 0xf0	
-	CUtlString m_grassFileName; // 0x108	
-	BakedLightingInfo_t m_nodeLightingInfo; // 0x110	
-	bool m_bHasBakedGeometryFlag; // 0x140	
+	CUtlVector< AggregateInstanceStreamOnDiskData_t > m_aggregateInstanceStreams; // 0xc0	
+	CUtlVector< CUtlString > m_layerNames; // 0xd8	
+	CUtlVector< uint8 > m_sceneObjectLayerIndices; // 0xf0	
+	CUtlVector< uint8 > m_overlayLayerIndices; // 0x108	
+	CUtlString m_grassFileName; // 0x120	
+	BakedLightingInfo_t m_nodeLightingInfo; // 0x128	
+	bool m_bHasBakedGeometryFlag; // 0x158	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x7e8
+// Size: 0x810
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_Killing_Blow_GlowVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShivOnlyDeathStatus; // 0x608	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShivOnlyDeathTrail; // 0x6e8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShivOnlyDeathStatus; // 0x630	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ShivOnlyDeathTrail; // 0x710	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strShivOnlyActivateSound; // 0x7c8	
-	CSoundEventName m_strShivOnlyLoopSound; // 0x7d8	
+	CSoundEventName m_strShivOnlyActivateSound; // 0x7f0	
+	CSoundEventName m_strShivOnlyLoopSound; // 0x800	
 };
 

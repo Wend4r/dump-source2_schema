@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa48
+// Size: 0xa40
 // Has VTable
 // 
 // MNetworkIncludeByName "m_lifeState"
@@ -15,6 +15,6 @@ class CCitadel_BreakableProp : public CBaseAnimGraph
 {
 public:
 	// MNetworkEnable
-	int32_t m_nHitIndex; // 0xa40	
+	int32_t m_nHitIndex; // 0xa38	
 };
 

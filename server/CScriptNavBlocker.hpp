@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7e0
+// Size: 0x7d8
 // Has VTable
 class CScriptNavBlocker : public CFuncNavBlocker
 {
 public:
-	Vector m_vExtent; // 0x7d0	
+	Vector m_vExtent; // 0x7c8	
 };
 

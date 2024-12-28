@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xca0
+// Size: 0xc98
 // Has VTable
 // Is Abstract
 // 
@@ -69,89 +69,89 @@ struct GameTime_t;
 class C_CitadelBaseAbility : public C_BaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0568[0xd0]; // 0x568
+	[[maybe_unused]] uint8_t __pad0560[0xd0]; // 0x560
 public:
-	CUtlVector< CModifierHandleTyped< CCitadelModifier > > m_vecIntrinsicModifiers; // 0x638	
-	CModifierHandleTyped< CCitadelModifier > m_pCastDelayAutoModifier; // 0x650	
-	CModifierHandleTyped< CCitadelModifier > m_pChannelAutoModifier; // 0x668	
-	CGlobalSymbol m_strUsedCastGraphParam; // 0x680	
-	int32_t m_nCastParamNeedsResetTick; // 0x688	
-	bool m_bIsCoolingDownInternal; // 0x68c	
+	CUtlVector< CModifierHandleTyped< CCitadelModifier > > m_vecIntrinsicModifiers; // 0x630	
+	CModifierHandleTyped< CCitadelModifier > m_pCastDelayAutoModifier; // 0x648	
+	CModifierHandleTyped< CCitadelModifier > m_pChannelAutoModifier; // 0x660	
+	CGlobalSymbol m_strUsedCastGraphParam; // 0x678	
+	int32_t m_nCastParamNeedsResetTick; // 0x680	
+	bool m_bIsCoolingDownInternal; // 0x684	
 private:
-	[[maybe_unused]] uint8_t __pad068d[0x3]; // 0x68d
+	[[maybe_unused]] uint8_t __pad0685[0x3]; // 0x685
 public:
-	GameTime_t m_flCancelLockoutTime; // 0x690	
+	GameTime_t m_flCancelLockoutTime; // 0x688	
 private:
-	[[maybe_unused]] uint8_t __pad0694[0x1c]; // 0x694
+	[[maybe_unused]] uint8_t __pad068c[0x1c]; // 0x68c
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnChannelingChanged"
-	bool m_bChanneling; // 0x6b0	
+	bool m_bChanneling; // 0x6a8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnInCastDelayChanged"
-	bool m_bInCastDelay; // 0x6b1	
+	bool m_bInCastDelay; // 0x6a9	
 private:
-	[[maybe_unused]] uint8_t __pad06b2[0x6]; // 0x6b2
+	[[maybe_unused]] uint8_t __pad06aa[0x6]; // 0x6aa
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnAbilityImbuedChanged"
-	C_NetworkUtlVectorBase< CUtlStringToken > m_vecImbuedByAbilitiyIDs; // 0x6b8	
+	C_NetworkUtlVectorBase< CUtlStringToken > m_vecImbuedByAbilitiyIDs; // 0x6b0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnUpgradeBitsChanged"
 	// MNetworkPriority "32"
-	int32_t m_nUpgradeBits; // 0x6d0	
+	int32_t m_nUpgradeBits; // 0x6c8	
 	// MNetworkEnable
-	int32_t m_iBucketID; // 0x6d4	
+	int32_t m_iBucketID; // 0x6cc	
 	// MNetworkEnable
-	bool m_bToggleState; // 0x6d8	
+	bool m_bToggleState; // 0x6d0	
 private:
-	[[maybe_unused]] uint8_t __pad06d9[0x3]; // 0x6d9
+	[[maybe_unused]] uint8_t __pad06d1[0x3]; // 0x6d1
 public:
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_flCooldownStart; // 0x6dc	
+	GameTime_t m_flCooldownStart; // 0x6d4	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_flCooldownEnd; // 0x6e0	
+	GameTime_t m_flCooldownEnd; // 0x6d8	
 	// MNetworkEnable
-	GameTime_t m_flCastCompletedTime; // 0x6e4	
+	GameTime_t m_flCastCompletedTime; // 0x6dc	
 	// MNetworkEnable
-	GameTime_t m_flChannelStartTime; // 0x6e8	
+	GameTime_t m_flChannelStartTime; // 0x6e0	
 	// MNetworkEnable
-	GameTime_t m_flCastDelayStartTime; // 0x6ec	
+	GameTime_t m_flCastDelayStartTime; // 0x6e4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnAbilitySlotChanged"
-	EAbilitySlots_t m_eAbilitySlot; // 0x6f0	
+	EAbilitySlots_t m_eAbilitySlot; // 0x6e8	
 private:
-	[[maybe_unused]] uint8_t __pad06f2[0x2]; // 0x6f2
+	[[maybe_unused]] uint8_t __pad06ea[0x2]; // 0x6ea
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flPostCastDelayEndTime; // 0x6f4	
+	GameTime_t m_flPostCastDelayEndTime; // 0x6ec	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	int32_t m_iRemainingCharges; // 0x6f8	
+	int32_t m_iRemainingCharges; // 0x6f0	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_flChargeRechargeStart; // 0x6fc	
+	GameTime_t m_flChargeRechargeStart; // 0x6f4	
 	// MNetworkEnable
 	// MNetworkPriority "32"
-	GameTime_t m_flChargeRechargeEnd; // 0x700	
+	GameTime_t m_flChargeRechargeEnd; // 0x6f8	
 	// MNetworkEnable
-	GameTime_t m_flMovementControlActiveTime; // 0x704	
-	// MNetworkEnable
-	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flSelectedChangedTime; // 0x708	
+	GameTime_t m_flMovementControlActiveTime; // 0x6fc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flAltCastHoldStartTime; // 0x70c	
+	GameTime_t m_flSelectedChangedTime; // 0x700	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flAltCastDoubleTapStartTime; // 0x710	
-	// MNetworkEnable
-	CUtlStringToken m_nImbuedAbilityID; // 0x714	
+	GameTime_t m_flAltCastHoldStartTime; // 0x704	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bSelectionModeIsAltMode; // 0x718	
+	GameTime_t m_flAltCastDoubleTapStartTime; // 0x708	
+	// MNetworkEnable
+	CUtlStringToken m_nImbuedAbilityID; // 0x70c	
+	// MNetworkEnable
+	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+	bool m_bSelectionModeIsAltMode; // 0x710	
 };
 

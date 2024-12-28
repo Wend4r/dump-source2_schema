@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1670
+// Size: 0x1678
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,12 +12,12 @@ class CAbilityHornetChainVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x1560	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x1568	
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_strExplodeSound; // 0x1640	
+	CSoundEventName m_strExplodeSound; // 0x1648	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ChainModifier; // 0x1650	
+	CEmbeddedSubclass< CCitadelModifier > m_ChainModifier; // 0x1658	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DisarmModifier; // 0x1660	
+	CEmbeddedSubclass< CCitadelModifier > m_DisarmModifier; // 0x1668	
 };
 

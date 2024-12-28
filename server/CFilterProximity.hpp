@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x548
+// Size: 0x540
 // Has VTable
 class CFilterProximity : public CBaseFilter
 {
 public:
-	float m_flRadius; // 0x540	
+	float m_flRadius; // 0x538	
 };
 

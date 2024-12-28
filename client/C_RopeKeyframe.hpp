@@ -6,7 +6,7 @@ struct AttachmentHandle_t;
 struct C_RopeKeyframe::CPhysicsDelegate;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xc48
+// Size: 0xc40
 // Has VTable
 // 
 // MNetworkIncludeByUserGroup "Origin"
@@ -35,87 +35,87 @@ struct C_RopeKeyframe::CPhysicsDelegate;
 class C_RopeKeyframe : public C_BaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0860[0x8]; // 0x860
+	[[maybe_unused]] uint8_t __pad0858[0x8]; // 0x858
 public:
-	CBitVec< 10 > m_LinksTouchingSomething; // 0x868	
-	int32_t m_nLinksTouchingSomething; // 0x86c	
-	bool m_bApplyWind; // 0x870	
+	CBitVec< 10 > m_LinksTouchingSomething; // 0x860	
+	int32_t m_nLinksTouchingSomething; // 0x864	
+	bool m_bApplyWind; // 0x868	
 private:
-	[[maybe_unused]] uint8_t __pad0871[0x3]; // 0x871
+	[[maybe_unused]] uint8_t __pad0869[0x3]; // 0x869
 public:
-	int32_t m_fPrevLockedPoints; // 0x874	
-	int32_t m_iForcePointMoveCounter; // 0x878	
-	bool m_bPrevEndPointPos[2]; // 0x87c	
+	int32_t m_fPrevLockedPoints; // 0x86c	
+	int32_t m_iForcePointMoveCounter; // 0x870	
+	bool m_bPrevEndPointPos[2]; // 0x874	
 private:
-	[[maybe_unused]] uint8_t __pad087e[0x2]; // 0x87e
+	[[maybe_unused]] uint8_t __pad0876[0x2]; // 0x876
 public:
-	Vector m_vPrevEndPointPos[2]; // 0x880	
-	float m_flCurScroll; // 0x898	
+	Vector m_vPrevEndPointPos[2]; // 0x878	
+	float m_flCurScroll; // 0x890	
 	// MNetworkEnable
-	float m_flScrollSpeed; // 0x89c	
+	float m_flScrollSpeed; // 0x894	
 	// MNetworkEnable
-	uint16_t m_RopeFlags; // 0x8a0	
+	uint16_t m_RopeFlags; // 0x898	
 private:
-	[[maybe_unused]] uint8_t __pad08a2[0x6]; // 0x8a2
-public:
-	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0x8a8	
-private:
-	[[maybe_unused]] uint8_t __pad08b0[0x270]; // 0x8b0
-public:
-	Vector m_LightValues[10]; // 0xb20	
-	// MNetworkEnable
-	uint8_t m_nSegments; // 0xb98	
-private:
-	[[maybe_unused]] uint8_t __pad0b99[0x3]; // 0xb99
+	[[maybe_unused]] uint8_t __pad089a[0x6]; // 0x89a
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hStartPoint; // 0xb9c	
-	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hEndPoint; // 0xba0	
-	// MNetworkEnable
-	AttachmentHandle_t m_iStartAttachment; // 0xba4	
-	// MNetworkEnable
-	AttachmentHandle_t m_iEndAttachment; // 0xba5	
-	// MNetworkEnable
-	uint8_t m_Subdiv; // 0xba6	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_iRopeMaterialModelIndex; // 0x8a0	
 private:
-	[[maybe_unused]] uint8_t __pad0ba7[0x1]; // 0xba7
+	[[maybe_unused]] uint8_t __pad08a8[0x270]; // 0x8a8
+public:
+	Vector m_LightValues[10]; // 0xb18	
+	// MNetworkEnable
+	uint8_t m_nSegments; // 0xb90	
+private:
+	[[maybe_unused]] uint8_t __pad0b91[0x3]; // 0xb91
+public:
+	// MNetworkEnable
+	CHandle< C_BaseEntity > m_hStartPoint; // 0xb94	
+	// MNetworkEnable
+	CHandle< C_BaseEntity > m_hEndPoint; // 0xb98	
+	// MNetworkEnable
+	AttachmentHandle_t m_iStartAttachment; // 0xb9c	
+	// MNetworkEnable
+	AttachmentHandle_t m_iEndAttachment; // 0xb9d	
+	// MNetworkEnable
+	uint8_t m_Subdiv; // 0xb9e	
+private:
+	[[maybe_unused]] uint8_t __pad0b9f[0x1]; // 0xb9f
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "RecomputeSprings"
-	int16_t m_RopeLength; // 0xba8	
+	int16_t m_RopeLength; // 0xba0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "RecomputeSprings"
-	int16_t m_Slack; // 0xbaa	
+	int16_t m_Slack; // 0xba2	
 	// MNetworkEnable
 	// MNetworkBitCount "10"
 	// MNetworkMinValue "0.100000"
 	// MNetworkMaxValue "10.000000"
-	float m_TextureScale; // 0xbac	
+	float m_TextureScale; // 0xba4	
 	// MNetworkEnable
-	uint8_t m_fLockedPoints; // 0xbb0	
+	uint8_t m_fLockedPoints; // 0xba8	
 	// MNetworkEnable
-	uint8_t m_nChangeCount; // 0xbb1	
+	uint8_t m_nChangeCount; // 0xba9	
 private:
-	[[maybe_unused]] uint8_t __pad0bb2[0x2]; // 0xbb2
+	[[maybe_unused]] uint8_t __pad0baa[0x2]; // 0xbaa
 public:
 	// MNetworkEnable
-	float m_Width; // 0xbb4	
-	C_RopeKeyframe::CPhysicsDelegate m_PhysicsDelegate; // 0xbb8	
-	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterial; // 0xbc8	
-	int32_t m_TextureHeight; // 0xbd0	
-	Vector m_vecImpulse; // 0xbd4	
-	Vector m_vecPreviousImpulse; // 0xbe0	
-	float m_flCurrentGustTimer; // 0xbec	
-	float m_flCurrentGustLifetime; // 0xbf0	
-	float m_flTimeToNextGust; // 0xbf4	
-	Vector m_vWindDir; // 0xbf8	
-	Vector m_vColorMod; // 0xc04	
-	Vector m_vCachedEndPointAttachmentPos[2]; // 0xc10	
-	QAngle m_vCachedEndPointAttachmentAngle[2]; // 0xc28	
+	float m_Width; // 0xbac	
+	C_RopeKeyframe::CPhysicsDelegate m_PhysicsDelegate; // 0xbb0	
+	CStrongHandle< InfoForResourceTypeIMaterial2 > m_hMaterial; // 0xbc0	
+	int32_t m_TextureHeight; // 0xbc8	
+	Vector m_vecImpulse; // 0xbcc	
+	Vector m_vecPreviousImpulse; // 0xbd8	
+	float m_flCurrentGustTimer; // 0xbe4	
+	float m_flCurrentGustLifetime; // 0xbe8	
+	float m_flTimeToNextGust; // 0xbec	
+	Vector m_vWindDir; // 0xbf0	
+	Vector m_vColorMod; // 0xbfc	
+	Vector m_vCachedEndPointAttachmentPos[2]; // 0xc08	
+	QAngle m_vCachedEndPointAttachmentAngle[2]; // 0xc20	
 	// MNetworkEnable
-	bool m_bConstrainBetweenEndpoints; // 0xc40	
+	bool m_bConstrainBetweenEndpoints; // 0xc38	
 	struct 
 	{
 		uint8_t m_bEndPointAttachmentPositionsDirty: 1; 		

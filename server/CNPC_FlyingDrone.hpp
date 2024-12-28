@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1848
+// Size: 0x1840
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iHealth"

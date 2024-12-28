@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa30
+// Size: 0xa28
 // Has VTable
 class CScriptTriggerHurt : public CTriggerHurt
 {
 public:
-	Vector m_vExtent; // 0xa20	
+	Vector m_vExtent; // 0xa18	
 };
 

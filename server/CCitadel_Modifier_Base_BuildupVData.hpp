@@ -4,23 +4,23 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x620
+// Size: 0x648
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_Base_BuildupVData : public CCitadelModifierVData
 {
 public:
-	bool m_bUseBaseWeaponCycleTimeForDelay; // 0x608	
+	bool m_bUseBaseWeaponCycleTimeForDelay; // 0x630	
 private:
-	[[maybe_unused]] uint8_t __pad0609[0x3]; // 0x609
+	[[maybe_unused]] uint8_t __pad0631[0x3]; // 0x631
 public:
-	float m_flCycleTimeDelayAdd; // 0x60c	
-	float m_flBuildUpDecayDelay; // 0x610	
-	BuildupMode_t m_eBuildupMode; // 0x614	
+	float m_flCycleTimeDelayAdd; // 0x634	
+	float m_flBuildUpDecayDelay; // 0x638	
+	BuildupMode_t m_eBuildupMode; // 0x63c	
 	// MPropertyDescription "When true, effectiveness (distance falloff) will be applied to the buildup."
-	bool m_bBuildupAffectedByEffectiveness; // 0x618	
+	bool m_bBuildupAffectedByEffectiveness; // 0x640	
 	// MPropertyDescription "When true, the averaged effectiveness of the build up modifier will be passed to the fill modifier"
-	bool m_bPassBuildupEffectivenessToFillModifier; // 0x619	
+	bool m_bPassBuildupEffectivenessToFillModifier; // 0x641	
 };
 

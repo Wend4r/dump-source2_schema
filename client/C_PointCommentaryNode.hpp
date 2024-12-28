@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb50
+// Size: 0xb48
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bActive"
@@ -21,39 +21,39 @@ struct GameTime_t;
 class C_PointCommentaryNode : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b00[0x8]; // 0xb00
+	[[maybe_unused]] uint8_t __pad0af8[0x8]; // 0xaf8
 public:
 	// MNetworkEnable
-	bool m_bActive; // 0xb08	
-	bool m_bWasActive; // 0xb09	
+	bool m_bActive; // 0xb00	
+	bool m_bWasActive; // 0xb01	
 private:
-	[[maybe_unused]] uint8_t __pad0b0a[0x2]; // 0xb0a
+	[[maybe_unused]] uint8_t __pad0b02[0x2]; // 0xb02
 public:
-	GameTime_t m_flEndTime; // 0xb0c	
+	GameTime_t m_flEndTime; // 0xb04	
 	// MNetworkEnable
-	GameTime_t m_flStartTime; // 0xb10	
+	GameTime_t m_flStartTime; // 0xb08	
 	// MNetworkEnable
-	float m_flStartTimeInCommentary; // 0xb14	
+	float m_flStartTimeInCommentary; // 0xb0c	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszCommentaryFile; // 0xb18	
+	CUtlSymbolLarge m_iszCommentaryFile; // 0xb10	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszTitle; // 0xb20	
+	CUtlSymbolLarge m_iszTitle; // 0xb18	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszSpeakers; // 0xb28	
+	CUtlSymbolLarge m_iszSpeakers; // 0xb20	
 	// MNetworkEnable
-	int32_t m_iNodeNumber; // 0xb30	
+	int32_t m_iNodeNumber; // 0xb28	
 	// MNetworkEnable
-	int32_t m_iNodeNumberMax; // 0xb34	
+	int32_t m_iNodeNumberMax; // 0xb2c	
 	// MNetworkEnable
-	bool m_bListenedTo; // 0xb38	
+	bool m_bListenedTo; // 0xb30	
 private:
-	[[maybe_unused]] uint8_t __pad0b39[0xf]; // 0xb39
+	[[maybe_unused]] uint8_t __pad0b31[0xf]; // 0xb31
 public:
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hViewPosition; // 0xb48	
-	bool m_bRestartAfterRestore; // 0xb4c	
+	CHandle< C_BaseEntity > m_hViewPosition; // 0xb40	
+	bool m_bRestartAfterRestore; // 0xb44	
 	
 	// Datamap fields:
-	// void m_sndCommentary; // 0xb40
+	// void m_sndCommentary; // 0xb38
 };
 

@@ -5,13 +5,13 @@
 struct CRangeFloat;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x610
+// Size: 0x638
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CModifierVData_SetModelScale : public CCitadelModifierVData
 {
 public:
-	CRangeFloat m_flScale; // 0x608	
+	CRangeFloat m_flScale; // 0x630	
 };
 

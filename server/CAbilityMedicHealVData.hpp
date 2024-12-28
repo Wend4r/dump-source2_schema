@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1730
+// Size: 0x1738
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,9 +12,9 @@ class CAbilityMedicHealVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealBeamParticle; // 0x1560	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealTargetParticle; // 0x1640	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealBeamParticle; // 0x1568	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HealTargetParticle; // 0x1648	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strHealCastSound; // 0x1720	
+	CSoundEventName m_strHealCastSound; // 0x1728	
 };
 

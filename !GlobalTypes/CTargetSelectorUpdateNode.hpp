@@ -5,7 +5,7 @@
 struct CAnimParamHandle;
 // Registered binary: animationsystem.dll (project 'animgraphlib')
 // Alignment: 8
-// Size: 0x90
+// Size: 0x88
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -20,13 +20,12 @@ private:
 public:
 	CAnimParamHandle m_hTargetPosition; // 0x7c	
 	CAnimParamHandle m_hTargetFacePositionParameter; // 0x7e	
-	CAnimParamHandle m_hForwardDirectionOverrideParameter; // 0x80	
-	bool m_bTargetPositionIsWorldSpace; // 0x82	
-	bool m_bTargetFacePositionIsWorldSpace; // 0x83	
-	bool m_bEnablePhaseMatching; // 0x84	
+	bool m_bTargetPositionIsWorldSpace; // 0x80	
+	bool m_bTargetFacePositionIsWorldSpace; // 0x81	
+	bool m_bEnablePhaseMatching; // 0x82	
 private:
-	[[maybe_unused]] uint8_t __pad0085[0x3]; // 0x85
+	[[maybe_unused]] uint8_t __pad0083[0x1]; // 0x83
 public:
-	float m_flPhaseMatchingMaxRootMotionSkip; // 0x88	
+	float m_flPhaseMatchingMaxRootMotionSkip; // 0x84	
 };
 

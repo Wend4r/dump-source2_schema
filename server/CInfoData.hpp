@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 16
-// Size: 0x880
+// Size: 0x870
 // Has VTable
 class CInfoData : public CServerOnlyEntity
 {

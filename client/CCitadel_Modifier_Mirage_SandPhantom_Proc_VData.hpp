@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x908
+// Size: 0x930
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,30 +13,30 @@ class CCitadel_Modifier_Mirage_SandPhantom_Proc_VData : public CCitadelModifierV
 {
 public:
 	// MPropertyDescription "When true, we roll for a proc once per shot and apply that result to all bullets in the shot.  When false, we roll independently for each bullet in the shot."
-	bool m_bRollOnceForAllBulletsInAShot; // 0x608	
+	bool m_bRollOnceForAllBulletsInAShot; // 0x630	
 private:
-	[[maybe_unused]] uint8_t __pad0609[0x3]; // 0x609
+	[[maybe_unused]] uint8_t __pad0631[0x3]; // 0x631
 public:
 	// MPropertyDescription "When not rolling once for all shots, what's the max number of times we can proc in a single shot? 0 means no limit."
-	float m_flMaxBulletsToProcInShot; // 0x60c	
+	float m_flMaxBulletsToProcInShot; // 0x634	
 	// MPropertyDescription "When true, each bullet can apply its proc to any entities hit.  When false, we only apply the first proc to the first entity."
-	bool m_bCanProcMultipleTimesFromSameShot; // 0x610	
+	bool m_bCanProcMultipleTimesFromSameShot; // 0x638	
 	// MPropertyDescription "When true, will only call OnProc if the target hit passes the unit filter."
-	bool m_bRequiresTargetFilter; // 0x611	
+	bool m_bRequiresTargetFilter; // 0x639	
 private:
-	[[maybe_unused]] uint8_t __pad0612[0x6]; // 0x612
+	[[maybe_unused]] uint8_t __pad063a[0x6]; // 0x63a
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_ProcReadyModifier; // 0x618	
-	CEmbeddedSubclass< CCitadelModifier > m_PassiveVictimModifier; // 0x628	
+	CEmbeddedSubclass< CCitadelModifier > m_ProcReadyModifier; // 0x640	
+	CEmbeddedSubclass< CCitadelModifier > m_PassiveVictimModifier; // 0x650	
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ProcReadyParticle; // 0x638	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerAdditionParticle; // 0x718	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x7f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ProcReadyParticle; // 0x660	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerAdditionParticle; // 0x740	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x820	
 	// MPropertyStartGroup "Sounds"
 	// MPropertyDescription "Sound to play on the shooter when a bullet rolls a proc when fired."
-	CSoundEventName m_OnBulletRolledProcSound; // 0x8d8	
-	CSoundEventName m_ProcSound; // 0x8e8	
-	CSoundEventName m_ExplodeSound; // 0x8f8	
+	CSoundEventName m_OnBulletRolledProcSound; // 0x900	
+	CSoundEventName m_ProcSound; // 0x910	
+	CSoundEventName m_ExplodeSound; // 0x920	
 };
 

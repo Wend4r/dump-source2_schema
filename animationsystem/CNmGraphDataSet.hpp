@@ -12,7 +12,7 @@ class CNmGraphDataSet
 public:
 	CGlobalSymbol m_variationID; // 0x0	
 	CStrongHandle< InfoForResourceTypeCNmSkeleton > m_skeleton; // 0x8	
-	CUtlVector< CStrongHandleVoid > m_resources; // 0x10	
+	CUtlVector< CNmGraphNode::CVariationData* > m_data; // 0x10	
 private:
 	[[maybe_unused]] uint8_t __pad0028[0x20]; // 0x28
 public:

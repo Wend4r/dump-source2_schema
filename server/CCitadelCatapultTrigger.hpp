@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x998
+// Size: 0x990
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vLaunchTarget"
@@ -13,9 +13,9 @@ class CCitadelCatapultTrigger : public CBaseTrigger
 {
 public:
 	// MNetworkEnable
-	Vector m_vLaunchTarget; // 0x980	
+	Vector m_vLaunchTarget; // 0x978	
 	// MNetworkEnable
-	float m_flLaunchSpeed; // 0x98c	
-	CUtlSymbolLarge m_nameTarget; // 0x990	
+	float m_flLaunchSpeed; // 0x984	
+	CUtlSymbolLarge m_nameTarget; // 0x988	
 };
 

@@ -4,13 +4,13 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x610
+// Size: 0x638
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadel_Modifier_Near_Climbable_RopeVData : public CCitadelModifierVData
 {
 public:
-	float m_flEnableStateTime; // 0x608	
+	float m_flEnableStateTime; // 0x630	
 };
 

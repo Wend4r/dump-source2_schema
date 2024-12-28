@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x700
+// Size: 0x728
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,9 +12,9 @@ class CCitadel_Modifier_GalvanicStormTechShieldVData : public CCitadelModifierVD
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_BuffModifier; // 0x608	
+	CEmbeddedSubclass< CBaseModifier > m_BuffModifier; // 0x630	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x618	
-	float m_flExplodeSpeed; // 0x6f8	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x640	
+	float m_flExplodeSpeed; // 0x720	
 };
 

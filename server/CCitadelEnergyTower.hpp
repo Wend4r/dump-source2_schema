@@ -4,17 +4,17 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x4f8
 // Has VTable
 class CCitadelEnergyTower : public CServerOnlyEntity
 {
 public:
-	bool m_bEnabled; // 0x4e8	
+	bool m_bEnabled; // 0x4e0	
 private:
-	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
+	[[maybe_unused]] uint8_t __pad04e1[0x3]; // 0x4e1
 public:
-	float m_flDamage; // 0x4ec	
-	float m_flRadius; // 0x4f0	
+	float m_flDamage; // 0x4e4	
+	float m_flRadius; // 0x4e8	
 	
 	// Datamap fields:
 	//  InputEnable; // 0x0

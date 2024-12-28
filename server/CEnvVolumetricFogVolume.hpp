@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x538
+// Size: 0x530
 // Has VTable
 // 
 // MEntityAllowsPortraitWorldSpawn
@@ -30,47 +30,47 @@ class CEnvVolumetricFogVolume : public CBaseEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bActive; // 0x4e8	
+	bool m_bActive; // 0x4e0	
 private:
-	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
+	[[maybe_unused]] uint8_t __pad04e1[0x3]; // 0x4e1
 public:
 	// MNetworkEnable
-	Vector m_vBoxMins; // 0x4ec	
+	Vector m_vBoxMins; // 0x4e4	
 	// MNetworkEnable
-	Vector m_vBoxMaxs; // 0x4f8	
+	Vector m_vBoxMaxs; // 0x4f0	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x504	
+	bool m_bStartDisabled; // 0x4fc	
 private:
-	[[maybe_unused]] uint8_t __pad0505[0x3]; // 0x505
+	[[maybe_unused]] uint8_t __pad04fd[0x3]; // 0x4fd
 public:
 	// MNetworkEnable
-	float m_flStrength; // 0x508	
+	float m_flStrength; // 0x500	
 	// MNetworkEnable
-	int32_t m_nFalloffShape; // 0x50c	
+	int32_t m_nFalloffShape; // 0x504	
 	// MNetworkEnable
-	float m_flFalloffExponent; // 0x510	
+	float m_flFalloffExponent; // 0x508	
 	// MNetworkEnable
-	float m_flHeightFogDepth; // 0x514	
+	float m_flHeightFogDepth; // 0x50c	
 	// MNetworkEnable
-	float m_fHeightFogEdgeWidth; // 0x518	
+	float m_fHeightFogEdgeWidth; // 0x510	
 	// MNetworkEnable
-	float m_fIndirectLightStrength; // 0x51c	
+	float m_fIndirectLightStrength; // 0x514	
 	// MNetworkEnable
-	float m_fSunLightStrength; // 0x520	
+	float m_fSunLightStrength; // 0x518	
 	// MNetworkEnable
-	float m_fNoiseStrength; // 0x524	
+	float m_fNoiseStrength; // 0x51c	
 	// MNetworkEnable
-	Color m_TintColor; // 0x528	
+	Color m_TintColor; // 0x520	
 	// MNetworkEnable
-	bool m_bOverrideTintColor; // 0x52c	
+	bool m_bOverrideTintColor; // 0x524	
 	// MNetworkEnable
-	bool m_bOverrideIndirectLightStrength; // 0x52d	
+	bool m_bOverrideIndirectLightStrength; // 0x525	
 	// MNetworkEnable
-	bool m_bOverrideSunLightStrength; // 0x52e	
+	bool m_bOverrideSunLightStrength; // 0x526	
 	// MNetworkEnable
-	bool m_bOverrideNoiseStrength; // 0x52f	
+	bool m_bOverrideNoiseStrength; // 0x527	
 	// MNetworkEnable
-	bool m_bAllowLPVIndirect; // 0x530	
+	bool m_bAllowLPVIndirect; // 0x528	
 	
 	// Datamap fields:
 	// bool InputEnable; // 0x0

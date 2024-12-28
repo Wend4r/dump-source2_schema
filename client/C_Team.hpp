@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x620
+// Size: 0x618
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iTeamNum"
@@ -17,13 +17,13 @@ class C_Team : public C_BaseEntity
 public:
 	// MNetworkEnable
 	// MNetworkAlias "m_aPlayers"
-	C_NetworkUtlVectorBase< CHandle< CBasePlayerController > > m_aPlayerControllers; // 0x568	
+	C_NetworkUtlVectorBase< CHandle< CBasePlayerController > > m_aPlayerControllers; // 0x560	
 	// MNetworkEnable
 	// MNetworkAlias "m_aPawns"
-	C_NetworkUtlVectorBase< CHandle< C_BasePlayerPawn > > m_aPlayers; // 0x580	
+	C_NetworkUtlVectorBase< CHandle< C_BasePlayerPawn > > m_aPlayers; // 0x578	
 	// MNetworkEnable
-	int32_t m_iScore; // 0x598	
+	int32_t m_iScore; // 0x590	
 	// MNetworkEnable
-	char m_szTeamname[129]; // 0x59c	
+	char m_szTeamname[129]; // 0x594	
 };
 

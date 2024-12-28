@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
-// Enumerator count: 24
+// Enumerator count: 25
 // Alignment: 4
 // Size: 0x4
 enum class PulseValueType_t : uint32_t
@@ -54,7 +54,10 @@ enum class PulseValueType_t : uint32_t
 	PVAL_PANORAMA_PANEL_HANDLE = 0x14,
 	// MPropertyFriendlyName "Test Handle"
 	PVAL_TEST_HANDLE = 0x15,
+	// MPropertyFriendlyName "Array"
 	// MPropertySuppressEnumerator
-	PVAL_COUNT = 0x16,
+	PVAL_ARRAY = 0x16,
+	// MPropertySuppressEnumerator
+	PVAL_COUNT = 0x17,
 };
 

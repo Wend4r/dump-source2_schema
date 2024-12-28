@@ -5,18 +5,18 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x4f8
 // Has VTable
 class CAI_LookTarget : public CPointEntity
 {
 public:
-	int32_t m_iContext; // 0x4e8	
-	int32_t m_iPriority; // 0x4ec	
-	bool m_bDisabled; // 0x4f0	
+	int32_t m_iContext; // 0x4e0	
+	int32_t m_iPriority; // 0x4e4	
+	bool m_bDisabled; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04f1[0x3]; // 0x4f1
+	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
 public:
-	GameTime_t m_flTimeNextAvailable; // 0x4f4	
-	float m_flMaxDist; // 0x4f8	
+	GameTime_t m_flTimeNextAvailable; // 0x4ec	
+	float m_flMaxDist; // 0x4f0	
 };
 

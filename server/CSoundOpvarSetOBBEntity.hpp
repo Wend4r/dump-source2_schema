@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x6d8
+// Size: 0x6d0
 // Has VTable
 class CSoundOpvarSetOBBEntity : public CSoundOpvarSetAABBEntity
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x560
+// Size: 0x558
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bDisabled"
@@ -19,32 +19,32 @@ class CInfoOffscreenPanoramaTexture : public CPointEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bDisabled; // 0x4e8	
+	bool m_bDisabled; // 0x4e0	
 private:
-	[[maybe_unused]] uint8_t __pad04e9[0x3]; // 0x4e9
+	[[maybe_unused]] uint8_t __pad04e1[0x3]; // 0x4e1
 public:
 	// MNetworkEnable
-	int32_t m_nResolutionX; // 0x4ec	
+	int32_t m_nResolutionX; // 0x4e4	
 	// MNetworkEnable
-	int32_t m_nResolutionY; // 0x4f0	
+	int32_t m_nResolutionY; // 0x4e8	
 private:
-	[[maybe_unused]] uint8_t __pad04f4[0x4]; // 0x4f4
+	[[maybe_unused]] uint8_t __pad04ec[0x4]; // 0x4ec
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_szLayoutFileName; // 0x4f8	
+	CUtlSymbolLarge m_szLayoutFileName; // 0x4f0	
 	// MNetworkEnable
-	CUtlSymbolLarge m_RenderAttrName; // 0x500	
+	CUtlSymbolLarge m_RenderAttrName; // 0x4f8	
 	// MNetworkEnable
-	CNetworkUtlVectorBase< CHandle< CBaseModelEntity > > m_TargetEntities; // 0x508	
+	CNetworkUtlVectorBase< CHandle< CBaseModelEntity > > m_TargetEntities; // 0x500	
 	// MNetworkEnable
-	int32_t m_nTargetChangeCount; // 0x520	
+	int32_t m_nTargetChangeCount; // 0x518	
 private:
-	[[maybe_unused]] uint8_t __pad0524[0x4]; // 0x524
+	[[maybe_unused]] uint8_t __pad051c[0x4]; // 0x51c
 public:
 	// MNetworkEnable
-	CNetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0x528	
-	CUtlSymbolLarge m_szTargetsName; // 0x540	
-	CUtlVector< CHandle< CBaseModelEntity > > m_AdditionalTargetEntities; // 0x548	
+	CNetworkUtlVectorBase< CUtlSymbolLarge > m_vecCSSClasses; // 0x520	
+	CUtlSymbolLarge m_szTargetsName; // 0x538	
+	CUtlVector< CHandle< CBaseModelEntity > > m_AdditionalTargetEntities; // 0x540	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

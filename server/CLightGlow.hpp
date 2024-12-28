@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7e0
+// Size: 0x7d8
 // Has VTable
 // 
 // MNetworkIncludeByUserGroup "Origin"
@@ -23,25 +23,25 @@ class CLightGlow : public CBaseModelEntity
 {
 public:
 	// MNetworkEnable
-	uint32_t m_nHorizontalSize; // 0x7c0	
+	uint32_t m_nHorizontalSize; // 0x7b8	
 	// MNetworkEnable
-	uint32_t m_nVerticalSize; // 0x7c4	
+	uint32_t m_nVerticalSize; // 0x7bc	
 	// MNetworkEnable
-	uint32_t m_nMinDist; // 0x7c8	
+	uint32_t m_nMinDist; // 0x7c0	
 	// MNetworkEnable
-	uint32_t m_nMaxDist; // 0x7cc	
+	uint32_t m_nMaxDist; // 0x7c4	
 	// MNetworkEnable
-	uint32_t m_nOuterMaxDist; // 0x7d0	
+	uint32_t m_nOuterMaxDist; // 0x7c8	
 	// MNetworkEnable
 	// MNetworkBitCount "6"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "64.000000"
 	// MNetworkEncodeFlags "2"
-	float m_flGlowProxySize; // 0x7d4	
+	float m_flGlowProxySize; // 0x7cc	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "100.000000"
-	float m_flHDRColorScale; // 0x7d8	
+	float m_flHDRColorScale; // 0x7d0	
 	
 	// Datamap fields:
 	// Color InputColor; // 0x0

@@ -4,7 +4,7 @@
 
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 4
-// Size: 0x28
+// Size: 0x1c
 // Has Trivial Destructor
 // 
 // MGetKV3ClassDefaults
@@ -25,11 +25,5 @@ public:
 	float m_softContactDampingRatio; // 0x14	
 	// MKV3TransferName "wheeldrag"
 	float m_wheelDrag; // 0x18	
-	// MKV3TransferName "heatconductivity"
-	float m_heatConductivity; // 0x1c	
-	// MKV3TransferName "flashpoint"
-	float m_flashpoint; // 0x20	
-	// MKV3TransferName "burnfuel"
-	float m_burnfuel; // 0x24	
 };
 

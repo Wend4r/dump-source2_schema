@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x848
+// Size: 0x840
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_timeLaunch"
@@ -13,12 +13,12 @@ struct GameTime_t;
 class CItemXP : public CBaseModelEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad07c0[0x54]; // 0x7c0
+	[[maybe_unused]] uint8_t __pad07b8[0x54]; // 0x7b8
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnLaunchTimeChanged"
-	GameTime_t m_timeLaunch; // 0x814	
+	GameTime_t m_timeLaunch; // 0x80c	
 	// MNetworkEnable
-	GameTime_t m_flAttackableTime; // 0x818	
+	GameTime_t m_flAttackableTime; // 0x810	
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 12
+// Enumerator count: 13
 // Alignment: 4
 // Size: 0x4
 enum class ECitadelClientMessages : uint32_t
@@ -20,5 +20,6 @@ enum class ECitadelClientMessages : uint32_t
 	CITADEL_CM_ExecuteMapUnitAbility = 0x3f3,
 	CITADEL_CM_GetDamageStats = 0x3f4,
 	CITADEL_CM_CheaterVote = 0x3f5,
+	CITADEL_CM_MutePlayers = 0x3f6,
 };
 

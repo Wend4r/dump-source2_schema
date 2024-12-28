@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa70
+// Size: 0xa68
 // Has VTable
 // 
 // MNetworkVarNames "char m_messageText"
@@ -27,43 +27,43 @@ class CPointWorldText : public CModelPointEntity
 {
 public:
 	// MNetworkEnable
-	char m_messageText[512]; // 0x7c0	
+	char m_messageText[512]; // 0x7b8	
 	// MNetworkEnable
-	char m_FontName[64]; // 0x9c0	
+	char m_FontName[64]; // 0x9b8	
 	// MNetworkEnable
-	char m_BackgroundMaterialName[64]; // 0xa00	
+	char m_BackgroundMaterialName[64]; // 0x9f8	
 	// MNetworkEnable
-	bool m_bEnabled; // 0xa40	
+	bool m_bEnabled; // 0xa38	
 	// MNetworkEnable
-	bool m_bFullbright; // 0xa41	
+	bool m_bFullbright; // 0xa39	
 private:
-	[[maybe_unused]] uint8_t __pad0a42[0x2]; // 0xa42
+	[[maybe_unused]] uint8_t __pad0a3a[0x2]; // 0xa3a
 public:
 	// MNetworkEnable
-	float m_flWorldUnitsPerPx; // 0xa44	
+	float m_flWorldUnitsPerPx; // 0xa3c	
 	// MNetworkEnable
-	float m_flFontSize; // 0xa48	
+	float m_flFontSize; // 0xa40	
 	// MNetworkEnable
-	float m_flDepthOffset; // 0xa4c	
+	float m_flDepthOffset; // 0xa44	
 	// MNetworkEnable
-	bool m_bDrawBackground; // 0xa50	
+	bool m_bDrawBackground; // 0xa48	
 private:
-	[[maybe_unused]] uint8_t __pad0a51[0x3]; // 0xa51
+	[[maybe_unused]] uint8_t __pad0a49[0x3]; // 0xa49
 public:
 	// MNetworkEnable
-	float m_flBackgroundBorderWidth; // 0xa54	
+	float m_flBackgroundBorderWidth; // 0xa4c	
 	// MNetworkEnable
-	float m_flBackgroundBorderHeight; // 0xa58	
+	float m_flBackgroundBorderHeight; // 0xa50	
 	// MNetworkEnable
-	float m_flBackgroundWorldToUV; // 0xa5c	
+	float m_flBackgroundWorldToUV; // 0xa54	
 	// MNetworkEnable
-	Color m_Color; // 0xa60	
+	Color m_Color; // 0xa58	
 	// MNetworkEnable
-	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xa64	
+	PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xa5c	
 	// MNetworkEnable
-	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xa68	
+	PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xa60	
 	// MNetworkEnable
-	PointWorldTextReorientMode_t m_nReorientMode; // 0xa6c	
+	PointWorldTextReorientMode_t m_nReorientMode; // 0xa64	
 	
 	// Datamap fields:
 	// void InputEnable; // 0x0

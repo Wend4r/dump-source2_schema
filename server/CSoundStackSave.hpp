@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4f0
+// Size: 0x4e8
 // Has VTable
 class CSoundStackSave : public CLogicalEntity
 {
 public:
-	CUtlSymbolLarge m_iszStackName; // 0x4e8	
+	CUtlSymbolLarge m_iszStackName; // 0x4e0	
 };
 

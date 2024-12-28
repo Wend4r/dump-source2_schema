@@ -6,7 +6,7 @@ struct ragdoll_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbe0
+// Size: 0xbd8
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_ragPos"
@@ -16,64 +16,64 @@ struct GameTime_t;
 class CRagdollProp : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0a40[0x8]; // 0xa40
+	[[maybe_unused]] uint8_t __pad0a38[0x8]; // 0xa38
 public:
-	ragdoll_t m_ragdoll; // 0xa48	
-	bool m_bStartDisabled; // 0xa80	
+	ragdoll_t m_ragdoll; // 0xa40	
+	bool m_bStartDisabled; // 0xa78	
 private:
-	[[maybe_unused]] uint8_t __pad0a81[0x7]; // 0xa81
+	[[maybe_unused]] uint8_t __pad0a79[0x7]; // 0xa79
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	CNetworkUtlVectorBase< Vector > m_ragPos; // 0xa88	
+	CNetworkUtlVectorBase< Vector > m_ragPos; // 0xa80	
 	// MNetworkEnable
 	// MNetworkEncoder "qangle"
 	// MNetworkBitCount "13"
-	CNetworkUtlVectorBase< QAngle > m_ragAngles; // 0xaa0	
+	CNetworkUtlVectorBase< QAngle > m_ragAngles; // 0xa98	
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hRagdollSource; // 0xab8	
-	uint32_t m_lastUpdateTickCount; // 0xabc	
-	bool m_allAsleep; // 0xac0	
-	bool m_bFirstCollisionAfterLaunch; // 0xac1	
+	CHandle< CBaseEntity > m_hRagdollSource; // 0xab0	
+	uint32_t m_lastUpdateTickCount; // 0xab4	
+	bool m_allAsleep; // 0xab8	
+	bool m_bFirstCollisionAfterLaunch; // 0xab9	
 private:
-	[[maybe_unused]] uint8_t __pad0ac2[0x2]; // 0xac2
+	[[maybe_unused]] uint8_t __pad0aba[0x2]; // 0xaba
 public:
-	CHandle< CBaseEntity > m_hDamageEntity; // 0xac4	
-	CHandle< CBaseEntity > m_hKiller; // 0xac8	
-	CHandle< CBasePlayerPawn > m_hPhysicsAttacker; // 0xacc	
-	GameTime_t m_flLastPhysicsInfluenceTime; // 0xad0	
-	GameTime_t m_flFadeOutStartTime; // 0xad4	
-	float m_flFadeTime; // 0xad8	
-	Vector m_vecLastOrigin; // 0xadc	
-	GameTime_t m_flAwakeTime; // 0xae8	
-	GameTime_t m_flLastOriginChangeTime; // 0xaec	
-	CUtlSymbolLarge m_strOriginClassName; // 0xaf0	
-	CUtlSymbolLarge m_strSourceClassName; // 0xaf8	
-	bool m_bHasBeenPhysgunned; // 0xb00	
-	bool m_bShouldTeleportPhysics; // 0xb01	
+	CHandle< CBaseEntity > m_hDamageEntity; // 0xabc	
+	CHandle< CBaseEntity > m_hKiller; // 0xac0	
+	CHandle< CBasePlayerPawn > m_hPhysicsAttacker; // 0xac4	
+	GameTime_t m_flLastPhysicsInfluenceTime; // 0xac8	
+	GameTime_t m_flFadeOutStartTime; // 0xacc	
+	float m_flFadeTime; // 0xad0	
+	Vector m_vecLastOrigin; // 0xad4	
+	GameTime_t m_flAwakeTime; // 0xae0	
+	GameTime_t m_flLastOriginChangeTime; // 0xae4	
+	CUtlSymbolLarge m_strOriginClassName; // 0xae8	
+	CUtlSymbolLarge m_strSourceClassName; // 0xaf0	
+	bool m_bHasBeenPhysgunned; // 0xaf8	
+	bool m_bShouldTeleportPhysics; // 0xaf9	
 private:
-	[[maybe_unused]] uint8_t __pad0b02[0x2]; // 0xb02
+	[[maybe_unused]] uint8_t __pad0afa[0x2]; // 0xafa
 public:
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "1.000000"
 	// MNetworkEncodeFlags "1"
-	float m_flBlendWeight; // 0xb04	
-	float m_flDefaultFadeScale; // 0xb08	
+	float m_flBlendWeight; // 0xafc	
+	float m_flDefaultFadeScale; // 0xb00	
 private:
-	[[maybe_unused]] uint8_t __pad0b0c[0x4]; // 0xb0c
+	[[maybe_unused]] uint8_t __pad0b04[0x4]; // 0xb04
 public:
-	CUtlVector< Vector > m_ragdollMins; // 0xb10	
-	CUtlVector< Vector > m_ragdollMaxs; // 0xb28	
-	bool m_bShouldDeleteActivationRecord; // 0xb40	
+	CUtlVector< Vector > m_ragdollMins; // 0xb08	
+	CUtlVector< Vector > m_ragdollMaxs; // 0xb20	
+	bool m_bShouldDeleteActivationRecord; // 0xb38	
 private:
-	[[maybe_unused]] uint8_t __pad0b41[0x5f]; // 0xb41
+	[[maybe_unused]] uint8_t __pad0b39[0x5f]; // 0xb39
 public:
-	bool m_bValidatePoweredRagdollPose; // 0xba0	
+	bool m_bValidatePoweredRagdollPose; // 0xb98	
 	
 	// Datamap fields:
-	// void m_ragdoll.boneIndex; // 0xa60
+	// void m_ragdoll.boneIndex; // 0xa58
 	// void InputEnableMotion; // 0x0
 	// void InputDisableMotion; // 0x0
 	// void InputTurnOn; // 0x0
@@ -85,7 +85,7 @@ public:
 	// void CRagdollPropSettleThink; // 0x0
 	// void CRagdollPropAttachedItemsThink; // 0x0
 	// void CRagdollPropRagdollTouch; // 0x0
-	// void m_ragdoll.list; // 0xa48
-	// bool m_ragdoll.allowStretch; // 0xa78
+	// void m_ragdoll.list; // 0xa40
+	// bool m_ragdoll.allowStretch; // 0xa70
 };
 

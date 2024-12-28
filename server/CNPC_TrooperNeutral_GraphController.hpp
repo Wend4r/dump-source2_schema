@@ -4,16 +4,16 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc60
+// Size: 0xc40
 // Has VTable
 class CNPC_TrooperNeutral_GraphController : public CAI_CitadelNPC_GraphController
 {
 public:
-	CAnimGraphParamOptionalRef< bool > m_bShielded; // 0xbb0	
-	CAnimGraphParamOptionalRef< bool > m_bAlert; // 0xbd0	
-	CAnimGraphParamOptionalRef< char* > m_pszAttackLeanPosition; // 0xbf0	
-	CAnimGraphParamOptionalRef< char* > m_pszOrbDrop; // 0xc18	
-	CAnimGraphParamOptionalRef< bool > m_bHeavyMelee; // 0xc40	
+	CAnimGraphParamOptionalRef< bool > m_bShielded; // 0xb90	
+	CAnimGraphParamOptionalRef< bool > m_bAlert; // 0xbb0	
+	CAnimGraphParamOptionalRef< char* > m_pszAttackLeanPosition; // 0xbd0	
+	CAnimGraphParamOptionalRef< char* > m_pszOrbDrop; // 0xbf8	
+	CAnimGraphParamOptionalRef< bool > m_bHeavyMelee; // 0xc20	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperNeutral_GraphController")->m_static_fields[0]->m_instance);};

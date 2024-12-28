@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x8e8
+// Size: 0x910
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_SuperAcolytesGlove_VData : public CCitadel_Modifier_Base
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CBaseModifier > m_DebuffModifier; // 0x638	
+	CEmbeddedSubclass< CBaseModifier > m_DebuffModifier; // 0x660	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SwingParticle; // 0x648	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HitParticle; // 0x728	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FistReadyEffect; // 0x808	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SwingParticle; // 0x670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_HitParticle; // 0x750	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_FistReadyEffect; // 0x830	
 };
 

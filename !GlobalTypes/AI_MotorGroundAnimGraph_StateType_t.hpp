@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 11
+// Enumerator count: 12
 // Alignment: 4
 // Size: 0x4
 enum class AI_MotorGroundAnimGraph_StateType_t : uint32_t
@@ -26,7 +26,9 @@ enum class AI_MotorGroundAnimGraph_StateType_t : uint32_t
 	eLoopPerformance = 0x7,
 	// MPropertyFriendlyName "Planted Turn"
 	ePlantedTurn = 0x8,
-	eAny = 0x9,
-	eCount = 0x9,
+	// MPropertyFriendlyName "Other"
+	eOther = 0x9,
+	eAny = 0xa,
+	eCount = 0xa,
 };
 

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 66
+// Enumerator count: 67
 // Alignment: 4
 // Size: 0x4
 enum class EAbilityBehavior_t : uint32_t
@@ -72,8 +72,9 @@ enum class EAbilityBehavior_t : uint32_t
 	CITADEL_ABILITY_BEHAVIOR_REQUIRE_ABILITY_BUTTON_TO_CANCEL = 0x3d,
 	CITADEL_ABILITY_BEHAVIOR_CAN_SET_QUICK_CAST = 0x3e,
 	CITADEL_ABILITY_BEHAVIOR_DONT_INTERRUPT_SLIDE_ON_CAST = 0x3f,
-	CITADEL_ABILITY_BEHAVIOR_CAST_RANGE_IS_2D = 0x40,
+	CITADEL_ABILITY_BEHAVIOR_DEACTIVATE_CROUCH_TOGGLE_ON_CAST = 0x40,
+	CITADEL_ABILITY_BEHAVIOR_CAST_RANGE_IS_2D = 0x41,
 	// MPropertySuppressEnumerator
-	CITADEL_ABILITY_BEHAVIOR_COUNT = 0x41,
+	CITADEL_ABILITY_BEHAVIOR_COUNT = 0x42,
 };
 

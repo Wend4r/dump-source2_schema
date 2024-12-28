@@ -5,8 +5,7 @@
 struct VPhysXRange_t;
 // Registered binary: animationsystem.dll (project 'modellib')
 // Alignment: 16
-// Size: 0xc0
-// Has Trivial Destructor
+// Size: 0xd0
 // 
 // MGetKV3ClassDefaults
 struct VPhysXJoint_t
@@ -57,5 +56,9 @@ public:
 	float m_flElasticity; // 0xb0	
 	float m_flElasticDamping; // 0xb4	
 	float m_flPlasticity; // 0xb8	
+private:
+	[[maybe_unused]] uint8_t __pad00bc[0x4]; // 0xbc
+public:
+	CUtlString m_Tag; // 0xc0	
 };
 

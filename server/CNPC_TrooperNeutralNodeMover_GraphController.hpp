@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc78
+// Size: 0xc58
 // Has VTable
 class CNPC_TrooperNeutralNodeMover_GraphController : public CNPC_TrooperNeutral_GraphController
 {
 public:
-	CAnimGraphTagRef m_sHidingInNode; // 0xc60	
+	CAnimGraphTagRef m_sHidingInNode; // 0xc40	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperNeutralNodeMover_GraphController")->m_static_fields[0]->m_instance);};

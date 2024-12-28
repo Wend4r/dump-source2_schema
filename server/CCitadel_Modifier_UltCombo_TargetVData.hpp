@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x700
+// Size: 0x728
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadel_Modifier_UltCombo_TargetVData : public CCitadel_Modifier_StunnedV
 {
 public:
 	// MPropertyStartGroup "Gameplay"
-	float m_flTargetPosDistance; // 0x6e8	
-	float m_flTargetPosRange; // 0x6ec	
-	float m_flPullSpeedMin; // 0x6f0	
-	float m_flPullSpeedMax; // 0x6f4	
-	float m_flPullDistanceMin; // 0x6f8	
-	float m_flPullDistanceMax; // 0x6fc	
+	float m_flTargetPosDistance; // 0x710	
+	float m_flTargetPosRange; // 0x714	
+	float m_flPullSpeedMin; // 0x718	
+	float m_flPullSpeedMax; // 0x71c	
+	float m_flPullDistanceMin; // 0x720	
+	float m_flPullDistanceMax; // 0x724	
 };
 

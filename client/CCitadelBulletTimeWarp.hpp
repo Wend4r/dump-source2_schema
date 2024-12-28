@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x888
+// Size: 0x880
 // Has VTable
 // 
 // MNetworkVarNames "float m_flBulletTimeScale"
@@ -16,12 +16,12 @@ class CCitadelBulletTimeWarp : public C_BaseModelEntity
 {
 public:
 	// MNetworkEnable
-	float m_flBulletTimeScale; // 0x860	
+	float m_flBulletTimeScale; // 0x858	
 	// MNetworkEnable
-	float m_flProjectileTimeScale; // 0x864	
+	float m_flProjectileTimeScale; // 0x85c	
 	// MNetworkEnable
-	GameTime_t m_flExpireTime; // 0x868	
+	GameTime_t m_flExpireTime; // 0x860	
 	// MNetworkEnable
-	float m_flStopDuration; // 0x86c	
+	float m_flStopDuration; // 0x864	
 };
 

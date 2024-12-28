@@ -5,7 +5,7 @@
 struct CPulse_ResumePoint;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xa0
+// Size: 0xb8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -16,13 +16,13 @@ struct CPulse_ResumePoint;
 class CPulseCell_Step_CallExternalMethod : public CPulseCell_BaseYieldingInflow
 {
 public:
-	CGlobalSymbol m_MethodName; // 0x48	
-	CGlobalSymbol m_GameBlackboard; // 0x50	
-	CUtlLeanVector< CPulseRuntimeMethodArg > m_ExpectedArgs; // 0x58	
-	PulseMethodCallMode_t m_nAsyncCallMode; // 0x68	
+	PulseSymbol_t m_MethodName; // 0x48	
+	PulseSymbol_t m_GameBlackboard; // 0x58	
+	CUtlLeanVector< CPulseRuntimeMethodArg > m_ExpectedArgs; // 0x68	
+	PulseMethodCallMode_t m_nAsyncCallMode; // 0x78	
 private:
-	[[maybe_unused]] uint8_t __pad006c[0x4]; // 0x6c
+	[[maybe_unused]] uint8_t __pad007c[0x4]; // 0x7c
 public:
-	CPulse_ResumePoint m_OnFinished; // 0x70	
+	CPulse_ResumePoint m_OnFinished; // 0x80	
 };
 

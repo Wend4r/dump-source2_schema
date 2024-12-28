@@ -5,7 +5,7 @@
 struct CCitadelAutoScaledTime;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe50
+// Size: 0xe10
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelAutoScaledTime m_flDashEndTime"
@@ -14,8 +14,8 @@ class CCitadel_Ability_FlameDash : public C_CitadelBaseAbility
 {
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flDashEndTime; // 0xca0	
+	CCitadelAutoScaledTime m_flDashEndTime; // 0xc98	
 	// MNetworkEnable
-	bool m_bIsSpeedBursting; // 0xcb8	
+	bool m_bIsSpeedBursting; // 0xcb0	
 };
 

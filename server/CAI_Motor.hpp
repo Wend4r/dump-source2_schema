@@ -8,7 +8,7 @@ struct CAI_MotorTransition;
 struct CAI_MotorGroundAnimGraph;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x520
+// Size: 0x578
 // Has VTable
 class CAI_Motor : public CAI_Component
 {
@@ -41,14 +41,14 @@ public:
 	CAI_MotorNavLink m_motorNavLink; // 0xf8	
 	CAI_MotorTransition m_motorTransition; // 0x170	
 	CAI_MotorGroundAnimGraph m_motorGroundAnimgraph; // 0x1d0	
-	bool m_bIsExecutingMoveSolve; // 0x410	
+	bool m_bIsExecutingMoveSolve; // 0x468	
 private:
-	[[maybe_unused]] uint8_t __pad0411[0x3]; // 0x411
+	[[maybe_unused]] uint8_t __pad0469[0x3]; // 0x469
 public:
-	CAI_InterestTarget m_pEntityFacingRequests[5]; // 0x414	
-	AI_ScheduleFacingTargetPriority_t m_eScheduleFacingRequestPriority; // 0x518	
-	AI_Motor_MovementFacingMode_t m_movementFacingModeRequests[4]; // 0x519	
-	AI_Motor_DefaultFacing_t m_eDefaultFacing; // 0x51d	
-	AI_Motor_DefaultFacing_t m_eScheduleDefaultFacing; // 0x51e	
+	CAI_InterestTarget m_pEntityFacingRequests[5]; // 0x46c	
+	AI_ScheduleFacingTargetPriority_t m_eScheduleFacingRequestPriority; // 0x570	
+	AI_Motor_MovementFacingMode_t m_movementFacingModeRequests[4]; // 0x571	
+	AI_Motor_DefaultFacing_t m_eDefaultFacing; // 0x575	
+	AI_Motor_DefaultFacing_t m_eScheduleDefaultFacing; // 0x576	
 };
 

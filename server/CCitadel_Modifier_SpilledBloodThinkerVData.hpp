@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x6f0
+// Size: 0x718
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,9 +12,9 @@ class CCitadel_Modifier_SpilledBloodThinkerVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SpilledBloodParticle; // 0x608	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SpilledBloodParticle; // 0x630	
 	// MPropertyStartGroup "Gameplay"
-	float m_flTickRate; // 0x6e8	
-	float m_flHeight; // 0x6ec	
+	float m_flTickRate; // 0x710	
+	float m_flHeight; // 0x714	
 };
 

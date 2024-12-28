@@ -4,11 +4,11 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd8
+// Size: 0xc8
 // Has VTable
 class CCitadel_Modifier_Unstoppable : public CCitadelModifier
 {
 public:
-	CUtlVector< CCitadelModifier* > m_vecCheckedModifiers; // 0xc0	
+	bool m_bInCheckState; // 0xc0	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x188
+// Size: 0x198
 // Has VTable
 class CCitadel_Modifier_ThermalDetonator_Thinker : public CCitadelModifierAura
 {

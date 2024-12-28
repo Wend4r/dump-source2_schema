@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb58
+// Size: 0xb50
 // Has VTable
 class CCitadel_WeaponUpgrade_BansheeSlugs : public CCitadel_Item
 {

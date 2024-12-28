@@ -4,13 +4,13 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4f0
+// Size: 0x4e8
 // Has VTable
 class CProjectedDecal : public CPointEntity
 {
 public:
-	int32_t m_nTexture; // 0x4e8	
-	float m_flDistance; // 0x4ec	
+	int32_t m_nTexture; // 0x4e0	
+	float m_flDistance; // 0x4e4	
 	
 	// Datamap fields:
 	// void CProjectedDecalTriggerDecal; // 0x0

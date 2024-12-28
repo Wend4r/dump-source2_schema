@@ -4,9 +4,10 @@
 
 struct CCitadelModifierResponseRules_t;
 struct CitadelCameraOperationsSequence_t;
+struct FootstepSound_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x608
+// Size: 0x630
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -80,7 +81,9 @@ private:
 	[[maybe_unused]] uint8_t __pad0569[0x7]; // 0x569
 public:
 	CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x570	
-	// MPropertyGroupName "Sounds"
+	// MPropertyStartGroup "Sounds"
 	CSoundEventName m_sExpiredSound; // 0x5f8	
+	FootstepSound_t m_FootstepOverride; // 0x608	
+	CSoundEventName m_FootstepAdditional; // 0x620	
 };
 

@@ -22,19 +22,16 @@ public:
 	CNetworkVarChainer __m_pChainEntity; // 0x8	
 	CHandle< C_BaseEntity > m_hOwner; // 0x30	
 private:
-	[[maybe_unused]] uint8_t __pad0034[0x167]; // 0x34
+	[[maybe_unused]] uint8_t __pad0034[0x169]; // 0x34
 public:
-	uint8_t m_nProviderVisitedFlags; // 0x19b	
-	bool m_bModifierStatesDirty; // 0x19c	
-	bool m_bPredictedOwner; // 0x19d	
-	int8_t m_iLockRefCount; // 0x19e	
+	uint8_t m_nProviderVisitedFlags; // 0x19d	
+	bool m_bModifierStatesDirty; // 0x19e	
+	bool m_bPredictedOwner; // 0x19f	
+	int8_t m_iLockRefCount; // 0x1a0	
 private:
-	[[maybe_unused]] uint8_t __pad019f[0x1]; // 0x19f
+	[[maybe_unused]] uint8_t __pad01a1[0x1]; // 0x1a1
 public:
-	ModifierPropRuntimeHandle_t m_hHandle; // 0x1a0	
-private:
-	[[maybe_unused]] uint8_t __pad01a2[0x2]; // 0x1a2
-public:
+	ModifierPropRuntimeHandle_t m_hHandle; // 0x1a2	
 	uint32_t m_nBroadcastEventListenerMask; // 0x1a4	
 private:
 	[[maybe_unused]] uint8_t __pad01a8[0x8]; // 0x1a8

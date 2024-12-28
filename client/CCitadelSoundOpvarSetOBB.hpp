@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5d0
+// Size: 0x5c8
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_iszStackName"
@@ -18,23 +18,23 @@
 class CCitadelSoundOpvarSetOBB : public C_BaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0568[0x18]; // 0x568
+	[[maybe_unused]] uint8_t __pad0560[0x18]; // 0x560
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszStackName; // 0x580	
+	CUtlSymbolLarge m_iszStackName; // 0x578	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOperatorName; // 0x588	
+	CUtlSymbolLarge m_iszOperatorName; // 0x580	
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOpvarName; // 0x590	
+	CUtlSymbolLarge m_iszOpvarName; // 0x588	
 	// MNetworkEnable
-	Vector m_vDistanceInnerMins; // 0x598	
+	Vector m_vDistanceInnerMins; // 0x590	
 	// MNetworkEnable
-	Vector m_vDistanceInnerMaxs; // 0x5a4	
+	Vector m_vDistanceInnerMaxs; // 0x59c	
 	// MNetworkEnable
-	Vector m_vDistanceOuterMins; // 0x5b0	
+	Vector m_vDistanceOuterMins; // 0x5a8	
 	// MNetworkEnable
-	Vector m_vDistanceOuterMaxs; // 0x5bc	
+	Vector m_vDistanceOuterMaxs; // 0x5b4	
 	// MNetworkEnable
-	int32_t m_nAABBDirection; // 0x5c8	
+	int32_t m_nAABBDirection; // 0x5c0	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x678
+// Size: 0x670
 // Has VTable
 // 
 // MNetworkVarNames "float m_flParticleSpacing"
@@ -22,47 +22,47 @@
 class C_PathParticleRope : public C_BaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0568[0x8]; // 0x568
+	[[maybe_unused]] uint8_t __pad0560[0x8]; // 0x560
 public:
-	bool m_bStartActive; // 0x570	
+	bool m_bStartActive; // 0x568	
 private:
-	[[maybe_unused]] uint8_t __pad0571[0x3]; // 0x571
+	[[maybe_unused]] uint8_t __pad0569[0x3]; // 0x569
 public:
-	float m_flMaxSimulationTime; // 0x574	
-	CUtlSymbolLarge m_iszEffectName; // 0x578	
-	CUtlVector< CUtlSymbolLarge > m_PathNodes_Name; // 0x580	
+	float m_flMaxSimulationTime; // 0x56c	
+	CUtlSymbolLarge m_iszEffectName; // 0x570	
+	CUtlVector< CUtlSymbolLarge > m_PathNodes_Name; // 0x578	
 	// MNetworkEnable
-	float m_flParticleSpacing; // 0x598	
-	// MNetworkEnable
-	// MNetworkChangeCallback "parametersChanged"
-	float m_flSlack; // 0x59c	
+	float m_flParticleSpacing; // 0x590	
 	// MNetworkEnable
 	// MNetworkChangeCallback "parametersChanged"
-	float m_flRadius; // 0x5a0	
+	float m_flSlack; // 0x594	
 	// MNetworkEnable
 	// MNetworkChangeCallback "parametersChanged"
-	Color m_ColorTint; // 0x5a4	
+	float m_flRadius; // 0x598	
+	// MNetworkEnable
+	// MNetworkChangeCallback "parametersChanged"
+	Color m_ColorTint; // 0x59c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "effectStateChanged"
-	int32_t m_nEffectState; // 0x5a8	
+	int32_t m_nEffectState; // 0x5a0	
 private:
-	[[maybe_unused]] uint8_t __pad05ac[0x4]; // 0x5ac
+	[[maybe_unused]] uint8_t __pad05a4[0x4]; // 0x5a4
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x5b0	
+	CStrongHandle< InfoForResourceTypeIParticleSystemDefinition > m_iEffectIndex; // 0x5a8	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< Vector > m_PathNodes_Position; // 0x5b8	
+	C_NetworkUtlVectorBase< Vector > m_PathNodes_Position; // 0x5b0	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< Vector > m_PathNodes_TangentIn; // 0x5d0	
+	C_NetworkUtlVectorBase< Vector > m_PathNodes_TangentIn; // 0x5c8	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< Vector > m_PathNodes_TangentOut; // 0x5e8	
+	C_NetworkUtlVectorBase< Vector > m_PathNodes_TangentOut; // 0x5e0	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< Vector > m_PathNodes_Color; // 0x600	
+	C_NetworkUtlVectorBase< Vector > m_PathNodes_Color; // 0x5f8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "pinStateChanged"
-	C_NetworkUtlVectorBase< bool > m_PathNodes_PinEnabled; // 0x618	
+	C_NetworkUtlVectorBase< bool > m_PathNodes_PinEnabled; // 0x610	
 	// MNetworkEnable
-	C_NetworkUtlVectorBase< float32 > m_PathNodes_RadiusScale; // 0x630	
+	C_NetworkUtlVectorBase< float32 > m_PathNodes_RadiusScale; // 0x628	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge pathNodes; // 0x7fffffff

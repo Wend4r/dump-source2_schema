@@ -5,7 +5,7 @@
 struct CCitadelRegenComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc0
+// Size: 0xbb8
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iHealth"
@@ -18,6 +18,6 @@ public:
 	// MNetworkUserGroup "CCitadelRegenComponent"
 	// MNetworkAlias "CCitadelRegenComponent"
 	// MNetworkTypeAlias "CCitadelRegenComponent"
-	CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa40	
+	CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa38	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xce0
+// Size: 0xcd8
 // Has VTable
 class CCitadelItemPickupRejuvHeroTest : public CCitadelItemPickupRejuv
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x100
+// Size: 0x120
 // Has VTable
 class CBuoyancyHelper
 {
@@ -13,10 +13,17 @@ private:
 public:
 	CUtlStringToken m_nFluidType; // 0x18	
 	float m_flFluidDensity; // 0x1c	
-	CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelFriction; // 0x20	
-	CUtlVector< float32 > m_vecWheelFrictionScales; // 0x38	
-	CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelDrag; // 0x50	
-	CUtlVector< float32 > m_vecWheelDrag; // 0x68	
+	float m_flNeutrallyBuoyantGravity; // 0x20	
+	float m_flNeutrallyBuoyantLinearDamping; // 0x24	
+	float m_flNeutrallyBuoyantAngularDamping; // 0x28	
+	bool m_bNeutrallyBuoyant; // 0x2c	
+private:
+	[[maybe_unused]] uint8_t __pad002d[0x3]; // 0x2d
+public:
+	CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelFriction; // 0x30	
+	CUtlVector< float32 > m_vecWheelFrictionScales; // 0x48	
+	CUtlVector< float32 > m_vecFractionOfWheelSubmergedForWheelDrag; // 0x60	
+	CUtlVector< float32 > m_vecWheelDrag; // 0x78	
 	
 	// Datamap fields:
 	// void m_pController; // 0x8

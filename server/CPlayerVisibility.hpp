@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x500
+// Size: 0x4f8
 // Has VTable
 // 
 // MNetworkVarNames "float m_flVisibilityStrength"
@@ -18,20 +18,20 @@ class CPlayerVisibility : public CBaseEntity
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "PlayerVisibilityStateChanged"
-	float m_flVisibilityStrength; // 0x4e8	
+	float m_flVisibilityStrength; // 0x4e0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "PlayerVisibilityStateChanged"
-	float m_flFogDistanceMultiplier; // 0x4ec	
+	float m_flFogDistanceMultiplier; // 0x4e4	
 	// MNetworkEnable
 	// MNetworkChangeCallback "PlayerVisibilityStateChanged"
-	float m_flFogMaxDensityMultiplier; // 0x4f0	
+	float m_flFogMaxDensityMultiplier; // 0x4e8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "PlayerVisibilityStateChanged"
-	float m_flFadeTime; // 0x4f4	
+	float m_flFadeTime; // 0x4ec	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x4f8	
+	bool m_bStartDisabled; // 0x4f0	
 	// MNetworkEnable
-	bool m_bIsEnabled; // 0x4f9	
+	bool m_bIsEnabled; // 0x4f1	
 	
 	// Datamap fields:
 	// bool InputEnable; // 0x0

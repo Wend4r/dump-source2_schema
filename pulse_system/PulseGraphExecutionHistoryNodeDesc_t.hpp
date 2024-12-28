@@ -4,13 +4,13 @@
 
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x18
+// Size: 0x20
 // 
 // MGetKV3ClassDefaults
 struct PulseGraphExecutionHistoryNodeDesc_t
 {
 public:
 	CBufferString strCellDesc; // 0x0	
-	CGlobalSymbol strBindingName; // 0x10	
+	PulseSymbol_t strBindingName; // 0x10	
 };
 

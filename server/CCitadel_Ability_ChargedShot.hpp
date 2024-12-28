@@ -5,11 +5,11 @@
 struct ParticleIndex_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbe8
+// Size: 0xbe0
 // Has VTable
 class CCitadel_Ability_ChargedShot : public CCitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_ChannelParticle; // 0xb00	
+	ParticleIndex_t m_ChannelParticle; // 0xaf8	
 };
 

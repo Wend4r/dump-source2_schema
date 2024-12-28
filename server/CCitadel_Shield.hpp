@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x948
+// Size: 0x940
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bAllowRotatingUp"
@@ -14,13 +14,13 @@ class CCitadel_Shield : public CCitadelModelEntity
 {
 public:
 	// MNetworkEnable
-	bool m_bAllowRotatingUp; // 0x940	
+	bool m_bAllowRotatingUp; // 0x938	
 	// MNetworkEnable
-	bool m_bFixedPosition; // 0x941	
+	bool m_bFixedPosition; // 0x939	
 private:
-	[[maybe_unused]] uint8_t __pad0942[0x2]; // 0x942
+	[[maybe_unused]] uint8_t __pad093a[0x2]; // 0x93a
 public:
 	// MNetworkEnable
-	float m_flShieldOffset; // 0x944	
+	float m_flShieldOffset; // 0x93c	
 };
 

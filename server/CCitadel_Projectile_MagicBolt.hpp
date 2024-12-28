@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x878
+// Size: 0x870
 // Has VTable
 class CCitadel_Projectile_MagicBolt : public CCitadelProjectile
 {
 public:
-	bool bIsCloneProjectile; // 0x870	
+	bool bIsCloneProjectile; // 0x868	
 };
 

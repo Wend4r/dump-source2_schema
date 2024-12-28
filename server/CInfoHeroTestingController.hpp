@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5a0
+// Size: 0x598
 // Has VTable
 class CInfoHeroTestingController : public CPointEntity
 {

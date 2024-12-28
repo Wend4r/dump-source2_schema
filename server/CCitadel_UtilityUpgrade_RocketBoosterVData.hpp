@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x1970
+// Size: 0x1978
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,15 +12,15 @@ class CCitadel_UtilityUpgrade_RocketBoosterVData : public CCitadel_UtilityUpgrad
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LandingParticle; // 0x1698	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEPreviewParticle; // 0x1778	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DropDownStartParticle; // 0x1858	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_LandingParticle; // 0x16a0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AoEPreviewParticle; // 0x1780	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DropDownStartParticle; // 0x1860	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_DropDownStartSound; // 0x1938	
-	CSoundEventName m_LandingSound; // 0x1948	
+	CSoundEventName m_DropDownStartSound; // 0x1940	
+	CSoundEventName m_LandingSound; // 0x1950	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1958	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x1960	
 	// MPropertyStartGroup "Gameplay"
-	float m_flSlamEnabledTime; // 0x1968	
+	float m_flSlamEnabledTime; // 0x1970	
 };
 

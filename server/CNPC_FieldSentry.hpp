@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc20
+// Size: 0xc18
 // Has VTable
 // 
 // MNetworkVarNames "float m_flAimPitch"
@@ -13,29 +13,29 @@ struct GameTime_t;
 class CNPC_FieldSentry : public CNPC_SimpleAnimatingAI
 {
 private:
-	[[maybe_unused]] uint8_t __pad0bd8[0xc]; // 0xbd8
+	[[maybe_unused]] uint8_t __pad0bd0[0xc]; // 0xbd0
 public:
 	// MNetworkEnable
-	float m_flAimPitch; // 0xbe4	
-	GameTime_t m_flNextAttackTime; // 0xbe8	
-	float m_flAttackCone; // 0xbec	
-	float m_flAttackDelay; // 0xbf0	
-	GameTime_t m_flLastAlertSound; // 0xbf4	
-	float m_flTrackingSpeed; // 0xbf8	
-	float m_flDeployTime; // 0xbfc	
+	float m_flAimPitch; // 0xbdc	
+	GameTime_t m_flNextAttackTime; // 0xbe0	
+	float m_flAttackCone; // 0xbe4	
+	float m_flAttackDelay; // 0xbe8	
+	GameTime_t m_flLastAlertSound; // 0xbec	
+	float m_flTrackingSpeed; // 0xbf0	
+	float m_flDeployTime; // 0xbf4	
 private:
-	[[maybe_unused]] uint8_t __pad0c00[0xa]; // 0xc00
+	[[maybe_unused]] uint8_t __pad0bf8[0xa]; // 0xbf8
 public:
-	bool m_bHadEnemy; // 0xc0a	
-	bool m_bLockedOn; // 0xc0b	
+	bool m_bHadEnemy; // 0xc02	
+	bool m_bLockedOn; // 0xc03	
 private:
-	[[maybe_unused]] uint8_t __pad0c0c[0x10]; // 0xc0c
+	[[maybe_unused]] uint8_t __pad0c04[0x10]; // 0xc04
 public:
 	// MNetworkEnable
-	float m_flAttackRange; // 0xc1c	
+	float m_flAttackRange; // 0xc14	
 	
 	// Datamap fields:
-	// float m_flLifeTime; // 0xc04
-	// void m_flSpawnTime; // 0xc00
+	// float m_flLifeTime; // 0xbfc
+	// void m_flSpawnTime; // 0xbf8
 };
 

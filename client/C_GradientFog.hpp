@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x600
+// Size: 0x5f8
 // Has VTable
 // 
 // MNetworkVarNames "HRenderTextureStrong m_hGradientFogTexture"
@@ -26,51 +26,51 @@ class C_GradientFog : public C_BaseEntity
 {
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_hGradientFogTexture; // 0x568	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_hGradientFogTexture; // 0x560	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogStartDistance; // 0x570	
+	float m_flFogStartDistance; // 0x568	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogEndDistance; // 0x574	
+	float m_flFogEndDistance; // 0x56c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	bool m_bHeightFogEnabled; // 0x578	
+	bool m_bHeightFogEnabled; // 0x570	
 private:
-	[[maybe_unused]] uint8_t __pad0579[0x3]; // 0x579
+	[[maybe_unused]] uint8_t __pad0571[0x3]; // 0x571
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogStartHeight; // 0x57c	
+	float m_flFogStartHeight; // 0x574	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogEndHeight; // 0x580	
+	float m_flFogEndHeight; // 0x578	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFarZ; // 0x584	
+	float m_flFarZ; // 0x57c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogMaxOpacity; // 0x588	
+	float m_flFogMaxOpacity; // 0x580	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogFalloffExponent; // 0x58c	
+	float m_flFogFalloffExponent; // 0x584	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogVerticalExponent; // 0x590	
+	float m_flFogVerticalExponent; // 0x588	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	Color m_fogColor; // 0x594	
+	Color m_fogColor; // 0x58c	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFogStrength; // 0x598	
+	float m_flFogStrength; // 0x590	
 	// MNetworkEnable
 	// MNetworkChangeCallback "FogStateChanged"
-	float m_flFadeTime; // 0x59c	
+	float m_flFadeTime; // 0x594	
 	// MNetworkEnable
-	bool m_bStartDisabled; // 0x5a0	
+	bool m_bStartDisabled; // 0x598	
 	// MNetworkEnable
-	bool m_bIsEnabled; // 0x5a1	
-	bool m_bGradientFogNeedsTextures; // 0x5a2	
+	bool m_bIsEnabled; // 0x599	
+	bool m_bGradientFogNeedsTextures; // 0x59a	
 	
 	// Static fields:
 	static C_GradientFog* &Get_sm_pGradientFog(){return *reinterpret_cast<C_GradientFog**>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_GradientFog")->m_static_fields[0]->m_instance);};

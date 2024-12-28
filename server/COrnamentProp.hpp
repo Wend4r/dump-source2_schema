@@ -4,12 +4,12 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcf8
+// Size: 0xcf0
 // Has VTable
 class COrnamentProp : public CDynamicProp
 {
 public:
-	CUtlSymbolLarge m_initialOwner; // 0xcf0	
+	CUtlSymbolLarge m_initialOwner; // 0xce8	
 	
 	// Datamap fields:
 	// CUtlSymbolLarge InputSetAttached; // 0x0

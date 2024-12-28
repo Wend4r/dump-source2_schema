@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1670
+// Size: 0x1678
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadel_Ability_Viper_PetrifyBolaVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x1560	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplodeParticle; // 0x1568	
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x1640	
-	CEmbeddedSubclass< CCitadelModifier > m_PetrifyModifier; // 0x1650	
+	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x1648	
+	CEmbeddedSubclass< CCitadelModifier > m_PetrifyModifier; // 0x1658	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strBolaExplodeSound; // 0x1660	
+	CSoundEventName m_strBolaExplodeSound; // 0x1668	
 };
 

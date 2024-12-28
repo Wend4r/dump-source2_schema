@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: server.dll (project 'server')
-// Enumerator count: 7
+// Enumerator count: 6
 // Alignment: 4
 // Size: 0x4
 enum class EDenyDistributionType : uint32_t
@@ -13,7 +13,6 @@ enum class EDenyDistributionType : uint32_t
 	EDenyToDenierTeam = 0x2,
 	EDenyToNobody = 0x3,
 	EDenyInLaningPhase = 0x4,
-	EDenyInLaningPhaseDuo = 0x5,
-	EDenyTypesCount = 0x6,
+	EDenyTypesCount = 0x5,
 };
 

@@ -55,13 +55,15 @@ public:
 	int32_t m_iBatchCount; // 0xb4	
 	float m_flEffectiveness; // 0xb8	
 	float m_timeDamage; // 0xbc	
-	HSCRIPT m_hScriptInstance; // 0xc0	
 private:
-	[[maybe_unused]] uint8_t __pad00c8[0x14]; // 0xc8
+	[[maybe_unused]] uint8_t __pad00c0[0x1c]; // 0xc0
 public:
 	bool m_bInTakeDamageFlow; // 0xdc	
 	
 	// Static fields:
 	static CTakeDamageInfo &Get_EmptyInfo(){return *reinterpret_cast<CTakeDamageInfo*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CTakeDamageInfo")->m_static_fields[0]->m_instance);};
+	
+	// Datamap fields:
+	// void m_hScriptInstance; // 0xc0
 };
 

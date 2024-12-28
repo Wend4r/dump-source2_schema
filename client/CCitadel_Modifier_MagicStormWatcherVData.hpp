@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x618
+// Size: 0x640
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_MagicStormWatcherVData : public CCitadel_Modifier_Intrin
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x608	
+	CEmbeddedSubclass< CCitadelModifier > m_BuffModifier; // 0x630	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x130
+// Size: 0x168
 // Has VTable
 class CModifier_Mirage_FireScarabs_HealthLoss : public CCitadelModifier
 {

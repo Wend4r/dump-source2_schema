@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1c0
+// Size: 0x1d0
 // Has VTable
 class CCitadel_Modifier_FrenzyAura : public CCitadelModifierAura
 {

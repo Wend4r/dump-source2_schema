@@ -5,11 +5,11 @@
 struct CEntityIOOutput;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x938
+// Size: 0x930
 // Has VTable
 class CFuncTankTrain : public CFuncTrackTrain
 {
 public:
-	CEntityIOOutput m_OnDeath; // 0x910	
+	CEntityIOOutput m_OnDeath; // 0x908	
 };
 

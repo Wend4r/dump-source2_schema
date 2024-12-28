@@ -5,7 +5,7 @@
 struct CPulse_ResumePoint;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0x78
+// Size: 0x80
 // Has VTable
 // Is Abstract
 // 

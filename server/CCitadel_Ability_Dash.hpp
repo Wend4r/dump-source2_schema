@@ -6,7 +6,7 @@ struct GameTime_t;
 struct CCitadelAutoScaledTime;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xcc8
+// Size: 0xcc0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flDashAngle"
@@ -23,34 +23,34 @@ class CCitadel_Ability_Dash : public CCitadelBaseAbility
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	float m_flDashAngle; // 0xb00	
-	GameTime_t m_GroundDashExecuteTime; // 0xb04	
+	float m_flDashAngle; // 0xaf8	
+	GameTime_t m_GroundDashExecuteTime; // 0xafc	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int32_t m_nLastGroundDashTick; // 0xb08	
+	int32_t m_nLastGroundDashTick; // 0xb00	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flGroundDashCastTime; // 0xb0c	
-	bool m_bTagCanActivateGroundDash; // 0xb10	
+	GameTime_t m_flGroundDashCastTime; // 0xb04	
+	bool m_bTagCanActivateGroundDash; // 0xb08	
 private:
-	[[maybe_unused]] uint8_t __pad0b11[0x7]; // 0xb11
+	[[maybe_unused]] uint8_t __pad0b09[0x7]; // 0xb09
 public:
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xb18	
+	CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xb10	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flAirDashCastTime; // 0xb30	
+	GameTime_t m_flAirDashCastTime; // 0xb28	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flAirDashDragStartTime; // 0xb34	
+	GameTime_t m_flAirDashDragStartTime; // 0xb2c	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int8_t m_nConsecutiveAirDashes; // 0xb38	
+	int8_t m_nConsecutiveAirDashes; // 0xb30	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	int8_t m_nConsecutiveDownDashes; // 0xb39	
+	int8_t m_nConsecutiveDownDashes; // 0xb31	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	bool m_bDownAirDash; // 0xb3a	
+	bool m_bDownAirDash; // 0xb32	
 };
 

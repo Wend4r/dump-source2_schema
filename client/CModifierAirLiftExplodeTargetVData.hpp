@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x648
+// Size: 0x670
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CModifierAirLiftExplodeTargetVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyGroupName "Sounds"
-	CSoundEventName m_strSilenceTargetSound; // 0x608	
+	CSoundEventName m_strSilenceTargetSound; // 0x630	
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SilenceModifier; // 0x618	
-	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x628	
-	CEmbeddedSubclass< CCitadelModifier > m_BulletResistModifier; // 0x638	
+	CEmbeddedSubclass< CCitadelModifier > m_SilenceModifier; // 0x640	
+	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x650	
+	CEmbeddedSubclass< CCitadelModifier > m_BulletResistModifier; // 0x660	
 };
 

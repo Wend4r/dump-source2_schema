@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5c0
+// Size: 0x5b8
 // Has VTable
 class CFilterLOS : public CBaseFilter
 {

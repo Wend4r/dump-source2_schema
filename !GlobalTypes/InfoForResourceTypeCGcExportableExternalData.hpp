@@ -8,7 +8,7 @@
 // Has Trivial Constructor
 // Has Trivial Destructor
 // 
-// MResourceTypeForInfoType "vgcxdataPS"
+// MResourceTypeForInfoType "vgcxdatavxml"
 class InfoForResourceTypeCGcExportableExternalData
 {
 private:

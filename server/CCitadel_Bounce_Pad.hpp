@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbd8
+// Size: 0xbd0
 // Has VTable
 // 
 // MNetworkVarNames "float m_flUpFactor"
@@ -12,14 +12,14 @@
 class CCitadel_Bounce_Pad : public CCitadelAnimatingModelEntity
 {
 public:
-	CHandle< CCitadelBaseAbility > m_hAbility; // 0xbc0	
+	CHandle< CCitadelBaseAbility > m_hAbility; // 0xbb8	
 	// MNetworkEnable
-	float m_flUpFactor; // 0xbc4	
+	float m_flUpFactor; // 0xbbc	
 	// MNetworkEnable
-	float m_flBounceVelocity; // 0xbc8	
-	float m_flBarrelBounceVelocity; // 0xbcc	
-	float m_flBarrelUpFactor; // 0xbd0	
-	bool m_bSpeedOnLand; // 0xbd4	
-	bool m_bHasBouncedPlayerBefore; // 0xbd5	
+	float m_flBounceVelocity; // 0xbc0	
+	float m_flBarrelBounceVelocity; // 0xbc4	
+	float m_flBarrelUpFactor; // 0xbc8	
+	bool m_bSpeedOnLand; // 0xbcc	
+	bool m_bHasBouncedPlayerBefore; // 0xbcd	
 };
 

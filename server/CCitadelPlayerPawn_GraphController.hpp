@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x2d0
+// Size: 0x2e8
 // Has VTable
 class CCitadelPlayerPawn_GraphController : public CBaseAnimGraphAnimGraphController
 {
@@ -29,6 +29,7 @@ public:
 	CAnimGraph1ParamOptionalRef< bool > m_bHardLanding; // 0x288	
 	CAnimGraph1ParamOptionalRef< float32 > m_flUltCooldownProgress; // 0x2a0	
 	CAnimGraph1ParamOptionalRef< bool > m_bSpawn; // 0x2b8	
+	CAnimGraph1ParamOptionalRef< float32 > m_flAmmoFraction; // 0x2d0	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadelPlayerPawn_GraphController")->m_static_fields[0]->m_instance);};

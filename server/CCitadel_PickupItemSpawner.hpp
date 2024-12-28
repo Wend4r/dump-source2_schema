@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa48
+// Size: 0xa40
 // Has VTable
 class CCitadel_PickupItemSpawner : public CBaseAnimGraph
 {

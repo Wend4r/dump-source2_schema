@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb00
+// Size: 0xaf8
 // Has VTable
 class CCitadelItemMetal : public CBaseAnimGraph
 {

@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x980
+// Size: 0x978
 // Has VTable
 class CTriggerToggleSave : public CBaseTrigger
 {

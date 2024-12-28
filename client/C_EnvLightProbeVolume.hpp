@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x15b8
+// Size: 0x15b0
 // Has VTable
 // 
 // MNetworkVarNames "HRenderTextureStrong m_Entity_hLightProbeTexture"
@@ -27,53 +27,53 @@
 class C_EnvLightProbeVolume : public C_BaseEntity
 {
 private:
-	[[maybe_unused]] uint8_t __pad0568[0xfe0]; // 0x568
+	[[maybe_unused]] uint8_t __pad0560[0xfe0]; // 0x560
 public:
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture; // 0x1548	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeTexture; // 0x1540	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightIndicesTexture; // 0x1550	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightIndicesTexture; // 0x1548	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightScalarsTexture; // 0x1558	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightScalarsTexture; // 0x1550	
 	// MNetworkEnable
-	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightShadowsTexture; // 0x1560	
+	CStrongHandle< InfoForResourceTypeCTextureBase > m_Entity_hLightProbeDirectLightShadowsTexture; // 0x1558	
 	// MNetworkEnable
-	Vector m_Entity_vBoxMins; // 0x1568	
+	Vector m_Entity_vBoxMins; // 0x1560	
 	// MNetworkEnable
-	Vector m_Entity_vBoxMaxs; // 0x1574	
+	Vector m_Entity_vBoxMaxs; // 0x156c	
 	// MNetworkEnable
-	bool m_Entity_bMoveable; // 0x1580	
+	bool m_Entity_bMoveable; // 0x1578	
 private:
-	[[maybe_unused]] uint8_t __pad1581[0x3]; // 0x1581
+	[[maybe_unused]] uint8_t __pad1579[0x3]; // 0x1579
 public:
 	// MNetworkEnable
-	int32_t m_Entity_nHandshake; // 0x1584	
+	int32_t m_Entity_nHandshake; // 0x157c	
 	// MNetworkEnable
-	int32_t m_Entity_nPriority; // 0x1588	
+	int32_t m_Entity_nPriority; // 0x1580	
 	// MNetworkEnable
-	bool m_Entity_bStartDisabled; // 0x158c	
+	bool m_Entity_bStartDisabled; // 0x1584	
 private:
-	[[maybe_unused]] uint8_t __pad158d[0x3]; // 0x158d
+	[[maybe_unused]] uint8_t __pad1585[0x3]; // 0x1585
 public:
 	// MNetworkEnable
-	int32_t m_Entity_nLightProbeSizeX; // 0x1590	
+	int32_t m_Entity_nLightProbeSizeX; // 0x1588	
 	// MNetworkEnable
-	int32_t m_Entity_nLightProbeSizeY; // 0x1594	
+	int32_t m_Entity_nLightProbeSizeY; // 0x158c	
 	// MNetworkEnable
-	int32_t m_Entity_nLightProbeSizeZ; // 0x1598	
+	int32_t m_Entity_nLightProbeSizeZ; // 0x1590	
 	// MNetworkEnable
-	int32_t m_Entity_nLightProbeAtlasX; // 0x159c	
+	int32_t m_Entity_nLightProbeAtlasX; // 0x1594	
 	// MNetworkEnable
-	int32_t m_Entity_nLightProbeAtlasY; // 0x15a0	
+	int32_t m_Entity_nLightProbeAtlasY; // 0x1598	
 	// MNetworkEnable
-	int32_t m_Entity_nLightProbeAtlasZ; // 0x15a4	
+	int32_t m_Entity_nLightProbeAtlasZ; // 0x159c	
 private:
-	[[maybe_unused]] uint8_t __pad15a8[0x9]; // 0x15a8
+	[[maybe_unused]] uint8_t __pad15a0[0x9]; // 0x15a0
 public:
 	// MNetworkEnable
-	bool m_Entity_bEnabled; // 0x15b1	
+	bool m_Entity_bEnabled; // 0x15a9	
 	
 	// Datamap fields:
-	// void m_Entity_pSceneObject; // 0x15a8
+	// void m_Entity_pSceneObject; // 0x15a0
 };
 

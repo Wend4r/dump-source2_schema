@@ -3,7 +3,7 @@
 #include <cstdint>
 
 // Registered binary: particles.dll (project 'particles')
-// Enumerator count: 9
+// Enumerator count: 10
 // Alignment: 4
 // Size: 0x4
 enum class VectorExpressionType_t : uint32_t
@@ -26,5 +26,7 @@ enum class VectorExpressionType_t : uint32_t
 	VECTOR_EXPRESSION_MAX = 0x6,
 	// MPropertyFriendlyName "Cross Product"
 	VECTOR_EXPRESSION_CROSSPRODUCT = 0x7,
+	// MPropertyFriendlyName "Lerp"
+	VECTOR_EXPRESSION_LERP = 0x8,
 };
 

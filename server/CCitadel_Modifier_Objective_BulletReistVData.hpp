@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x610
+// Size: 0x638
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -13,8 +13,8 @@ class CCitadel_Modifier_Objective_BulletReistVData : public CCitadelModifierVDat
 public:
 	// MPropertyStartGroup "Objective Bullet Resist"
 	// MPropertyDescription "Bullet Resist with no Enemy Heroes around"
-	float m_BulletResist; // 0x608	
+	float m_BulletResist; // 0x630	
 	// MPropertyDescription "Bullet Resist Reduced Per Enemy Hero (Max 0%)"
-	float m_BulletResistReductionPerHero; // 0x60c	
+	float m_BulletResistReductionPerHero; // 0x634	
 };
 

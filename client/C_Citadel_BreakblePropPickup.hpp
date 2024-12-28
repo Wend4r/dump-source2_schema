@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xb30
+// Size: 0xb28
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bActive"
@@ -16,18 +16,18 @@ class C_Citadel_BreakblePropPickup : public CBaseAnimGraph
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnActiveChanged"
-	bool m_bActive; // 0xb00	
+	bool m_bActive; // 0xaf8	
 private:
-	[[maybe_unused]] uint8_t __pad0b01[0x7]; // 0xb01
+	[[maybe_unused]] uint8_t __pad0af9[0x7]; // 0xaf9
 public:
 	// MNetworkEnable
-	CUtlString m_sPickupName; // 0xb08	
+	CUtlString m_sPickupName; // 0xb00	
 	// MNetworkEnable
-	int32_t m_nNameOffset; // 0xb10	
+	int32_t m_nNameOffset; // 0xb08	
 private:
-	[[maybe_unused]] uint8_t __pad0b14[0x4]; // 0xb14
+	[[maybe_unused]] uint8_t __pad0b0c[0x4]; // 0xb0c
 public:
 	// MNetworkEnable
-	CUtlString m_sAmbientNoise; // 0xb18	
+	CUtlString m_sAmbientNoise; // 0xb10	
 };
 

@@ -19,7 +19,9 @@ private:
 	[[maybe_unused]] uint8_t __pad002e[0x2]; // 0x2e
 public:
 	float m_flChargeAmount; // 0x30	
-	float m_flArmingTime; // 0x34	
+private:
+	[[maybe_unused]] uint8_t __pad0034[0x4]; // 0x34
+public:
 	CUtlString m_sOverrideClassName; // 0x38	
 	bool m_bShouldHitThrower; // 0x40	
 	bool m_bLagCompensatePosition; // 0x41	

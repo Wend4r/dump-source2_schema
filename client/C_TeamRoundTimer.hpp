@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x5b0
+// Size: 0x5a8
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bTimerPaused"
@@ -28,64 +28,64 @@ class C_TeamRoundTimer : public C_BaseEntity
 public:
 	// MNetworkEnable
 	// MNetworkChangeCallback "OnTimerPaused"
-	bool m_bTimerPaused; // 0x568	
+	bool m_bTimerPaused; // 0x560	
 private:
-	[[maybe_unused]] uint8_t __pad0569[0x3]; // 0x569
+	[[maybe_unused]] uint8_t __pad0561[0x3]; // 0x561
 public:
 	// MNetworkEnable
-	float m_flTimeRemaining; // 0x56c	
+	float m_flTimeRemaining; // 0x564	
 	// MNetworkEnable
-	GameTime_t m_flTimerEndTime; // 0x570	
+	GameTime_t m_flTimerEndTime; // 0x568	
 	// MNetworkEnable
-	bool m_bIsDisabled; // 0x574	
+	bool m_bIsDisabled; // 0x56c	
 	// MNetworkEnable
-	bool m_bShowInHUD; // 0x575	
+	bool m_bShowInHUD; // 0x56d	
 private:
-	[[maybe_unused]] uint8_t __pad0576[0x2]; // 0x576
+	[[maybe_unused]] uint8_t __pad056e[0x2]; // 0x56e
 public:
 	// MNetworkEnable
-	int32_t m_nTimerLength; // 0x578	
+	int32_t m_nTimerLength; // 0x570	
 	// MNetworkEnable
-	int32_t m_nTimerInitialLength; // 0x57c	
+	int32_t m_nTimerInitialLength; // 0x574	
 	// MNetworkEnable
-	int32_t m_nTimerMaxLength; // 0x580	
+	int32_t m_nTimerMaxLength; // 0x578	
 	// MNetworkEnable
-	bool m_bAutoCountdown; // 0x584	
+	bool m_bAutoCountdown; // 0x57c	
 private:
-	[[maybe_unused]] uint8_t __pad0585[0x3]; // 0x585
+	[[maybe_unused]] uint8_t __pad057d[0x3]; // 0x57d
 public:
 	// MNetworkEnable
-	int32_t m_nSetupTimeLength; // 0x588	
+	int32_t m_nSetupTimeLength; // 0x580	
 	// MNetworkEnable
-	int32_t m_nState; // 0x58c	
+	int32_t m_nState; // 0x584	
 	// MNetworkEnable
-	bool m_bStartPaused; // 0x590	
+	bool m_bStartPaused; // 0x588	
 	// MNetworkEnable
-	bool m_bInCaptureWatchState; // 0x591	
+	bool m_bInCaptureWatchState; // 0x589	
 private:
-	[[maybe_unused]] uint8_t __pad0592[0x2]; // 0x592
+	[[maybe_unused]] uint8_t __pad058a[0x2]; // 0x58a
 public:
 	// MNetworkEnable
-	float m_flTotalTime; // 0x594	
+	float m_flTotalTime; // 0x58c	
 	// MNetworkEnable
-	bool m_bStopWatchTimer; // 0x598	
-	bool m_bFireFinished; // 0x599	
-	bool m_bFire5MinRemain; // 0x59a	
-	bool m_bFire4MinRemain; // 0x59b	
-	bool m_bFire3MinRemain; // 0x59c	
-	bool m_bFire2MinRemain; // 0x59d	
-	bool m_bFire1MinRemain; // 0x59e	
-	bool m_bFire30SecRemain; // 0x59f	
-	bool m_bFire10SecRemain; // 0x5a0	
-	bool m_bFire5SecRemain; // 0x5a1	
-	bool m_bFire4SecRemain; // 0x5a2	
-	bool m_bFire3SecRemain; // 0x5a3	
-	bool m_bFire2SecRemain; // 0x5a4	
-	bool m_bFire1SecRemain; // 0x5a5	
+	bool m_bStopWatchTimer; // 0x590	
+	bool m_bFireFinished; // 0x591	
+	bool m_bFire5MinRemain; // 0x592	
+	bool m_bFire4MinRemain; // 0x593	
+	bool m_bFire3MinRemain; // 0x594	
+	bool m_bFire2MinRemain; // 0x595	
+	bool m_bFire1MinRemain; // 0x596	
+	bool m_bFire30SecRemain; // 0x597	
+	bool m_bFire10SecRemain; // 0x598	
+	bool m_bFire5SecRemain; // 0x599	
+	bool m_bFire4SecRemain; // 0x59a	
+	bool m_bFire3SecRemain; // 0x59b	
+	bool m_bFire2SecRemain; // 0x59c	
+	bool m_bFire1SecRemain; // 0x59d	
 private:
-	[[maybe_unused]] uint8_t __pad05a6[0x2]; // 0x5a6
+	[[maybe_unused]] uint8_t __pad059e[0x2]; // 0x59e
 public:
-	int32_t m_nOldTimerLength; // 0x5a8	
-	int32_t m_nOldTimerState; // 0x5ac	
+	int32_t m_nOldTimerLength; // 0x5a0	
+	int32_t m_nOldTimerState; // 0x5a4	
 };
 

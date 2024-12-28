@@ -5,7 +5,7 @@
 struct SignatureOutflow_Continue;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xa8
+// Size: 0xb8
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -19,6 +19,6 @@ public:
 	// MPulseSignatureName
 	SignatureOutflow_Continue m_Out1; // 0x48	
 	// MPulseSignatureName
-	SignatureOutflow_Continue m_Out2; // 0x78	
+	SignatureOutflow_Continue m_Out2; // 0x80	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1488
+// Size: 0x1480
 // Has VTable
 // 
 // MNetworkVarNames "float m_flForwardSpeed"
@@ -12,11 +12,11 @@
 class C_NPC_NanoRollermine : public C_AI_CitadelNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1468[0x18]; // 0x1468
+	[[maybe_unused]] uint8_t __pad1460[0x18]; // 0x1460
 public:
 	// MNetworkEnable
-	float m_flForwardSpeed; // 0x1480	
+	float m_flForwardSpeed; // 0x1478	
 	// MNetworkEnable
-	CHandle< C_BaseEntity > m_hOwnerPawn; // 0x1484	
+	CHandle< C_BaseEntity > m_hOwnerPawn; // 0x147c	
 };
 

@@ -5,7 +5,7 @@
 struct CPulse_ResumePoint;
 // Registered binary: pulse_system.dll (project 'pulse_runtime_lib')
 // Alignment: 8
-// Size: 0xd8
+// Size: 0xf0
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -17,7 +17,7 @@ class CPulseCell_TestWaitWithCursorState : public CPulseCell_BaseYieldingInflow
 public:
 	// MPulseCellOutflow_IsDefault
 	CPulse_ResumePoint m_WakeResume; // 0x48	
-	CPulse_ResumePoint m_WakeCancel; // 0x78	
-	CPulse_ResumePoint m_WakeFail; // 0xa8	
+	CPulse_ResumePoint m_WakeCancel; // 0x80	
+	CPulse_ResumePoint m_WakeFail; // 0xb8	
 };
 

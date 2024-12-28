@@ -5,7 +5,7 @@
 struct AI_MovementHeadingSettings_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x78
+// Size: 0x80
 // 
 // MGetKV3ClassDefaults
 class AI_AdditionalMovementSettings
@@ -22,5 +22,6 @@ public:
 	float m_flMovementMaxPathEndDirectionAngleDifferenceForStop; // 0x70	
 	// MPropertyDescription "What angle between the current move direction and the direction to the next waypoint will trigger a planted turn. Any value <= 0 will use the sharp angle from the vmdl movement settings."
 	float m_flMovementPlantedTurnAngleThreshold; // 0x74	
+	float m_flMaxIdleTurnScaleUp; // 0x78	
 };
 

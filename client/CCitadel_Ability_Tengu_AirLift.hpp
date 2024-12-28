@@ -5,30 +5,33 @@
 struct ParticleIndex_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xeb8
+// Size: 0xeb0
 // Has VTable
 // 
-// MNetworkVarNames "bool m_bFlying"
-// MNetworkVarNames "bool m_bFlyingStarted"
+// MNetworkVarNames "EHANDLE m_hGrabTarget"
+// MNetworkVarNames "EFlightState m_eFlightState"
 // MNetworkVarNames "bool m_bIsGrabbing"
 // MNetworkVarNames "bool m_bIsHoldingBomb"
 // MNetworkVarNames "float m_flCurrentSpeed"
 class CCitadel_Ability_Tengu_AirLift : public C_CitadelBaseAbility
 {
 public:
-	ParticleIndex_t m_nHoldBombEffect; // 0xca0	
+	// MNetworkEnable
+	CHandle< C_BaseEntity > m_hGrabTarget; // 0xc98	
+	ParticleIndex_t m_nHoldBombEffect; // 0xc9c	
 private:
-	[[maybe_unused]] uint8_t __pad0ca4[0x1fc]; // 0xca4
+	[[maybe_unused]] uint8_t __pad0ca0[0x1f8]; // 0xca0
 public:
 	// MNetworkEnable
-	bool m_bFlying; // 0xea0	
+	EFlightState m_eFlightState; // 0xe98	
 	// MNetworkEnable
-	bool m_bFlyingStarted; // 0xea1	
+	bool m_bIsGrabbing; // 0xe99	
 	// MNetworkEnable
-	bool m_bIsGrabbing; // 0xea2	
+	bool m_bIsHoldingBomb; // 0xe9a	
+private:
+	[[maybe_unused]] uint8_t __pad0e9b[0x1]; // 0xe9b
+public:
 	// MNetworkEnable
-	bool m_bIsHoldingBomb; // 0xea3	
-	// MNetworkEnable
-	float m_flCurrentSpeed; // 0xea4	
+	float m_flCurrentSpeed; // 0xe9c	
 };
 

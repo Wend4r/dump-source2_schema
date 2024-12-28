@@ -14,7 +14,7 @@ public:
 	CStrongHandle< InfoForResourceTypeCNmGraphDefinition > m_graphDefinition; // 0x0	
 	// -> m_variationID - 0x8
 	// -> m_skeleton - 0x10
-	// -> m_resources - 0x18
+	// -> m_data - 0x18
 	// -> m_warnings - 0x50
 	CNmGraphDataSet m_dataSet; // 0x8	
 };

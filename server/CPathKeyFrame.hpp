@@ -10,8 +10,11 @@ struct CPathKeyFrame;
 class CPathKeyFrame : public CLogicalEntity
 {
 public:
-	Vector m_Origin; // 0x4e8	
-	QAngle m_Angles; // 0x4f4	
+	Vector m_Origin; // 0x4e0	
+	QAngle m_Angles; // 0x4ec	
+private:
+	[[maybe_unused]] uint8_t __pad04f8[0x8]; // 0x4f8
+public:
 	Quaternion m_qAngle; // 0x500	
 	CUtlSymbolLarge m_iNextKey; // 0x510	
 	float m_flNextTime; // 0x518	

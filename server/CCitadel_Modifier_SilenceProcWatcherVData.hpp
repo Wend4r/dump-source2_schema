@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x750
+// Size: 0x778
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,11 +12,11 @@ class CCitadel_Modifier_SilenceProcWatcherVData : public CCitadel_Modifier_BaseE
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x638	
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x648	
-	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x658	
-	CUtlString m_sInstantProcIfCasterHasModifier; // 0x668	
+	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x660	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x670	
+	CEmbeddedSubclass< CCitadelModifier > m_ImmunityModifier; // 0x680	
+	CUtlString m_sInstantProcIfCasterHasModifier; // 0x690	
 	// MPropertyGroupName "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x670	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_TracerParticle; // 0x698	
 };
 

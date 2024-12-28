@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x150
+// Size: 0x160
 // Has VTable
 class CCitadel_Modifier_Thumper_2_Aura : public CCitadelModifierAura
 {

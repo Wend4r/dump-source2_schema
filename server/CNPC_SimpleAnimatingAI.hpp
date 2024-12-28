@@ -5,7 +5,7 @@
 struct CCitadelRegenComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbd8
+// Size: 0xbd0
 // Has VTable
 // 
 // MNetworkIncludeByName "m_iMaxHealth"
@@ -22,17 +22,17 @@ struct CCitadelRegenComponent;
 class CNPC_SimpleAnimatingAI : public CBaseAnimGraph
 {
 private:
-	[[maybe_unused]] uint8_t __pad0a40[0x14]; // 0xa40
+	[[maybe_unused]] uint8_t __pad0a38[0x14]; // 0xa38
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hEnemy; // 0xa54	
+	CHandle< CBaseEntity > m_hEnemy; // 0xa4c	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelRegenComponent"
 	// MNetworkAlias "CCitadelRegenComponent"
 	// MNetworkTypeAlias "CCitadelRegenComponent"
-	CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa58	
+	CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa50	
 	
 	// Datamap fields:
-	// CHandle< CBaseEntity > m_hAbilityOwner; // 0xa48
+	// CHandle< CBaseEntity > m_hAbilityOwner; // 0xa40
 };
 

@@ -13,8 +13,9 @@ public:
 	ObjectTypeFlags_t m_allFlags; // 0x0	
 	ObjectTypeFlags_t m_anyFlags; // 0x4	
 	int16_t m_nLayer; // 0x8	
+	int16_t m_instanceStream; // 0xa	
 private:
-	[[maybe_unused]] uint8_t __pad000a[0x6]; // 0xa
+	[[maybe_unused]] uint8_t __pad000c[0x4]; // 0xc
 public:
 	CUtlVector< AggregateMeshInfo_t > m_aggregateMeshes; // 0x10	
 	CUtlVector< AggregateLODSetup_t > m_lodSetups; // 0x28	

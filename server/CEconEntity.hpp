@@ -5,18 +5,18 @@
 struct CAttributeContainer;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xc40
+// Size: 0xc38
 // Has VTable
 // 
 // MNetworkVarNames "CAttributeContainer m_AttributeManager"
 class CEconEntity : public CBaseFlex
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ad0[0x10]; // 0xad0
+	[[maybe_unused]] uint8_t __pad0ac8[0x10]; // 0xac8
 public:
 	// MNetworkEnable
-	CAttributeContainer m_AttributeManager; // 0xae0	
-	CHandle< CBaseEntity > m_hOldProvidee; // 0xc38	
-	int32_t m_iOldOwnerClass; // 0xc3c	
+	CAttributeContainer m_AttributeManager; // 0xad8	
+	CHandle< CBaseEntity > m_hOldProvidee; // 0xc30	
+	int32_t m_iOldOwnerClass; // 0xc34	
 };
 

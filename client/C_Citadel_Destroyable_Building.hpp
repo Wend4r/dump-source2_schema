@@ -5,7 +5,7 @@
 struct CCitadelAbilityComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xd18
+// Size: 0xd10
 // Has VTable
 // 
 // MNetworkIncludeByName "m_bTakesDamage"
@@ -22,15 +22,15 @@ public:
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb08	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb00	
 	// MNetworkEnable
-	C_UtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0xca8	
+	C_UtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0xca0	
 	// MNetworkEnable
 	// MNetworkChangeCallback "DestroyedChanged"
-	bool m_bDestroyed; // 0xd10	
+	bool m_bDestroyed; // 0xd08	
 	// MNetworkEnable
-	bool m_bActive; // 0xd11	
+	bool m_bActive; // 0xd09	
 	// MNetworkEnable
-	bool m_bFinal; // 0xd12	
+	bool m_bFinal; // 0xd0a	
 };
 

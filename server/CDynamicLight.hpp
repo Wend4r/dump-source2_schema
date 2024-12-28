@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x7d8
+// Size: 0x7d0
 // Has VTable
 // 
 // MNetworkVarNames "uint8 m_Flags"
@@ -17,28 +17,28 @@
 class CDynamicLight : public CBaseModelEntity
 {
 public:
-	uint8_t m_ActualFlags; // 0x7c0	
+	uint8_t m_ActualFlags; // 0x7b8	
 	// MNetworkEnable
-	uint8_t m_Flags; // 0x7c1	
+	uint8_t m_Flags; // 0x7b9	
 	// MNetworkEnable
-	uint8_t m_LightStyle; // 0x7c2	
-	bool m_On; // 0x7c3	
+	uint8_t m_LightStyle; // 0x7ba	
+	bool m_On; // 0x7bb	
 	// MNetworkEnable
-	float m_Radius; // 0x7c4	
+	float m_Radius; // 0x7bc	
 	// MNetworkEnable
-	int32_t m_Exponent; // 0x7c8	
-	// MNetworkEnable
-	// MNetworkBitCount "8"
-	// MNetworkMinValue "0.000000"
-	// MNetworkMaxValue "360.000000"
-	float m_InnerAngle; // 0x7cc	
+	int32_t m_Exponent; // 0x7c0	
 	// MNetworkEnable
 	// MNetworkBitCount "8"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "360.000000"
-	float m_OuterAngle; // 0x7d0	
+	float m_InnerAngle; // 0x7c4	
 	// MNetworkEnable
-	float m_SpotRadius; // 0x7d4	
+	// MNetworkBitCount "8"
+	// MNetworkMinValue "0.000000"
+	// MNetworkMaxValue "360.000000"
+	float m_OuterAngle; // 0x7c8	
+	// MNetworkEnable
+	float m_SpotRadius; // 0x7cc	
 	
 	// Datamap fields:
 	// void CDynamicLightDynamicLightThink; // 0x0

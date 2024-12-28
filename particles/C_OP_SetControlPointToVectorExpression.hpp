@@ -3,9 +3,10 @@
 #include <cstdint>
 
 struct CParticleCollectionVecInput;
+struct CPerParticleFloatInput;
 // Registered binary: particles.dll (project 'particles')
 // Alignment: 8
-// Size: 0xec8
+// Size: 0x1028
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -20,7 +21,10 @@ public:
 	CParticleCollectionVecInput m_vInput1; // 0x1d0	
 	// MPropertyFriendlyName "input 2"
 	CParticleCollectionVecInput m_vInput2; // 0x848	
+	// MPropertyFriendlyName "lerp value"
+	// MPropertySuppressExpr "m_nExpression != VECTOR_EXPRESSION_LERP"
+	CPerParticleFloatInput m_flLerp; // 0xec0	
 	// MPropertyFriendlyName "normalize result"
-	bool m_bNormalizedOutput; // 0xec0	
+	bool m_bNormalizedOutput; // 0x1020	
 };
 

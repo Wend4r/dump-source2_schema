@@ -5,16 +5,16 @@
 struct CitadelAbilityProjectileCreateInfo_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xbc0
+// Size: 0xbb8
 // Has VTable
 class CCitadel_Item_BaseProjectileAOEModifier : public CCitadel_Item
 {
 public:
-	Vector m_vLaunchPosition; // 0xb20	
-	QAngle m_qLaunchAngle; // 0xb2c	
+	Vector m_vLaunchPosition; // 0xb18	
+	QAngle m_qLaunchAngle; // 0xb24	
 private:
-	[[maybe_unused]] uint8_t __pad0b38[0x38]; // 0xb38
+	[[maybe_unused]] uint8_t __pad0b30[0x38]; // 0xb30
 public:
-	CitadelAbilityProjectileCreateInfo_t m_projInfo; // 0xb70	
+	CitadelAbilityProjectileCreateInfo_t m_projInfo; // 0xb68	
 };
 

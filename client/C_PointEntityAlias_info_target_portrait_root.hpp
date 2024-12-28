@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x568
+// Size: 0x560
 // Has VTable
 class C_PointEntityAlias_info_target_portrait_root : public C_PointEntity
 {

@@ -6,7 +6,7 @@ struct CEntityIdentity;
 struct CScriptComponent;
 // Registered binary: engine2.dll (project 'entity2')
 // Alignment: 8
-// Size: 0x40
+// Size: 0x38
 // Has VTable
 // 
 // MNetworkVarNames "CEntityIdentity * m_pEntity"
@@ -24,6 +24,5 @@ private:
 	[[maybe_unused]] uint8_t __pad0018[0x18]; // 0x18
 public:
 	CScriptComponent* m_CScriptComponent; // 0x30	
-	bool m_bVisibleinPVS; // 0x38	
 };
 

@@ -4,14 +4,14 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x520
+// Size: 0x518
 // Has VTable
 class CLogicLineToEntity : public CLogicalEntity
 {
 public:
-	CEntityOutputTemplate< Vector > m_Line; // 0x4e8	
-	CUtlSymbolLarge m_SourceName; // 0x510	
-	CHandle< CBaseEntity > m_StartEntity; // 0x518	
-	CHandle< CBaseEntity > m_EndEntity; // 0x51c	
+	CEntityOutputTemplate< Vector > m_Line; // 0x4e0	
+	CUtlSymbolLarge m_SourceName; // 0x508	
+	CHandle< CBaseEntity > m_StartEntity; // 0x510	
+	CHandle< CBaseEntity > m_EndEntity; // 0x514	
 };
 

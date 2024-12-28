@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xa08
+// Size: 0xa30
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,13 +12,13 @@ class CCitadel_Modifier_SalvoBulletVData : public CCitadel_Modifier_BaseBulletPr
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x738	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x760	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x748	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionVictimParticle; // 0x828	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SalvoWeaponParticle; // 0x908	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionParticle; // 0x770	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ExplosionVictimParticle; // 0x850	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_SalvoWeaponParticle; // 0x930	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ShotVictimSound; // 0x9e8	
-	CSoundEventName m_ShotConfirmationSound; // 0x9f8	
+	CSoundEventName m_ShotVictimSound; // 0xa10	
+	CSoundEventName m_ShotConfirmationSound; // 0xa20	
 };
 

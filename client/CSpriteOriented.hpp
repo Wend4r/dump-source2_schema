@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x970
+// Size: 0x968
 // Has VTable
 class CSpriteOriented : public C_Sprite
 {

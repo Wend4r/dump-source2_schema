@@ -8,7 +8,7 @@ struct CCitadelRegenComponent;
 struct CCitadelMinimapComponent;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x17f0
+// Size: 0x17e8
 // Has VTable
 // Is Abstract
 // 
@@ -32,65 +32,65 @@ struct CCitadelMinimapComponent;
 class CAI_CitadelNPC : public CAI_BaseNPC
 {
 private:
-	[[maybe_unused]] uint8_t __pad1280[0x18]; // 0x1280
+	[[maybe_unused]] uint8_t __pad1278[0x18]; // 0x1278
 public:
-	Vector m_vLastGroundEntityCheckPos; // 0x1298	
-	GameTime_t m_flLastGroundCheckTime; // 0x12a4	
+	Vector m_vLastGroundEntityCheckPos; // 0x1290	
+	GameTime_t m_flLastGroundCheckTime; // 0x129c	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelAbilityComponent"
 	// MNetworkAlias "CCitadelAbilityComponent"
 	// MNetworkTypeAlias "CCitadelAbilityComponent"
-	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x12a8	
+	CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x12a0	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelRegenComponent"
 	// MNetworkAlias "CCitadelRegenComponent"
 	// MNetworkTypeAlias "CCitadelRegenComponent"
-	CCitadelRegenComponent m_CCitadelRegenComponent; // 0x14b0	
+	CCitadelRegenComponent m_CCitadelRegenComponent; // 0x14a8	
 	// MNetworkEnable
 	// MNetworkUserGroup "CCitadelMinimapComponent"
 	// MNetworkAlias "CCitadelMinimapComponent"
 	// MNetworkTypeAlias "CCitadelMinimapComponent"
-	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x1630	
+	CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x1628	
 private:
-	[[maybe_unused]] uint8_t __pad1648[0x4]; // 0x1648
+	[[maybe_unused]] uint8_t __pad1640[0x4]; // 0x1640
 public:
-	int32_t m_iBaseGoldReward; // 0x164c	
-	int32_t m_iSkillShotReward; // 0x1650	
+	int32_t m_iBaseGoldReward; // 0x1644	
+	int32_t m_iSkillShotReward; // 0x1648	
 private:
-	[[maybe_unused]] uint8_t __pad1654[0x30]; // 0x1654
+	[[maybe_unused]] uint8_t __pad164c[0x30]; // 0x164c
 public:
-	CHandle< CCitadelBaseAbility > m_hAbilityOwner; // 0x1684	
+	CHandle< CCitadelBaseAbility > m_hAbilityOwner; // 0x167c	
 private:
-	[[maybe_unused]] uint8_t __pad1688[0x48]; // 0x1688
-public:
-	// MNetworkEnable
-	CUtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0x16d0	
-	// MNetworkEnable
-	bool m_bMinion; // 0x1738	
-private:
-	[[maybe_unused]] uint8_t __pad1739[0x3]; // 0x1739
+	[[maybe_unused]] uint8_t __pad1680[0x48]; // 0x1680
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hLookTarget; // 0x173c	
+	CUtlVectorEmbeddedNetworkVar< WeakPoint_t > m_vecWeakPoints; // 0x16c8	
+	// MNetworkEnable
+	bool m_bMinion; // 0x1730	
 private:
-	[[maybe_unused]] uint8_t __pad1740[0x10]; // 0x1740
-public:
-	int32_t m_iCoverGroupID; // 0x1750	
-private:
-	[[maybe_unused]] uint8_t __pad1754[0x5c]; // 0x1754
-public:
-	Vector m_vecSpawnOrigin; // 0x17b0	
-private:
-	[[maybe_unused]] uint8_t __pad17bc[0x18]; // 0x17bc
+	[[maybe_unused]] uint8_t __pad1731[0x3]; // 0x1731
 public:
 	// MNetworkEnable
-	bool m_bBeamActive; // 0x17d4	
+	CHandle< CBaseEntity > m_hLookTarget; // 0x1734	
 private:
-	[[maybe_unused]] uint8_t __pad17d5[0x3]; // 0x17d5
+	[[maybe_unused]] uint8_t __pad1738[0x10]; // 0x1738
+public:
+	int32_t m_iCoverGroupID; // 0x1748	
+private:
+	[[maybe_unused]] uint8_t __pad174c[0x5c]; // 0x174c
+public:
+	Vector m_vecSpawnOrigin; // 0x17a8	
+private:
+	[[maybe_unused]] uint8_t __pad17b4[0x18]; // 0x17b4
+public:
+	// MNetworkEnable
+	bool m_bBeamActive; // 0x17cc	
+private:
+	[[maybe_unused]] uint8_t __pad17cd[0x3]; // 0x17cd
 public:
 	// MNetworkEnable
 	// MNetworkEncoder "coord"
-	Vector m_vEyeBeamTarget; // 0x17d8	
+	Vector m_vEyeBeamTarget; // 0x17d0	
 	
 	// Static fields:
 	static ConditionId_t &Get_COND_RECEIVED_AGGRO(){return *reinterpret_cast<ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_CitadelNPC")->m_static_fields[0]->m_instance);};

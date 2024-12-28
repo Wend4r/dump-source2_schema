@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x570
+// Size: 0x568
 // Has VTable
 // 
 // MNetworkVarNames "string_t m_iszOverlayNames"
@@ -17,18 +17,18 @@ class CEnvScreenOverlay : public CPointEntity
 {
 public:
 	// MNetworkEnable
-	CUtlSymbolLarge m_iszOverlayNames[10]; // 0x4e8	
+	CUtlSymbolLarge m_iszOverlayNames[10]; // 0x4e0	
 	// MNetworkEnable
 	// MNetworkBitCount "11"
 	// MNetworkMinValue "-1.000000"
 	// MNetworkMaxValue "63.000000"
-	float m_flOverlayTimes[10]; // 0x538	
+	float m_flOverlayTimes[10]; // 0x530	
 	// MNetworkEnable
-	GameTime_t m_flStartTime; // 0x560	
+	GameTime_t m_flStartTime; // 0x558	
 	// MNetworkEnable
-	int32_t m_iDesiredOverlay; // 0x564	
+	int32_t m_iDesiredOverlay; // 0x55c	
 	// MNetworkEnable
-	bool m_bIsActive; // 0x568	
+	bool m_bIsActive; // 0x560	
 	
 	// Datamap fields:
 	// void InputStartOverlay; // 0x0

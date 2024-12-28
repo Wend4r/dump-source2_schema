@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x828
+// Size: 0x850
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,15 +12,15 @@ class CCitadelModifierChronoPulseGrenadePulseAreaVData : public CCitadelModifier
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x608	
-	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x618	
+	CEmbeddedSubclass< CCitadelModifier > m_DebuffModifier; // 0x630	
+	CEmbeddedSubclass< CCitadelModifier > m_SlowModifier; // 0x640	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PreviewRingParticle; // 0x628	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AreaEffect; // 0x708	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_PreviewRingParticle; // 0x650	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_AreaEffect; // 0x730	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strArmingSound; // 0x7e8	
-	CSoundEventName m_strArmedSound; // 0x7f8	
-	CSoundEventName m_strLoopingSound; // 0x808	
-	CSoundEventName m_strHitSound; // 0x818	
+	CSoundEventName m_strArmingSound; // 0x810	
+	CSoundEventName m_strArmedSound; // 0x820	
+	CSoundEventName m_strLoopingSound; // 0x830	
+	CSoundEventName m_strHitSound; // 0x840	
 };
 

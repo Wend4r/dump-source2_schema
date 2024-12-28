@@ -5,7 +5,7 @@
 struct CCitadelHeroComponent;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x588
+// Size: 0x580
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelHeroComponent::Storage_t m_CCitadelHeroComponent"
@@ -16,8 +16,9 @@ public:
 	// MNetworkUserGroup "CCitadelHeroComponent"
 	// MNetworkAlias "CCitadelHeroComponent"
 	// MNetworkTypeAlias "CCitadelHeroComponent"
-	// -> m_nHeroID - 0x57c
-	// -> m_nHeroLoading - 0x580
-	CCitadelHeroComponent m_CCitadelHeroComponent; // 0x568	
+	// -> m_nHeroID - 0x574
+	// -> m_nHeroLoading - 0x578
+	// -> m_bIsUsingSeasonalSkin - 0x57c
+	CCitadelHeroComponent m_CCitadelHeroComponent; // 0x560	
 };
 

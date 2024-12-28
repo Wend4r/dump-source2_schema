@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb20
+// Size: 0xb68
 // Has VTable
 class CItemSilenceGlyph : public CCitadel_Item
 {
 public:
-	// No schema binary for binding
+	CUtlVector< CHandle< CBaseEntity > > m_vecProjectileHitTargets; // 0xb18	
 };
 

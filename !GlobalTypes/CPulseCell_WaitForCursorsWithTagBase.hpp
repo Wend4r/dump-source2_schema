@@ -5,7 +5,7 @@
 struct CPulse_ResumePoint;
 // Registered binary: pulse_system.dll (project 'pulse_system')
 // Alignment: 8
-// Size: 0x80
+// Size: 0x88
 // Has VTable
 // 
 // MGetKV3ClassDefaults

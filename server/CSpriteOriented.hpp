@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x830
+// Size: 0x828
 // Has VTable
 class CSpriteOriented : public CSprite
 {

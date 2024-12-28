@@ -7,7 +7,7 @@ struct ParticleIndex_t;
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xf10
+// Size: 0xf08
 // Has VTable
 // 
 // MNetworkVarNames "bool m_bActive"
@@ -20,36 +20,36 @@ struct GameTime_t;
 class CCitadel_Ability_Shiv_KillingBlow : public CCitadelBaseShivAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b00[0x1c0]; // 0xb00
+	[[maybe_unused]] uint8_t __pad0af8[0x1c0]; // 0xaf8
 public:
 	// MNetworkEnable
-	bool m_bActive; // 0xcc0	
+	bool m_bActive; // 0xcb8	
 private:
-	[[maybe_unused]] uint8_t __pad0cc1[0x3]; // 0xcc1
+	[[maybe_unused]] uint8_t __pad0cb9[0x3]; // 0xcb9
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hCurrentTarget; // 0xcc4	
+	CHandle< CBaseEntity > m_hCurrentTarget; // 0xcbc	
 	// MNetworkEnable
-	Vector m_vStartPosition; // 0xcc8	
+	Vector m_vStartPosition; // 0xcc0	
 	// MNetworkEnable
-	Vector m_vDeparturePosition; // 0xcd4	
+	Vector m_vDeparturePosition; // 0xccc	
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flDepartureTime; // 0xce0	
+	CCitadelAutoScaledTime m_flDepartureTime; // 0xcd8	
 	// MNetworkEnable
-	CCitadelAutoScaledTime m_flArrivalTime; // 0xcf8	
-	Vector m_vLastKnownSafePos; // 0xd10	
+	CCitadelAutoScaledTime m_flArrivalTime; // 0xcf0	
+	Vector m_vLastKnownSafePos; // 0xd08	
 private:
-	[[maybe_unused]] uint8_t __pad0d1c[0x4]; // 0xd1c
+	[[maybe_unused]] uint8_t __pad0d14[0x4]; // 0xd14
 public:
-	ParticleIndex_t m_ChannelParticle; // 0xd20	
+	ParticleIndex_t m_ChannelParticle; // 0xd18	
 private:
-	[[maybe_unused]] uint8_t __pad0d24[0xc]; // 0xd24
+	[[maybe_unused]] uint8_t __pad0d1c[0xc]; // 0xd1c
 public:
 	// MNetworkEnable
-	GameTime_t m_flDrainSuppressEndTime; // 0xd30	
+	GameTime_t m_flDrainSuppressEndTime; // 0xd28	
 private:
-	[[maybe_unused]] uint8_t __pad0d34[0x1c4]; // 0xd34
+	[[maybe_unused]] uint8_t __pad0d2c[0x1c4]; // 0xd2c
 public:
-	CModifierHandleTyped< CCitadelModifier > m_BuffModifier; // 0xef8	
+	CModifierHandleTyped< CCitadelModifier > m_BuffModifier; // 0xef0	
 };
 

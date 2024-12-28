@@ -6,7 +6,7 @@ struct CCitadelPlayerClipComponent;
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x14e8
+// Size: 0x14e0
 // Has VTable
 // 
 // MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
@@ -19,13 +19,13 @@ public:
 	// MNetworkUserGroup "CCitadelPlayerClipComponent"
 	// MNetworkAlias "CCitadelPlayerClipComponent"
 	// MNetworkTypeAlias "CCitadelPlayerClipComponent"
-	CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x14b0	
+	CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x14a8	
 private:
-	[[maybe_unused]] uint8_t __pad14d0[0xc]; // 0x14d0
+	[[maybe_unused]] uint8_t __pad14c8[0xc]; // 0x14c8
 public:
 	// MNetworkEnable
-	GameTime_t m_flFadeOutStart; // 0x14dc	
+	GameTime_t m_flFadeOutStart; // 0x14d4	
 	// MNetworkEnable
-	GameTime_t m_flFadeOutEnd; // 0x14e0	
+	GameTime_t m_flFadeOutEnd; // 0x14d8	
 };
 

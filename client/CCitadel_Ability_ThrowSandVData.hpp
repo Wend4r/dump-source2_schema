@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1580
+// Size: 0x1588
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,7 +12,7 @@ class CCitadel_Ability_ThrowSandVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_SandDebuff; // 0x1560	
-	CEmbeddedSubclass< CCitadelModifier > m_SilenceDebuff; // 0x1570	
+	CEmbeddedSubclass< CCitadelModifier > m_SandDebuff; // 0x1568	
+	CEmbeddedSubclass< CCitadelModifier > m_SilenceDebuff; // 0x1578	
 };
 

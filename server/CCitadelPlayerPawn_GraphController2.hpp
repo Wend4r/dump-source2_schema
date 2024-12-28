@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x4e8
+// Size: 0x500
 // Has VTable
 class CCitadelPlayerPawn_GraphController2 : public CAnimGraphControllerBase
 {
@@ -42,20 +42,21 @@ public:
 	CAnimGraph2ParamRef< float32 > m_flReloadFraction; // 0x350	
 	CAnimGraph2ParamRef< float32 > m_flReloadTransitionTime; // 0x368	
 	CAnimGraph2ParamRef< float32 > m_flStrafeSpeed; // 0x380	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eDeathSequence; // 0x398	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eFlinchType; // 0x3b0	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eFullBodySequence; // 0x3c8	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eGenericCast; // 0x3e0	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eGenericThrow; // 0x3f8	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eLaunchType; // 0x410	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eMelee; // 0x428	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eMovementType; // 0x440	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eRopeClimb; // 0x458	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eSelectedAbility; // 0x470	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eTurn; // 0x488	
-	CAnimGraph2ParamRef< CGlobalSymbol > m_eZiplineState; // 0x4a0	
-	CAnimGraph2ParamRef< Vector > m_Locomotion_Facing; // 0x4b8	
-	CAnimGraph2ParamOptionalRef< Vector > m_Look_Target; // 0x4d0	
+	CAnimGraph2ParamRef< float32 > m_flAmmoFraction; // 0x398	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eDeathSequence; // 0x3b0	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eFlinchType; // 0x3c8	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eFullBodySequence; // 0x3e0	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eGenericCast; // 0x3f8	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eGenericThrow; // 0x410	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eLaunchType; // 0x428	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eMelee; // 0x440	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eMovementType; // 0x458	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eRopeClimb; // 0x470	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eSelectedAbility; // 0x488	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eTurn; // 0x4a0	
+	CAnimGraph2ParamRef< CGlobalSymbol > m_eZiplineState; // 0x4b8	
+	CAnimGraph2ParamRef< Vector > m_Locomotion_Facing; // 0x4d0	
+	CAnimGraph2ParamOptionalRef< Vector > m_Look_Target; // 0x4e8	
 	
 	// Static fields:
 	static uint32_t &Get_s_nControllerTypeID(){return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadelPlayerPawn_GraphController2")->m_static_fields[0]->m_instance);};

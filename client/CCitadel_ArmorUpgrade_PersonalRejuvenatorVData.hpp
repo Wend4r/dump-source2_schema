@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1788
+// Size: 0x1790
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_ArmorUpgrade_PersonalRejuvenatorVData : public CitadelItemVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeployParticle; // 0x15a8	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_RespawnParticle; // 0x1688	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DeployParticle; // 0x15b0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_RespawnParticle; // 0x1690	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_sDeploySound; // 0x1768	
-	CSoundEventName m_sRespawnSound; // 0x1778	
+	CSoundEventName m_sDeploySound; // 0x1770	
+	CSoundEventName m_sRespawnSound; // 0x1780	
 };
 

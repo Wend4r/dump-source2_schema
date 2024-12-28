@@ -5,7 +5,7 @@
 struct C_LightGlowOverlay;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x978
+// Size: 0x970
 // Has VTable
 // 
 // MNetworkIncludeByUserGroup "Origin"
@@ -24,29 +24,29 @@ class C_LightGlow : public C_BaseModelEntity
 {
 public:
 	// MNetworkEnable
-	uint32_t m_nHorizontalSize; // 0x860	
+	uint32_t m_nHorizontalSize; // 0x858	
 	// MNetworkEnable
-	uint32_t m_nVerticalSize; // 0x864	
+	uint32_t m_nVerticalSize; // 0x85c	
 	// MNetworkEnable
-	uint32_t m_nMinDist; // 0x868	
+	uint32_t m_nMinDist; // 0x860	
 	// MNetworkEnable
-	uint32_t m_nMaxDist; // 0x86c	
+	uint32_t m_nMaxDist; // 0x864	
 	// MNetworkEnable
-	uint32_t m_nOuterMaxDist; // 0x870	
+	uint32_t m_nOuterMaxDist; // 0x868	
 	// MNetworkEnable
 	// MNetworkBitCount "6"
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "64.000000"
 	// MNetworkEncodeFlags "2"
-	float m_flGlowProxySize; // 0x874	
+	float m_flGlowProxySize; // 0x86c	
 	// MNetworkEnable
 	// MNetworkMinValue "0.000000"
 	// MNetworkMaxValue "100.000000"
 	// MNetworkChangeCallback "OnHDRColorScaleChanged"
-	float m_flHDRColorScale; // 0x878	
+	float m_flHDRColorScale; // 0x870	
 private:
-	[[maybe_unused]] uint8_t __pad087c[0x4]; // 0x87c
+	[[maybe_unused]] uint8_t __pad0874[0x4]; // 0x874
 public:
-	C_LightGlowOverlay m_GlowOverlay; // 0x880	
+	C_LightGlowOverlay m_GlowOverlay; // 0x878	
 };
 

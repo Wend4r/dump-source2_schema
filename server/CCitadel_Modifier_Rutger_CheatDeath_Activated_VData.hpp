@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x6e8
+// Size: 0x710
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,6 +12,6 @@ class CCitadel_Modifier_Rutger_CheatDeath_Activated_VData : public CCitadelModif
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ActivatedParticle; // 0x608	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_ActivatedParticle; // 0x630	
 };
 

@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x640
+// Size: 0x668
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,10 +12,10 @@ class CCitadel_Modifier_VeilWalkerWatcherVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_InvisModifier; // 0x608	
-	CEmbeddedSubclass< CCitadelModifier > m_VeilWalkerTriggeredModifier; // 0x618	
-	CEmbeddedSubclass< CCitadelModifier > m_VeilWalkerMovespeed; // 0x628	
+	CEmbeddedSubclass< CCitadelModifier > m_InvisModifier; // 0x630	
+	CEmbeddedSubclass< CCitadelModifier > m_VeilWalkerTriggeredModifier; // 0x640	
+	CEmbeddedSubclass< CCitadelModifier > m_VeilWalkerMovespeed; // 0x650	
 	// MPropertyStartGroup "Gameplay"
-	float m_flTraceLengthMin; // 0x638	
+	float m_flTraceLengthMin; // 0x660	
 };
 

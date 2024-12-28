@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x758
+// Size: 0x780
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,20 +12,20 @@ class CModifierRestorativeGooVData : public CCitadelModifierVData
 {
 public:
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_RestorativeGooEndParticle; // 0x608	
-	float m_flDistanceCameraOffsetLerpTime; // 0x6e8	
-	float m_flDistanceCameraOffsetBias; // 0x6ec	
-	float m_flDistanceCameraOffset; // 0x6f0	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_RestorativeGooEndParticle; // 0x630	
+	float m_flDistanceCameraOffsetLerpTime; // 0x710	
+	float m_flDistanceCameraOffsetBias; // 0x714	
+	float m_flDistanceCameraOffset; // 0x718	
 private:
-	[[maybe_unused]] uint8_t __pad06f4[0x4]; // 0x6f4
+	[[maybe_unused]] uint8_t __pad071c[0x4]; // 0x71c
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_BreakoutProgressBarModifier; // 0x6f8	
-	CEmbeddedSubclass< CCitadelModifier > m_PostCubeBuffModifier; // 0x708	
+	CEmbeddedSubclass< CCitadelModifier > m_BreakoutProgressBarModifier; // 0x720	
+	CEmbeddedSubclass< CCitadelModifier > m_PostCubeBuffModifier; // 0x730	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_NonTargetLoopingSound; // 0x718	
-	CSoundEventName m_TargetLoopingSound; // 0x728	
-	CSoundEventName m_LightMeleeImpact; // 0x738	
-	CSoundEventName m_HeavyMeleeImpact; // 0x748	
+	CSoundEventName m_NonTargetLoopingSound; // 0x740	
+	CSoundEventName m_TargetLoopingSound; // 0x750	
+	CSoundEventName m_LightMeleeImpact; // 0x760	
+	CSoundEventName m_HeavyMeleeImpact; // 0x770	
 };
 

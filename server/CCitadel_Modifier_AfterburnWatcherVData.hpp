@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x668
+// Size: 0x690
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,9 +12,9 @@ class CCitadel_Modifier_AfterburnWatcherVData : public CCitadel_Modifier_BaseEve
 {
 public:
 	// MPropertyGroupName "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_AfterburnDotModifier; // 0x638	
-	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x648	
+	CEmbeddedSubclass< CCitadelModifier > m_AfterburnDotModifier; // 0x660	
+	CEmbeddedSubclass< CCitadel_Modifier_Base_Buildup > m_BuildUpModifier; // 0x670	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_ExplodeSound; // 0x658	
+	CSoundEventName m_ExplodeSound; // 0x680	
 };
 

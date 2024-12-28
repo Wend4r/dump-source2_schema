@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x14a0
+// Size: 0x1498
 // Has VTable
 class C_NPC_Boss_Tier2_Sidelanes : public C_NPC_Boss_Tier2
 {

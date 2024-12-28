@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0xb40
+// Size: 0xb38
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flDomeStartTime"
@@ -13,13 +13,13 @@ struct GameTime_t;
 class CCitadel_Ability_IceDome : public CCitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0b00[0x38]; // 0xb00
+	[[maybe_unused]] uint8_t __pad0af8[0x38]; // 0xaf8
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flDomeStartTime; // 0xb38	
+	GameTime_t m_flDomeStartTime; // 0xb30	
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-	GameTime_t m_flDomeEndTime; // 0xb3c	
+	GameTime_t m_flDomeEndTime; // 0xb34	
 };
 

@@ -4,11 +4,11 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x988
+// Size: 0x980
 // Has VTable
 class CTriggerRemoveModifier : public CBaseTrigger
 {
 public:
-	CUtlSymbolLarge m_strModifier; // 0x980	
+	CUtlSymbolLarge m_strModifier; // 0x978	
 };
 

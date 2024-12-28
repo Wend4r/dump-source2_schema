@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1858
+// Size: 0x1860
 // Has VTable
 // 
 // MGetKV3ClassDefaults
@@ -12,17 +12,17 @@ class CAbilityShivDashVData : public CitadelAbilityVData
 {
 public:
 	// MPropertyStartGroup "Modifiers"
-	CEmbeddedSubclass< CCitadelModifier > m_DashModifier; // 0x1560	
+	CEmbeddedSubclass< CCitadelModifier > m_DashModifier; // 0x1568	
 	// MPropertyStartGroup "Visuals"
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashImpactEffect; // 0x1570	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashSwingEffect; // 0x1650	
-	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashLineEffect; // 0x1730	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashImpactEffect; // 0x1578	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashSwingEffect; // 0x1658	
+	CResourceNameTyped< CWeakHandle< InfoForResourceTypeIParticleSystemDefinition > > m_DashLineEffect; // 0x1738	
 	// MPropertyStartGroup "Sounds"
-	CSoundEventName m_strDashStartWithTargets; // 0x1810	
-	CSoundEventName m_strDashStartEcho; // 0x1820	
-	CSoundEventName m_strDashStartMiss; // 0x1830	
-	CSoundEventName m_strDashHitEnemy; // 0x1840	
+	CSoundEventName m_strDashStartWithTargets; // 0x1818	
+	CSoundEventName m_strDashStartEcho; // 0x1828	
+	CSoundEventName m_strDashStartMiss; // 0x1838	
+	CSoundEventName m_strDashHitEnemy; // 0x1848	
 	// MPropertyStartGroup "+Dash Properties"
-	float m_flEchoDelay; // 0x1850	
+	float m_flEchoDelay; // 0x1858	
 };
 

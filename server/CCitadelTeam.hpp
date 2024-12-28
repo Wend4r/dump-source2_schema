@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x638
+// Size: 0x630
 // Has VTable
 // 
 // MNetworkVarNames "EHANDLE m_hPayload"
@@ -16,27 +16,27 @@
 class CCitadelTeam : public CTeam
 {
 private:
-	[[maybe_unused]] uint8_t __pad05a0[0x18]; // 0x5a0
+	[[maybe_unused]] uint8_t __pad0598[0x18]; // 0x598
 public:
 	// MNetworkEnable
-	CHandle< CBaseEntity > m_hPayload; // 0x5b8	
+	CHandle< CBaseEntity > m_hPayload; // 0x5b0	
 	// MNetworkEnable
-	int32_t m_nBossesAlive; // 0x5bc	
+	int32_t m_nBossesAlive; // 0x5b4	
 	// MNetworkEnable
-	int32_t m_nBossesMax; // 0x5c0	
+	int32_t m_nBossesMax; // 0x5b8	
 	// MNetworkEnable
-	EFlexSlotTypes_t m_nFlexSlotsUnlocked; // 0x5c4	
+	EFlexSlotTypes_t m_nFlexSlotsUnlocked; // 0x5bc	
 private:
-	[[maybe_unused]] uint8_t __pad05c6[0x2]; // 0x5c6
+	[[maybe_unused]] uint8_t __pad05be[0x2]; // 0x5be
 public:
 	// MNetworkEnable
-	int32_t m_nBaseGuardianLanesCleared; // 0x5c8	
+	int32_t m_nBaseGuardianLanesCleared; // 0x5c0	
 private:
-	[[maybe_unused]] uint8_t __pad05cc[0x4]; // 0x5cc
+	[[maybe_unused]] uint8_t __pad05c4[0x4]; // 0x5c4
 public:
 	// MNetworkEnable
 	// MNetworkSendProxyRecipientsFilter
 	// MNetworkPriority "32"
-	CUtlVectorEmbeddedNetworkVar< STeamFOWEntity > m_vecFOWEntities; // 0x5d0	
+	CUtlVectorEmbeddedNetworkVar< STeamFOWEntity > m_vecFOWEntities; // 0x5c8	
 };
 

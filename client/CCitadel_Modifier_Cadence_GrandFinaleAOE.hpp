@@ -4,7 +4,7 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xe0
+// Size: 0xf0
 // Has VTable
 class CCitadel_Modifier_Cadence_GrandFinaleAOE : public CCitadelModifierAura
 {

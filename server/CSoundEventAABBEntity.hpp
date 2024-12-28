@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x5b8
+// Size: 0x5b0
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vMins"
@@ -13,8 +13,8 @@ class CSoundEventAABBEntity : public CSoundEventEntity
 {
 public:
 	// MNetworkEnable
-	Vector m_vMins; // 0x5a0	
+	Vector m_vMins; // 0x598	
 	// MNetworkEnable
-	Vector m_vMaxs; // 0x5ac	
+	Vector m_vMaxs; // 0x5a4	
 };
 

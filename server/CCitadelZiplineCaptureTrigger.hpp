@@ -4,7 +4,7 @@
 
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x9a0
+// Size: 0x998
 // Has VTable
 class CCitadelZiplineCaptureTrigger : public CBaseTrigger
 {

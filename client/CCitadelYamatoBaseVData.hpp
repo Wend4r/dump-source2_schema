@@ -4,13 +4,13 @@
 
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1568
+// Size: 0x1570
 // Has VTable
 // 
 // MGetKV3ClassDefaults
 class CCitadelYamatoBaseVData : public CitadelAbilityVData
 {
 public:
-	float m_flShadowFormSpeed; // 0x1560	
+	float m_flShadowFormSpeed; // 0x1568	
 };
 

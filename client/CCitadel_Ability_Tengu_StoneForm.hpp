@@ -18,7 +18,7 @@ struct ParticleIndex_t;
 class CCitadel_Ability_Tengu_StoneForm : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x1c0]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c98[0x1c8]; // 0xc98
 public:
 	// MNetworkEnable
 	// MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"

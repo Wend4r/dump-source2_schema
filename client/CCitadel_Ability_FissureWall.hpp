@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0xdb8
+// Size: 0xdb0
 // Has VTable
 // 
 // MNetworkVarNames "Vector m_vecStartPos"
@@ -20,31 +20,31 @@ struct GameTime_t;
 class CCitadel_Ability_FissureWall : public C_CitadelBaseAbility
 {
 private:
-	[[maybe_unused]] uint8_t __pad0ca0[0x10]; // 0xca0
+	[[maybe_unused]] uint8_t __pad0c98[0x10]; // 0xc98
 public:
-	CUtlVector< ParticleIndex_t > m_vecWallPreviewParticles; // 0xcb0	
+	CUtlVector< ParticleIndex_t > m_vecWallPreviewParticles; // 0xca8	
 private:
-	[[maybe_unused]] uint8_t __pad0cc8[0xa8]; // 0xcc8
+	[[maybe_unused]] uint8_t __pad0cc0[0xa8]; // 0xcc0
 public:
 	// MNetworkEnable
-	Vector m_vecStartPos; // 0xd70	
+	Vector m_vecStartPos; // 0xd68	
 	// MNetworkEnable
-	Vector m_vecPosition; // 0xd7c	
+	Vector m_vecPosition; // 0xd74	
 	// MNetworkEnable
-	Vector m_vecInitialPosition; // 0xd88	
+	Vector m_vecInitialPosition; // 0xd80	
 	// MNetworkEnable
-	GameTime_t m_CastTime; // 0xd94	
+	GameTime_t m_CastTime; // 0xd8c	
 	// MNetworkEnable
-	Vector m_vecDirection; // 0xd98	
+	Vector m_vecDirection; // 0xd90	
 	// MNetworkEnable
-	Vector m_vecLeft; // 0xda4	
+	Vector m_vecLeft; // 0xd9c	
 	// MNetworkEnable
-	float m_Length; // 0xdb0	
-	// MNetworkEnable
-	// MNetworkChangeCallback "PreviewModeChanged"
-	bool m_bTraveling; // 0xdb4	
+	float m_Length; // 0xda8	
 	// MNetworkEnable
 	// MNetworkChangeCallback "PreviewModeChanged"
-	bool m_bPreview; // 0xdb5	
+	bool m_bTraveling; // 0xdac	
+	// MNetworkEnable
+	// MNetworkChangeCallback "PreviewModeChanged"
+	bool m_bPreview; // 0xdad	
 };
 

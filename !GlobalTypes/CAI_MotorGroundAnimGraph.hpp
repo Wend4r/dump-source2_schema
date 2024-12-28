@@ -11,49 +11,56 @@ struct CAI_MotorGroundAnimGraph_State_InstantStop;
 struct CAI_MotorGroundAnimGraph_State_Hop;
 struct CAI_MotorGroundAnimGraph_State_MovePerformance;
 struct CAI_MotorGroundAnimGraph_State_PlantedTurn;
+struct CAI_MotorGroundAnimGraph_State_Other;
+struct CFloatExponentialMovingAverage;
 // Registered binary: server.dll (project 'server')
 // Alignment: 8
-// Size: 0x240
+// Size: 0x298
 class CAI_MotorGroundAnimGraph
 {
 private:
 	[[maybe_unused]] uint8_t __pad0000[0x10]; // 0x0
 public:
 	CAI_MotorGroundAnimGraph_State_Idle m_stateIdle; // 0x10	
+	// -> m_eType - 0x50
+	// -> m_vOriginalTargetFacingPosition - 0x54
+	// -> m_vTargetFacingPosition - 0x60
+	// -> m_flOriginalAngleDelta - 0x6c
+	// -> m_bWasBlockIdleTurnTagActive - 0x70
 	CAI_MotorGroundAnimGraph_State_IdleTurn m_stateIdleTurn; // 0x30	
-	CAI_MotorGroundAnimGraph_State_Loop m_stateLoop; // 0x58	
-	CAI_MotorGroundAnimGraph_State_Start m_stateStart; // 0x78	
-	// -> m_vGoalPosition - 0xc0
-	// -> m_vArrivalDirection - 0xcc
-	// -> m_bPathChanged - 0xd8
-	CAI_MotorGroundAnimGraph_State_Stop m_stateStop; // 0xa0	
-	CAI_MotorGroundAnimGraph_State_InstantStop m_stateInstantStop; // 0xe0	
-	CAI_MotorGroundAnimGraph_State_Hop m_stateHop; // 0x120	
-	// -> m_sHandshake - 0x180
-	// -> m_dynamicSettings - 0x188
-	CAI_MotorGroundAnimGraph_State_MovePerformance m_stateMovePerformance; // 0x160	
-	// -> m_bRepathed - 0x1e0
-	// -> m_bPathChanged - 0x1e1
-	CAI_MotorGroundAnimGraph_State_PlantedTurn m_statePlantedTurn; // 0x1c0	
+	CAI_MotorGroundAnimGraph_State_Loop m_stateLoop; // 0x78	
+	CAI_MotorGroundAnimGraph_State_Start m_stateStart; // 0xa0	
+	// -> m_vGoalPosition - 0xe8
+	// -> m_vArrivalDirection - 0xf4
+	// -> m_bPathChanged - 0x100
+	CAI_MotorGroundAnimGraph_State_Stop m_stateStop; // 0xc8	
+	CAI_MotorGroundAnimGraph_State_InstantStop m_stateInstantStop; // 0x108	
+	CAI_MotorGroundAnimGraph_State_Hop m_stateHop; // 0x148	
+	// -> m_sHandshake - 0x1a8
+	// -> m_dynamicSettings - 0x1b0
+	CAI_MotorGroundAnimGraph_State_MovePerformance m_stateMovePerformance; // 0x188	
+	// -> m_bRepathed - 0x208
+	// -> m_bPathChanged - 0x209
+	CAI_MotorGroundAnimGraph_State_PlantedTurn m_statePlantedTurn; // 0x1e8	
+	CAI_MotorGroundAnimGraph_State_Other m_stateOther; // 0x210	
 private:
-	[[maybe_unused]] uint8_t __pad01e8[0x18]; // 0x1e8
+	[[maybe_unused]] uint8_t __pad0230[0x18]; // 0x230
 public:
-	int32_t m_nCurrentState; // 0x200	
-	float m_flDistanceCoveredInCurrentState; // 0x204	
-	bool m_bEnableStop; // 0x208	
-	bool m_bEnableStart; // 0x209	
-	bool m_bHadPath; // 0x20a	
+	int32_t m_nCurrentState; // 0x248	
+	float m_flDistanceCoveredInCurrentState; // 0x24c	
+	bool m_bEnableStop; // 0x250	
+	bool m_bEnableStart; // 0x251	
+	bool m_bHadPath; // 0x252	
 private:
-	[[maybe_unused]] uint8_t __pad020b[0x1]; // 0x20b
+	[[maybe_unused]] uint8_t __pad0253[0x1]; // 0x253
 public:
-	AI_MotorGroundAnimGraph_Flags_t m_eFlags; // 0x20c	
-	Vector m_vPreviousPosition; // 0x210	
+	AI_MotorGroundAnimGraph_Flags_t m_eFlags; // 0x254	
+	Vector m_vPreviousPosition; // 0x258	
 private:
-	[[maybe_unused]] uint8_t __pad021c[0x4]; // 0x21c
+	[[maybe_unused]] uint8_t __pad0264[0x4]; // 0x264
 public:
-	float m_flCurrentLean; // 0x220	
-	RotationVector m_vDesiredMovementHeadingChangeVelocity; // 0x224	
-	float m_flPrevDesiredMovementHeading; // 0x230	
-	float m_flSmoothedDesiredMovementHeadingChange; // 0x234	
+	float m_flCurrentLean; // 0x268	
+	RotationVector m_vDesiredMovementHeadingChangeVelocity; // 0x26c	
+	CFloatExponentialMovingAverage m_smoothedDesiredMoveHeading; // 0x278	
 };
 
