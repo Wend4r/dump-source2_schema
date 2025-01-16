@@ -61,11 +61,13 @@ public:
 	float m_fLerpTime; // 0x5d8	
 	bool m_bLagCompensation; // 0x5dc	
 	bool m_bPredict; // 0x5dd	
-	bool m_bAutoKickDisabled; // 0x5de	
-	bool m_bIsLowViolence; // 0x5df	
-	bool m_bGamePaused; // 0x5e0	
 private:
-	[[maybe_unused]] uint8_t __pad05e1[0x13f]; // 0x5e1
+	[[maybe_unused]] uint8_t __pad05de[0x6]; // 0x5de
+public:
+	bool m_bIsLowViolence; // 0x5e4	
+	bool m_bGamePaused; // 0x5e5	
+private:
+	[[maybe_unused]] uint8_t __pad05e6[0x13a]; // 0x5e6
 public:
 	ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x720	
 	float m_flLastPlayerTalkTime; // 0x724	
@@ -91,6 +93,7 @@ public:
 	// const char * playername; // 0x7fffffff
 	// bool reserving; // 0x7fffffff
 	// void m_pCurrentCommand; // 0x738
+	// int32_t m_ePlayerControllerKickPolicyMask; // 0x5e0
 	// void m_LastCmd; // 0x5e8
 	// void m_nLastRealCommandNumberExecuted; // 0x704
 	// void m_nLastLateCommandExecuted; // 0x708

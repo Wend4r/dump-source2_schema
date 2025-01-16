@@ -5,7 +5,7 @@
 struct CompositeMaterialInputLooseVariable_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x378
+// Size: 0x380
 // 
 // MGetKV3ClassDefaults
 // MPropertyElementNameFn
@@ -54,57 +54,57 @@ public:
 	CompositeMaterialInputLooseVariable_t m_nSetValue_Value; // 0x68	
 	// MPropertyFriendlyName "Target Texture Param"
 	// MPropertyAttrStateCallback
-	CUtlString m_strGenerateTexture_TargetParam; // 0x2e8	
+	CUtlString m_strGenerateTexture_TargetParam; // 0x2f0	
 	// MPropertyFriendlyName "Initial Container"
 	// MPropertyAttrStateCallback
-	CUtlString m_strGenerateTexture_InitialContainer; // 0x2f0	
+	CUtlString m_strGenerateTexture_InitialContainer; // 0x2f8	
 	// MPropertyFriendlyName "Resolution"
 	// MPropertyAttrStateCallback
-	int32_t m_nResolution; // 0x2f8	
+	int32_t m_nResolution; // 0x300	
 	// MPropertyAutoRebuildOnChange
 	// MPropertyFriendlyName "Scratch Target"
 	// MPropertyAttrStateCallback
-	bool m_bIsScratchTarget; // 0x2fc	
+	bool m_bIsScratchTarget; // 0x304	
 	// MPropertyAutoRebuildOnChange
 	// MPropertyFriendlyName "Splat Debug info on Texture"
 	// MPropertyAttrStateCallback
-	bool m_bSplatDebugInfo; // 0x2fd	
+	bool m_bSplatDebugInfo; // 0x305	
 	// MPropertyAutoRebuildOnChange
 	// MPropertyFriendlyName "Capture in RenderDoc"
 	// MPropertyAttrStateCallback
-	bool m_bCaptureInRenderDoc; // 0x2fe	
+	bool m_bCaptureInRenderDoc; // 0x306	
 private:
-	[[maybe_unused]] uint8_t __pad02ff[0x1]; // 0x2ff
+	[[maybe_unused]] uint8_t __pad0307[0x1]; // 0x307
 public:
 	// MPropertyFriendlyName "Texture Generation Instructions"
 	// MPropertyAttrStateCallback
-	CUtlVector< CompMatPropertyMutator_t > m_vecTexGenInstructions; // 0x300	
+	CUtlVector< CompMatPropertyMutator_t > m_vecTexGenInstructions; // 0x308	
 	// MPropertyFriendlyName "Mutators"
 	// MPropertyAttrStateCallback
-	CUtlVector< CompMatPropertyMutator_t > m_vecConditionalMutators; // 0x318	
+	CUtlVector< CompMatPropertyMutator_t > m_vecConditionalMutators; // 0x320	
 	// MPropertyFriendlyName "Container to Pop"
 	// MPropertyAttrStateCallback
-	CUtlString m_strPopInputQueue_Container; // 0x330	
+	CUtlString m_strPopInputQueue_Container; // 0x338	
 	// MPropertyFriendlyName "Input Container"
 	// MPropertyAttrStateCallback
-	CUtlString m_strDrawText_InputContainerSrc; // 0x338	
+	CUtlString m_strDrawText_InputContainerSrc; // 0x340	
 	// MPropertyFriendlyName "Input Container Property"
 	// MPropertyAttrStateCallback
-	CUtlString m_strDrawText_InputContainerProperty; // 0x340	
+	CUtlString m_strDrawText_InputContainerProperty; // 0x348	
 	// MPropertyFriendlyName "Text Position"
 	// MPropertyAttrStateCallback
-	Vector2D m_vecDrawText_Position; // 0x348	
+	Vector2D m_vecDrawText_Position; // 0x350	
 	// MPropertyFriendlyName "Text Color"
 	// MPropertyAttrStateCallback
-	Color m_colDrawText_Color; // 0x350	
+	Color m_colDrawText_Color; // 0x358	
 private:
-	[[maybe_unused]] uint8_t __pad0354[0x4]; // 0x354
+	[[maybe_unused]] uint8_t __pad035c[0x4]; // 0x35c
 public:
 	// MPropertyFriendlyName "Font"
 	// MPropertyAttrStateCallback
-	CUtlString m_strDrawText_Font; // 0x358	
+	CUtlString m_strDrawText_Font; // 0x360	
 	// MPropertyFriendlyName "Conditions"
 	// MPropertyAttrStateCallback
-	CUtlVector< CompMatMutatorCondition_t > m_vecConditions; // 0x360	
+	CUtlVector< CompMatMutatorCondition_t > m_vecConditions; // 0x368	
 };
 
