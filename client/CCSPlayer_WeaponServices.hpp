@@ -5,7 +5,7 @@
 struct GameTime_t;
 // Registered binary: client.dll (project 'client')
 // Alignment: 8
-// Size: 0x1370
+// Size: 0x1380
 // Has VTable
 // 
 // MNetworkVarNames "GameTime_t m_flNextAttack"
