@@ -25,7 +25,7 @@ public:
 	QAngle m_angDeltaAverage[8]; // 0x30	
 	QAngle m_angViewLast; // 0x90	
 	Vector2D m_vecDotCoords; // 0x9c	
-	float m_flDotBlur; // 0xa4	
+	float m_flFiringInaccuracyExtraWidthMultiplier; // 0xa4	
 	float m_flSpeedRatio; // 0xa8	
 };
 
